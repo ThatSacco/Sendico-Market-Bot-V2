@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -132,19 +133,31 @@ def _validate_pricecharting_url(url: str) -> None:
         raise ValueError(f"PriceCharting URL must point to a product page: {url}")
 
 
+def _derive_id_from_url(url: str) -> str:
+    """Turn a PriceCharting product slug (.../victini-97) into victini_97."""
+
+    slug = Path(urlparse(url).path).name
+    return re.sub(r"[^a-zA-Z0-9]+", "_", slug).strip("_").lower()
+
+
 def load_watchlist(path: Path) -> list[WatchTarget]:
     data = _load_yaml(path, "data/watchlist.yaml")
     targets: list[WatchTarget] = []
     for item in data.get("cards") or []:
         if not isinstance(item, dict) or not item.get("active", True):
             continue
-        target_id = str(item.get("id") or "").strip()
         url = str(item.get("pricecharting_url") or "").strip()
-        if not target_id:
-            raise ValueError("Every active watchlist card needs an id")
         _validate_pricecharting_url(url)
+        target_id = str(item.get("id") or "").strip() or _derive_id_from_url(url)
+        if not target_id:
+            raise ValueError(f"Could not derive a watchlist id from {url!r}")
         searches: list[WatchSearch] = []
         for raw_search in item.get("searches") or []:
+            if isinstance(raw_search, str):
+                term = raw_search.strip()
+                if term:
+                    searches.append(WatchSearch(term=term, active=True))
+                continue
             if not isinstance(raw_search, dict) or not raw_search.get("active", True):
                 continue
             term = str(raw_search.get("term") or "").strip()

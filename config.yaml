@@ -15,8 +15,18 @@ pricing:
   reference_cache_hours: 24
   manual_usd_to_aud: 1.52
   manual_jpy_to_aud: 0.0102
+  fx_cache_hours: 6
 sendico_fee:
   yen: 800
+costs:
+  # Estimates -- tune to your actual experience. Stamped into the Discord
+  # embed as estimates, never presented as exact landed cost.
+  domestic_shipping_yen: 500
+  international_freight_aud: 15.00
+  au_import_gst_rate: 0.10
+lot_valuation:
+  price_match_threshold: 0.95
+  price_search_cache_hours: 336
 discord:
   enabled: true
   username: Pokemon Deal Scout

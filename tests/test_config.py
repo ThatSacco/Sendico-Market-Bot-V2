@@ -29,6 +29,23 @@ cards:
     assert not hasattr(targets[0], "card_number")
 
 
+def test_minimal_watchlist_derives_id_and_accepts_bare_search_strings(tmp_path):
+    path = tmp_path / "watchlist.yaml"
+    path.write_text("""
+cards:
+  - pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+    searches:
+      - "ブラックボルト まとめ売り"
+      - "sv11B まとめ売り"
+""", encoding="utf-8")
+    targets = load_watchlist(path)
+    assert targets[0].id == "victini_97"
+    assert [search.term for search in targets[0].searches] == [
+        "ブラックボルト まとめ売り",
+        "sv11B まとめ売り",
+    ]
+
+
 def test_search_plan_groups_shared_terms():
     config = load_config(ROOT / "config.yaml")
     plan = build_search_plan(config.targets)
