@@ -1,9 +1,20 @@
 {
+  "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27": {
+    "card_number": "27",
+    "fetched_at": "2026-07-29T07:08:51.962411+00:00",
+    "image_path": "data/reference_images/3462297.jpg",
+    "image_url": "https://storage.googleapis.com/images.pricecharting.com/cd8c68b54e5055ec8d2e6515547e35036e21f38aef9865a63d4d181ccff1febc/1600.jpg",
+    "name": "Ampharos EX",
+    "product_id": "3462297",
+    "psa10_usd": 6.0,
+    "set_name": "Pokemon Japanese Bandit Ring",
+    "ungraded_usd": 6.97
+  },
   "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97": {
     "card_number": "97",
-    "fetched_at": "2026-07-29T02:14:56.526725+00:00",
+    "fetched_at": "2026-07-29T07:08:51.472227+00:00",
     "image_path": "data/reference_images/9647332.jpg",
-    "image_url": "https://storage.googleapis.com/images.pricecharting.com/mt22efukqwtmtzrt/240.jpg",
+    "image_url": "https://storage.googleapis.com/images.pricecharting.com/mt22efukqwtmtzrt/1600.jpg",
     "name": "Victini",
     "product_id": "9647332",
     "psa10_usd": 6.0,
