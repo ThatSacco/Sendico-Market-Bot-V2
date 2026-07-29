@@ -589,6 +589,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                         exc,
                     )
                     # Leave processing errors eligible for the next scheduled run.
+                    state.save()
 
             for pending_task in hydration_tasks.values():
                 pending_task.cancel()
@@ -598,6 +599,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         status = f"Failed: {exc}"
         raise
     finally:
+        state.save()
         stats.requests_sent = matcher.requests_sent
         stats.input_tokens = matcher.input_tokens
         stats.output_tokens = matcher.output_tokens

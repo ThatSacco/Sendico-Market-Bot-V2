@@ -45,6 +45,26 @@ def test_alert_stages_are_deduplicated_separately(tmp_path):
     assert not store.alert_sent("m1", "victini", "confirmed", "p")
 
 
+def test_mark_processed_and_record_alert_buffer_until_save(tmp_path):
+    path = tmp_path / "seen.json"
+    store = StateStore(path)
+    listing = SendicoListing(
+        "m12345678",
+        "https://sendico.test/m12345678",
+        "Lot",
+        1000,
+        ["https://x/m12345678_1.jpg"],
+    )
+    store.mark_processed(listing, "a", "done")
+    store.record_alert("m12345678", "victini", "probable", "p")
+    assert not path.exists()
+    store.save()
+    assert path.exists()
+    persisted = StateStore(path)
+    assert not persisted.should_process(listing, "a")
+    assert persisted.alert_sent("m12345678", "victini", "probable", "p")
+
+
 def test_seen_state_is_pruned_to_prevent_repository_bloat(tmp_path):
     store = StateStore(tmp_path / "seen.json", max_listings=100)
     for index in range(110):
@@ -56,4 +76,5 @@ def test_seen_state_is_pruned_to_prevent_repository_bloat(tmp_path):
             [f"https://x/m{index:08d}_1.jpg"],
         )
         store.mark_processed(listing, "signature", "done")
+    store.save()
     assert len(store.data["listings"]) == 100

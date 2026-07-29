@@ -74,10 +74,11 @@ class StateStore:
         stage: str,
         fingerprint: str,
     ) -> None:
+        """Buffer the alert in memory; call save() to flush to disk."""
+
         record = self.data["listings"].setdefault(listing_code, {})
         record.setdefault("alerts", {})[f"{target_id}:{stage}"] = fingerprint
         record["updated_at"] = datetime.now(timezone.utc).isoformat()
-        self.save()
 
     def mark_processed(
         self,
@@ -87,6 +88,8 @@ class StateStore:
         *,
         fingerprint: str | None = None,
     ) -> None:
+        """Buffer the outcome in memory; call save() to flush to disk."""
+
         previous = self.data["listings"].get(listing.code) or {}
         self.data["listings"][listing.code] = {
             "fingerprint": fingerprint
@@ -95,7 +98,6 @@ class StateStore:
             "alerts": previous.get("alerts") or {},
             "updated_at": datetime.now(timezone.utc).isoformat(),
         }
-        self.save()
 
     def _prune(self) -> None:
         listings = self.data.setdefault("listings", {})
