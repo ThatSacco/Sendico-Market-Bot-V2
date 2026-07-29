@@ -4,7 +4,12 @@ import json
 import httpx
 import pytest
 
-from pokemon_deal_bot.gemini import GeminiBudgetReached, GeminiReferenceMatcher
+from pokemon_deal_bot.gemini import (
+    GeminiBudgetReached,
+    GeminiDegenerateOutputError,
+    GeminiReferenceMatcher,
+    _json_object,
+)
 
 
 def _limits(max_tokens: int = 10000):
@@ -203,3 +208,89 @@ def test_identify_lot_cards_parses_cards_and_visible_count():
     assert cards[0].variant == "AR"
     assert visible_count == 3
     assert len(captured["input"]) == 2
+
+
+def test_json_object_raises_on_degenerate_repetition():
+    text = "Charizard VMAX " * 40
+    with pytest.raises(GeminiDegenerateOutputError):
+        _json_object(text)
+
+
+def test_json_object_does_not_flag_max_size_legitimate_lot():
+    # The lot-identification prompt caps output at 25 cards, so a maximally
+    # sized, structurally-repetitive-but-legitimate response (every card
+    # sharing the same fields) still can't hit the 30x repeat threshold.
+    result = {
+        "visible_card_count": 25,
+        "cards": [
+            {"name": f"Card {i}", "grade": "Ungraded", "confidence": 0.9}
+            for i in range(25)
+        ],
+    }
+    assert _json_object(json.dumps(result)) == result
+
+
+def test_json_object_still_parses_valid_json():
+    result = {"same_card": True, "confidence": 0.5}
+    assert _json_object(json.dumps(result)) == result
+
+
+def test_identify_lot_cards_falls_through_on_degenerate_repetition():
+    calls: list[str] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.content)
+        model = body["model"]
+        calls.append(model)
+        if model == "gemini-3.6-flash":
+            # Simulate the observed failure mode: the model gets stuck
+            # repeating a short phrase instead of emitting JSON.
+            text = "Charizard VMAX " * 200
+        else:
+            result = {
+                "visible_card_count": 1,
+                "cards": [
+                    {
+                        "name": "Charizard",
+                        "card_number": "006",
+                        "set_name": "Base Set",
+                        "language": "Japanese",
+                        "variant": "Holo",
+                        "grade": "Ungraded",
+                        "confidence": 0.8,
+                    }
+                ],
+            }
+            text = json.dumps(result)
+        return httpx.Response(
+            200,
+            json={
+                "usage": {
+                    "total_input_tokens": 50,
+                    "total_output_tokens": 500,
+                    "total_tokens": 550,
+                },
+                "steps": [
+                    {
+                        "type": "model_output",
+                        "content": [{"type": "text", "text": text}],
+                    }
+                ],
+            },
+        )
+
+    matcher = GeminiReferenceMatcher(
+        "x",
+        {"models": ["gemini-3.6-flash", "gemini-3.5-flash-lite"]},
+        _limits(20000),
+        transport=httpx.MockTransport(handler),
+    )
+    cards, visible_count = asyncio.run(
+        matcher.identify_lot_cards(candidate_jpeg=b"lot")
+    )
+    asyncio.run(matcher.close())
+
+    assert calls == ["gemini-3.6-flash", "gemini-3.5-flash-lite"]
+    assert len(cards) == 1
+    assert cards[0].name == "Charizard"
+    assert visible_count == 1

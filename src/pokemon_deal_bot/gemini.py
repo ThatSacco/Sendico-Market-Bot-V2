@@ -73,10 +73,35 @@ class GeminiBudgetReached(RuntimeError):
     pass
 
 
+class GeminiDegenerateOutputError(RuntimeError):
+    """The model got stuck repeating a short phrase instead of emitting JSON."""
+
+
+# Matches a short phrase (<=50 chars) immediately repeated 30+ times in a row.
+# Real responses in this schema (capped at 25 short-field cards) never repeat
+# a substring that many times back-to-back, so this only fires on the known
+# degenerate-loop failure mode.
+_DEGENERATE_REPETITION = re.compile(r"(.{1,50}?)\1{29,}", re.S)
+
+
+def _check_not_degenerate(text: str) -> None:
+    match = _DEGENERATE_REPETITION.search(text)
+    if not match:
+        return
+    phrase = match.group(1)
+    repeats = len(match.group(0)) // max(len(phrase), 1)
+    snippet = phrase if len(phrase) <= 40 else phrase[:40] + "..."
+    raise GeminiDegenerateOutputError(
+        f"model output degenerated into {snippet!r} repeated ~{repeats}x "
+        f"({len(text)} chars total) instead of valid JSON"
+    )
+
+
 def _json_object(text: str) -> dict[str, Any]:
     cleaned = text.strip()
     if cleaned.startswith("```"):
         cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", cleaned, flags=re.I | re.S)
+    _check_not_degenerate(cleaned)
     try:
         value = json.loads(cleaned)
     except json.JSONDecodeError:
