@@ -118,7 +118,7 @@ class SendicoScanner:
         if self.playwright:
             await self.playwright.stop()
 
-    async def _new_page(self) -> Page:
+    async def _new_page(self, *, block_media: bool = False) -> Page:
         if not self.browser:
             raise RuntimeError("Scanner must be used as an async context manager")
         page = await self.browser.new_page(
@@ -130,6 +130,14 @@ class SendicoScanner:
             ),
         )
         page.set_default_timeout(int(self.limits["search"]["page_timeout_ms"]))
+        if block_media:
+            async def _block_media(route):
+                if route.request.resource_type in {"image", "font", "media"}:
+                    await route.abort()
+                else:
+                    await route.continue_()
+
+            await page.route(re.compile(r".*"), _block_media)
         return page
 
     async def _goto(self, page: Page, url: str) -> None:
@@ -142,13 +150,18 @@ class SendicoScanner:
             LOGGER.warning("Navigation timed out after commit; continuing: %s", url)
 
     async def search(self, term: str) -> list[SendicoListing]:
-        page = await self._new_page()
+        page = await self._new_page(block_media=True)
         try:
             LOGGER.info("Starting Sendico search: %s", term)
             await self._goto(page, self.config["category_url"])
             await self._dismiss_cookies(page)
             search_method = await self._submit_search(page, term)
-            await page.wait_for_timeout(2200)
+            try:
+                await page.wait_for_selector('a[href*="/shop/mercari/catalog/"]')
+            except PlaywrightTimeoutError:
+                LOGGER.warning(
+                    "No listing links appeared after search: term=%r", term
+                )
             await self._scroll(page)
 
             raw = await page.locator(
@@ -223,7 +236,10 @@ class SendicoScanner:
                 )
             return results
         finally:
-            await page.close()
+            try:
+                await page.close()
+            except Exception:
+                pass
 
     async def _scroll(self, page: Page) -> None:
         maximum = int(self.limits["search"]["max_scroll_rounds"])
@@ -252,7 +268,28 @@ class SendicoScanner:
             await self._goto(page, listing.url)
             await self._dismiss_cookies(page)
             await page.wait_for_timeout(1300)
-            body = await page.locator("body").inner_text()
+            # Exclude the "Related items" / "Other Items From This Seller"
+            # carousels: they carry unrelated prices that a whole-page scan
+            # can mistake for this listing's own price.
+            body = await page.evaluate(
+                """
+                () => {
+                  const clone = document.body.cloneNode(true);
+                  const headings = Array.from(clone.querySelectorAll('h3')).filter((h) => {
+                    const text = (h.textContent || '').trim();
+                    return text === 'Related items'
+                      || text === 'Other Items From This Seller';
+                  });
+                  for (const heading of headings) {
+                    const section = heading.closest('.mt-7\\\\.5') || heading.parentElement;
+                    if (section && section.parentElement) {
+                      section.remove();
+                    }
+                  }
+                  return clone.innerText;
+                }
+                """
+            )
             heading = page.locator("h1").first
             if await heading.count():
                 listing.title = (await heading.inner_text()).strip() or listing.title
@@ -292,7 +329,17 @@ class SendicoScanner:
             )
             listing.description = body
             listing.raw_text = body
-            listing.seller_positive_ratings = parse_seller_positive_ratings(body)
+            seller_badge = page.locator(
+                'span[data-slot="base"]:has(span[class*="thumbs-up"]) '
+                'span[data-slot="label"]'
+            ).first
+            if await seller_badge.count():
+                rating_text = (await seller_badge.inner_text()).strip()
+                listing.seller_positive_ratings = parse_seller_positive_ratings(
+                    f"positive ratings {rating_text}"
+                )
+            else:
+                listing.seller_positive_ratings = parse_seller_positive_ratings(body)
             if listing.price_yen <= 0:
                 listing.price_yen = parse_yen(body) or 0
                 if listing.price_yen > 0:
@@ -308,7 +355,10 @@ class SendicoScanner:
                     )
             return listing
         finally:
-            await page.close()
+            try:
+                await page.close()
+            except Exception:
+                pass
 
     async def _submit_search(self, page: Page, term: str) -> str:
         selectors = [

@@ -1,4 +1,4 @@
-from pokemon_deal_bot.main import _candidate_targets
+from pokemon_deal_bot.main import _candidate_targets, _round_robin_truncate
 from pokemon_deal_bot.models import ReferenceCard, SendicoListing, VisualMatch
 
 
@@ -63,3 +63,25 @@ def test_match_score_is_zero_for_confident_negative_decision():
         target_id="victini", stage="screening", confidence=0.6, same_card=True
     )
     assert positive.match_score == 0.6
+
+
+def _listing(code: str) -> SendicoListing:
+    return SendicoListing(
+        code=code, url=f"https://sendico.test/{code}", title=code, price_yen=1000
+    )
+
+
+def test_round_robin_truncate_does_not_sacrifice_the_last_term():
+    per_term = [
+        [_listing("a1"), _listing("a2"), _listing("a3")],
+        [_listing("b1")],
+        [_listing("c1")],
+    ]
+    result = _round_robin_truncate(per_term, limit=3)
+    assert [listing.code for listing in result] == ["a1", "b1", "c1"]
+
+
+def test_round_robin_truncate_respects_limit_and_order_within_round():
+    per_term = [[_listing("a1"), _listing("a2")], [_listing("b1"), _listing("b2")]]
+    result = _round_robin_truncate(per_term, limit=3)
+    assert [listing.code for listing in result] == ["a1", "b1", "a2"]

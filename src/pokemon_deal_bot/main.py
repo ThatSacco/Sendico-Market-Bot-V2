@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import hashlib
+import itertools
 import logging
 from collections.abc import Iterable
 
@@ -24,6 +25,8 @@ from .sendico import SendicoScanner
 from .state import StateStore
 
 LOGGER = logging.getLogger(__name__)
+SEARCH_CONCURRENCY = 3
+HYDRATE_PREFETCH = 4
 
 
 def _alert_fingerprint(
@@ -59,6 +62,29 @@ def _candidate_targets(
         return associated
     remaining = [target_id for target_id in references if target_id not in associated]
     return [*associated, *remaining]
+
+
+def _round_robin_truncate(
+    per_term_listings: list[list[SendicoListing]],
+    limit: int,
+) -> list[SendicoListing]:
+    """Interleave unique listings across search terms before truncating.
+
+    Insertion-order truncation would always sacrifice whichever term was
+    searched last; round-robin gives every term a fair share of the cap.
+    """
+
+    return [
+        listing
+        for round_items in itertools.zip_longest(*per_term_listings)
+        for listing in round_items
+        if listing is not None
+    ][:limit]
+
+
+def _load_reference_thumbnail(path) -> Image.Image:
+    with Image.open(path) as source:
+        return source.convert("RGB")
 
 
 def _batches(values: list[Image.Image], size: int, maximum: int) -> Iterable[list[Image.Image]]:
@@ -156,6 +182,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
     signature = scan_signature(config)
     stats = ScanStats()
     report_rows: list[dict] = []
+    status = "Completed normally"
 
     matching = config.criteria["reference_image_matching"]
     seller_criteria = config.criteria["seller"]
@@ -171,6 +198,10 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         target_id: image_file_bytes(reference.image_path)
         for target_id, reference in references.items()
     }
+    reference_thumbnails: dict[str, Image.Image] = {
+        target_id: _load_reference_thumbnail(reference.image_path)
+        for target_id, reference in references.items()
+    }
 
     listings_by_code: dict[str, SendicoListing] = {}
     plan = build_search_plan(config.targets)
@@ -178,26 +209,70 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         async with SendicoScanner(
             config.raw["sendico"], config.run_limits
         ) as scanner:
-            for task in plan:
-                results = await scanner.search(task.term)
+            search_semaphore = asyncio.Semaphore(SEARCH_CONCURRENCY)
+
+            async def _run_search(task):
+                async with search_semaphore:
+                    try:
+                        return task, await scanner.search(task.term)
+                    except Exception as exc:
+                        LOGGER.warning(
+                            "Search failed for term %r: %s", task.term, exc
+                        )
+                        return task, []
+
+            search_results = await asyncio.gather(
+                *(_run_search(task) for task in plan)
+            )
+            per_term_listings: list[list[SendicoListing]] = []
+            for task, results in search_results:
                 stats.found += len(results)
+                first_seen: list[SendicoListing] = []
                 for listing in results:
                     current = listings_by_code.get(listing.code)
                     if current is None:
-                        listing.matched_search_terms.append(task.term)
                         listing.candidate_target_ids.extend(task.target_ids)
                         listings_by_code[listing.code] = listing
+                        first_seen.append(listing)
                     else:
-                        current.matched_search_terms.append(task.term)
                         current.candidate_target_ids.extend(task.target_ids)
+                per_term_listings.append(first_seen)
 
-            candidates = list(listings_by_code.values())[:search_limit]
+            candidates = _round_robin_truncate(per_term_listings, search_limit)
             stats.candidates = len(candidates)
             if len(listings_by_code) > len(candidates):
                 stats.held += len(listings_by_code) - len(candidates)
 
+            listing_fingerprints = [
+                state.listing_fingerprint(listing, signature) for listing in candidates
+            ]
+            eligible_positions = [
+                index
+                for index, listing in enumerate(candidates)
+                if state.should_process_fingerprint(
+                    listing.code, listing_fingerprints[index]
+                )
+            ]
+            hydrate_semaphore = asyncio.Semaphore(HYDRATE_PREFETCH)
+            hydration_tasks: dict[int, asyncio.Task] = {}
+
+            def _start_hydration(position: int) -> None:
+                if position >= len(eligible_positions) or position in hydration_tasks:
+                    return
+                pending_listing = candidates[eligible_positions[position]]
+
+                async def _bounded() -> SendicoListing:
+                    async with hydrate_semaphore:
+                        return await scanner.hydrate(pending_listing)
+
+                hydration_tasks[position] = asyncio.create_task(_bounded())
+
+            for position in range(min(HYDRATE_PREFETCH, len(eligible_positions))):
+                _start_hydration(position)
+
+            eligible_pos = 0
             for index, listing in enumerate(candidates):
-                discovery_fingerprint = state.listing_fingerprint(listing, signature)
+                discovery_fingerprint = listing_fingerprints[index]
                 if not state.should_process_fingerprint(
                     listing.code, discovery_fingerprint
                 ):
@@ -207,8 +282,13 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                     stats.held += len(candidates) - index
                     break
 
+                position = eligible_pos
+                hydration_task = hydration_tasks.pop(position)
+                eligible_pos += 1
+                _start_hydration(position + HYDRATE_PREFETCH)
+
                 try:
-                    listing = await scanner.hydrate(listing)
+                    listing = await hydration_task
                     stats.hydrated += 1
                     minimum_ratings = int(
                         seller_criteria["minimum_positive_ratings"]
@@ -260,36 +340,61 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                         references,
                         compare_all=compare_all,
                     )
-                    for target_id in target_ids:
-                        reference = references[target_id]
-                        reference_jpeg = reference_jpegs[target_id]
-                        best_screen: VisualMatch | None = None
-                        probable_alerted = False
+                    min_detail_score = float(
+                        matching["minimum_screening_confidence_for_detail"]
+                    )
+                    probable_threshold = float(matching["probable_alert_threshold"])
 
-                        for batch_number, batch in enumerate(
-                            _batches(
-                                images,
-                                int(screening_limits["images_per_batch"]),
-                                int(screening_limits["max_batches_per_listing"]),
+                    best_screen_by_target: dict[str, VisualMatch | None] = {
+                        target_id: None for target_id in target_ids
+                    }
+                    probable_alerted: set[str] = set()
+                    remaining_targets = list(target_ids)
+
+                    for batch_number, batch in enumerate(
+                        _batches(
+                            images,
+                            int(screening_limits["images_per_batch"]),
+                            int(screening_limits["max_batches_per_listing"]),
+                        ),
+                        start=1,
+                    ):
+                        if not remaining_targets:
+                            break
+                        overview = make_contact_sheet(
+                            batch,
+                            prefix=f"O{batch_number}-",
+                            max_dimension=int(
+                                screening_limits["max_image_dimension_px"]
                             ),
-                            start=1,
-                        ):
-                            overview = make_contact_sheet(
-                                batch,
-                                prefix=f"O{batch_number}-",
-                                max_dimension=int(
-                                    screening_limits["max_image_dimension_px"]
-                                ),
-                                quality=int(screening_limits["jpeg_quality"]),
-                                columns=2,
-                            )
-                            screen = matcher.compare(
-                                target_id=target_id,
-                                reference_name=reference.display_name,
-                                reference_jpeg=reference_jpeg,
-                                candidate_jpeg=overview.jpeg,
-                                stage="screening",
-                            )
+                            quality=int(screening_limits["jpeg_quality"]),
+                            columns=2,
+                        )
+                        strip_targets = [
+                            (target_id, references[target_id].display_name)
+                            for target_id in remaining_targets
+                        ]
+                        reference_strip = make_contact_sheet(
+                            [
+                                reference_thumbnails[target_id]
+                                for target_id, _ in strip_targets
+                            ],
+                            prefix="R",
+                            max_dimension=int(
+                                screening_limits["max_image_dimension_px"]
+                            ),
+                            quality=int(screening_limits["jpeg_quality"]),
+                            columns=min(4, max(1, len(strip_targets))),
+                        )
+                        screen_results = await matcher.screen_multi(
+                            targets=strip_targets,
+                            reference_strip_jpeg=reference_strip.jpeg,
+                            candidate_jpeg=overview.jpeg,
+                        )
+                        for target_id in list(remaining_targets):
+                            screen = screen_results.get(target_id)
+                            if screen is None:
+                                continue
                             _report_match(
                                 report_rows,
                                 listing,
@@ -297,19 +402,19 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                 stage="screening",
                                 batch_number=batch_number,
                             )
+                            current_best = best_screen_by_target[target_id]
                             if (
-                                best_screen is None
-                                or screen.match_score > best_screen.match_score
+                                current_best is None
+                                or screen.match_score > current_best.match_score
                             ):
-                                best_screen = screen
+                                best_screen_by_target[target_id] = screen
 
                             if (
-                                screen.match_score
-                                >= float(matching["probable_alert_threshold"])
-                                and not probable_alerted
+                                screen.match_score >= probable_threshold
+                                and target_id not in probable_alerted
                             ):
                                 stats.probable_matches += 1
-                                probable_alerted = True
+                                probable_alerted.add(target_id)
                                 fingerprint = _alert_fingerprint(
                                     listing, target_id, "probable"
                                 )
@@ -323,7 +428,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     )
                                 ):
                                     if notifier.probable(
-                                        listing, reference, screen
+                                        listing, references[target_id], screen
                                     ):
                                         stats.alerts_sent += 1
                                         state.record_alert(
@@ -333,17 +438,18 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                             fingerprint,
                                         )
 
-                            # A sufficiently strong batch can proceed immediately.
-                            if screen.match_score >= float(
-                                matching["minimum_screening_confidence_for_detail"]
-                            ):
-                                break
+                            # A sufficiently strong batch resolves this target immediately.
+                            if screen.match_score >= min_detail_score:
+                                remaining_targets.remove(target_id)
 
+                    for target_id in target_ids:
+                        reference = references[target_id]
+                        reference_jpeg = reference_jpegs[target_id]
                         stats.screened += 1
+                        best_screen = best_screen_by_target[target_id]
                         if (
                             best_screen is None
-                            or best_screen.match_score
-                            < float(matching["minimum_screening_confidence_for_detail"])
+                            or best_screen.match_score < min_detail_score
                         ):
                             match_score = best_screen.match_score if best_screen else 0.0
                             outcomes.append(
@@ -394,7 +500,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                 quality=int(detailed_limits["jpeg_quality"]),
                                 columns=int(detailed_limits["contact_sheet_columns"]),
                             )
-                            detail = matcher.compare(
+                            detail = await matcher.compare(
                                 target_id=target_id,
                                 reference_name=reference.display_name,
                                 reference_jpeg=reference_jpeg,
@@ -473,6 +579,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                 except GeminiBudgetReached as exc:
                     LOGGER.warning("Stopping at Gemini budget: %s", exc)
                     stats.held += len(candidates) - index
+                    status = f"Stopped early: {exc}"
                     break
                 except Exception as exc:
                     stats.processing_errors += 1
@@ -482,6 +589,14 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                         exc,
                     )
                     # Leave processing errors eligible for the next scheduled run.
+
+            for pending_task in hydration_tasks.values():
+                pending_task.cancel()
+            if hydration_tasks:
+                await asyncio.gather(*hydration_tasks.values(), return_exceptions=True)
+    except Exception as exc:
+        status = f"Failed: {exc}"
+        raise
     finally:
         stats.requests_sent = matcher.requests_sent
         stats.input_tokens = matcher.input_tokens
@@ -489,7 +604,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         stats.thinking_tokens = matcher.thinking_tokens
         stats.total_tokens = matcher.total_tokens
         stats.models_used = matcher.model_usage
-        matcher.close()
+        await matcher.close()
         write_report(config.root, stats, report_rows)
         if bool(
             config.raw.get("discord", {}).get(
@@ -497,7 +612,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
             )
         ):
             try:
-                notifier.completion(stats)
+                notifier.completion(stats, status=status)
             except Exception as exc:
                 LOGGER.error("Could not send completion summary: %s", exc)
         notifier.close()
