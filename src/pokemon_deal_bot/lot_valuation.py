@@ -12,6 +12,7 @@ class LotValuation:
     unpriced_identified_count: int
     unidentified_visible_count: int
     total_priced_usd: float
+    price_match_threshold: float
 
     @property
     def identified_count(self) -> int:
@@ -45,4 +46,5 @@ def lot_value(
         unpriced_identified_count=unpriced,
         unidentified_visible_count=max(0, visible_card_count - len(cards)),
         total_priced_usd=sum(card.priced_usd or 0.0 for card in priced),
+        price_match_threshold=price_match_threshold,
     )

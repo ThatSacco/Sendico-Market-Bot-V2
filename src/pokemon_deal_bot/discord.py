@@ -152,10 +152,11 @@ class DiscordNotifier:
             for card in valuation.priced_cards
         ] or ["No individual cards cleared the price-match threshold."]
 
+        threshold_pct = f"{valuation.price_match_threshold:.0%}"
         coverage = (
             f"{valuation.identified_count} cards identified at the configured "
             f"confidence; {len(valuation.priced_cards)} priced at "
-            "≥95% match confidence; "
+            f"≥{threshold_pct} match confidence; "
             f"{valuation.unpriced_identified_count} identified cards unpriced; "
             f"{valuation.unidentified_visible_count} visible cards unidentified"
         )
@@ -200,7 +201,7 @@ class DiscordNotifier:
                         "inline": False,
                     },
                     {
-                        "name": "Cards priced at ≥95% match",
+                        "name": f"Cards priced at ≥{threshold_pct} match",
                         "value": "\n".join(priced_lines)[:1000],
                         "inline": False,
                     },

@@ -33,6 +33,8 @@ def test_lot_value_respects_custom_threshold():
 
     assert strict.total_priced_usd == 0.0
     assert lenient.total_priced_usd == 10.0
+    assert strict.price_match_threshold == 0.95
+    assert lenient.price_match_threshold == 0.7
 
 
 def test_lot_value_never_reports_negative_unidentified_count():
