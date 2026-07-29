@@ -1,0 +1,29 @@
+# Add a card using only:
+# 1. an id;
+# 2. its PriceCharting product link; and
+# 3. the Sendico/Mercari search phrases used to discover listings.
+#
+# Names, set, card number, market price and the visual reference image are
+# downloaded automatically from PriceCharting. They are not matching gates.
+cards:
+  - id: victini_black_bolt_97
+    active: true
+    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+    searches:
+      - term: "ブラックボルト まとめ売り"
+        active: true
+      - term: "sv11B まとめ売り"
+        active: true
+      - term: "ビクティニ まとめ売り"
+        active: true
+
+  - id: ampharos_bandit_ring_27
+    active: false
+    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
+    searches:
+      - term: "XY7 まとめ売り"
+        active: true
+      - term: "バンデットリング まとめ売り"
+        active: true
+      - term: "デンリュウEX まとめ売り"
+        active: true

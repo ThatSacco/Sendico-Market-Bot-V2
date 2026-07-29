@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: sendico-pokemon-deal-bot
+Version: 0.8.0
+Summary: Monitor Sendico Mercari listings using PriceCharting reference-image matching.
+Requires-Python: >=3.11
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: opencv-python-headless<5,>=4.10
+Requires-Dist: Pillow<12,>=10
+Requires-Dist: playwright<2,>=1.49
+Requires-Dist: PyYAML<7,>=6

@@ -1,0 +1,13 @@
+{
+  "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97": {
+    "card_number": "97",
+    "fetched_at": "2026-07-29T02:14:56.526725+00:00",
+    "image_path": "data/reference_images/9647332.jpg",
+    "image_url": "https://storage.googleapis.com/images.pricecharting.com/mt22efukqwtmtzrt/240.jpg",
+    "name": "Victini",
+    "product_id": "9647332",
+    "psa10_usd": 6.0,
+    "set_name": "Pokemon Japanese Black Bolt",
+    "ungraded_usd": 17.84
+  }
+}

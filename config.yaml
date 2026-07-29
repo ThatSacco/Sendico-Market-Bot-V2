@@ -1,0 +1,23 @@
+watchlist_file: data/watchlist.yaml
+run_limits_file: data/run_limits.yaml
+search_criteria_file: data/search_criteria.yaml
+sendico:
+  category_url: https://sendico.com/shop/mercari/catalog/categories/1289
+gemini:
+  api_version: v1beta
+  api_revision: '2026-05-20'
+  thinking_level: low
+  screening_model: gemini-3.5-flash-lite
+  models:
+  - gemini-3.6-flash
+  - gemini-3.5-flash-lite
+pricing:
+  reference_cache_hours: 24
+  manual_usd_to_aud: 1.52
+  manual_jpy_to_aud: 0.0102
+sendico_fee:
+  yen: 800
+discord:
+  enabled: true
+  username: Pokemon Deal Scout
+  send_completion_summary: true

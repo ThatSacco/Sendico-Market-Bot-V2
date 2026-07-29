@@ -1,0 +1,7 @@
+beautifulsoup4<5,>=4.12
+httpx<1,>=0.27
+numpy<3,>=1.26
+opencv-python-headless<5,>=4.10
+Pillow<12,>=10
+playwright<2,>=1.49
+PyYAML<7,>=6

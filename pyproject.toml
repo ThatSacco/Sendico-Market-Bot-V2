@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sendico-pokemon-deal-bot"
+version = "0.8.0"
+description = "Monitor Sendico Mercari listings using PriceCharting reference-image matching."
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "httpx>=0.27,<1",
+  "numpy>=1.26,<3",
+  "opencv-python-headless>=4.10,<5",
+  "Pillow>=10,<12",
+  "playwright>=1.49,<2",
+  "PyYAML>=6,<7",
+]
+
+[project.scripts]
+pokemon-deal-bot = "pokemon_deal_bot.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

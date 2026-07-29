@@ -1,0 +1,36 @@
+# CENTRAL CAPACITY AND TOKEN LIMITS
+version: 1
+search:
+  results_per_term: 80
+  total_listings_per_run: 200
+  raw_links_per_term: 120
+  page_timeout_ms: 60000
+  max_scroll_rounds: 10
+  stable_rounds_before_stop: 2
+  scroll_pause_ms: 1200
+screening:
+  max_listings_per_run: 200
+  max_image_dimension_px: 1400
+  jpeg_quality: 80
+  images_per_batch: 4
+  max_batches_per_listing: 3
+detailed_analysis:
+  max_listings_per_run: 100
+  max_images_downloaded: 20
+  max_card_crops_per_listing: 40
+  images_per_batch: 12
+  max_batches_per_listing: 4
+  max_image_dimension_px: 1600
+  jpeg_quality: 86
+  contact_sheet_columns: 4
+token_budget:
+  max_total_tokens_per_run: 150000
+  reserve_per_request: 5000
+  max_requests_per_run: 0
+gemini_request:
+  max_retries_per_model: 2
+  retry_base_seconds: 2.0
+  request_timeout_seconds: 240
+  max_completion_tokens: 1000
+state:
+  max_seen_listings: 5000
