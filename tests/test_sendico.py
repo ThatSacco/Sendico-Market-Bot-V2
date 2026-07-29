@@ -1,4 +1,5 @@
 from pokemon_deal_bot.sendico import (
+    dedupe_listing_photos,
     is_listing_image_url,
     listing_from_search_item,
     parse_seller_positive_ratings,
@@ -54,6 +55,27 @@ def test_search_item_uses_result_price_when_available():
     assert listing is not None
     assert listing.price_yen == 2860
     assert listing.title == "Victini lot"
+
+
+def test_dedupe_listing_photos_prefers_orig_over_thumb():
+    urls = [
+        "https://static.mercdn.net/thumb/item/jpeg/m1_1.jpg?1",
+        "https://static.mercdn.net/item/detail/orig/photos/m1_1.jpg?1",
+        "https://static.mercdn.net/item/detail/orig/photos/m1_2.jpg?1",
+    ]
+    result = dedupe_listing_photos(urls)
+    assert result == [
+        "https://static.mercdn.net/item/detail/orig/photos/m1_1.jpg?1",
+        "https://static.mercdn.net/item/detail/orig/photos/m1_2.jpg?1",
+    ]
+
+
+def test_dedupe_listing_photos_preserves_discovery_order():
+    urls = [
+        "https://static.mercdn.net/item/detail/orig/photos/m1_3.jpg?1",
+        "https://static.mercdn.net/item/detail/orig/photos/m1_1.jpg?1",
+    ]
+    assert dedupe_listing_photos(urls) == urls
 
 
 def test_non_listing_catalog_links_are_rejected():

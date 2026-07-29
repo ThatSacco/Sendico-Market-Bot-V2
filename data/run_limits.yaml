@@ -16,7 +16,7 @@ screening:
   max_batches_per_listing: 3
 detailed_analysis:
   max_listings_per_run: 100
-  max_images_downloaded: 12
+  max_images_downloaded: 20
   max_card_crops_per_listing: 40
   images_per_batch: 12
   max_batches_per_listing: 4

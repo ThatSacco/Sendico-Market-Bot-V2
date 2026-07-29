@@ -35,6 +35,7 @@ SELLER_PATTERNS = [
 ]
 _MERCARI_ID = re.compile(r"m\d{8,}", re.I)
 _IMAGE_EXT = re.compile(r"\.(?:jpe?g|png|webp)(?:$|\?)", re.I)
+_PHOTO_INDEX_RE = re.compile(r"_(\d+)\.(?:jpe?g|png|webp)(?:\?|$)", re.I)
 
 
 def parse_yen(text: str) -> int | None:
@@ -66,6 +67,41 @@ def is_listing_image_url(url: str, code: str) -> bool:
     return code.lower() in candidate.lower() and (
         not found or found == {code.lower()}
     )
+
+
+def _photo_key(url: str) -> str:
+    """Identify which physical photo a URL is, independent of resolution."""
+
+    match = _PHOTO_INDEX_RE.search(unquote(str(url or "")))
+    return match.group(1) if match else url
+
+
+def _photo_quality_rank(url: str) -> int:
+    """Lower is better. Prefer full-resolution "orig" photos over thumbnails."""
+
+    return 1 if "/thumb/" in str(url or "") else 0
+
+
+def dedupe_listing_photos(urls: list[str]) -> list[str]:
+    """Collapse thumb/orig duplicates of the same photo, keeping the best copy.
+
+    Mercari listing pages link both a low-res thumbnail and a full-res "orig"
+    image for every photo; without this, both count against
+    max_images_downloaded for what is really one distinct photo, silently
+    truncating away later photos in listings with many pictures.
+    """
+
+    best: dict[str, str] = {}
+    order: list[str] = []
+    for url in urls:
+        key = _photo_key(url)
+        current = best.get(key)
+        if current is None:
+            order.append(key)
+            best[key] = url
+        elif _photo_quality_rank(url) < _photo_quality_rank(current):
+            best[key] = url
+    return [best[key] for key in order]
 
 
 def listing_from_search_item(item: dict[str, Any]) -> SendicoListing | None:
@@ -324,8 +360,8 @@ class SendicoScanner:
                         and url not in selected
                     ):
                         selected.append(url)
-            listing.image_urls = list(
-                dict.fromkeys([*listing.image_urls, *selected])
+            listing.image_urls = dedupe_listing_photos(
+                list(dict.fromkeys([*listing.image_urls, *selected]))
             )
             listing.description = body
             listing.raw_text = body

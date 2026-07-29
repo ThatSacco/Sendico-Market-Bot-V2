@@ -188,7 +188,18 @@ IMAGE 1 is the canonical PriceCharting reference for: {reference_name}.
 IMAGE 2 is a labelled contact sheet from one Sendico/Mercari listing.
 Find whether any visible card appears to be the same exact printing and artwork as IMAGE 1.
 Do not require readable card text or number. Use artwork, layout, borders, colours and illustration composition.
-Be recall-oriented: uncertainty should produce a moderate confidence rather than an automatic false.
+
+Many unrelated Pokemon cards share generic background tropes (grassy cliffs,
+sunset skies, forests, water, ruins). A similar background or colour palette
+alone is never sufficient evidence -- the specific Pokemon species, its exact
+pose and its illustration must match IMAGE 1.
+
+Moderate uncertainty about a real candidate can produce a moderate confidence
+rather than an automatic false. But a high confidence (above 0.6) requires you
+to name one specific candidate label in IMAGE 2 whose Pokemon, pose and
+illustration genuinely match IMAGE 1 -- never assign a high confidence based on
+a generic resemblance, and never describe IMAGE 1's own appearance as if it
+were something you found in IMAGE 2.
 Return candidate_labels such as O1-1, O1-2, C1-1 for cells that may contain the target.
 "confidence" is the probability from 0.0 to 1.0 that the reference card IS
 present in IMAGE 2. 0.0 means certainly absent, 1.0 means certainly present.
@@ -203,6 +214,17 @@ IMAGE 2 is a labelled contact sheet of candidate listing cards/crops.
 Decide whether any candidate is the same exact card printing as the reference.
 Artwork and card layout are primary. Printed name, number and set are supporting evidence only and may be unreadable.
 Different artwork, framing, pose, background composition or card template are conflicts.
+
+Many unrelated Pokemon cards share generic background tropes (grassy cliffs,
+sunset skies, forests, water, ruins). A similar background alone is never
+sufficient; the specific Pokemon species, its exact pose, colouring and
+illustration must match IMAGE 1.
+
+"evidence" must describe what you actually observe in IMAGE 2 at one specific
+candidate label -- never restate IMAGE 1's own appearance as if it were found
+in IMAGE 2. If you cannot name one specific candidate label in IMAGE 2 whose
+Pokemon, pose and illustration genuinely match IMAGE 1, report same_card=false
+with a low confidence, even if a card in that general style is present.
 Return same_card true only when the visual identity is convincing, but do not reject merely because text is blurred.
 "confidence" is the probability from 0.0 to 1.0 that the reference card IS
 present in IMAGE 2. 0.0 means certainly absent, 1.0 means certainly present.

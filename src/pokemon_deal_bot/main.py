@@ -87,6 +87,34 @@ def _load_reference_thumbnail(path) -> Image.Image:
         return source.convert("RGB")
 
 
+def _resolve_candidate_image(
+    batch: list[Image.Image],
+    prefix: str,
+    labels: list[str],
+) -> Image.Image | None:
+    """Map a model-claimed candidate label (e.g. "C1-3") back to its source image.
+
+    Normalises case and the letter-O/digit-zero mix-up vision models
+    sometimes make when transcribing a small rendered label (our prefixes are
+    always letter-initial: "C1-", "O1-").
+    """
+
+    normalized_prefix = prefix.upper()
+    for label in labels:
+        normalized = label.strip().upper()
+        if normalized[:1] == "0" and normalized_prefix[:1] != "0":
+            normalized = "O" + normalized[1:]
+        if not normalized.startswith(normalized_prefix):
+            continue
+        suffix = normalized[len(normalized_prefix):]
+        if not suffix.isdigit():
+            continue
+        index = int(suffix) - 1
+        if 0 <= index < len(batch):
+            return batch[index]
+    return None
+
+
 def _batches(values: list[Image.Image], size: int, maximum: int) -> Iterable[list[Image.Image]]:
     size = max(1, size)
     count = 0
@@ -490,10 +518,10 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             ),
                             start=1,
                         ):
+                            batch_prefix = ("C" if crops else "O") + f"{batch_number}-"
                             detail_sheet = make_contact_sheet(
                                 batch,
-                                prefix=("C" if crops else "O")
-                                + f"{batch_number}-",
+                                prefix=batch_prefix,
                                 max_dimension=int(
                                     detailed_limits["max_image_dimension_px"]
                                 ),
@@ -522,8 +550,41 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             if detail.match_score >= float(
                                 matching["confirmed_threshold"]
                             ):
-                                confirmed_detail = detail
-                                break
+                                # A whole-grid judgement can hallucinate a
+                                # match; re-check the specific claimed card in
+                                # isolation before trusting a confirmation.
+                                candidate_image = _resolve_candidate_image(
+                                    batch, batch_prefix, detail.candidate_labels
+                                )
+                                if candidate_image is not None:
+                                    zoom_sheet = make_contact_sheet(
+                                        [candidate_image],
+                                        prefix="Z1-",
+                                        max_dimension=int(
+                                            detailed_limits["max_image_dimension_px"]
+                                        ),
+                                        quality=int(detailed_limits["jpeg_quality"]),
+                                        columns=1,
+                                    )
+                                    verified = await matcher.compare(
+                                        target_id=target_id,
+                                        reference_name=reference.display_name,
+                                        reference_jpeg=reference_jpeg,
+                                        candidate_jpeg=zoom_sheet.jpeg,
+                                        stage="detailed",
+                                    )
+                                    _report_match(
+                                        report_rows,
+                                        listing,
+                                        verified,
+                                        stage="detailed_cross_check",
+                                        batch_number=batch_number,
+                                    )
+                                    if verified.match_score >= float(
+                                        matching["confirmed_threshold"]
+                                    ):
+                                        confirmed_detail = verified
+                                        break
 
                         if confirmed_detail is not None:
                             stats.confirmed_matches += 1
