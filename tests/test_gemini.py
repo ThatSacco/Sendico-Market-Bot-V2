@@ -148,3 +148,58 @@ def test_screen_multi_maps_reference_labels_back_to_target_ids():
     assert results["ampharos"].confidence == 0.8
     assert results["ampharos"].same_card is True
     assert captured["response_format"]["schema"]["required"] == ["matches"]
+
+
+def test_identify_lot_cards_parses_cards_and_visible_count():
+    captured = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        captured.update(json.loads(request.content))
+        result = {
+            "visible_card_count": 3,
+            "cards": [
+                {
+                    "name": "Pikachu",
+                    "card_number": "025",
+                    "set_name": "Scarlet & Violet",
+                    "language": "Japanese",
+                    "variant": "AR",
+                    "grade": "Ungraded",
+                    "confidence": 0.9,
+                },
+                {"name": "", "confidence": 0.5},
+            ],
+        }
+        return httpx.Response(
+            200,
+            json={
+                "usage": {
+                    "total_input_tokens": 50,
+                    "total_output_tokens": 10,
+                    "total_tokens": 60,
+                },
+                "steps": [
+                    {
+                        "type": "model_output",
+                        "content": [{"type": "text", "text": json.dumps(result)}],
+                    }
+                ],
+            },
+        )
+
+    matcher = GeminiReferenceMatcher(
+        "x",
+        {"models": ["gemini-3.6-flash"]},
+        _limits(20000),
+        transport=httpx.MockTransport(handler),
+    )
+    cards, visible_count = asyncio.run(
+        matcher.identify_lot_cards(candidate_jpeg=b"lot")
+    )
+    asyncio.run(matcher.close())
+
+    assert len(cards) == 1
+    assert cards[0].name == "Pikachu"
+    assert cards[0].variant == "AR"
+    assert visible_count == 3
+    assert len(captured["input"]) == 2

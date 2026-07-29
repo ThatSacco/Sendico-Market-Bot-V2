@@ -9,7 +9,7 @@ from typing import Any
 
 import httpx
 
-from .models import VisualMatch
+from .models import LotCard, VisualMatch
 
 LOGGER = logging.getLogger(__name__)
 _SCHEMA = {
@@ -43,6 +43,29 @@ _MULTI_SCHEMA = {
         },
     },
     "required": ["matches"],
+}
+_LOT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "visible_card_count": {"type": "integer"},
+        "cards": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "card_number": {"type": "string"},
+                    "set_name": {"type": "string"},
+                    "language": {"type": "string"},
+                    "variant": {"type": "string"},
+                    "grade": {"type": "string"},
+                    "confidence": {"type": "number"},
+                },
+                "required": ["name", "confidence"],
+            },
+        },
+    },
+    "required": ["visible_card_count", "cards"],
 }
 
 
@@ -132,8 +155,7 @@ class GeminiReferenceMatcher:
         self,
         model: str,
         prompt: str,
-        reference_jpeg: bytes,
-        candidate_jpeg: bytes,
+        images: list[bytes],
         *,
         schema: dict[str, Any] = _SCHEMA,
     ) -> dict[str, Any]:
@@ -142,8 +164,7 @@ class GeminiReferenceMatcher:
             "model": model,
             "input": [
                 {"type": "text", "text": prompt},
-                self._image_part(reference_jpeg),
-                self._image_part(candidate_jpeg),
+                *(self._image_part(image) for image in images),
             ],
             "store": False,
             "generation_config": {
@@ -233,7 +254,7 @@ Never report a high confidence for an absence -- report a low number instead.
         errors: list[str] = []
         for model in dict.fromkeys(model_candidates):
             try:
-                data = await self._request(model, prompt, reference_jpeg, candidate_jpeg)
+                data = await self._request(model, prompt, [reference_jpeg, candidate_jpeg])
                 confidence = max(0.0, min(1.0, float(data.get("confidence") or 0.0)))
                 return VisualMatch(
                     target_id=target_id,
@@ -295,8 +316,7 @@ instead.
                 data = await self._request(
                     model,
                     prompt,
-                    reference_strip_jpeg,
-                    candidate_jpeg,
+                    [reference_strip_jpeg, candidate_jpeg],
                     schema=_MULTI_SCHEMA,
                 )
                 results: dict[str, VisualMatch] = {}
@@ -325,4 +345,70 @@ instead.
             except Exception as exc:
                 errors.append(f"{model}: {exc}")
                 LOGGER.warning("Gemini multi-target screening failed with %s: %s", model, exc)
+        raise RuntimeError("All Gemini models failed: " + " | ".join(errors))
+
+    async def identify_lot_cards(
+        self,
+        *,
+        candidate_jpeg: bytes,
+    ) -> tuple[list[LotCard], int]:
+        """Catalogue every card visible in a confirmed lot's crops.
+
+        Returns ``(identified_cards, visible_card_count)`` so callers can
+        report how many visible cards could not be identified.
+        """
+        prompt = """
+You are cataloguing every Pokemon card visible in a labelled contact sheet
+from a Sendico/Mercari lot listing that has already been confirmed to
+contain a wanted card.
+For every DISTINCT card you can identify, report its Pokemon name, card
+number (if legible), set name (if legible), language, variant/rarity (e.g.
+"Normal/Holo", "SR", "AR", "Full Art"; default to "Normal/Holo" unless a
+premium variant is clearly shown), and grade (only report a specific grading
+company and grade, e.g. "PSA 10", if a graded slab is clearly visible;
+otherwise report "Ungraded" -- never assume a card is graded).
+Also report "visible_card_count": your best count of distinct cards visible
+in the contact sheet overall, including ones you could not identify.
+Only include a card in "cards" when you can read or confidently recognise
+its name; skip cards you cannot identify rather than guessing.
+
+Report at most the 25 most clearly identifiable distinct cards. Keep every
+field short (a few words) -- name, number, set, language, variant and grade
+only, never a description of the artwork or card layout.
+"confidence" is 0.0 to 1.0: how confident you are in this specific
+identification (name/number/set), not whether it matches any other card.
+"""
+        errors: list[str] = []
+        for model in dict.fromkeys(self.models):
+            try:
+                data = await self._request(
+                    model,
+                    prompt,
+                    [candidate_jpeg],
+                    schema=_LOT_SCHEMA,
+                )
+                cards = [
+                    LotCard(
+                        name=str(item.get("name") or "").strip(),
+                        card_number=str(item.get("card_number") or "").strip(),
+                        set_name=str(item.get("set_name") or "").strip(),
+                        language=str(item.get("language") or "").strip(),
+                        variant=str(item.get("variant") or "Normal/Holo").strip()
+                        or "Normal/Holo",
+                        grade=str(item.get("grade") or "Ungraded").strip()
+                        or "Ungraded",
+                        identification_confidence=max(
+                            0.0, min(1.0, float(item.get("confidence") or 0.0))
+                        ),
+                    )
+                    for item in data.get("cards") or []
+                    if str(item.get("name") or "").strip()
+                ]
+                visible_count = int(data.get("visible_card_count") or len(cards))
+                return cards, max(visible_count, len(cards))
+            except GeminiBudgetReached:
+                raise
+            except Exception as exc:
+                errors.append(f"{model}: {exc}")
+                LOGGER.warning("Gemini lot identification failed with %s: %s", model, exc)
         raise RuntimeError("All Gemini models failed: " + " | ".join(errors))

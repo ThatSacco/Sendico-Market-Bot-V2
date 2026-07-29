@@ -11,6 +11,7 @@ from PIL import Image
 
 from .config import build_search_plan, load_config, scan_signature
 from .discord import DiscordNotifier
+from .fx import FxRateClient
 from .gemini import GeminiBudgetReached, GeminiReferenceMatcher
 from .image_processing import (
     download_listing_images,
@@ -18,7 +19,9 @@ from .image_processing import (
     image_file_bytes,
     make_contact_sheet,
 )
-from .models import ReferenceCard, ScanStats, SendicoListing, VisualMatch
+from .lot_valuation import lot_value
+from .models import LotCard, ReferenceCard, ScanStats, SendicoListing, VisualMatch
+from .pricecharting_search import PriceChartingSearchClient
 from .reference import PriceChartingReferenceClient
 from .reporting import write_report
 from .sendico import SendicoScanner
@@ -184,6 +187,27 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         references_client.close()
     if not references:
         raise RuntimeError("No PriceCharting references could be loaded")
+
+    pricing_config = config.raw.get("pricing") or {}
+    fx_client = FxRateClient(
+        config.root,
+        manual_jpy_to_aud=float(pricing_config.get("manual_jpy_to_aud", 0.0102)),
+        manual_usd_to_aud=float(pricing_config.get("manual_usd_to_aud", 1.52)),
+        cache_hours=int(pricing_config.get("fx_cache_hours", 6)),
+    )
+    fx_rates = fx_client.fetch()
+    fx_client.close()
+    LOGGER.info(
+        "FX rates (%s): 1 JPY = A$%.6f, 1 USD = A$%.4f",
+        fx_rates.source,
+        fx_rates.jpy_to_aud,
+        fx_rates.usd_to_aud,
+    )
+    lot_valuation_config = config.raw.get("lot_valuation") or {}
+    price_client = PriceChartingSearchClient(
+        config.root,
+        cache_hours=int(lot_valuation_config.get("price_search_cache_hours", 336)),
+    )
 
     matcher_config = dict(config.raw.get("gemini") or {})
     matcher_config["screening_model"] = str(
@@ -600,18 +624,89 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     fingerprint,
                                 )
                             ):
-                                pricing = config.raw["pricing"]
                                 fee_yen = int(config.raw["sendico_fee"]["yen"])
+                                costs_config = config.raw.get("costs") or {}
+
+                                lot_cards: list[LotCard] = []
+                                visible_card_count = 0
+                                try:
+                                    identification_source = crops or images
+                                    for id_batch_number, id_batch in enumerate(
+                                        _batches(
+                                            identification_source,
+                                            int(detailed_limits["images_per_batch"]),
+                                            int(
+                                                detailed_limits["max_batches_per_listing"]
+                                            ),
+                                        ),
+                                        start=1,
+                                    ):
+                                        id_sheet = make_contact_sheet(
+                                            id_batch,
+                                            prefix=f"L{id_batch_number}-",
+                                            max_dimension=int(
+                                                detailed_limits["max_image_dimension_px"]
+                                            ),
+                                            quality=int(
+                                                detailed_limits["jpeg_quality"]
+                                            ),
+                                            columns=int(
+                                                detailed_limits["contact_sheet_columns"]
+                                            ),
+                                        )
+                                        batch_cards, batch_visible = (
+                                            await matcher.identify_lot_cards(
+                                                candidate_jpeg=id_sheet.jpeg,
+                                            )
+                                        )
+                                        lot_cards.extend(batch_cards)
+                                        visible_card_count += batch_visible
+
+                                    for card in lot_cards:
+                                        price_match = price_client.find_price(
+                                            name=card.name,
+                                            card_number=card.card_number,
+                                            set_name=card.set_name,
+                                        )
+                                        if price_match is not None:
+                                            card.priced_usd = price_match.ungraded_usd
+                                            card.price_similarity = (
+                                                price_match.similarity
+                                            )
+                                            card.price_source_url = (
+                                                price_match.source_url
+                                            )
+                                except GeminiBudgetReached:
+                                    raise
+                                except Exception as exc:
+                                    # Lot cataloguing is enrichment, not the
+                                    # confirmation itself -- never let it cost
+                                    # the whole alert.
+                                    LOGGER.warning(
+                                        "Lot cataloguing failed for %s: %s",
+                                        listing.code,
+                                        exc,
+                                    )
+                                    lot_cards = []
+                                    visible_card_count = 0
+
+                                valuation = lot_value(
+                                    lot_cards,
+                                    visible_card_count=visible_card_count,
+                                    price_match_threshold=float(
+                                        lot_valuation_config.get(
+                                            "price_match_threshold", 0.95
+                                        )
+                                    ),
+                                )
+
                                 if notifier.confirmed(
                                     listing,
                                     reference,
                                     confirmed_detail,
-                                    jpy_to_aud=float(
-                                        pricing["manual_jpy_to_aud"]
-                                    ),
-                                    usd_to_aud=float(
-                                        pricing["manual_usd_to_aud"]
-                                    ),
+                                    valuation=valuation,
+                                    fx_rates=fx_rates,
+                                    costs=costs_config,
                                     fee_yen=fee_yen,
                                 ):
                                     stats.alerts_sent += 1
@@ -668,6 +763,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         stats.total_tokens = matcher.total_tokens
         stats.models_used = matcher.model_usage
         await matcher.close()
+        price_client.close()
         write_report(config.root, stats, report_rows)
         if bool(
             config.raw.get("discord", {}).get(

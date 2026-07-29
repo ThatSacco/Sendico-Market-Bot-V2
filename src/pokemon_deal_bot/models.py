@@ -77,6 +77,28 @@ class VisualMatch:
 
 
 @dataclass(slots=True)
+class LotCard:
+    """One card identified in a confirmed lot's crops, priced independently."""
+
+    name: str
+    card_number: str = ""
+    set_name: str = ""
+    language: str = ""
+    variant: str = "Normal/Holo"
+    grade: str = "Ungraded"
+    identification_confidence: float = 0.0
+    priced_usd: float | None = None
+    price_similarity: float = 0.0
+    price_source_url: str = ""
+
+    @property
+    def display_name(self) -> str:
+        number = f" #{self.card_number}" if self.card_number else ""
+        set_name = f" ({self.set_name})" if self.set_name else ""
+        return f"{self.name}{number}{set_name}".strip()
+
+
+@dataclass(slots=True)
 class ScanStats:
     found: int = 0
     candidates: int = 0
