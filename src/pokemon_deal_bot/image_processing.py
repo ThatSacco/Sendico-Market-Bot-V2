@@ -135,6 +135,6 @@ def extract_card_crops(images: list[Image.Image], *, maximum: int = 40) -> list[
     return crops
 
 
-def image_file_bytes(path, *, max_dimension: int = 1400, quality: int = 88) -> bytes:
+def image_file_bytes(path, *, max_dimension: int = 1600, quality: int = 88) -> bytes:
     with Image.open(path) as image:
         return _jpeg(image, max_dimension, quality)

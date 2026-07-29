@@ -178,6 +178,23 @@ class PriceChartingReferenceClient:
         except Exception:
             return False
 
+    def _fetch_reference_image(self, url: str) -> tuple[bytes, str, str]:
+        """PriceCharting storage paths are size-keyed; prefer the largest available."""
+        for size in ("1600.jpg", "1024.jpg", "640.jpg", "400.jpg"):
+            candidate = re.sub(r"/\d+\.jpg$", f"/{size}", url)
+            if candidate == url:
+                break
+            try:
+                response = self.client.get(candidate)
+                if not response.is_error and len(response.content) > 2000:
+                    content_type = response.headers.get("content-type", "")
+                    return response.content, candidate, content_type
+            except httpx.HTTPError:
+                continue
+        response = self.client.get(url)
+        response.raise_for_status()
+        return response.content, url, response.headers.get("content-type", "")
+
     def resolve(self, target: WatchTarget, *, force: bool = False) -> ReferenceCard:
         record = self.cache.get(target.pricecharting_url) or {}
         image_path = self.root / str(record.get("image_path") or "")
@@ -187,15 +204,17 @@ class PriceChartingReferenceClient:
         response = self.client.get(target.pricecharting_url)
         response.raise_for_status()
         parsed = parse_pricecharting_page(target.pricecharting_url, response.text)
-        image_response = self.client.get(str(parsed["image_url"]))
-        image_response.raise_for_status()
-        suffix = ".png" if "png" in image_response.headers.get("content-type", "") else ".jpg"
+        image_content, resolved_image_url, content_type = self._fetch_reference_image(
+            str(parsed["image_url"])
+        )
+        suffix = ".png" if "png" in content_type else ".jpg"
         filename = re.sub(r"[^a-zA-Z0-9_.-]+", "-", str(parsed["product_id"])) + suffix
         relative_path = Path("data/reference_images") / filename
         absolute_path = self.root / relative_path
-        absolute_path.write_bytes(image_response.content)
+        absolute_path.write_bytes(image_content)
         record = {
             **parsed,
+            "image_url": resolved_image_url,
             "image_path": relative_path.as_posix(),
             "fetched_at": datetime.now(timezone.utc).isoformat(),
         }

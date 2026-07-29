@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 import httpx
 
@@ -38,3 +39,40 @@ def test_reference_client_caches_page_and_image(tmp_path):
     assert reference.name == "Victini"
     assert reference.image_path.read_bytes() == b"fake-jpeg"
     assert (tmp_path / "data/reference_cache.json").exists()
+
+
+SIZE_KEYED_HTML = HTML.replace(
+    "https://storage.googleapis.com/example/victini.jpg",
+    "https://storage.googleapis.com/example/240.jpg",
+)
+
+
+def test_reference_client_prefers_largest_available_image(tmp_path):
+    requested_image_urls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.host == "www.pricecharting.com":
+            return httpx.Response(200, text=SIZE_KEYED_HTML)
+        requested_image_urls.append(str(request.url))
+        if str(request.url).endswith("/1600.jpg"):
+            return httpx.Response(
+                200,
+                content=b"x" * 3000,
+                headers={"content-type": "image/jpeg"},
+            )
+        return httpx.Response(404)
+
+    client = PriceChartingReferenceClient(tmp_path, transport=httpx.MockTransport(handler))
+    target = WatchTarget(
+        "victini",
+        "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97",
+        [WatchSearch("x")],
+    )
+    reference = client.resolve(target)
+    client.close()
+    assert reference.image_path.read_bytes() == b"x" * 3000
+    assert reference.image_url.endswith("/1600.jpg")
+    assert requested_image_urls[0].endswith("/1600.jpg")
+
+    cache = json.loads((tmp_path / "data/reference_cache.json").read_text())
+    assert cache[target.pricecharting_url]["image_url"].endswith("/1600.jpg")
