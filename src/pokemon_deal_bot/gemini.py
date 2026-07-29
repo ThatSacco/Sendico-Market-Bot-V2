@@ -23,6 +23,27 @@ _SCHEMA = {
     },
     "required": ["same_card", "confidence", "candidate_labels", "evidence", "conflicts"],
 }
+_MULTI_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "matches": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "reference_label": {"type": "string"},
+                    "same_card": {"type": "boolean"},
+                    "confidence": {"type": "number"},
+                    "candidate_labels": {"type": "array", "items": {"type": "string"}},
+                    "evidence": {"type": "array", "items": {"type": "string"}},
+                    "conflicts": {"type": "array", "items": {"type": "string"}},
+                },
+                "required": ["reference_label", "same_card", "confidence"],
+            },
+        },
+    },
+    "required": ["matches"],
+}
 
 
 class GeminiBudgetReached(RuntimeError):
@@ -68,10 +89,10 @@ class GeminiReferenceMatcher:
         self.thinking_tokens = 0
         self.total_tokens = 0
         self.model_usage: dict[str, int] = {}
-        self.client = httpx.Client(timeout=self.timeout, transport=transport)
+        self.client = httpx.AsyncClient(timeout=self.timeout, transport=transport)
 
-    def close(self) -> None:
-        self.client.close()
+    async def close(self) -> None:
+        await self.client.aclose()
 
     def _budget_check(self) -> None:
         if self.max_requests > 0 and self.requests_sent >= self.max_requests:
@@ -107,7 +128,15 @@ class GeminiReferenceMatcher:
         self.total_tokens += total
         self.model_usage[model] = self.model_usage.get(model, 0) + 1
 
-    def _request(self, model: str, prompt: str, reference_jpeg: bytes, candidate_jpeg: bytes) -> dict[str, Any]:
+    async def _request(
+        self,
+        model: str,
+        prompt: str,
+        reference_jpeg: bytes,
+        candidate_jpeg: bytes,
+        *,
+        schema: dict[str, Any] = _SCHEMA,
+    ) -> dict[str, Any]:
         self._budget_check()
         body = {
             "model": model,
@@ -121,7 +150,7 @@ class GeminiReferenceMatcher:
                 "thinking_level": self.thinking_level,
                 "max_output_tokens": self.max_output_tokens,
             },
-            "response_format": {"type": "text", "mime_type": "application/json", "schema": _SCHEMA},
+            "response_format": {"type": "text", "mime_type": "application/json", "schema": schema},
         }
         headers = {"x-goog-api-key": self.api_key, "Content-Type": "application/json"}
         if self.api_revision:
@@ -130,7 +159,7 @@ class GeminiReferenceMatcher:
         for retry in range(self.max_retries + 1):
             self._budget_check()
             self.requests_sent += 1
-            response = self.client.post(self.endpoint, headers=headers, json=body)
+            response = await self.client.post(self.endpoint, headers=headers, json=body)
             if not response.is_error:
                 payload = response.json()
                 self._record_usage(payload, model)
@@ -139,10 +168,10 @@ class GeminiReferenceMatcher:
             last_error = RuntimeError(f"Gemini {model} HTTP {response.status_code}: {message}")
             if response.status_code not in {429, 500, 502, 503, 504} or retry >= self.max_retries:
                 break
-            time.sleep(min(30.0, self.retry_base * (2 ** retry)))
+            await asyncio.sleep(min(30.0, self.retry_base * (2 ** retry)))
         raise last_error or RuntimeError("Gemini request failed")
 
-    def compare(
+    async def compare(
         self,
         *,
         target_id: str,
@@ -182,7 +211,7 @@ Never report a high confidence for an absence -- report a low number instead.
         errors: list[str] = []
         for model in dict.fromkeys(model_candidates):
             try:
-                data = self._request(model, prompt, reference_jpeg, candidate_jpeg)
+                data = await self._request(model, prompt, reference_jpeg, candidate_jpeg)
                 confidence = max(0.0, min(1.0, float(data.get("confidence") or 0.0)))
                 return VisualMatch(
                     target_id=target_id,
@@ -199,4 +228,79 @@ Never report a high confidence for an absence -- report a low number instead.
             except Exception as exc:
                 errors.append(f"{model}: {exc}")
                 LOGGER.warning("Gemini visual comparison failed with %s: %s", model, exc)
+        raise RuntimeError("All Gemini models failed: " + " | ".join(errors))
+
+    async def screen_multi(
+        self,
+        *,
+        targets: list[tuple[str, str]],
+        reference_strip_jpeg: bytes,
+        candidate_jpeg: bytes,
+    ) -> dict[str, VisualMatch]:
+        """Screen one listing contact sheet against every reference in a single call.
+
+        ``targets`` is ``(target_id, reference_name)`` in the same order the
+        reference strip's R1..Rn labels were laid out.
+        """
+        labels = [f"R{index + 1}" for index in range(len(targets))]
+        by_label = dict(zip(labels, targets))
+        reference_list = "\n".join(
+            f"{label}: {name}" for label, (_, name) in by_label.items()
+        )
+        prompt = f"""
+You are visually screening a Japanese Pokemon-card marketplace listing against
+multiple canonical reference cards at once.
+IMAGE 1 is a labelled reference strip. Each cell is one canonical PriceCharting
+reference card:
+{reference_list}
+IMAGE 2 is a labelled contact sheet from one Sendico/Mercari listing.
+For every reference label that plausibly appears among the listing images in
+IMAGE 2, report it in "matches". Do not require readable card text or number.
+Use artwork, layout, borders, colours and illustration composition.
+Be recall-oriented: uncertainty should produce a moderate confidence rather
+than omitting the reference. Omit a reference label entirely only when it
+clearly does not appear anywhere in IMAGE 2.
+Return candidate_labels such as O1-1, O1-2, C1-1 for listing cells that may
+match a given reference.
+"confidence" is the probability from 0.0 to 1.0 that that specific reference
+card IS present in IMAGE 2. 0.0 means certainly absent, 1.0 means certainly
+present. Never report a high confidence for an absence -- report a low number
+instead.
+"""
+        errors: list[str] = []
+        for model in dict.fromkeys([self.screening_model, *self.models]):
+            try:
+                data = await self._request(
+                    model,
+                    prompt,
+                    reference_strip_jpeg,
+                    candidate_jpeg,
+                    schema=_MULTI_SCHEMA,
+                )
+                results: dict[str, VisualMatch] = {}
+                for item in data.get("matches") or []:
+                    label = str(item.get("reference_label") or "")
+                    target = by_label.get(label)
+                    if target is None:
+                        continue
+                    target_id, _ = target
+                    confidence = max(0.0, min(1.0, float(item.get("confidence") or 0.0)))
+                    results[target_id] = VisualMatch(
+                        target_id=target_id,
+                        stage="screening",
+                        confidence=confidence,
+                        same_card=bool(item.get("same_card")),
+                        candidate_labels=[
+                            str(value) for value in item.get("candidate_labels") or []
+                        ],
+                        evidence=[str(value) for value in item.get("evidence") or []],
+                        conflicts=[str(value) for value in item.get("conflicts") or []],
+                        model=model,
+                    )
+                return results
+            except GeminiBudgetReached:
+                raise
+            except Exception as exc:
+                errors.append(f"{model}: {exc}")
+                LOGGER.warning("Gemini multi-target screening failed with %s: %s", model, exc)
         raise RuntimeError("All Gemini models failed: " + " | ".join(errors))
