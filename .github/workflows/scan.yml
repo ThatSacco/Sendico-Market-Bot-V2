@@ -1,9 +1,6 @@
 name: Scan Sendico Pokemon Deals
 on:
   workflow_dispatch:
-  schedule:
-    # Near-real-time GitHub-hosted monitoring: once per hour.
-    - cron: "7 * * * *"
 permissions:
   contents: write
 concurrency:
