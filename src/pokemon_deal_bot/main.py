@@ -667,7 +667,12 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                         visible_card_count += batch_visible
 
                                     for card in lot_cards:
-                                        price_match = price_client.find_price(
+                                        # find_price is synchronous blocking
+                                        # I/O (a cache miss does a real HTTP
+                                        # request); run it off the event loop
+                                        # so it doesn't stall concurrent work.
+                                        price_match = await asyncio.to_thread(
+                                            price_client.find_price,
                                             name=card.name,
                                             card_number=card.card_number,
                                             set_name=card.set_name,
