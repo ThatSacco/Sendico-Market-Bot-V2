@@ -17,10 +17,12 @@ class DiscordNotifier:
         self,
         webhook_url: str | None,
         username: str = "Pokemon Deal Scout",
+        *,
+        transport: httpx.BaseTransport | None = None,
     ) -> None:
         self.webhook_url = webhook_url
         self.username = username
-        self.client = httpx.Client(timeout=30.0)
+        self.client = httpx.Client(timeout=30.0, transport=transport)
 
     def close(self) -> None:
         self.client.close()
@@ -34,7 +36,15 @@ class DiscordNotifier:
             self.webhook_url,
             json={"username": self.username, "embeds": [clean_embed]},
         )
-        response.raise_for_status()
+        if response.is_error:
+            # Not response.raise_for_status(): its message embeds the request
+            # URL, which for a webhook *is* the secret token. That message
+            # tends to get logged or persisted (e.g. into state/completion
+            # summaries), so build one that never carries the URL.
+            raise RuntimeError(
+                f"Discord webhook post failed: HTTP {response.status_code} "
+                f"{response.reason_phrase}: {response.text[:300]}"
+            )
         return True
 
     @staticmethod
