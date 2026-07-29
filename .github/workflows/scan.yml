@@ -1,7 +1,6 @@
 name: Scan Sendico Pokemon Deals
 on:
   workflow_dispatch:
-  
 permissions:
   contents: write
 concurrency:
