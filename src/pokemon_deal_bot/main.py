@@ -523,7 +523,11 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             stats.detailed += 1
                             listing_detailed = True
 
-                        crops = extract_card_crops(
+                        # extract_card_crops is CPU-bound OpenCV work (contour
+                        # detection, perspective warp); run it off the event
+                        # loop so it doesn't stall concurrent hydration prefetch.
+                        crops = await asyncio.to_thread(
+                            extract_card_crops,
                             images,
                             maximum=int(
                                 detailed_limits["max_card_crops_per_listing"]
