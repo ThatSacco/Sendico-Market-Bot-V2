@@ -1,0 +1,300 @@
+name: Apply positive visual match fix
+
+on:
+  push:
+    branches:
+      - fix/require-positive-visual-match
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: fix/require-positive-visual-match
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Apply match-direction fix
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('src/pokemon_deal_bot/main.py')
+          text = path.read_text(encoding='utf-8')
+
+          replacements = []
+
+          old = '''def _report_match(
+'''
+          new = '''def _match_passes(match: VisualMatch | None, threshold: float) -> bool:
+    """Require a positive same-card decision above the confidence threshold.
+
+    Gemini confidence describes confidence in its yes/no decision. A 99%
+    confident ``same_card=False`` response is therefore a strong rejection,
+    not a 99% match.
+    """
+
+    return bool(
+        match is not None
+        and match.same_card
+        and match.confidence >= float(threshold)
+    )
+
+
+def _prefer_match(
+    current: VisualMatch | None,
+    candidate: VisualMatch,
+) -> VisualMatch:
+    """Prefer positive decisions, then the stronger confidence."""
+
+    if current is None:
+        return candidate
+    current_rank = (int(current.same_card), current.confidence)
+    candidate_rank = (int(candidate.same_card), candidate.confidence)
+    return candidate if candidate_rank > current_rank else current
+
+
+def _report_match(
+'''
+          replacements.append((old, new, 'helper insertion'))
+
+          old = '''                            if (
+                                best_screen is None
+                                or screen.confidence > best_screen.confidence
+                            ):
+                                best_screen = screen
+'''
+          new = '''                            best_screen = _prefer_match(best_screen, screen)
+'''
+          replacements.append((old, new, 'screen result preference'))
+
+          old = '''                            if (
+                                screen.confidence
+                                >= float(matching["probable_alert_threshold"])
+                                and not probable_alerted
+                            ):
+'''
+          new = '''                            if (
+                                _match_passes(
+                                    screen,
+                                    float(matching["probable_alert_threshold"]),
+                                )
+                                and not probable_alerted
+                            ):
+'''
+          replacements.append((old, new, 'probable alert gate'))
+
+          old = '''                            # A sufficiently strong batch can proceed immediately.
+                            if screen.confidence >= float(
+                                matching["minimum_screening_confidence_for_detail"]
+                            ):
+                                break
+'''
+          new = '''                            # Only a positive same-card decision can proceed.
+                            if _match_passes(
+                                screen,
+                                float(
+                                    matching[
+                                        "minimum_screening_confidence_for_detail"
+                                    ]
+                                ),
+                            ):
+                                break
+'''
+          replacements.append((old, new, 'detail escalation gate'))
+
+          old = '''                        if (
+                            best_screen is None
+                            or best_screen.confidence
+                            < float(matching["minimum_screening_confidence_for_detail"])
+                        ):
+                            confidence = best_screen.confidence if best_screen else 0.0
+                            outcomes.append(
+                                f"{target_id}: screen negative {confidence:.2f}"
+                            )
+                            continue
+'''
+          new = '''                        if not _match_passes(
+                            best_screen,
+                            float(
+                                matching[
+                                    "minimum_screening_confidence_for_detail"
+                                ]
+                            ),
+                        ):
+                            if best_screen is None:
+                                outcome = "no screening decision"
+                            elif not best_screen.same_card:
+                                outcome = (
+                                    "rejected as different card "
+                                    f"(decision confidence {best_screen.confidence:.2f})"
+                                )
+                            else:
+                                outcome = (
+                                    "positive screen below threshold "
+                                    f"{best_screen.confidence:.2f}"
+                                )
+                            outcomes.append(f"{target_id}: {outcome}")
+                            continue
+'''
+          replacements.append((old, new, 'post-screen gate'))
+
+          old = '''                            if (
+                                best_detail is None
+                                or detail.confidence > best_detail.confidence
+                            ):
+                                best_detail = detail
+                            if (
+                                detail.same_card
+                                and detail.confidence
+                                >= float(matching["confirmed_threshold"])
+                            ):
+'''
+          new = '''                            best_detail = _prefer_match(best_detail, detail)
+                            if _match_passes(
+                                detail,
+                                float(matching["confirmed_threshold"]),
+                            ):
+'''
+          replacements.append((old, new, 'detailed result gate'))
+
+          old = '''                        else:
+                            confidence = best_detail.confidence if best_detail else 0.0
+                            outcomes.append(
+                                f"{target_id}: not confirmed {confidence:.2f}"
+                            )
+'''
+          new = '''                        else:
+                            if best_detail is None:
+                                outcome = "no detailed decision"
+                            elif not best_detail.same_card:
+                                outcome = (
+                                    "detail rejected as different card "
+                                    f"(decision confidence {best_detail.confidence:.2f})"
+                                )
+                            else:
+                                outcome = (
+                                    "detail positive below confirmation threshold "
+                                    f"{best_detail.confidence:.2f}"
+                                )
+                            outcomes.append(f"{target_id}: {outcome}")
+'''
+          replacements.append((old, new, 'detailed outcome wording'))
+
+          for old, new, label in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise RuntimeError(f'{label}: expected 1 match, found {count}')
+              text = text.replace(old, new, 1)
+
+          path.write_text(text, encoding='utf-8')
+
+          test_path = Path('tests/test_main_helpers.py')
+          test_path.write_text('''from pokemon_deal_bot.main import (
+    _candidate_targets,
+    _match_passes,
+    _prefer_match,
+)
+from pokemon_deal_bot.models import (
+    ReferenceCard,
+    SendicoListing,
+    VisualMatch,
+)
+
+
+def _reference(target_id: str) -> ReferenceCard:
+    from pathlib import Path
+
+    return ReferenceCard(
+        target_id=target_id,
+        source_url="https://www.pricecharting.com/game/x/y",
+        product_id=target_id,
+        name=target_id,
+        set_name="",
+        card_number="",
+        image_url="https://example.test/image.jpg",
+        image_path=Path("image.jpg"),
+    )
+
+
+def test_search_association_prioritises_but_does_not_filter_targets():
+    listing = SendicoListing(
+        code="m1",
+        url="https://sendico.test/m1",
+        title="lot",
+        price_yen=1000,
+        candidate_target_ids=["ampharos"],
+    )
+    references = {
+        "victini": _reference("victini"),
+        "ampharos": _reference("ampharos"),
+    }
+    assert _candidate_targets(
+        listing,
+        references,
+        compare_all=True,
+    ) == ["ampharos", "victini"]
+    assert _candidate_targets(
+        listing,
+        references,
+        compare_all=False,
+    ) == ["ampharos"]
+
+
+def _visual_match(*, same_card: bool, confidence: float) -> VisualMatch:
+    return VisualMatch(
+        target_id="victini",
+        stage="screening",
+        same_card=same_card,
+        confidence=confidence,
+    )
+
+
+def test_negative_decision_never_passes_match_threshold():
+    assert not _match_passes(
+        _visual_match(same_card=False, confidence=0.99),
+        0.55,
+    )
+    assert not _match_passes(
+        _visual_match(same_card=True, confidence=0.54),
+        0.55,
+    )
+    assert _match_passes(
+        _visual_match(same_card=True, confidence=0.55),
+        0.55,
+    )
+
+
+def test_positive_decision_is_preferred_over_confident_rejection():
+    negative = _visual_match(same_card=False, confidence=1.0)
+    positive = _visual_match(same_card=True, confidence=0.60)
+    assert _prefer_match(negative, positive) is positive
+    assert _prefer_match(positive, negative) is positive
+''', encoding='utf-8')
+          PY
+
+      - name: Install and test
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+          pytest -q
+
+      - name: Commit fix and remove one-time workflow
+        shell: bash
+        run: |
+          rm -f .github/workflows/apply-positive-match-fix.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Require positive same-card decision before alerts [skip ci]'
+          git push origin HEAD:fix/require-positive-visual-match
