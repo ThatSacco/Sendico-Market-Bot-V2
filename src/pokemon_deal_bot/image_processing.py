@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import io
 import math
 from dataclasses import dataclass
@@ -26,17 +27,37 @@ def _jpeg(image: Image.Image, max_dimension: int, quality: int) -> bytes:
     return output.getvalue()
 
 
-async def download_listing_images(urls: list[str], *, maximum: int, timeout: float = 45.0) -> list[Image.Image]:
-    images: list[Image.Image] = []
-    async with httpx.AsyncClient(timeout=timeout, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"}) as client:
-        for url in urls[:maximum]:
-            try:
-                response = await client.get(url)
-                response.raise_for_status()
-                images.append(Image.open(io.BytesIO(response.content)).convert("RGB"))
-            except Exception:
-                continue
-    return images
+async def _fetch_one(
+    client: httpx.AsyncClient, url: str, semaphore: asyncio.Semaphore
+) -> Image.Image | None:
+    async with semaphore:
+        try:
+            response = await client.get(url)
+            response.raise_for_status()
+            return Image.open(io.BytesIO(response.content)).convert("RGB")
+        except Exception:
+            return None
+
+
+async def download_listing_images(
+    urls: list[str],
+    *,
+    maximum: int,
+    timeout: float = 45.0,
+    concurrency: int = 6,
+    transport: httpx.BaseTransport | None = None,
+) -> list[Image.Image]:
+    semaphore = asyncio.Semaphore(max(1, concurrency))
+    async with httpx.AsyncClient(
+        timeout=timeout,
+        follow_redirects=True,
+        headers={"User-Agent": "Mozilla/5.0"},
+        transport=transport,
+    ) as client:
+        results = await asyncio.gather(
+            *(_fetch_one(client, url, semaphore) for url in urls[:maximum])
+        )
+    return [image for image in results if image is not None]
 
 
 def make_contact_sheet(images: list[Image.Image], *, prefix: str, max_dimension: int, quality: int, columns: int = 2) -> PreparedImage:
