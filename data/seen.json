@@ -1,16 +1,52 @@
 {
   "listings": {
+    "m10520548620": {
+      "alerts": {},
+      "fingerprint": "c5d2da4711c918afd0ddfddd735ff09eacb85057da5440a36185bb6e574c9ca3",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:16.302124+00:00"
+    },
+    "m13744295670": {
+      "alerts": {},
+      "fingerprint": "8eed62eb7665e7ac77a9f8bec641d983f2a7904c02c3d87c146f6968ab27b940",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:41.363741+00:00"
+    },
     "m14104122318": {
       "alerts": {},
       "fingerprint": "c033b57bf7affa7b4553e1a640535cc63995b964afc3d821eb55e0664b5e584a",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:20.484534+00:00"
     },
+    "m14150988267": {
+      "alerts": {},
+      "fingerprint": "a8bc2ed01c129d9966306c89c122b74964d8c7b8a6988ed8b664d47696c1f5fd",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:34.304090+00:00"
+    },
+    "m14556104331": {
+      "alerts": {},
+      "fingerprint": "2f629638d2c056c210a560c799b2d51a690c61eed33bbac2137f2e644283cae7",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:55.724439+00:00"
+    },
+    "m16522033195": {
+      "alerts": {},
+      "fingerprint": "8f4f6da9263e6bf6aa86d18e2558713f192e165ae3ab7ba29f3bf75a6340f6e2",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:05.138747+00:00"
+    },
     "m16982767648": {
       "alerts": {},
       "fingerprint": "c0f741796e3d946f9d8eb0c62d541b4e5cd679388c85f34390c85a08cf5876db",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:59.533858+00:00"
+    },
+    "m17786558805": {
+      "alerts": {},
+      "fingerprint": "7c0024eea0535daac1255fcf8f39ce385c9dfec294a3a3b7503674adf4b4d858",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:53.254374+00:00"
     },
     "m18348593430": {
       "alerts": {},
@@ -24,6 +60,12 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:09:39.826377+00:00"
     },
+    "m21123281312": {
+      "alerts": {},
+      "fingerprint": "c4192a73e88747a7be49a7530daa5614d57d8b5a854a2441d684718b3b7433fa",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:07.533560+00:00"
+    },
     "m21181271247": {
       "alerts": {},
       "fingerprint": "c2ca22d018a066f60fa866febb6e8bfef90015ce24b4714884b240f9f2064d60",
@@ -35,6 +77,12 @@
       "fingerprint": "a2b37bdeb0be82a29da290fd32bce473bdc1864e8f2e9e650b83e9d6bddd8f57",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:09:36.845018+00:00"
+    },
+    "m25067143591": {
+      "alerts": {},
+      "fingerprint": "f7c4b9ddc2272edf00c064e3b498aaa3ea880a69a730c5756fa0b5279538bb1b",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: not confirmed 0.00",
+      "updated_at": "2026-07-29T09:50:45.125983+00:00"
     },
     "m31103287357": {
       "alerts": {},
@@ -66,11 +114,41 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:13:57.473691+00:00"
     },
+    "m36078175814": {
+      "alerts": {},
+      "fingerprint": "cfc6cb8ba656ad2a8a51c1f5d88c58893f69daf08e591a0102aed25562ee9717",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:11.882644+00:00"
+    },
+    "m36337599015": {
+      "alerts": {},
+      "fingerprint": "61de1df6eea93c403811e14ca0ad3a32236ff7a68a1ca652f722d01b075dbf09",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:50:31.246450+00:00"
+    },
     "m36542460698": {
       "alerts": {},
       "fingerprint": "5b9e1558eb6433e5b20bfff8d3e53e07dc48fc3f1f0314b58f90f5138248e41a",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:11:04.663139+00:00"
+    },
+    "m36666962499": {
+      "alerts": {},
+      "fingerprint": "92c7879f01b8ed0abaee06dc30d5ebff1ca9aa23be4e56760cd2e5bf19095e0c",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:49:37.602391+00:00"
+    },
+    "m38498235301": {
+      "alerts": {},
+      "fingerprint": "2ab87351a25f9f7d9cc4e7be47e62227c49a42c19c9c87a6b8164da0826f8248",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:50:28.770194+00:00"
+    },
+    "m38507568037": {
+      "alerts": {},
+      "fingerprint": "e44ff43c734487dc53083b1196439d543f9fc75d1279463c968b31654db65c10",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:13.767057+00:00"
     },
     "m38607504141": {
       "alerts": {},
@@ -98,11 +176,35 @@
       "last_outcome": "victini_black_bolt_97: confirmed 1.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:11.692411+00:00"
     },
+    "m46206936375": {
+      "alerts": {},
+      "fingerprint": "b015fe19baafbc4e3f5293f24d910a57515ffc962295bea2866fad735265dede",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:31.371377+00:00"
+    },
     "m46972187190": {
       "alerts": {},
       "fingerprint": "229d4b8a848a98811da302c46bb3a31cfe8d8857e37a792713e0cf2b056431ac",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:45.403168+00:00"
+    },
+    "m47268016830": {
+      "alerts": {},
+      "fingerprint": "637396683ca968f86d313e7a305f5568587c685b82759e7e3b31a318515b0e03",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:07.059038+00:00"
+    },
+    "m47896126545": {
+      "alerts": {},
+      "fingerprint": "0abd68f59d74c626b11a308d5f7c5514013a6e0ffc70e6731898c61abea8b288",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:49:24.729486+00:00"
+    },
+    "m48199441370": {
+      "alerts": {},
+      "fingerprint": "3cf954fd2d9069c497bcc87280054627bc31f15152d8ec22590b9fc841de7ff2",
+      "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:27.679796+00:00"
     },
     "m49307643904": {
       "alerts": {},
@@ -116,11 +218,41 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:12:41.345652+00:00"
     },
+    "m50777952153": {
+      "alerts": {},
+      "fingerprint": "203ef06cf189d11018576f5d7f8c052e4da25d84e29599f3d2b2ec1d22def432",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.95; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:23.700204+00:00"
+    },
+    "m52182714155": {
+      "alerts": {},
+      "fingerprint": "d3f9b80c715f7760047a64ac73029b221b7e354590055fd75cd1682c6ede8b16",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:46.333828+00:00"
+    },
+    "m55293738311": {
+      "alerts": {},
+      "fingerprint": "0a0f6140843e2f23a32a19b69391b39f884e8dc124df6c06d68373697f0d4f7f",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:26.002641+00:00"
+    },
+    "m56893767027": {
+      "alerts": {},
+      "fingerprint": "7eaaf6fe9e49a070c28dd3d0846d38ac37592a236b7d3182e5c48196ab2f0f7e",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:56:28.271050+00:00"
+    },
     "m57911636285": {
       "alerts": {},
       "fingerprint": "4e303f2693e210d64734838f0510b093be702ec749b075789c8a1e4ddb521905",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:54.416382+00:00"
+    },
+    "m60459432528": {
+      "alerts": {},
+      "fingerprint": "8578e01a87774b5d27bb16695516005d35e09f3275000a5b25bf95b37b74e166",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:44.047577+00:00"
     },
     "m61103418177": {
       "alerts": {
@@ -148,11 +280,23 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:57.248615+00:00"
     },
+    "m64861440145": {
+      "alerts": {},
+      "fingerprint": "eeead22cc0b354281af087f9462dfdaef2d16a6dd1c85d40896ea215f42c2866",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:46.673530+00:00"
+    },
     "m64888554454": {
       "alerts": {},
       "fingerprint": "c03abd5853a5fb8f391b3a63f0a9418da00abda0864cdd39636707f0c1ba8472",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:11:57.140682+00:00"
+    },
+    "m65759619370": {
+      "alerts": {},
+      "fingerprint": "06e21d4fd1b78d77a1fe75cf5c8b031432531492bfd4a5a93d77a21da15d71a9",
+      "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:50:04.137561+00:00"
     },
     "m67164777903": {
       "alerts": {},
@@ -177,6 +321,12 @@
       "fingerprint": "679702bbdcda4c225c0c73d101e31058773819c1486fe35f3ead2e1f798b21e3",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:09:29.681858+00:00"
+    },
+    "m68529098231": {
+      "alerts": {},
+      "fingerprint": "8df42366430beb46915683a6a0614afbb0ca652bd31d45f2a61d7cd433479545",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:50:47.721235+00:00"
     },
     "m68894424404": {
       "alerts": {},
@@ -214,6 +364,12 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:14:06.620968+00:00"
     },
+    "m70408215144": {
+      "alerts": {},
+      "fingerprint": "bebe7cb9ba4a6a542d26303ed7096b27966ad79bf62853f62bafd55bc1e1be20",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:48.640766+00:00"
+    },
     "m70635628168": {
       "alerts": {},
       "fingerprint": "a3b8ffaa79319eea4cf76f80f64d9550d8e969d6774f2c742085ea76debab6b5",
@@ -234,9 +390,27 @@
     },
     "m72211336299": {
       "alerts": {},
-      "fingerprint": "33a0d80aac505243872693cf88340f8c0e9b7074e4eedd6025570fddc1665bd4",
+      "fingerprint": "48ea86d24bdfa6d55155b5fc9b858e045b73e1396fa2db093784697793e97448",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-07-29T07:14:04.374400+00:00"
+      "updated_at": "2026-07-29T09:55:31.914743+00:00"
+    },
+    "m74529278563": {
+      "alerts": {},
+      "fingerprint": "f6af0dec327114e81948f9b994f433a2b5507b69a0fc5c5d83f54477b808a6f9",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:57.881732+00:00"
+    },
+    "m76701843378": {
+      "alerts": {},
+      "fingerprint": "9fa641bab9eccf0f88ce117bd632fb22c7118791322b31eafa7a3e135e7cc8a5",
+      "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:55:43.764998+00:00"
+    },
+    "m78806483168": {
+      "alerts": {},
+      "fingerprint": "ddfd98bcc4a33c91e060ffb0012999c0379d3d8832e10d608399c3af4d14ab73",
+      "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:02.321880+00:00"
     },
     "m82369734447": {
       "alerts": {},
@@ -250,11 +424,23 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:10:50.043331+00:00"
     },
+    "m82937939934": {
+      "alerts": {},
+      "fingerprint": "7130ed278694d3f0881c2f83ab737a3e7f663f46aa66645a0788b9e0fa998225",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:09.392571+00:00"
+    },
     "m84787484110": {
       "alerts": {},
       "fingerprint": "55d64e9cda9df2bc2391f05fb6ddd3562e636baae21138d1b510dbb4edd22d17",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:14:01.899921+00:00"
+    },
+    "m85751901350": {
+      "alerts": {},
+      "fingerprint": "ac76220ed1a3aeca35ef8306bc555fe954ddc4509fdb1c1a835ff03804c832d8",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:50:26.736870+00:00"
     },
     "m90998903501": {
       "alerts": {},
@@ -262,11 +448,23 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-29T07:13:36.819382+00:00"
     },
+    "m93284028718": {
+      "alerts": {},
+      "fingerprint": "21929e9421fbadb480722791b53fa1c950979554c894bd9f8dbf2999d352f60f",
+      "last_outcome": "victini_black_bolt_97: not confirmed 0.95; ampharos_bandit_ring_27: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:41.660401+00:00"
+    },
     "m95358046577": {
       "alerts": {},
       "fingerprint": "5258680d1833f05c0921dffd0df3e3e6f76e6054af7d231ec26a588e7ab2fc89",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
       "updated_at": "2026-07-29T07:09:47.116081+00:00"
+    },
+    "m95829027532": {
+      "alerts": {},
+      "fingerprint": "8205fb01af7ebc0c6c1d84cfcd27811665ed0a9725953f5c48949d1ab26074be",
+      "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00",
+      "updated_at": "2026-07-29T09:51:04.725972+00:00"
     },
     "m99328624635": {
       "alerts": {},
