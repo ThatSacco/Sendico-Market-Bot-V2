@@ -8,7 +8,6 @@ from typing import Any
 @dataclass(slots=True)
 class WatchSearch:
     term: str
-    mode: str = "focused_lot"
     active: bool = True
 
 
@@ -18,7 +17,6 @@ class WatchTarget:
     pricecharting_url: str
     searches: list[WatchSearch] = field(default_factory=list)
     active: bool = True
-    label: str = ""
 
 
 @dataclass(slots=True)
@@ -45,7 +43,6 @@ class ReferenceCard:
 @dataclass(slots=True)
 class SearchTask:
     term: str
-    mode: str
     target_ids: list[str]
 
 
@@ -59,7 +56,6 @@ class SendicoListing:
     description: str = ""
     raw_text: str = ""
     seller_positive_ratings: int | None = None
-    matched_search_terms: list[str] = field(default_factory=list)
     candidate_target_ids: list[str] = field(default_factory=list)
 
 

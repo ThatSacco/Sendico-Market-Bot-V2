@@ -1,5 +1,3 @@
-marketplace: mercari
-currency: AUD
 watchlist_file: data/watchlist.yaml
 run_limits_file: data/run_limits.yaml
 search_criteria_file: data/search_criteria.yaml

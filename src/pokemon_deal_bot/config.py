@@ -148,12 +148,9 @@ def load_watchlist(path: Path) -> list[WatchTarget]:
             if not isinstance(raw_search, dict) or not raw_search.get("active", True):
                 continue
             term = str(raw_search.get("term") or "").strip()
-            mode = str(raw_search.get("mode") or "focused_lot").strip()
             if not term:
                 continue
-            if mode not in {"exact", "focused_lot", "generic_lot"}:
-                raise ValueError(f"Unsupported search mode {mode!r} for {target_id}")
-            searches.append(WatchSearch(term=term, mode=mode, active=True))
+            searches.append(WatchSearch(term=term, active=True))
         if not searches:
             raise ValueError(f"Active watchlist card {target_id!r} needs at least one active search")
         targets.append(
@@ -162,7 +159,6 @@ def load_watchlist(path: Path) -> list[WatchTarget]:
                 pricecharting_url=url,
                 searches=searches,
                 active=True,
-                label=str(item.get("label") or "").strip(),
             )
         )
     if not targets:
@@ -174,14 +170,13 @@ def load_watchlist(path: Path) -> list[WatchTarget]:
 
 
 def build_search_plan(targets: list[WatchTarget]) -> list[SearchTask]:
-    grouped: dict[tuple[str, str], list[str]] = {}
+    grouped: dict[str, list[str]] = {}
     for target in targets:
         for search in target.searches:
-            key = (search.term, search.mode)
-            grouped.setdefault(key, []).append(target.id)
+            grouped.setdefault(search.term, []).append(target.id)
     return [
-        SearchTask(term=term, mode=mode, target_ids=target_ids)
-        for (term, mode), target_ids in grouped.items()
+        SearchTask(term=term, target_ids=target_ids)
+        for term, target_ids in grouped.items()
     ]
 
 
