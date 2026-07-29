@@ -167,6 +167,11 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
     detailed_limit = int(detailed_limits["max_listings_per_run"])
     compare_all = bool(matching.get("compare_all_active_targets", True))
 
+    reference_jpegs: dict[str, bytes] = {
+        target_id: image_file_bytes(reference.image_path)
+        for target_id, reference in references.items()
+    }
+
     listings_by_code: dict[str, SendicoListing] = {}
     plan = build_search_plan(config.targets)
     try:
@@ -257,7 +262,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                     )
                     for target_id in target_ids:
                         reference = references[target_id]
-                        reference_jpeg = image_file_bytes(reference.image_path)
+                        reference_jpeg = reference_jpegs[target_id]
                         best_screen: VisualMatch | None = None
                         probable_alerted = False
 
