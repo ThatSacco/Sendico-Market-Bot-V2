@@ -18,7 +18,7 @@ cards:
         active: true
 
   - id: ampharos_bandit_ring_27
-    active: false
+    active: true
     pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
     searches:
       - term: "XY7 まとめ売り"

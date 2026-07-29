@@ -14,9 +14,11 @@ def test_legacy_runtime_files_are_not_part_of_v8_package():
     assert all(not (ROOT / path).exists() for path in legacy)
 
 
-def test_workflow_runs_hourly_and_persists_reference_cache():
+def test_workflow_is_manual_only_and_persists_reference_cache():
     workflow = (ROOT / ".github/workflows/scan.yml").read_text(encoding="utf-8")
-    assert 'cron: "7 * * * *"' in workflow
+    assert "workflow_dispatch" in workflow
+    assert "schedule" not in workflow
+    assert "cron" not in workflow
     assert "data/reference_cache.json" in workflow
     assert "actions/cache@v4" in workflow
     assert "data/reference_images" in workflow
