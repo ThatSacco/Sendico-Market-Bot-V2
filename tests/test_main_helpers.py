@@ -1,5 +1,5 @@
 from pokemon_deal_bot.main import _candidate_targets
-from pokemon_deal_bot.models import ReferenceCard, SendicoListing
+from pokemon_deal_bot.models import ReferenceCard, SendicoListing, VisualMatch
 
 
 def _reference(target_id: str) -> ReferenceCard:
@@ -39,3 +39,27 @@ def test_search_association_prioritises_but_does_not_filter_targets():
         references,
         compare_all=False,
     ) == ["ampharos"]
+
+
+def test_compare_all_false_with_no_search_association_returns_no_targets():
+    listing = SendicoListing(
+        code="m2",
+        url="https://sendico.test/m2",
+        title="lot",
+        price_yen=1000,
+    )
+    references = {"victini": _reference("victini")}
+    assert _candidate_targets(listing, references, compare_all=False) == []
+    assert _candidate_targets(listing, references, compare_all=True) == ["victini"]
+
+
+def test_match_score_is_zero_for_confident_negative_decision():
+    negative = VisualMatch(
+        target_id="victini", stage="screening", confidence=1.0, same_card=False
+    )
+    assert negative.match_score == 0.0
+
+    positive = VisualMatch(
+        target_id="victini", stage="screening", confidence=0.6, same_card=True
+    )
+    assert positive.match_score == 0.6

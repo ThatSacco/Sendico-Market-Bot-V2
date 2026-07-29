@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import asyncio
 import base64
 import json
 import logging
 import re
-import time
 from typing import Any
 
 import httpx
@@ -160,7 +160,10 @@ IMAGE 2 is a labelled contact sheet from one Sendico/Mercari listing.
 Find whether any visible card appears to be the same exact printing and artwork as IMAGE 1.
 Do not require readable card text or number. Use artwork, layout, borders, colours and illustration composition.
 Be recall-oriented: uncertainty should produce a moderate confidence rather than an automatic false.
-Return candidate_labels such as O1, O2, C1 for cells that may contain the target.
+Return candidate_labels such as O1-1, O1-2, C1-1 for cells that may contain the target.
+"confidence" is the probability from 0.0 to 1.0 that the reference card IS
+present in IMAGE 2. 0.0 means certainly absent, 1.0 means certainly present.
+Never report a high confidence for an absence -- report a low number instead.
 """
         else:
             model_candidates = self.models
@@ -172,23 +175,20 @@ Decide whether any candidate is the same exact card printing as the reference.
 Artwork and card layout are primary. Printed name, number and set are supporting evidence only and may be unreadable.
 Different artwork, framing, pose, background composition or card template are conflicts.
 Return same_card true only when the visual identity is convincing, but do not reject merely because text is blurred.
+"confidence" is the probability from 0.0 to 1.0 that the reference card IS
+present in IMAGE 2. 0.0 means certainly absent, 1.0 means certainly present.
+Never report a high confidence for an absence -- report a low number instead.
 """
         errors: list[str] = []
         for model in dict.fromkeys(model_candidates):
             try:
                 data = self._request(model, prompt, reference_jpeg, candidate_jpeg)
-                same_card = bool(data.get("same_card"))
-                raw_confidence = max(0.0, min(1.0, float(data.get("confidence") or 0.0)))
-                # The model reports confidence in its decision, including negative
-                # decisions. Downstream thresholds represent positive-match
-                # confidence, so a same_card=false result must never qualify for
-                # detailed analysis or an alert regardless of raw confidence.
-                confidence = raw_confidence if same_card else 0.0
+                confidence = max(0.0, min(1.0, float(data.get("confidence") or 0.0)))
                 return VisualMatch(
                     target_id=target_id,
                     stage=stage,
                     confidence=confidence,
-                    same_card=same_card,
+                    same_card=bool(data.get("same_card")),
                     candidate_labels=[str(value) for value in data.get("candidate_labels") or []],
                     evidence=[str(value) for value in data.get("evidence") or []],
                     conflicts=[str(value) for value in data.get("conflicts") or []],

@@ -74,6 +74,11 @@ class VisualMatch:
     conflicts: list[str] = field(default_factory=list)
     model: str = ""
 
+    @property
+    def match_score(self) -> float:
+        """Directional probability the target is present, not verdict confidence."""
+        return self.confidence if self.same_card else 0.0
+
 
 @dataclass(slots=True)
 class ScanStats:

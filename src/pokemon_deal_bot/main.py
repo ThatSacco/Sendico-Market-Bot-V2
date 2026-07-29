@@ -46,7 +46,7 @@ def _candidate_targets(
     *,
     compare_all: bool,
 ) -> list[str]:
-    """Prioritise search-associated targets without making search text a gate."""
+    """Prioritise search-associated targets; gate on them when compare_all is false."""
 
     associated = list(
         dict.fromkeys(
@@ -56,7 +56,7 @@ def _candidate_targets(
         )
     )
     if not compare_all:
-        return associated or list(references)
+        return associated
     remaining = [target_id for target_id in references if target_id not in associated]
     return [*associated, *remaining]
 
@@ -87,6 +87,7 @@ def _report_match(
             "stage": stage,
             "batch": batch_number,
             "confidence": match.confidence,
+            "match_score": match.match_score,
             "same_card": match.same_card,
             "model": match.model,
             "candidate_labels": ",".join(match.candidate_labels),
@@ -293,12 +294,12 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             )
                             if (
                                 best_screen is None
-                                or screen.confidence > best_screen.confidence
+                                or screen.match_score > best_screen.match_score
                             ):
                                 best_screen = screen
 
                             if (
-                                screen.confidence
+                                screen.match_score
                                 >= float(matching["probable_alert_threshold"])
                                 and not probable_alerted
                             ):
@@ -328,7 +329,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                         )
 
                             # A sufficiently strong batch can proceed immediately.
-                            if screen.confidence >= float(
+                            if screen.match_score >= float(
                                 matching["minimum_screening_confidence_for_detail"]
                             ):
                                 break
@@ -336,12 +337,12 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                         stats.screened += 1
                         if (
                             best_screen is None
-                            or best_screen.confidence
+                            or best_screen.match_score
                             < float(matching["minimum_screening_confidence_for_detail"])
                         ):
-                            confidence = best_screen.confidence if best_screen else 0.0
+                            match_score = best_screen.match_score if best_screen else 0.0
                             outcomes.append(
-                                f"{target_id}: screen negative {confidence:.2f}"
+                                f"{target_id}: screen negative {match_score:.2f}"
                             )
                             continue
 
@@ -404,13 +405,11 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             )
                             if (
                                 best_detail is None
-                                or detail.confidence > best_detail.confidence
+                                or detail.match_score > best_detail.match_score
                             ):
                                 best_detail = detail
-                            if (
-                                detail.same_card
-                                and detail.confidence
-                                >= float(matching["confirmed_threshold"])
+                            if detail.match_score >= float(
+                                matching["confirmed_threshold"]
                             ):
                                 confirmed_detail = detail
                                 break
@@ -452,12 +451,12 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     )
                             outcomes.append(
                                 f"{target_id}: confirmed "
-                                f"{confirmed_detail.confidence:.2f}"
+                                f"{confirmed_detail.match_score:.2f}"
                             )
                         else:
-                            confidence = best_detail.confidence if best_detail else 0.0
+                            match_score = best_detail.match_score if best_detail else 0.0
                             outcomes.append(
-                                f"{target_id}: not confirmed {confidence:.2f}"
+                                f"{target_id}: not confirmed {match_score:.2f}"
                             )
 
                     state.mark_processed(

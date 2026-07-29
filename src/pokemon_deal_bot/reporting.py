@@ -15,6 +15,7 @@ REPORT_FIELDS = [
     "stage",
     "batch",
     "confidence",
+    "match_score",
     "same_card",
     "model",
     "candidate_labels",
