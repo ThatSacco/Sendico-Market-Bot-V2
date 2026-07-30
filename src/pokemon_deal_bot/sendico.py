@@ -19,6 +19,11 @@ LOGGER = logging.getLogger(__name__)
 PRICE_PATTERNS = [
     re.compile(r"(?:¥|JPY|円)\s*([0-9][0-9,]*)", re.I),
     re.compile(r"([0-9][0-9,]*)\s*(?:JPY|円)", re.I),
+    # Sendico renders the yen symbol as a CSS icon (mdi:currency-jpy), not a
+    # text character, so the page's plain text has no marker next to the
+    # price at all -- only the site's own "amount (converted-currency)"
+    # display convention to go on, e.g. "7,999 (48.79)".
+    re.compile(r"([0-9][0-9,]*)\s*\(\s*[0-9]+\.[0-9]{2}\s*\)"),
 ]
 SELLER_PATTERNS = [
     re.compile(

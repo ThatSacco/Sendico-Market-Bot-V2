@@ -23,6 +23,15 @@ def test_parsers():
     assert parse_seller_positive_ratings("Positive ratings 431") == 431
 
 
+def test_parse_yen_falls_back_to_bare_amount_next_to_converted_currency():
+    # Sendico renders the yen symbol as a CSS icon, not text, so the page's
+    # innerText has no ¥/JPY/円 marker at all -- only the site's own
+    # "amount (converted-currency)" display, each part on its own line:
+    # "7,999\n(\n48.79\n)".
+    body = "Save Seller to Favorites\nSeller's Other Products\n7,999\n(\n48.79\n)\nSign Up/Log In"
+    assert parse_yen(body) == 7999
+
+
 def test_search_item_without_price_is_retained_for_hydration():
     listing = listing_from_search_item(
         {
