@@ -7,7 +7,13 @@ import httpx
 
 from .fx import FxRates
 from .lot_valuation import LotValuation
-from .models import ReferenceCard, ScanStats, SendicoListing, VisualMatch
+from .models import (
+    PendingConfirmation,
+    ReferenceCard,
+    ScanStats,
+    SendicoListing,
+    VisualMatch,
+)
 
 LOGGER = logging.getLogger(__name__)
 
@@ -280,6 +286,39 @@ class DiscordNotifier:
                     {"name": "Listings", "value": listing_value, "inline": True},
                     {"name": "Matches", "value": match_value, "inline": True},
                     {"name": "Gemini", "value": gemini_value, "inline": True},
+                ],
+            }
+        )
+
+    def card_confirmed(self, confirmation: PendingConfirmation) -> str | None:
+        """Post to the confirmed-cards channel once a user reacts to an alert.
+
+        Call this on an instance whose webhook_url points at that channel,
+        not the main alerts one.
+        """
+
+        return self._send(
+            {
+                "title": "CARD CONFIRMED",
+                "description": f"Verified: **{confirmation.card_name}**",
+                "url": confirmation.listing_url,
+                "color": 3066993,
+                "fields": [
+                    {
+                        "name": "Listing",
+                        "value": confirmation.listing_url,
+                        "inline": False,
+                    },
+                    {
+                        "name": "Originally alerted as",
+                        "value": confirmation.alert_type,
+                        "inline": True,
+                    },
+                    {
+                        "name": "Alert sent",
+                        "value": confirmation.sent_at,
+                        "inline": True,
+                    },
                 ],
             }
         )

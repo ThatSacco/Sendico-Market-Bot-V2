@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 import json
+import logging
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from .discord import DiscordNotifier
+from .discord_reactions import DiscordReactionClient
 from .models import PendingConfirmation
+
+LOGGER = logging.getLogger(__name__)
 
 
 class ConfirmationStore:
@@ -72,3 +77,38 @@ class ConfirmationStore:
             + "\n",
             encoding="utf-8",
         )
+
+
+def process_pending_confirmations(
+    store: ConfirmationStore,
+    reaction_client: DiscordReactionClient,
+    confirmed_notifier: DiscordNotifier,
+) -> tuple[int, int]:
+    """Check every pending alert for a reaction, resolving what's changed.
+
+    Returns (confirmed_count, rejected_count). Safe to call every run --
+    reactions that haven't happened yet are simply left pending.
+    """
+
+    confirmed_count = 0
+    rejected_count = 0
+    for pending in store.pending():
+        outcome = reaction_client.check_reaction(pending.message_id)
+        if outcome is None:
+            continue
+        resolved = store.resolve(pending.message_id, confirmed=outcome == "confirmed")
+        if resolved is None:
+            continue
+        if outcome == "confirmed":
+            confirmed_count += 1
+            try:
+                confirmed_notifier.card_confirmed(resolved)
+            except Exception as exc:
+                LOGGER.warning(
+                    "Could not post confirmed card %s to Discord: %s",
+                    resolved.listing_code,
+                    exc,
+                )
+        else:
+            rejected_count += 1
+    return confirmed_count, rejected_count
