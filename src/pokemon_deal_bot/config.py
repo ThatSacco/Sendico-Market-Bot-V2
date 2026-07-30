@@ -30,6 +30,18 @@ class AppConfig:
     def discord_webhook_url(self) -> str | None:
         return os.getenv("DISCORD_WEBHOOK_URL")
 
+    @property
+    def discord_confirmed_webhook_url(self) -> str | None:
+        return os.getenv("DISCORD_CONFIRMED_WEBHOOK_URL")
+
+    @property
+    def discord_bot_token(self) -> str | None:
+        return os.getenv("DISCORD_BOT_TOKEN")
+
+    @property
+    def discord_alert_channel_id(self) -> str | None:
+        return str(self.raw.get("discord", {}).get("alert_channel_id") or "") or None
+
     def path(self, relative: str) -> Path:
         return self.root / relative
 

@@ -34,6 +34,8 @@ jobs:
       - name: Scan and send alerts as matches are found
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_CONFIRMED_WEBHOOK_URL: ${{ secrets.DISCORD_CONFIRMED_WEBHOOK_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m pokemon_deal_bot.main --config config.yaml
       - name: Persist state, reference cache and report
@@ -41,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/seen.json data/reference_cache.json reports/latest.json reports/latest.csv || true
+          git add data/seen.json data/reference_cache.json data/confirmations.json reports/latest.json reports/latest.csv || true
           if ! git diff --cached --quiet; then
             git commit -m "Update scanner state [skip ci]"
             git push

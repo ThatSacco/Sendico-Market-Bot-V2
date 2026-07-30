@@ -31,3 +31,7 @@ discord:
   enabled: true
   username: Pokemon Deal Scout
   send_completion_summary: true
+  # ID of the channel alerts are posted into. Only needed for reaction-based
+  # confirmation (checking DISCORD_BOT_TOKEN reactions on past alerts); the
+  # feature is skipped entirely if this or the bot token isn't set.
+  alert_channel_id: ""

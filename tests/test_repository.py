@@ -20,6 +20,7 @@ def test_workflow_is_manual_only_and_persists_reference_cache():
     assert "schedule" not in workflow
     assert "cron" not in workflow
     assert "data/reference_cache.json" in workflow
+    assert "data/confirmations.json" in workflow
     assert "actions/cache@v4" in workflow
     assert "data/reference_images" in workflow
     assert "data/price_cache.json" not in workflow

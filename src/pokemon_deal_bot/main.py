@@ -6,11 +6,14 @@ import hashlib
 import itertools
 import logging
 from collections.abc import Iterable
+from datetime import datetime, timezone
 
 from PIL import Image
 
 from .config import build_search_plan, load_config, scan_signature
+from .confirmations import ConfirmationStore, process_pending_confirmations
 from .discord import DiscordNotifier
+from .discord_reactions import DiscordReactionClient
 from .fx import FxRateClient
 from .gemini import GeminiBudgetReached, GeminiReferenceMatcher
 from .image_processing import (
@@ -20,7 +23,14 @@ from .image_processing import (
     make_contact_sheet,
 )
 from .lot_valuation import lot_value
-from .models import LotCard, ReferenceCard, ScanStats, SendicoListing, VisualMatch
+from .models import (
+    LotCard,
+    PendingConfirmation,
+    ReferenceCard,
+    ScanStats,
+    SendicoListing,
+    VisualMatch,
+)
 from .pricecharting_search import PriceChartingSearchClient
 from .reference import PriceChartingReferenceClient
 from .reporting import write_report
@@ -247,17 +257,49 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         config.run_limits,
     )
     discord_enabled = bool(config.raw.get("discord", {}).get("enabled", True))
+    discord_username = str(
+        config.raw.get("discord", {}).get("username") or "Pokemon Deal Scout"
+    )
     notifier = DiscordNotifier(
         config.discord_webhook_url if discord_enabled and not dry_run else None,
-        str(
-            config.raw.get("discord", {}).get("username")
-            or "Pokemon Deal Scout"
-        ),
+        discord_username,
+    )
+    confirmed_notifier = DiscordNotifier(
+        config.discord_confirmed_webhook_url
+        if discord_enabled and not dry_run
+        else None,
+        discord_username,
     )
     state = StateStore(
         config.path("data/seen.json"),
         max_listings=int(config.run_limits["state"]["max_seen_listings"]),
     )
+    confirmation_store = ConfirmationStore(config.path("data/confirmations.json"))
+    confirmation_tracking_enabled = bool(
+        discord_enabled
+        and not dry_run
+        and config.discord_bot_token
+        and config.discord_alert_channel_id
+    )
+    if confirmation_tracking_enabled:
+        reaction_client = DiscordReactionClient(
+            config.discord_bot_token, config.discord_alert_channel_id
+        )
+        try:
+            confirmed_count, rejected_count = process_pending_confirmations(
+                confirmation_store, reaction_client, confirmed_notifier
+            )
+            LOGGER.info(
+                "Checked pending alert reactions: %d confirmed, %d rejected, %d still pending",
+                confirmed_count,
+                rejected_count,
+                len(confirmation_store.pending()),
+            )
+        except Exception as exc:
+            LOGGER.warning("Could not check alert confirmations: %s", exc)
+        finally:
+            reaction_client.close()
+
     signature = scan_signature(config)
     stats = ScanStats()
     report_rows: list[dict] = []
@@ -506,9 +548,10 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                         fingerprint,
                                     )
                                 ):
-                                    if notifier.probable(
+                                    message_id = notifier.probable(
                                         listing, references[target_id], screen
-                                    ):
+                                    )
+                                    if message_id:
                                         stats.alerts_sent += 1
                                         state.record_alert(
                                             listing.code,
@@ -516,6 +559,22 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                             "probable",
                                             fingerprint,
                                         )
+                                        if confirmation_tracking_enabled:
+                                            confirmation_store.add_pending(
+                                                PendingConfirmation(
+                                                    message_id=message_id,
+                                                    listing_code=listing.code,
+                                                    listing_url=listing.url,
+                                                    target_id=target_id,
+                                                    card_name=references[
+                                                        target_id
+                                                    ].display_name,
+                                                    alert_type="probable",
+                                                    sent_at=datetime.now(
+                                                        timezone.utc
+                                                    ).isoformat(),
+                                                )
+                                            )
 
                             # A sufficiently strong batch resolves this target immediately.
                             if screen.match_score >= min_detail_score:
@@ -751,7 +810,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     ),
                                 )
 
-                                if notifier.confirmed(
+                                message_id = notifier.confirmed(
                                     listing,
                                     reference,
                                     confirmed_detail,
@@ -759,7 +818,8 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     fx_rates=fx_rates,
                                     costs=costs_config,
                                     fee_yen=fee_yen,
-                                ):
+                                )
+                                if message_id:
                                     stats.alerts_sent += 1
                                     state.record_alert(
                                         listing.code,
@@ -767,6 +827,20 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                         "confirmed",
                                         fingerprint,
                                     )
+                                    if confirmation_tracking_enabled:
+                                        confirmation_store.add_pending(
+                                            PendingConfirmation(
+                                                message_id=message_id,
+                                                listing_code=listing.code,
+                                                listing_url=listing.url,
+                                                target_id=target_id,
+                                                card_name=reference.display_name,
+                                                alert_type="confirmed",
+                                                sent_at=datetime.now(
+                                                    timezone.utc
+                                                ).isoformat(),
+                                            )
+                                        )
                             outcomes.append(
                                 f"{target_id}: confirmed "
                                 f"{confirmed_detail.match_score:.2f}"
@@ -807,6 +881,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         raise
     finally:
         state.save()
+        confirmation_store.save()
         stats.requests_sent = matcher.requests_sent
         stats.input_tokens = matcher.input_tokens
         stats.output_tokens = matcher.output_tokens
@@ -826,6 +901,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
             except Exception as exc:
                 LOGGER.error("Could not send completion summary: %s", exc)
         notifier.close()
+        confirmed_notifier.close()
     return 0
 
 
