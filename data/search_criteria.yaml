@@ -17,12 +17,19 @@ reference_image_matching:
   # confidence regardless of how confident Gemini is in the rejection.
   minimum_screening_confidence_for_detail: 0.20
 
-  # Internal screening threshold only. Potential matches are not sent.
+  # Screening threshold for a "possible match" alert.
   probable_alert_threshold: 0.55
 
   # Detailed Gemini comparison must return same_card=true and meet this value.
   confirmed_threshold: 0.85
 
-  # Discord receives verified listings only.
-  alert_on_probable_match: false
+  # Live verification (2026-07-30) found the crop-gated cross-check refusing
+  # to confirm several genuine matches (no OpenCV crop available to
+  # independently verify), with no way to tell them apart from screening
+  # alone -- both true and hallucinated matches screened at ~1.0 confidence.
+  # Probable alerts re-enabled so those "high confidence, couldn't verify"
+  # cases still reach Discord for manual review instead of being dropped
+  # silently. Expect more alerts than before: this fires for every listing
+  # that screens positive, not only the ones that reach detailed analysis.
+  alert_on_probable_match: true
   alert_on_confirmed_match: true
