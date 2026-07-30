@@ -34,4 +34,4 @@ discord:
   # ID of the channel alerts are posted into. Only needed for reaction-based
   # confirmation (checking DISCORD_BOT_TOKEN reactions on past alerts); the
   # feature is skipped entirely if this or the bot token isn't set.
-  alert_channel_id: ""
+  alert_channel_id: "1531130144410964141"
