@@ -12,10 +12,11 @@ from pokemon_deal_bot.config import (
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def _base_run_limits(token_budget: dict) -> dict:
+def _base_run_limits(*, token_budget: dict | None = None, search: dict | None = None) -> dict:
     return {
         "version": 1,
-        "search": {
+        "search": search
+        or {
             "results_per_term": 80,
             "total_listings_per_run": 200,
             "raw_links_per_term": 120,
@@ -37,7 +38,12 @@ def _base_run_limits(token_budget: dict) -> dict:
             "jpeg_quality": 86,
             "contact_sheet_columns": 4,
         },
-        "token_budget": token_budget,
+        "token_budget": token_budget
+        or {
+            "max_total_tokens_per_run": 150000,
+            "reserve_per_request": 5000,
+            "max_requests_per_run": 0,
+        },
         "state": {"max_seen_listings": 5000},
     }
 
@@ -49,12 +55,14 @@ def test_repository_configuration_loads():
     # 0 means unlimited -- removed deliberately so a full diagnostic run
     # isn't cut short before covering every candidate.
     assert config.run_limits["token_budget"]["max_total_tokens_per_run"] == 0
+    assert config.run_limits["search"]["results_per_term"] == 0
+    assert config.run_limits["search"]["raw_links_per_term"] == 0
 
 
 def test_validate_run_limits_allows_zero_token_budget_as_unlimited():
     validate_run_limits(
         _base_run_limits(
-            {
+            token_budget={
                 "max_total_tokens_per_run": 0,
                 "reserve_per_request": 5000,
                 "max_requests_per_run": 0,
@@ -67,10 +75,35 @@ def test_validate_run_limits_still_rejects_reserve_at_or_above_a_real_ceiling():
     with pytest.raises(ValueError, match="reserve_per_request must be below"):
         validate_run_limits(
             _base_run_limits(
-                {
+                token_budget={
                     "max_total_tokens_per_run": 5000,
                     "reserve_per_request": 5000,
                     "max_requests_per_run": 0,
+                }
+            )
+        )
+
+
+def test_validate_run_limits_allows_zero_results_and_raw_links_as_unlimited():
+    validate_run_limits(
+        _base_run_limits(
+            search={
+                "results_per_term": 0,
+                "total_listings_per_run": 200,
+                "raw_links_per_term": 0,
+            }
+        )
+    )
+
+
+def test_validate_run_limits_still_rejects_raw_links_below_a_real_results_cap():
+    with pytest.raises(ValueError, match="raw_links_per_term must be >="):
+        validate_run_limits(
+            _base_run_limits(
+                search={
+                    "results_per_term": 80,
+                    "total_listings_per_run": 200,
+                    "raw_links_per_term": 50,
                 }
             )
         )

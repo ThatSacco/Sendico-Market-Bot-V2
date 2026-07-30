@@ -76,12 +76,14 @@ def validate_run_limits(data: dict[str, Any]) -> None:
     detailed = data.get("detailed_analysis") or {}
     token = data.get("token_budget") or {}
     state = data.get("state") or {}
-    results = int(_require_number(search.get("results_per_term"), "search.results_per_term", minimum=1))
+    # 0 means unlimited for results_per_term/raw_links_per_term, matching
+    # token_budget.max_total_tokens_per_run's convention.
+    results = int(_require_number(search.get("results_per_term"), "search.results_per_term", minimum=0))
     total = int(_require_number(search.get("total_listings_per_run"), "search.total_listings_per_run", minimum=1))
-    raw_links = int(_require_number(search.get("raw_links_per_term"), "search.raw_links_per_term", minimum=1))
-    if total < results:
+    raw_links = int(_require_number(search.get("raw_links_per_term"), "search.raw_links_per_term", minimum=0))
+    if results and total < results:
         raise ValueError("search.total_listings_per_run must be >= search.results_per_term")
-    if raw_links < results:
+    if results and raw_links and raw_links < results:
         raise ValueError("search.raw_links_per_term must be >= search.results_per_term")
     screen_total = int(_require_number(screening.get("max_listings_per_run"), "screening.max_listings_per_run"))
     _require_number(screening.get("images_per_batch"), "screening.images_per_batch", minimum=1)

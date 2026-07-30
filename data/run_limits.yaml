@@ -1,11 +1,19 @@
 # CENTRAL CAPACITY AND TOKEN LIMITS
 version: 1
 search:
-  results_per_term: 80
+  # 0 means unlimited (matching token_budget's convention). Removed now that
+  # Load More pagination actually works (fixed 2026-07-30) -- previously
+  # these caps were moot since the bug meant search never got past page one
+  # anyway. total_listings_per_run is left as a real cap (not 0) as the one
+  # remaining cross-term ceiling.
+  results_per_term: 0
   total_listings_per_run: 200
-  raw_links_per_term: 120
+  raw_links_per_term: 0
   page_timeout_ms: 60000
-  max_scroll_rounds: 10
+  # Raised well beyond what any real search should need; the actual stop
+  # condition is stable_rounds_before_stop (Load More disappears or the
+  # count stops growing), not this ceiling.
+  max_scroll_rounds: 100
   stable_rounds_before_stop: 2
   scroll_pause_ms: 1200
 screening:

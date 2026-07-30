@@ -250,7 +250,7 @@ class SendicoScanner:
                 if listing.price_yen <= 0:
                     retained_without_price += 1
                 results.append(listing)
-                if len(results) >= limit:
+                if limit > 0 and len(results) >= limit:
                     break
 
             LOGGER.info(
@@ -294,7 +294,7 @@ class SendicoScanner:
                 'a[href*="/shop/mercari/catalog/"]'
             ).count()
             LOGGER.info("Search load round %d: %d listing links", round_number, count)
-            if count >= raw_limit:
+            if raw_limit > 0 and count >= raw_limit:
                 return
             stable = stable + 1 if count <= previous else 0
             if stable >= stable_required:
