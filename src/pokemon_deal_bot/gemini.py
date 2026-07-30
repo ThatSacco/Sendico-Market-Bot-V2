@@ -145,7 +145,7 @@ class GeminiReferenceMatcher:
     def _budget_check(self) -> None:
         if self.max_requests > 0 and self.requests_sent >= self.max_requests:
             raise GeminiBudgetReached(f"Gemini request cap of {self.max_requests} reached")
-        if self.total_tokens + self.reserve >= self.max_tokens:
+        if self.max_tokens > 0 and self.total_tokens + self.reserve >= self.max_tokens:
             raise GeminiBudgetReached(f"Gemini token budget of {self.max_tokens:,} reached")
 
     @staticmethod

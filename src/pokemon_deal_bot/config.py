@@ -88,9 +88,10 @@ def validate_run_limits(data: dict[str, Any]) -> None:
         raise ValueError("screening.max_listings_per_run cannot exceed search.total_listings_per_run")
     if detail_total and detail_total > total:
         raise ValueError("detailed_analysis.max_listings_per_run cannot exceed search.total_listings_per_run")
-    ceiling = int(_require_number(token.get("max_total_tokens_per_run"), "token_budget.max_total_tokens_per_run", minimum=1))
+    # 0 means unlimited, matching token_budget.max_requests_per_run's convention.
+    ceiling = int(_require_number(token.get("max_total_tokens_per_run"), "token_budget.max_total_tokens_per_run", minimum=0))
     reserve = int(_require_number(token.get("reserve_per_request"), "token_budget.reserve_per_request", minimum=0))
-    if reserve >= ceiling:
+    if ceiling and reserve >= ceiling:
         raise ValueError("token_budget.reserve_per_request must be below max_total_tokens_per_run")
     _require_number(state.get("max_seen_listings"), "state.max_seen_listings", minimum=100)
 

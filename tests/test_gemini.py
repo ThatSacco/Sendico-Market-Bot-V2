@@ -37,6 +37,14 @@ def test_token_budget_stops_before_request():
     asyncio.run(matcher.close())
 
 
+def test_zero_token_budget_means_unlimited():
+    config = {"models": ["gemini-test"], "screening_model": "gemini-lite"}
+    matcher = GeminiReferenceMatcher("x", config, _limits(max_tokens=0))
+    matcher.total_tokens = 10_000_000
+    matcher._budget_check()  # must not raise, regardless of tokens spent
+    asyncio.run(matcher.close())
+
+
 def test_interactions_request_uses_two_inline_images_and_structured_output():
     captured = {}
 
