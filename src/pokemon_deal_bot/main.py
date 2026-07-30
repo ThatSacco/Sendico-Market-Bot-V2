@@ -118,6 +118,33 @@ def _resolve_candidate_image(
     return None
 
 
+def _resolve_cropped_candidate(
+    batch: list[Image.Image],
+    batch_is_crop: list[bool],
+    prefix: str,
+    labels: list[str],
+) -> Image.Image | None:
+    """Resolve a claimed candidate label, but only if it's a genuine crop.
+
+    A whole listing photo has already been judged once at the "detailed"
+    stage; re-showing the model that identical image as a "zoomed in"
+    cross-check verifies nothing; it just re-asks the same question of the
+    same picture. Only a real OpenCV-extracted crop is a materially closer
+    look than what was already judged.
+    """
+
+    candidate = _resolve_candidate_image(batch, prefix, labels)
+    if candidate is None:
+        return None
+    index = next(
+        (position for position, image in enumerate(batch) if image is candidate),
+        None,
+    )
+    if index is None or not batch_is_crop[index]:
+        return None
+    return candidate
+
+
 def _batches(values: list[Image.Image], size: int, maximum: int) -> Iterable[list[Image.Image]]:
     size = max(1, size)
     count = 0
@@ -536,16 +563,23 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                         # Include originals as a fallback even when OpenCV found crops.
                         # This prevents a missed crop from becoming a false negative.
                         detail_images = [*images, *crops]
+                        # Tracks which entries are genuine OpenCV crops vs whole
+                        # listing photos, so the cross-check below can tell
+                        # whether it's actually zooming in or just re-showing
+                        # the model the same whole photo it already judged.
+                        is_crop = [False] * len(images) + [True] * len(crops)
                         best_detail: VisualMatch | None = None
                         confirmed_detail: VisualMatch | None = None
-                        for batch_number, batch in enumerate(
+                        for batch_number, tagged_batch in enumerate(
                             _batches(
-                                detail_images,
+                                list(zip(detail_images, is_crop)),
                                 int(detailed_limits["images_per_batch"]),
                                 int(detailed_limits["max_batches_per_listing"]),
                             ),
                             start=1,
                         ):
+                            batch = [image for image, _ in tagged_batch]
+                            batch_is_crop = [flag for _, flag in tagged_batch]
                             batch_prefix = ("C" if crops else "O") + f"{batch_number}-"
                             detail_sheet = make_contact_sheet(
                                 batch,
@@ -581,8 +615,16 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                 # A whole-grid judgement can hallucinate a
                                 # match; re-check the specific claimed card in
                                 # isolation before trusting a confirmation.
-                                candidate_image = _resolve_candidate_image(
-                                    batch, batch_prefix, detail.candidate_labels
+                                # Only a genuine crop counts as a materially
+                                # closer look (observed live: a whole-lot
+                                # photo with no extractable crops "confirmed"
+                                # itself twice over by re-examining the
+                                # identical image it had already judged).
+                                candidate_image = _resolve_cropped_candidate(
+                                    batch,
+                                    batch_is_crop,
+                                    batch_prefix,
+                                    detail.candidate_labels,
                                 )
                                 if candidate_image is not None:
                                     zoom_sheet = make_contact_sheet(

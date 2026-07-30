@@ -3,6 +3,7 @@ from PIL import Image
 from pokemon_deal_bot.main import (
     _candidate_targets,
     _resolve_candidate_image,
+    _resolve_cropped_candidate,
     _round_robin_truncate,
 )
 from pokemon_deal_bot.models import ReferenceCard, SendicoListing, VisualMatch
@@ -110,3 +111,24 @@ def test_resolve_candidate_image_tolerates_zero_for_letter_o_transcription():
     batch = [Image.new("RGB", (1, 1)), Image.new("RGB", (1, 1))]
     assert _resolve_candidate_image(batch, "O1-", ["01-2"]) is batch[1]
     assert _resolve_candidate_image(batch, "O1-", ["o1-1"]) is batch[0]
+
+
+def test_resolve_cropped_candidate_accepts_a_genuine_crop():
+    batch = [Image.new("RGB", (1, 1)), Image.new("RGB", (1, 1))]
+    batch_is_crop = [False, True]
+    assert _resolve_cropped_candidate(batch, batch_is_crop, "C1-", ["C1-2"]) is batch[1]
+
+
+def test_resolve_cropped_candidate_rejects_a_whole_listing_photo():
+    # This is the exact failure mode observed live: the model claims a whole
+    # photo (not a crop) shows the target card. Re-showing it the identical
+    # photo as a "zoomed in" cross-check would just re-ask the same question
+    # of the same picture, so it must not be treated as independent evidence.
+    batch = [Image.new("RGB", (1, 1)), Image.new("RGB", (1, 1))]
+    batch_is_crop = [False, False]
+    assert _resolve_cropped_candidate(batch, batch_is_crop, "O1-", ["O1-1"]) is None
+
+
+def test_resolve_cropped_candidate_returns_none_for_unresolvable_labels():
+    batch = [Image.new("RGB", (1, 1))]
+    assert _resolve_cropped_candidate(batch, [True], "C1-", ["C1-9"]) is None
