@@ -71,7 +71,71 @@
       "target_id": "victini_black_bolt_97"
     }
   },
-  "pending": {},
+  "pending": {
+    "1532234222012731513": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m55515637157",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m55515637157",
+      "message_id": "1532234222012731513",
+      "sent_at": "2026-07-30T03:51:46.177141+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234329995088008": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m33417629380",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m33417629380",
+      "message_id": "1532234329995088008",
+      "sent_at": "2026-07-30T03:52:11.997744+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234470483169432": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m17786558805",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m17786558805",
+      "message_id": "1532234470483169432",
+      "sent_at": "2026-07-30T03:52:45.400572+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234536660893697": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m87809934660",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m87809934660",
+      "message_id": "1532234536660893697",
+      "sent_at": "2026-07-30T03:53:01.181867+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234609838784636": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m73866183615",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m73866183615",
+      "message_id": "1532234609838784636",
+      "sent_at": "2026-07-30T03:53:18.637893+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234862830948454": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m71087629561",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m71087629561",
+      "message_id": "1532234862830948454",
+      "sent_at": "2026-07-30T03:54:19.017353+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1532234896301490227": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "listing_code": "m61103418177",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m61103418177",
+      "message_id": "1532234896301490227",
+      "sent_at": "2026-07-30T03:54:26.963314+00:00",
+      "target_id": "victini_black_bolt_97"
+    }
+  },
   "rejected": {
     "1532220348009943072": {
       "alert_type": "probable",
