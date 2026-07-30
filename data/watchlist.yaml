@@ -16,6 +16,8 @@ cards:
         active: true
       - term: "ビクティニ まとめ売り"
         active: true
+      - term: "ビクティニ プロモ"
+        active: true
 
   - id: ampharos_bandit_ring_27
     active: true
@@ -26,4 +28,6 @@ cards:
       - term: "バンデットリング まとめ売り"
         active: true
       - term: "デンリュウEX まとめ売り"
+        active: true
+      - term: "アンプハラン ex"
         active: true
