@@ -10,21 +10,17 @@ cards:
     active: true
     pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
     searches:
-      # TEMPORARY single-search-term test (2026-07-30) -- the other 3 terms
-      # are disabled, not removed, so this is easy to revert.
       - term: "ブラックボルト まとめ売り"
-        active: false
+        active: true
       - term: "sv11B まとめ売り"
-        active: false
+        active: true
       - term: "ビクティニ まとめ売り"
-        active: false
+        active: true
       - term: "ビクティニ プロモ"
         active: true
 
   - id: ampharos_bandit_ring_27
-    # TEMPORARY: deactivated for the duration of the single-search-term test
-    # above, so this run is cleanly isolated to just Victini.
-    active: false
+    active: true
     pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
     searches:
       - term: "XY7 まとめ売り"
