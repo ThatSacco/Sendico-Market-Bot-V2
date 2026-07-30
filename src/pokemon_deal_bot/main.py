@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 
 from PIL import Image
 
-from .config import build_search_plan, load_config, scan_signature
+from .config import AppConfig, build_search_plan, load_config, scan_signature
 from .confirmations import ConfirmationStore, process_pending_confirmations
 from .discord import DiscordNotifier
 from .discord_reactions import DiscordReactionClient
@@ -191,6 +191,84 @@ def _report_match(
     )
 
 
+def _check_pending_confirmations(
+    config: AppConfig,
+    confirmation_store: ConfirmationStore,
+    confirmed_notifier: DiscordNotifier,
+    *,
+    enabled: bool,
+) -> None:
+    """Check every pending alert for a reaction and resolve it, if configured.
+
+    Shared between the full scan (run()) and the standalone
+    check_confirmations() entry point, so the two never drift apart.
+    """
+
+    if not enabled:
+        return
+    reaction_client = DiscordReactionClient(
+        config.discord_bot_token, config.discord_alert_channel_id
+    )
+    try:
+        confirmed_count, rejected_count = process_pending_confirmations(
+            confirmation_store, reaction_client, confirmed_notifier
+        )
+        LOGGER.info(
+            "Checked pending alert reactions: %d confirmed, %d rejected, %d still pending",
+            confirmed_count,
+            rejected_count,
+            len(confirmation_store.pending()),
+        )
+    except Exception as exc:
+        LOGGER.warning("Could not check alert confirmations: %s", exc)
+    finally:
+        reaction_client.close()
+
+
+async def check_confirmations(config_path: str = "config.yaml") -> int:
+    """Check pending alert reactions and resolve them, without running a full scan.
+
+    Much cheaper than a full run: no Gemini, no Sendico scanning, no
+    GEMINI_API_KEY required -- just the bot token and the confirmed-cards
+    webhook, so this can be triggered as often as wanted after reacting to
+    alerts instead of waiting for the next scheduled scan.
+    """
+
+    config = load_config(config_path)
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
+    discord_enabled = bool(config.raw.get("discord", {}).get("enabled", True))
+    discord_username = str(
+        config.raw.get("discord", {}).get("username") or "Pokemon Deal Scout"
+    )
+    confirmed_notifier = DiscordNotifier(
+        config.discord_confirmed_webhook_url if discord_enabled else None,
+        discord_username,
+    )
+    confirmation_store = ConfirmationStore(config.path("data/confirmations.json"))
+    confirmation_tracking_enabled = bool(
+        discord_enabled and config.discord_bot_token and config.discord_alert_channel_id
+    )
+    if not confirmation_tracking_enabled:
+        LOGGER.warning(
+            "Confirmation tracking is not configured (need DISCORD_BOT_TOKEN and "
+            "discord.alert_channel_id); nothing to check."
+        )
+    try:
+        _check_pending_confirmations(
+            config,
+            confirmation_store,
+            confirmed_notifier,
+            enabled=confirmation_tracking_enabled,
+        )
+    finally:
+        confirmation_store.save()
+        confirmed_notifier.close()
+    return 0
+
+
 async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
     config = load_config(config_path)
     logging.basicConfig(
@@ -281,24 +359,12 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         and config.discord_bot_token
         and config.discord_alert_channel_id
     )
-    if confirmation_tracking_enabled:
-        reaction_client = DiscordReactionClient(
-            config.discord_bot_token, config.discord_alert_channel_id
-        )
-        try:
-            confirmed_count, rejected_count = process_pending_confirmations(
-                confirmation_store, reaction_client, confirmed_notifier
-            )
-            LOGGER.info(
-                "Checked pending alert reactions: %d confirmed, %d rejected, %d still pending",
-                confirmed_count,
-                rejected_count,
-                len(confirmation_store.pending()),
-            )
-        except Exception as exc:
-            LOGGER.warning("Could not check alert confirmations: %s", exc)
-        finally:
-            reaction_client.close()
+    _check_pending_confirmations(
+        config,
+        confirmation_store,
+        confirmed_notifier,
+        enabled=confirmation_tracking_enabled,
+    )
 
     signature = scan_signature(config)
     stats = ScanStats()
@@ -911,7 +977,17 @@ def cli() -> None:
     )
     parser.add_argument("--config", default="config.yaml")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--check-confirmations",
+        action="store_true",
+        help=(
+            "Only check pending alert reactions and resolve them; skip the "
+            "full scan."
+        ),
+    )
     args = parser.parse_args()
+    if args.check_confirmations:
+        raise SystemExit(asyncio.run(check_confirmations(args.config)))
     raise SystemExit(asyncio.run(run(args.config, args.dry_run)))
 
 

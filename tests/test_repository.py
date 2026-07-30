@@ -25,3 +25,17 @@ def test_workflow_is_manual_only_and_persists_reference_cache():
     assert "data/reference_images" in workflow
     assert "data/price_cache.json" not in workflow
     assert "python -m pokemon_deal_bot.main" in workflow
+
+
+def test_confirmations_workflow_is_manual_only_and_lightweight():
+    workflow = (
+        ROOT / ".github/workflows/check-confirmations.yml"
+    ).read_text(encoding="utf-8")
+    assert "workflow_dispatch" in workflow
+    assert "schedule" not in workflow
+    assert "cron" not in workflow
+    assert "--check-confirmations" in workflow
+    assert "data/confirmations.json" in workflow
+    # No scan happens here, so no need to spend time installing a browser.
+    assert "playwright" not in workflow
+    assert "GEMINI_API_KEY" not in workflow

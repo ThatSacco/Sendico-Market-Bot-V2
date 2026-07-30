@@ -1,0 +1,40 @@
+name: Check Alert Confirmations
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sendico-pokemon-scan
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Test
+        run: pytest -q
+      - name: Check pending alert reactions
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CONFIRMED_WEBHOOK_URL: ${{ secrets.DISCORD_CONFIRMED_WEBHOOK_URL }}
+        run: python -m pokemon_deal_bot.main --config config.yaml --check-confirmations
+      - name: Persist confirmation state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/confirmations.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update confirmation state [skip ci]"
+            git push
+          fi
