@@ -62,6 +62,39 @@ def test_check_reaction_returns_none_on_http_error_rather_than_raising():
     client.close()
 
 
+def test_check_reaction_retries_after_rate_limit_then_succeeds():
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        if len(calls) <= 2:
+            return httpx.Response(
+                429, json={"message": "You are being rate limited.", "retry_after": 0.01}
+            )
+        return httpx.Response(200, json={"reactions": [{"emoji": {"name": "✅"}}]})
+
+    client = _client(handler)
+    assert client.check_reaction("123") == "confirmed"
+    client.close()
+
+    assert len(calls) == 3
+
+
+def test_check_reaction_gives_up_gracefully_after_exhausting_retries():
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        return httpx.Response(429, json={"retry_after": 0.01})
+
+    client = _client(handler)
+    assert client.check_reaction("123", max_retries=2) is None
+    client.close()
+
+    # Initial attempt + 2 retries, then it gives up rather than retrying forever.
+    assert len(calls) == 3
+
+
 def test_requests_use_bot_authorization_and_channel_path():
     captured = {}
 

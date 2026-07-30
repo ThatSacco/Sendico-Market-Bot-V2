@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import time
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -83,16 +84,27 @@ def process_pending_confirmations(
     store: ConfirmationStore,
     reaction_client: DiscordReactionClient,
     confirmed_notifier: DiscordNotifier,
+    *,
+    request_interval_seconds: float = 0.3,
 ) -> tuple[int, int]:
     """Check every pending alert for a reaction, resolving what's changed.
 
     Returns (confirmed_count, rejected_count). Safe to call every run --
     reactions that haven't happened yet are simply left pending.
+
+    Spaced out deliberately: Discord's per-route limit on the message-fetch
+    endpoint is tight (observed: 5 requests/second), and a run can easily
+    have a few dozen pending alerts to check. check_reaction() already
+    retries on a 429, but pacing requests up front means most checks never
+    need to.
     """
 
     confirmed_count = 0
     rejected_count = 0
-    for pending in store.pending():
+    pending_confirmations = store.pending()
+    for index, pending in enumerate(pending_confirmations):
+        if index > 0 and request_interval_seconds > 0:
+            time.sleep(request_interval_seconds)
         outcome = reaction_client.check_reaction(pending.message_id)
         if outcome is None:
             continue

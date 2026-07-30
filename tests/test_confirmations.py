@@ -105,7 +105,7 @@ def test_process_pending_confirmations_resolves_and_posts_confirmed(tmp_path):
     )
 
     confirmed_count, rejected_count = process_pending_confirmations(
-        store, reaction_client, confirmed_notifier
+        store, reaction_client, confirmed_notifier, request_interval_seconds=0
     )
     reaction_client.close()
     confirmed_notifier.close()
@@ -139,7 +139,7 @@ def test_process_pending_confirmations_survives_notifier_failure(tmp_path):
     # A failed post to the confirmed-cards channel must not stop the rest
     # of the batch from being checked and resolved.
     confirmed_count, rejected_count = process_pending_confirmations(
-        store, reaction_client, confirmed_notifier
+        store, reaction_client, confirmed_notifier, request_interval_seconds=0
     )
     reaction_client.close()
     confirmed_notifier.close()
