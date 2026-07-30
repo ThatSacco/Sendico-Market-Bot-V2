@@ -300,7 +300,23 @@ class SendicoScanner:
             if stable >= stable_required:
                 return
             previous = count
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            # Search results paginate via a "Load More" button, not
+            # scroll-triggered infinite loading -- confirmed live: plain
+            # scrollTo() loaded nothing new, while clicking this button
+            # repeatedly took one search from 17 real listings up past 69
+            # (site total: 394; a manual click-through found 64 of those
+            # genuinely contained the target card -- all invisible to the
+            # bot before this fix, since it never got past page one).
+            # Fall back to scrolling for any page that doesn't have one
+            # (e.g. plain category browsing with no search term).
+            load_more = page.get_by_role("button", name="Load More")
+            if await load_more.count() and await load_more.first.is_visible():
+                try:
+                    await load_more.first.click()
+                except Exception:
+                    pass
+            else:
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await page.wait_for_timeout(pause)
 
     async def hydrate(self, listing: SendicoListing) -> SendicoListing:
