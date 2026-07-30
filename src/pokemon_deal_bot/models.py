@@ -109,6 +109,12 @@ class PendingConfirmation:
     card_name: str
     alert_type: str  # "probable" or "confirmed"
     sent_at: str
+    # The full embed sent for a "confirmed" alert, stored so card_confirmed()
+    # can replay identical numbers to the confirmed-cards channel even if
+    # prices/FX have drifted by the time someone reacts. None for "probable"
+    # alerts (no lot valuation exists yet at that stage) and for pending
+    # records created before this field existed.
+    embed: dict[str, Any] | None = None
 
 
 @dataclass(slots=True)

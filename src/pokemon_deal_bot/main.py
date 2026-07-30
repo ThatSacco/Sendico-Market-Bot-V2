@@ -796,7 +796,6 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                 )
                             ):
                                 fee_yen = int(config.raw["sendico_fee"]["yen"])
-                                costs_config = config.raw.get("costs") or {}
 
                                 lot_cards: list[LotCard] = []
                                 visible_card_count = 0
@@ -876,14 +875,17 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     ),
                                 )
 
-                                message_id = notifier.confirmed(
+                                message_id, alert_embed = notifier.confirmed(
                                     listing,
                                     reference,
                                     confirmed_detail,
                                     valuation=valuation,
                                     fx_rates=fx_rates,
-                                    costs=costs_config,
                                     fee_yen=fee_yen,
+                                    seller_criteria=seller_criteria,
+                                    confirmed_threshold=float(
+                                        matching["confirmed_threshold"]
+                                    ),
                                 )
                                 if message_id:
                                     stats.alerts_sent += 1
@@ -905,6 +907,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                                 sent_at=datetime.now(
                                                     timezone.utc
                                                 ).isoformat(),
+                                                embed=alert_embed,
                                             )
                                         )
                             outcomes.append(

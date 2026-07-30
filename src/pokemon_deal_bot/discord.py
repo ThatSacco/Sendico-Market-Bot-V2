@@ -71,6 +71,69 @@ class DiscordNotifier:
         ]
         return "\n".join(f"• {value}" for value in values)[:900]
 
+    @staticmethod
+    def _short_identity(reference: ReferenceCard) -> str:
+        """Name + number only, for a scannable embed title."""
+
+        return " ".join(
+            part for part in [reference.name, reference.card_number] if part
+        ).strip()
+
+    @staticmethod
+    def _full_identity(reference: ReferenceCard) -> str:
+        """Name + set + number, for the embed description/subtitle."""
+
+        parts = [
+            reference.name,
+            reference.set_name,
+            f"#{reference.card_number}" if reference.card_number else "",
+        ]
+        return " ".join(part for part in parts if part).strip()
+
+    @staticmethod
+    def _watchlist_badge(reference: ReferenceCard) -> dict[str, Any]:
+        return {
+            "name": "Matched watchlist",
+            "value": f"`{reference.target_id}`",
+            "inline": False,
+        }
+
+    @staticmethod
+    def _seller_status(
+        listing: SendicoListing, minimum_positive_ratings: int
+    ) -> tuple[bool, str]:
+        """Report the seller's positive-ratings position.
+
+        Returns ``(bot_verified, field_value)``. ``bot_verified`` is only
+        true when a real minimum is configured AND the listing's own ratings
+        count is known to meet it -- a disabled threshold (0) or an unknown
+        count can never count as bot-verified, only "verify manually".
+        """
+
+        ratings = listing.seller_positive_ratings
+        if minimum_positive_ratings > 0:
+            if ratings is not None and ratings >= minimum_positive_ratings:
+                return True, (
+                    f"{ratings:,} positive ratings "
+                    f"(meets minimum {minimum_positive_ratings:,})"
+                )
+            if ratings is not None:
+                return False, (
+                    f"{ratings:,} positive ratings "
+                    f"(below minimum {minimum_positive_ratings:,}) "
+                    "— verify manually before buying"
+                )
+            return False, (
+                f"Unverified — confirm at least {minimum_positive_ratings:,} "
+                "positive ratings before buying"
+            )
+        if ratings is not None:
+            return False, (
+                f"{ratings:,} positive ratings — no minimum configured; "
+                "confirm seller reputation manually before buying"
+            )
+        return False, "Unverified — confirm seller reputation manually before buying"
+
     def probable(
         self,
         listing: SendicoListing,
@@ -79,17 +142,26 @@ class DiscordNotifier:
     ) -> str | None:
         return self._send(
             {
-                "title": "POSSIBLE WATCHLIST CARD FOUND",
-                "description": (
-                    f"A listing image may contain **{reference.display_name}**. "
-                    "Detailed confirmation is continuing now."
+                "title": (
+                    f"POSSIBLE WATCHLIST CARD FOUND — "
+                    f"{self._short_identity(reference)}"
                 ),
+                "description": self._full_identity(reference),
                 "url": listing.url,
                 "color": 16763904,
                 "thumbnail": (
                     {"url": listing.image_urls[0]} if listing.image_urls else None
                 ),
                 "fields": [
+                    {
+                        "name": "Status",
+                        "value": (
+                            "Watchlist match possible; detailed confirmation "
+                            "is continuing now."
+                        ),
+                        "inline": False,
+                    },
+                    self._watchlist_badge(reference),
                     {
                         "name": "Listing",
                         "value": listing.title[:1000],
@@ -115,7 +187,7 @@ class DiscordNotifier:
             }
         )
 
-    def confirmed(
+    def _build_confirmed_embed(
         self,
         listing: SendicoListing,
         reference: ReferenceCard,
@@ -123,24 +195,20 @@ class DiscordNotifier:
         *,
         valuation: LotValuation,
         fx_rates: FxRates,
-        costs: dict,
         fee_yen: int,
-    ) -> str | None:
+        seller_criteria: dict,
+        confirmed_threshold: float,
+    ) -> dict[str, Any]:
         jpy_to_aud = fx_rates.jpy_to_aud
         usd_to_aud = fx_rates.usd_to_aud
 
+        # Total Sendico cost is deliberately just the listing price plus the
+        # Sendico fee -- shipping, freight and GST are excluded, not
+        # estimated, since they vary too much per seller/lot to be a useful
+        # per-listing number (see the Important field below).
         listing_aud = listing.price_yen * jpy_to_aud
         fee_aud = fee_yen * jpy_to_aud
-        domestic_shipping_aud = (
-            float(costs.get("domestic_shipping_yen", 0.0)) * jpy_to_aud
-        )
-        international_freight_aud = float(costs.get("international_freight_aud", 0.0))
-        gst_rate = float(costs.get("au_import_gst_rate", 0.0))
-        subtotal_aud = (
-            listing_aud + fee_aud + domestic_shipping_aud + international_freight_aud
-        )
-        gst_aud = subtotal_aud * gst_rate
-        total_sendico_cost_aud = subtotal_aud + gst_aud
+        total_sendico_cost_aud = listing_aud + fee_aud
 
         lot_value_aud = valuation.total_priced_usd * usd_to_aud
         variance_aud = lot_value_aud - total_sendico_cost_aud
@@ -149,15 +217,36 @@ class DiscordNotifier:
             if total_sendico_cost_aud
             else 0.0
         )
+        variance_direction = "above" if variance_aud >= 0 else "below"
+        variance_value = (
+            f"A${variance_aud:+,.2f} value {variance_direction} Sendico cost "
+            f"({variance_pct:+.1f}%)"
+        )
+
+        minimum_positive_ratings = int(
+            seller_criteria.get("minimum_positive_ratings", 0) or 0
+        )
+        bot_verified, seller_field_value = self._seller_status(
+            listing, minimum_positive_ratings
+        )
+        headline = "WATCHLIST CARD CONFIRMED" if bot_verified else "MANUAL SELLER CHECK"
+        status = (
+            (
+                f"Watchlist match confirmed; seller rating verified "
+                f"({listing.seller_positive_ratings:,} ≥ "
+                f"{minimum_positive_ratings:,} positive ratings)"
+            )
+            if bot_verified
+            else "Watchlist match confirmed; seller rating must be verified manually"
+        )
 
         comparison_lines = [
             f"PriceCharting value: A${lot_value_aud:,.2f}",
             (
                 f"Sendico cost: A${total_sendico_cost_aud:,.2f} "
-                f"(¥{listing.price_yen:,} listing + ¥{fee_yen:,} fee, "
-                "est. shipping/freight/GST)"
+                f"(¥{listing.price_yen:,} listing + ¥{fee_yen:,} fee)"
             ),
-            f"Variance: A${variance_aud:+,.2f} ({variance_pct:+.0f}%)",
+            f"Variance: {variance_value}",
         ]
 
         priced_lines = [
@@ -165,6 +254,11 @@ class DiscordNotifier:
                 f"• 1x {card.display_name} [{card.variant} · {card.grade}] "
                 f"— A${card.priced_usd * usd_to_aud:,.2f} "
                 f"({card.price_similarity:.0%} price match; {card.grade})"
+                + (
+                    f" · [PriceCharting]({card.price_source_url})"
+                    if card.price_source_url
+                    else ""
+                )
             )
             for card in valuation.priced_cards
         ] or ["No individual cards cleared the price-match threshold."]
@@ -178,76 +272,126 @@ class DiscordNotifier:
             f"{valuation.unidentified_visible_count} visible cards unidentified"
         )
 
-        return self._send(
-            {
-                "title": "WATCHLIST CARD VISUALLY CONFIRMED",
-                "description": (
-                    "The listing appears to contain the same exact card artwork as "
-                    f"**{reference.display_name}**."
-                ),
-                "url": listing.url,
-                "color": 5763719,
-                "thumbnail": (
-                    {"url": listing.image_urls[0]} if listing.image_urls else None
-                ),
-                "fields": [
-                    {
-                        "name": "Confidence",
-                        "value": f"{match.confidence:.0%}",
-                        "inline": True,
-                    },
-                    {
-                        "name": "Mercari price / Sendico fee / Total Sendico cost",
-                        "value": (
-                            f"¥{listing.price_yen:,} / ¥{fee_yen:,} / "
-                            f"A${total_sendico_cost_aud:,.2f}"
-                        ),
-                        "inline": True,
-                    },
-                    {
-                        "name": "PriceCharting lot value / Price variance",
-                        "value": (
-                            f"A${lot_value_aud:,.2f} / "
-                            f"A${variance_aud:+,.2f} ({variance_pct:+.0f}%)"
-                        ),
-                        "inline": True,
-                    },
-                    {
-                        "name": "Lot value comparison",
-                        "value": "\n".join(comparison_lines),
-                        "inline": False,
-                    },
-                    {
-                        "name": f"Cards priced at ≥{threshold_pct} match",
-                        "value": "\n".join(priced_lines)[:1000],
-                        "inline": False,
-                    },
-                    {
-                        "name": "Coverage",
-                        "value": coverage,
-                        "inline": False,
-                    },
-                    {
-                        "name": "PriceCharting",
-                        "value": reference.source_url,
-                        "inline": False,
-                    },
-                    {
-                        "name": "Evidence",
-                        "value": self._evidence(match),
-                        "inline": False,
-                    },
-                ],
-                "footer": {
-                    "text": (
-                        f"FX: 1 JPY=A${jpy_to_aud:.6f}, 1 USD=A${usd_to_aud:.4f} "
-                        f"({fx_rates.source}, {fx_rates.fetched_at}). "
-                        "Shipping, freight and GST are estimates, not exact "
-                        "landed cost."
-                    )
-                },
-            }
+        seller_clause = (
+            f"at least {minimum_positive_ratings:,} positive ratings"
+            if minimum_positive_ratings > 0
+            else "sufficient positive ratings"
         )
+        important_text = (
+            f"Verify the seller has {seller_clause} before purchase. Shipping, "
+            "domestic freight, GST and condition adjustments are excluded. "
+            "Premium variants are valued only when explicitly confirmed; "
+            "otherwise Normal/Holo is assumed. Graded pricing is used only when "
+            "a grading company and grade are detected from the slab or "
+            "explicitly claimed in the listing title. Verify the slab, "
+            "certification number, identity and authenticity."
+        )
+
+        return {
+            "title": f"{headline} — {self._short_identity(reference)}",
+            "description": self._full_identity(reference),
+            "url": listing.url,
+            "color": 5763719 if bot_verified else 16763904,
+            "thumbnail": (
+                {"url": listing.image_urls[0]} if listing.image_urls else None
+            ),
+            "fields": [
+                {"name": "Status", "value": status, "inline": False},
+                self._watchlist_badge(reference),
+                {
+                    "name": "Mercari price",
+                    "value": f"¥{listing.price_yen:,} / A${listing_aud:,.2f}",
+                    "inline": True,
+                },
+                {
+                    "name": "Sendico fee",
+                    "value": f"¥{fee_yen:,} / A${fee_aud:,.2f}",
+                    "inline": True,
+                },
+                {
+                    "name": "Total Sendico cost",
+                    "value": f"A${total_sendico_cost_aud:,.2f}",
+                    "inline": True,
+                },
+                {
+                    "name": "PriceCharting lot value",
+                    "value": f"A${lot_value_aud:,.2f}",
+                    "inline": True,
+                },
+                {
+                    "name": "Price variance",
+                    "value": variance_value,
+                    "inline": True,
+                },
+                {
+                    "name": "Seller positives",
+                    "value": seller_field_value,
+                    "inline": True,
+                },
+                {
+                    "name": "Lot value comparison",
+                    "value": "\n".join(comparison_lines),
+                    "inline": False,
+                },
+                {
+                    "name": f"Cards priced at ≥{threshold_pct} match",
+                    "value": "\n".join(priced_lines)[:1000],
+                    "inline": False,
+                },
+                {
+                    "name": "Coverage",
+                    "value": coverage,
+                    "inline": False,
+                },
+                {
+                    "name": "PriceCharting",
+                    "value": reference.source_url,
+                    "inline": False,
+                },
+                {
+                    "name": "Evidence",
+                    "value": self._evidence(match),
+                    "inline": False,
+                },
+                {
+                    "name": "Important",
+                    "value": important_text,
+                    "inline": False,
+                },
+            ],
+            "footer": {
+                "text": (
+                    f"Confirmed match ≥{confirmed_threshold:.0%} · "
+                    f"lot pricing ≥{threshold_pct} · "
+                    f"FX: 1 JPY=A${jpy_to_aud:.6f}, 1 USD=A${usd_to_aud:.4f} "
+                    f"({fx_rates.source}, {fx_rates.fetched_at})"
+                )
+            },
+        }
+
+    def confirmed(
+        self,
+        listing: SendicoListing,
+        reference: ReferenceCard,
+        match: VisualMatch,
+        *,
+        valuation: LotValuation,
+        fx_rates: FxRates,
+        fee_yen: int,
+        seller_criteria: dict,
+        confirmed_threshold: float,
+    ) -> tuple[str | None, dict[str, Any]]:
+        embed = self._build_confirmed_embed(
+            listing,
+            reference,
+            match,
+            valuation=valuation,
+            fx_rates=fx_rates,
+            fee_yen=fee_yen,
+            seller_criteria=seller_criteria,
+            confirmed_threshold=confirmed_threshold,
+        )
+        return self._send(embed), embed
 
     def completion(
         self,
@@ -294,8 +438,33 @@ class DiscordNotifier:
         """Post to the confirmed-cards channel once a user reacts to an alert.
 
         Call this on an instance whose webhook_url points at that channel,
-        not the main alerts one.
+        not the main alerts one. When the original alert stored its full
+        embed (confirmed-type alerts only -- see PendingConfirmation.embed),
+        replay those exact numbers here instead of a bare identity stub, so
+        this channel carries the same information the user already reacted
+        to even if prices/FX have since moved.
         """
+
+        if confirmation.embed:
+            embed = {
+                **confirmation.embed,
+                "title": f"CARD CONFIRMED — {confirmation.card_name}",
+                "color": 3066993,
+                "fields": [
+                    *confirmation.embed.get("fields", []),
+                    {
+                        "name": "Originally alerted as",
+                        "value": confirmation.alert_type,
+                        "inline": True,
+                    },
+                    {
+                        "name": "Alert sent",
+                        "value": confirmation.sent_at,
+                        "inline": True,
+                    },
+                ],
+            }
+            return self._send(embed)
 
         return self._send(
             {
