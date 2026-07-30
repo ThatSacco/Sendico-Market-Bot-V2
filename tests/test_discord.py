@@ -29,21 +29,29 @@ def test_send_raises_sanitized_error_without_webhook_url():
     assert "Invalid Webhook Token" in message
 
 
-def test_send_succeeds_on_2xx():
+def test_send_succeeds_and_returns_the_message_id():
+    captured = {}
+
     def handler(request: httpx.Request) -> httpx.Response:
-        return httpx.Response(204)
+        captured["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"id": "1234567890"})
 
     notifier = DiscordNotifier(
         "https://discord.com/api/webhooks/123/super-secret-token",
         transport=httpx.MockTransport(handler),
     )
-    assert notifier._send({"title": "test"}) is True
+    assert notifier._send({"title": "test"}) == "1234567890"
     notifier.close()
+
+    # ?wait=true is what makes Discord return the message (with its id)
+    # instead of an empty 204 -- a later run needs that id to recognise
+    # which alert a reaction landed on.
+    assert captured["params"]["wait"] == "true"
 
 
 def test_send_without_configured_webhook_is_suppressed():
     notifier = DiscordNotifier(None)
-    assert notifier._send({"title": "test"}) is False
+    assert notifier._send({"title": "test"}) is None
     notifier.close()
 
 
@@ -52,7 +60,7 @@ def test_confirmed_embed_reflects_actual_configured_threshold():
 
     def handler(request: httpx.Request) -> httpx.Response:
         captured["body"] = json.loads(request.content)
-        return httpx.Response(204)
+        return httpx.Response(200, json={"id": "555"})
 
     notifier = DiscordNotifier(
         "https://discord.com/api/webhooks/123/token",

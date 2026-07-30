@@ -27,13 +27,21 @@ class DiscordNotifier:
     def close(self) -> None:
         self.client.close()
 
-    def _send(self, embed: dict[str, Any]) -> bool:
+    def _send(self, embed: dict[str, Any]) -> str | None:
+        """Post an embed, returning the sent message's Discord ID (or None if suppressed).
+
+        Uses ?wait=true so the webhook returns the created message instead of
+        an empty 204 -- the ID is how a later run recognises which alert a
+        reaction landed on.
+        """
+
         if not self.webhook_url:
             LOGGER.info("Discord webhook is not configured; alert suppressed")
-            return False
+            return None
         clean_embed = {key: value for key, value in embed.items() if value is not None}
         response = self.client.post(
             self.webhook_url,
+            params={"wait": "true"},
             json={"username": self.username, "embeds": [clean_embed]},
         )
         if response.is_error:
@@ -45,7 +53,10 @@ class DiscordNotifier:
                 f"Discord webhook post failed: HTTP {response.status_code} "
                 f"{response.reason_phrase}: {response.text[:300]}"
             )
-        return True
+        try:
+            return str(response.json()["id"])
+        except (ValueError, KeyError):
+            return None
 
     @staticmethod
     def _evidence(match: VisualMatch) -> str:
@@ -59,7 +70,7 @@ class DiscordNotifier:
         listing: SendicoListing,
         reference: ReferenceCard,
         match: VisualMatch,
-    ) -> bool:
+    ) -> str | None:
         return self._send(
             {
                 "title": "POSSIBLE WATCHLIST CARD FOUND",
@@ -108,7 +119,7 @@ class DiscordNotifier:
         fx_rates: FxRates,
         costs: dict,
         fee_yen: int,
-    ) -> bool:
+    ) -> str | None:
         jpy_to_aud = fx_rates.jpy_to_aud
         usd_to_aud = fx_rates.usd_to_aud
 
@@ -237,7 +248,7 @@ class DiscordNotifier:
         stats: ScanStats,
         *,
         status: str = "Completed normally",
-    ) -> bool:
+    ) -> str | None:
         models = ", ".join(
             f"{name} ({count})" for name, count in stats.models_used.items()
         ) or "None"

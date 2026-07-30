@@ -99,6 +99,19 @@ class LotCard:
 
 
 @dataclass(slots=True)
+class PendingConfirmation:
+    """An alert message awaiting a user reaction (checkmark/X) in Discord."""
+
+    message_id: str
+    listing_code: str
+    listing_url: str
+    target_id: str
+    card_name: str
+    alert_type: str  # "probable" or "confirmed"
+    sent_at: str
+
+
+@dataclass(slots=True)
 class ScanStats:
     found: int = 0
     candidates: int = 0
