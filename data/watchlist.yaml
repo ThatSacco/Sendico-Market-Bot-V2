@@ -31,3 +31,10 @@ cards:
         active: true
       - term: "アンプハラン ex"
         active: true
+
+  - id: team_rocket_27s_moltres_ex_124
+    active: true
+    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+    searches:
+      - term: "ロケット団のファイヤーex"
+        active: true
