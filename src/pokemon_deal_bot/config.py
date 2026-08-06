@@ -140,7 +140,7 @@ def validate_criteria(data: dict[str, Any]) -> None:
         raise ValueError("seller.analyse_unverified_sellers must be true or false")
 
 
-def _validate_pricecharting_url(url: str) -> None:
+def validate_pricecharting_url(url: str) -> None:
     parsed = urlparse(url)
     if parsed.scheme != "https" or parsed.netloc.lower() not in {"pricecharting.com", "www.pricecharting.com"}:
         raise ValueError(f"Watchlist reference must be a PriceCharting HTTPS product URL: {url}")
@@ -148,7 +148,7 @@ def _validate_pricecharting_url(url: str) -> None:
         raise ValueError(f"PriceCharting URL must point to a product page: {url}")
 
 
-def _derive_id_from_url(url: str) -> str:
+def derive_id_from_url(url: str) -> str:
     """Turn a PriceCharting product slug (.../victini-97) into victini_97."""
 
     slug = Path(urlparse(url).path).name
@@ -162,8 +162,8 @@ def load_watchlist(path: Path) -> list[WatchTarget]:
         if not isinstance(item, dict) or not item.get("active", True):
             continue
         url = str(item.get("pricecharting_url") or "").strip()
-        _validate_pricecharting_url(url)
-        target_id = str(item.get("id") or "").strip() or _derive_id_from_url(url)
+        validate_pricecharting_url(url)
+        target_id = str(item.get("id") or "").strip() or derive_id_from_url(url)
         if not target_id:
             raise ValueError(f"Could not derive a watchlist id from {url!r}")
         searches: list[WatchSearch] = []
