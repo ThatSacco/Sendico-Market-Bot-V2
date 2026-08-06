@@ -198,6 +198,7 @@ class DiscordNotifier:
         fee_yen: int,
         seller_criteria: dict,
         confirmed_threshold: float,
+        status_prefix: str = "Watchlist match confirmed",
     ) -> dict[str, Any]:
         jpy_to_aud = fx_rates.jpy_to_aud
         usd_to_aud = fx_rates.usd_to_aud
@@ -232,12 +233,12 @@ class DiscordNotifier:
         headline = "WATCHLIST CARD CONFIRMED" if bot_verified else "MANUAL SELLER CHECK"
         status = (
             (
-                f"Watchlist match confirmed; seller rating verified "
+                f"{status_prefix}; seller rating verified "
                 f"({listing.seller_positive_ratings:,} ≥ "
                 f"{minimum_positive_ratings:,} positive ratings)"
             )
             if bot_verified
-            else "Watchlist match confirmed; seller rating must be verified manually"
+            else f"{status_prefix}; seller rating must be verified manually"
         )
 
         comparison_lines = [

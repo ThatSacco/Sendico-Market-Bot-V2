@@ -27,6 +27,11 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_CONFIRMED_WEBHOOK_URL: ${{ secrets.DISCORD_CONFIRMED_WEBHOOK_URL }}
+          # Optional here: with it, a confirmed "probable" alert also gets
+          # its lot valued and posted with the full embed. Without it, the
+          # confirmed-cards post falls back to the lightweight format and
+          # nothing else changes.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m pokemon_deal_bot.main --config config.yaml --check-confirmations
       - name: Persist confirmation state
         if: always()

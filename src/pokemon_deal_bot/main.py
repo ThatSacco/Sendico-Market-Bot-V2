@@ -191,12 +191,242 @@ def _report_match(
     )
 
 
-def _check_pending_confirmations(
+def _listing_snapshot(listing: SendicoListing, match: VisualMatch) -> dict:
+    """Capture what a later lot valuation will need, at alert time.
+
+    A "probable" alert may sit unreacted for days; by the time someone
+    confirms it, the listing can be sold or delisted. Keeping the image
+    URLs and price here means the valuation uses exactly what was alerted
+    on, and never has to reach the source page again.
+    """
+
+    return {
+        "title": listing.title,
+        "price_yen": listing.price_yen,
+        "image_urls": list(listing.image_urls),
+        "seller_positive_ratings": listing.seller_positive_ratings,
+        "match_confidence": match.confidence,
+        "match_evidence": list(match.evidence),
+    }
+
+
+async def _catalogue_lot(
+    images: list[Image.Image],
+    crops: list[Image.Image],
+    matcher: GeminiReferenceMatcher,
+    price_client: PriceChartingSearchClient,
+    detailed_limits: dict,
+) -> tuple[list[LotCard], int]:
+    """Identify every card visible in a lot, then price each one.
+
+    Shared by the scan's confirmed-match path and the deferred
+    reaction-time valuation, so the two can never drift apart in what they
+    count or how they price it.
+    """
+
+    lot_cards: list[LotCard] = []
+    visible_card_count = 0
+    identification_source = crops or images
+    for batch_number, batch in enumerate(
+        _batches(
+            identification_source,
+            int(detailed_limits["images_per_batch"]),
+            int(detailed_limits["max_batches_per_listing"]),
+        ),
+        start=1,
+    ):
+        sheet = make_contact_sheet(
+            batch,
+            prefix=f"L{batch_number}-",
+            max_dimension=int(detailed_limits["max_image_dimension_px"]),
+            quality=int(detailed_limits["jpeg_quality"]),
+            columns=int(detailed_limits["contact_sheet_columns"]),
+        )
+        batch_cards, batch_visible = await matcher.identify_lot_cards(
+            candidate_jpeg=sheet.jpeg,
+        )
+        lot_cards.extend(batch_cards)
+        visible_card_count += batch_visible
+
+    for card in lot_cards:
+        # find_price is synchronous blocking I/O (a cache miss does a real
+        # HTTP request); run it off the event loop so it doesn't stall
+        # concurrent work.
+        price_match = await asyncio.to_thread(
+            price_client.find_price,
+            name=card.name,
+            card_number=card.card_number,
+            set_name=card.set_name,
+        )
+        if price_match is not None:
+            card.priced_usd = price_match.ungraded_usd
+            card.price_similarity = price_match.similarity
+            card.price_source_url = price_match.source_url
+
+    return lot_cards, visible_card_count
+
+
+def _load_valuation_context(config: AppConfig):
+    """Build everything needed to value a lot: references, FX, Gemini, pricing.
+
+    Shared by run() and check_confirmations() so the standalone
+    confirmation command values a lot exactly the way a scan would.
+    Returns ``(references, fx_rates, matcher, price_client)``; the caller
+    owns closing the matcher and price client.
+    """
+
+    references_client = PriceChartingReferenceClient(
+        config.root,
+        cache_hours=int(config.raw.get("pricing", {}).get("reference_cache_hours", 24)),
+    )
+    references: dict[str, ReferenceCard] = {}
+    try:
+        for target in config.targets:
+            try:
+                references[target.id] = references_client.resolve(target)
+                LOGGER.info("Loaded reference: %s", references[target.id].display_name)
+            except Exception as exc:
+                LOGGER.error(
+                    "Could not load PriceCharting reference for %s: %s", target.id, exc
+                )
+    finally:
+        references_client.close()
+    if not references:
+        raise RuntimeError("No PriceCharting references could be loaded")
+
+    pricing_config = config.raw.get("pricing") or {}
+    fx_client = FxRateClient(
+        config.root,
+        manual_jpy_to_aud=float(pricing_config.get("manual_jpy_to_aud", 0.0102)),
+        manual_usd_to_aud=float(pricing_config.get("manual_usd_to_aud", 1.52)),
+        cache_hours=int(pricing_config.get("fx_cache_hours", 6)),
+    )
+    fx_rates = fx_client.fetch()
+    fx_client.close()
+    LOGGER.info(
+        "FX rates (%s): 1 JPY = A$%.6f, 1 USD = A$%.4f",
+        fx_rates.source,
+        fx_rates.jpy_to_aud,
+        fx_rates.usd_to_aud,
+    )
+
+    lot_valuation_config = config.raw.get("lot_valuation") or {}
+    price_client = PriceChartingSearchClient(
+        config.root,
+        cache_hours=int(lot_valuation_config.get("price_search_cache_hours", 336)),
+    )
+
+    matcher_config = dict(config.raw.get("gemini") or {})
+    matcher_config["screening_model"] = str(
+        config.raw.get("gemini", {}).get("screening_model") or "gemini-3.5-flash-lite"
+    )
+    matcher = GeminiReferenceMatcher(
+        config.gemini_api_key, matcher_config, config.run_limits
+    )
+    return references, fx_rates, matcher, price_client
+
+
+def _build_confirmation_enricher(
+    config: AppConfig,
+    *,
+    references: dict[str, ReferenceCard],
+    matcher: GeminiReferenceMatcher,
+    price_client: PriceChartingSearchClient,
+    fx_rates,
+    notifier: DiscordNotifier,
+):
+    """Value a lot at reaction time, for alerts that never got valued.
+
+    A "probable" alert fires straight off screening, before any lot
+    cataloguing has happened -- deliberately, since most probable alerts are
+    noise and cataloguing every one would be expensive. Once a human reacts
+    to say a listing is real, though, it has earned the cost. This rebuilds
+    the listing from the snapshot captured at alert time (never re-fetching
+    the source page, which may be gone or unreachable by now) and produces
+    the same rich embed a bot-confirmed match would have got.
+    """
+
+    detailed_limits = config.run_limits["detailed_analysis"]
+    lot_valuation_config = config.raw.get("lot_valuation") or {}
+    seller_criteria = config.criteria["seller"]
+    matching = config.criteria["reference_image_matching"]
+    fee_yen = int(config.raw["sendico_fee"]["yen"])
+
+    async def enrich(confirmation: PendingConfirmation) -> dict | None:
+        snapshot = confirmation.listing_snapshot or {}
+        image_urls = list(snapshot.get("image_urls") or [])
+        reference = references.get(confirmation.target_id)
+        if not image_urls or reference is None:
+            return None
+
+        images = await download_listing_images(
+            image_urls,
+            maximum=int(detailed_limits["max_images_downloaded"]),
+        )
+        if not images:
+            LOGGER.warning(
+                "No images could be downloaded for confirmed listing %s; "
+                "posting without a lot valuation",
+                confirmation.listing_code,
+            )
+            return None
+
+        crops = await asyncio.to_thread(
+            extract_card_crops,
+            images,
+            maximum=int(detailed_limits["max_card_crops_per_listing"]),
+        )
+        lot_cards, visible_card_count = await _catalogue_lot(
+            images, crops, matcher, price_client, detailed_limits
+        )
+        valuation = lot_value(
+            lot_cards,
+            visible_card_count=visible_card_count,
+            price_match_threshold=float(
+                lot_valuation_config.get("price_match_threshold", 0.95)
+            ),
+        )
+
+        listing = SendicoListing(
+            code=confirmation.listing_code,
+            url=confirmation.listing_url,
+            title=str(snapshot.get("title") or confirmation.listing_code),
+            price_yen=int(snapshot.get("price_yen") or 0),
+            image_urls=image_urls,
+            seller_positive_ratings=snapshot.get("seller_positive_ratings"),
+        )
+        match = VisualMatch(
+            target_id=confirmation.target_id,
+            stage="reaction_confirmed",
+            confidence=float(snapshot.get("match_confidence") or 0.0),
+            same_card=True,
+            evidence=list(snapshot.get("match_evidence") or []),
+        )
+        return notifier._build_confirmed_embed(
+            listing,
+            reference,
+            match,
+            valuation=valuation,
+            fx_rates=fx_rates,
+            fee_yen=fee_yen,
+            seller_criteria=seller_criteria,
+            confirmed_threshold=float(matching["confirmed_threshold"]),
+            status_prefix=(
+                "Manually confirmed by reaction (the bot could not "
+                "independently verify this one)"
+            ),
+        )
+
+    return enrich
+
+
+async def _check_pending_confirmations(
     config: AppConfig,
     confirmation_store: ConfirmationStore,
     confirmed_notifier: DiscordNotifier,
     *,
     enabled: bool,
+    enrich=None,
 ) -> None:
     """Check every pending alert for a reaction and resolve it, if configured.
 
@@ -210,8 +440,8 @@ def _check_pending_confirmations(
         config.discord_bot_token, config.discord_alert_channel_id
     )
     try:
-        confirmed_count, rejected_count = process_pending_confirmations(
-            confirmation_store, reaction_client, confirmed_notifier
+        confirmed_count, rejected_count = await process_pending_confirmations(
+            confirmation_store, reaction_client, confirmed_notifier, enrich=enrich
         )
         LOGGER.info(
             "Checked pending alert reactions: %d confirmed, %d rejected, %d still pending",
@@ -228,10 +458,14 @@ def _check_pending_confirmations(
 async def check_confirmations(config_path: str = "config.yaml") -> int:
     """Check pending alert reactions and resolve them, without running a full scan.
 
-    Much cheaper than a full run: no Gemini, no Sendico scanning, no
-    GEMINI_API_KEY required -- just the bot token and the confirmed-cards
-    webhook, so this can be triggered as often as wanted after reacting to
-    alerts instead of waiting for the next scheduled scan.
+    Much cheaper than a full run: no Sendico scanning at all -- just the bot
+    token and the confirmed-cards webhook, so this can be triggered as often
+    as wanted after reacting to alerts instead of waiting for the next scan.
+
+    GEMINI_API_KEY stays optional. When it is set, a confirmed "probable"
+    alert also gets its lot valued and posted with the full embed; without
+    it, the confirmed-cards post falls back to the lightweight format and
+    everything else behaves identically.
     """
 
     config = load_config(config_path)
@@ -256,15 +490,48 @@ async def check_confirmations(config_path: str = "config.yaml") -> int:
             "Confirmation tracking is not configured (need DISCORD_BOT_TOKEN and "
             "discord.alert_channel_id); nothing to check."
         )
+
+    enrich = None
+    matcher = None
+    price_client = None
+    if confirmation_tracking_enabled and config.gemini_api_key:
+        try:
+            references, fx_rates, matcher, price_client = _load_valuation_context(config)
+            enrich = _build_confirmation_enricher(
+                config,
+                references=references,
+                matcher=matcher,
+                price_client=price_client,
+                fx_rates=fx_rates,
+                notifier=confirmed_notifier,
+            )
+        except Exception as exc:
+            LOGGER.warning(
+                "Could not prepare lot valuation for confirmations; "
+                "confirmed cards will post without it: %s",
+                exc,
+            )
+            enrich = None
+    elif confirmation_tracking_enabled:
+        LOGGER.info(
+            "GEMINI_API_KEY is not set; confirmed probable alerts will post "
+            "without a lot valuation."
+        )
+
     try:
-        _check_pending_confirmations(
+        await _check_pending_confirmations(
             config,
             confirmation_store,
             confirmed_notifier,
             enabled=confirmation_tracking_enabled,
+            enrich=enrich,
         )
     finally:
         confirmation_store.save()
+        if matcher is not None:
+            await matcher.close()
+        if price_client is not None:
+            price_client.close()
         confirmed_notifier.close()
     return 0
 
@@ -278,62 +545,8 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
     if not config.gemini_api_key:
         raise RuntimeError("GEMINI_API_KEY is not configured")
 
-    references_client = PriceChartingReferenceClient(
-        config.root,
-        cache_hours=int(
-            config.raw.get("pricing", {}).get("reference_cache_hours", 24)
-        ),
-    )
-    references: dict[str, ReferenceCard] = {}
-    try:
-        for target in config.targets:
-            try:
-                references[target.id] = references_client.resolve(target)
-                LOGGER.info(
-                    "Loaded reference: %s", references[target.id].display_name
-                )
-            except Exception as exc:
-                LOGGER.error(
-                    "Could not load PriceCharting reference for %s: %s",
-                    target.id,
-                    exc,
-                )
-    finally:
-        references_client.close()
-    if not references:
-        raise RuntimeError("No PriceCharting references could be loaded")
-
-    pricing_config = config.raw.get("pricing") or {}
-    fx_client = FxRateClient(
-        config.root,
-        manual_jpy_to_aud=float(pricing_config.get("manual_jpy_to_aud", 0.0102)),
-        manual_usd_to_aud=float(pricing_config.get("manual_usd_to_aud", 1.52)),
-        cache_hours=int(pricing_config.get("fx_cache_hours", 6)),
-    )
-    fx_rates = fx_client.fetch()
-    fx_client.close()
-    LOGGER.info(
-        "FX rates (%s): 1 JPY = A$%.6f, 1 USD = A$%.4f",
-        fx_rates.source,
-        fx_rates.jpy_to_aud,
-        fx_rates.usd_to_aud,
-    )
+    references, fx_rates, matcher, price_client = _load_valuation_context(config)
     lot_valuation_config = config.raw.get("lot_valuation") or {}
-    price_client = PriceChartingSearchClient(
-        config.root,
-        cache_hours=int(lot_valuation_config.get("price_search_cache_hours", 336)),
-    )
-
-    matcher_config = dict(config.raw.get("gemini") or {})
-    matcher_config["screening_model"] = str(
-        config.raw.get("gemini", {}).get("screening_model")
-        or "gemini-3.5-flash-lite"
-    )
-    matcher = GeminiReferenceMatcher(
-        config.gemini_api_key,
-        matcher_config,
-        config.run_limits,
-    )
     discord_enabled = bool(config.raw.get("discord", {}).get("enabled", True))
     discord_username = str(
         config.raw.get("discord", {}).get("username") or "Pokemon Deal Scout"
@@ -359,11 +572,19 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
         and config.discord_bot_token
         and config.discord_alert_channel_id
     )
-    _check_pending_confirmations(
+    await _check_pending_confirmations(
         config,
         confirmation_store,
         confirmed_notifier,
         enabled=confirmation_tracking_enabled,
+        enrich=_build_confirmation_enricher(
+            config,
+            references=references,
+            matcher=matcher,
+            price_client=price_client,
+            fx_rates=fx_rates,
+            notifier=confirmed_notifier,
+        ),
     )
 
     signature = scan_signature(config)
@@ -639,6 +860,11 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                                     sent_at=datetime.now(
                                                         timezone.utc
                                                     ).isoformat(),
+                                                    listing_snapshot=(
+                                                        _listing_snapshot(
+                                                            listing, screen
+                                                        )
+                                                    ),
                                                 )
                                             )
 
@@ -800,57 +1026,15 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                 lot_cards: list[LotCard] = []
                                 visible_card_count = 0
                                 try:
-                                    identification_source = crops or images
-                                    for id_batch_number, id_batch in enumerate(
-                                        _batches(
-                                            identification_source,
-                                            int(detailed_limits["images_per_batch"]),
-                                            int(
-                                                detailed_limits["max_batches_per_listing"]
-                                            ),
-                                        ),
-                                        start=1,
-                                    ):
-                                        id_sheet = make_contact_sheet(
-                                            id_batch,
-                                            prefix=f"L{id_batch_number}-",
-                                            max_dimension=int(
-                                                detailed_limits["max_image_dimension_px"]
-                                            ),
-                                            quality=int(
-                                                detailed_limits["jpeg_quality"]
-                                            ),
-                                            columns=int(
-                                                detailed_limits["contact_sheet_columns"]
-                                            ),
+                                    lot_cards, visible_card_count = (
+                                        await _catalogue_lot(
+                                            images,
+                                            crops,
+                                            matcher,
+                                            price_client,
+                                            detailed_limits,
                                         )
-                                        batch_cards, batch_visible = (
-                                            await matcher.identify_lot_cards(
-                                                candidate_jpeg=id_sheet.jpeg,
-                                            )
-                                        )
-                                        lot_cards.extend(batch_cards)
-                                        visible_card_count += batch_visible
-
-                                    for card in lot_cards:
-                                        # find_price is synchronous blocking
-                                        # I/O (a cache miss does a real HTTP
-                                        # request); run it off the event loop
-                                        # so it doesn't stall concurrent work.
-                                        price_match = await asyncio.to_thread(
-                                            price_client.find_price,
-                                            name=card.name,
-                                            card_number=card.card_number,
-                                            set_name=card.set_name,
-                                        )
-                                        if price_match is not None:
-                                            card.priced_usd = price_match.ungraded_usd
-                                            card.price_similarity = (
-                                                price_match.similarity
-                                            )
-                                            card.price_source_url = (
-                                                price_match.source_url
-                                            )
+                                    )
                                 except GeminiBudgetReached:
                                     raise
                                 except Exception as exc:

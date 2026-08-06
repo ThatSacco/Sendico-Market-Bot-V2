@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
-import time
+from collections.abc import Awaitable, Callable
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -11,6 +12,10 @@ from typing import Any
 from .discord import DiscordNotifier
 from .discord_reactions import DiscordReactionClient
 from .models import PendingConfirmation
+
+# Given a confirmation the user just approved, produce a rich embed for the
+# confirmed-cards channel, or None to fall back to the lightweight one.
+Enricher = Callable[[PendingConfirmation], Awaitable[dict[str, Any] | None]]
 
 LOGGER = logging.getLogger(__name__)
 
@@ -80,12 +85,13 @@ class ConfirmationStore:
         )
 
 
-def process_pending_confirmations(
+async def process_pending_confirmations(
     store: ConfirmationStore,
     reaction_client: DiscordReactionClient,
     confirmed_notifier: DiscordNotifier,
     *,
     request_interval_seconds: float = 0.3,
+    enrich: Enricher | None = None,
 ) -> tuple[int, int]:
     """Check every pending alert for a reaction, resolving what's changed.
 
@@ -97,6 +103,12 @@ def process_pending_confirmations(
     have a few dozen pending alerts to check. check_reaction() already
     retries on a 429, but pacing requests up front means most checks never
     need to.
+
+    ``enrich`` is called only for confirmations that don't already carry a
+    stored embed -- in practice, "probable" alerts, which never computed a
+    lot valuation at alert time. Paying that cost here, once a human has
+    actually vouched for the listing, is far cheaper than doing it for every
+    probable alert up front.
     """
 
     confirmed_count = 0
@@ -104,7 +116,7 @@ def process_pending_confirmations(
     pending_confirmations = store.pending()
     for index, pending in enumerate(pending_confirmations):
         if index > 0 and request_interval_seconds > 0:
-            time.sleep(request_interval_seconds)
+            await asyncio.sleep(request_interval_seconds)
         outcome = reaction_client.check_reaction(pending.message_id)
         if outcome is None:
             continue
@@ -113,6 +125,21 @@ def process_pending_confirmations(
             continue
         if outcome == "confirmed":
             confirmed_count += 1
+            if enrich is not None and not resolved.embed:
+                try:
+                    embed = await enrich(resolved)
+                    if embed:
+                        resolved.embed = embed
+                        store.data["confirmed"][resolved.message_id]["embed"] = embed
+                except Exception as exc:
+                    # Enrichment is a presentation upgrade, never the
+                    # confirmation itself -- fall through to the lightweight
+                    # embed rather than losing the post entirely.
+                    LOGGER.warning(
+                        "Could not value the lot for confirmed listing %s: %s",
+                        resolved.listing_code,
+                        exc,
+                    )
             try:
                 confirmed_notifier.card_confirmed(resolved)
             except Exception as exc:

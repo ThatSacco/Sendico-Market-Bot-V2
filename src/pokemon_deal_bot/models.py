@@ -115,6 +115,13 @@ class PendingConfirmation:
     # alerts (no lot valuation exists yet at that stage) and for pending
     # records created before this field existed.
     embed: dict[str, Any] | None = None
+    # Everything needed to value a "probable" listing's lot *later*, if and
+    # when a human confirms it by reaction. Captured at alert time because
+    # the listing may be sold, delisted, or simply unreachable by then --
+    # and because re-deriving it would otherwise mean re-scraping the site.
+    # Keys: title, price_yen, image_urls, seller_positive_ratings,
+    # match_confidence, match_evidence.
+    listing_snapshot: dict[str, Any] | None = None
 
 
 @dataclass(slots=True)

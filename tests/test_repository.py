@@ -37,5 +37,8 @@ def test_confirmations_workflow_is_manual_only_and_lightweight():
     assert "--check-confirmations" in workflow
     assert "data/confirmations.json" in workflow
     # No scan happens here, so no need to spend time installing a browser.
+    # GEMINI_API_KEY *is* passed (a confirmed probable alert gets its lot
+    # valued at reaction time), but that is a handful of requests for the
+    # listings a human actually vouched for -- not a scan.
     assert "playwright" not in workflow
-    assert "GEMINI_API_KEY" not in workflow
+    assert "sendico" not in workflow.lower().replace("sendico-pokemon-scan", "")
