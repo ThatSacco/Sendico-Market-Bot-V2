@@ -46,5 +46,11 @@ cards:
     active: true
     pricecharting_url: "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/gum-gum-fire-fist-pistol-red-hawk-alternate-art-op11-114"
     searches:
-      - term: "O11-114"
+      # Was "O11-114" (missing the P). Mercari fuzzy-matched that on "114"
+      # and returned trousers, a knife and an aircon remote -- 51 listings
+      # of noise that would have eaten the run's listing budget. Both terms
+      # below verified live 2026-08-07.
+      - term: "OP11-114"
+        active: true
+      - term: "ゴムゴムの火拳銃"
         active: true
