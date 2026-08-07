@@ -2848,6 +2848,2900 @@
       "message_id": "1535137923148808253",
       "sent_at": "2026-08-07T04:10:02.436292+00:00",
       "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535144109927571478": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m18002458121",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_1.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_2.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_3.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_4.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_5.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_6.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_7.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_8.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_9.jpg?1785761221",
+          "https://static.mercdn.net/item/detail/orig/photos/m18002458121_10.jpg?1785761221"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the complete R1 card (Gum-Gum Fire-Fist Pistol Red Hawk).",
+          "O1-2, O1-3, and O1-4 show closeups of different sections of the exact same card artwork and layout."
+        ],
+        "price_yen": 8666,
+        "seller_positive_ratings": 759,
+        "title": "ゴムゴムの火拳銃 (パラレル) OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m18002458121",
+      "message_id": "1535144109927571478",
+      "sent_at": "2026-08-07T04:34:37.508537+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535144370255437866": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m47535960457",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m47535960457_1.jpg?1785586595",
+          "https://static.mercdn.net/item/detail/orig/photos/m47535960457_2.jpg?1785586595"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the exact same One Piece artwork, layout, and numbering (OP11-114) as R1.",
+          "O1-2 shows the One Piece card game back, which matches the game of R1."
+        ],
+        "price_yen": 8888,
+        "seller_positive_ratings": 13058,
+        "title": "ゴムゴムの火拳銃　パラレル　sp ワンピースカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m47535960457",
+      "message_id": "1535144370255437866",
+      "sent_at": "2026-08-07T04:35:39.552095+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535144455357735023": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m30163017429",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m30163017429_1.jpg?1784626319",
+          "https://static.mercdn.net/item/detail/orig/photos/m30163017429_2.jpg?1784626319",
+          "https://static.mercdn.net/item/detail/orig/photos/m30163017429_3.jpg?1784626319"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card artwork, layout, and red color scheme in O1-1 and O1-3 perfectly match R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 9300,
+        "seller_positive_ratings": 204,
+        "title": "【ワンピースカード】ゴムゴムの火拳銃 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m30163017429",
+      "message_id": "1535144455357735023",
+      "sent_at": "2026-08-07T04:35:59.847126+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535144516535848983": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m27838803643",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m27838803643_1.jpg?1785765983"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact matching artwork of Gum-Gum Fire-Fist Pistol Red Hawk, layout, and card number visible in O1-1."
+        ],
+        "price_yen": 7000,
+        "seller_positive_ratings": 212,
+        "title": "ゴムゴムの火拳銃 (パラレル) OP03-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m27838803643",
+      "message_id": "1535144516535848983",
+      "sent_at": "2026-08-07T04:36:14.471715+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145025103462473": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m20218209402",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_1.jpg?1782855885",
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_2.jpg?1782855885",
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_3.jpg?1782855885",
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_4.jpg?1782855885",
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_5.jpg?1782855885",
+          "https://static.mercdn.net/item/detail/orig/photos/m20218209402_6.jpg?1782855885"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 shows the exact same artwork and layout as R1 (Gum-Gum Fire-Fist Pistol Red Hawk).",
+          "O1-2, O1-3, and O1-4 show the One Piece Card Game card back matching the game of R1."
+        ],
+        "price_yen": 11900,
+        "seller_positive_ratings": 49,
+        "title": "ワンピースカード ゴムゴムの火拳銃 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m20218209402",
+      "message_id": "1535145025103462473",
+      "sent_at": "2026-08-07T04:38:15.688637+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145275277185065": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m21105198011",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m21105198011_1.jpg?1784988686",
+          "https://static.mercdn.net/item/detail/orig/photos/m21105198011_2.jpg?1784988686"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and layout precisely match the Gum-Gum Fire-Fist Pistol Red Hawk card seen in R1.",
+          "Visible in cell O1-1 (fronts) and O1-2 (backs with One Piece card game logo)."
+        ],
+        "price_yen": 15800,
+        "seller_positive_ratings": 610,
+        "title": "ワンピースカード ゴムゴムの火拳銃 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m21105198011",
+      "message_id": "1535145275277185065",
+      "sent_at": "2026-08-07T04:39:15.311847+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145598590783499": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m11401644528",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m11401644528_1.jpg?1785248393",
+          "https://static.mercdn.net/item/detail/orig/photos/m11401644528_2.jpg?1785248393",
+          "https://static.mercdn.net/item/detail/orig/photos/m11401644528_3.jpg?1785248393",
+          "https://static.mercdn.net/item/detail/orig/photos/m11401644528_4.jpg?1785248393"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "PSA slab label matches OP11 #114 G/G F/F PISTOL RED HAWK ALTERNATE ART",
+          "Card back is One Piece Card Game design",
+          "Card front artwork matches R1 exactly"
+        ],
+        "price_yen": 27777,
+        "seller_positive_ratings": 743,
+        "title": "ワンピース　PSA10 ゴムゴムの火拳銃　Rパラレル OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m11401644528",
+      "message_id": "1535145598590783499",
+      "sent_at": "2026-08-07T04:40:32.406135+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145672452477012": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m61182403617",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m61182403617_1.jpg?1785164605",
+          "https://static.mercdn.net/item/detail/orig/photos/m61182403617_2.jpg?1785164605"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 shows the exact same One Piece artwork, layout, and text box structure as R1."
+        ],
+        "price_yen": 10210,
+        "seller_positive_ratings": 458,
+        "title": "ワンピースカード ゴムゴムの火拳銃 レッドホーク パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m61182403617",
+      "message_id": "1535145672452477012",
+      "sent_at": "2026-08-07T04:40:50.080425+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145815251624029": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m29791925538",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_1.jpg?1785620400",
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_2.jpg?1785620400",
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_3.jpg?1785620400",
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_4.jpg?1785620400",
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_5.jpg?1785620400",
+          "https://static.mercdn.net/item/detail/orig/photos/m29791925538_6.jpg?1785620400"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 matches the exact artwork, layout, and set number OP11-114 of reference R1."
+        ],
+        "price_yen": 7777,
+        "seller_positive_ratings": 934,
+        "title": "ワンピースカード ゴムゴムの火拳銃 パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m29791925538",
+      "message_id": "1535145815251624029",
+      "sent_at": "2026-08-07T04:41:24.212430+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145879730655294": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m21125670866",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_1.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_2.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_3.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_4.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_5.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_6.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_7.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_8.jpg?1785832351",
+          "https://static.mercdn.net/item/detail/orig/photos/m21125670866_9.jpg?1785832351"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and text box of the One Piece card match R1 across all listing cells."
+        ],
+        "price_yen": 7777,
+        "seller_positive_ratings": 8428,
+        "title": "ワンピースカード　ゴムゴムの火拳銃　パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m21125670866",
+      "message_id": "1535145879730655294",
+      "sent_at": "2026-08-07T04:41:39.443256+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535145975683752060": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m55225847032",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_1.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_2.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_3.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_4.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_5.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_6.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_7.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_8.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_9.jpg?1781112202",
+          "https://static.mercdn.net/item/detail/orig/photos/m55225847032_10.jpg?1781112202"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card R1 artwork, text box, and #OP11-114 match the card shown in O1-1, O1-2, O1-3, and O1-4 exactly."
+        ],
+        "price_yen": 10000,
+        "seller_positive_ratings": 1234,
+        "title": "OP11-114 ゴムゴムの火拳銃　レッドホーク　R パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m55225847032",
+      "message_id": "1535145975683752060",
+      "sent_at": "2026-08-07T04:42:02.350703+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146029698130057": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m30605311380",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m30605311380_1.jpg?1786013246",
+          "https://static.mercdn.net/item/detail/orig/photos/m30605311380_2.jpg?1786013246"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "PSA slab label and card artwork match R1 card perfectly"
+        ],
+        "price_yen": 27000,
+        "seller_positive_ratings": 217,
+        "title": "PSA10 ゴムゴムの火拳銃 ワンピースカード　レッドホーク"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m30605311380",
+      "message_id": "1535146029698130057",
+      "sent_at": "2026-08-07T04:42:15.263932+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146156269633569": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m14903705968",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m14903705968_1.jpg?1783772941",
+          "https://static.mercdn.net/item/detail/orig/photos/m14903705968_2.jpg?1783772941",
+          "https://static.mercdn.net/item/detail/orig/photos/m14903705968_3.jpg?1783772941"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, card layout, and red/white color scheme match the One Piece card in O1-1 and O1-3."
+        ],
+        "price_yen": 11500,
+        "seller_positive_ratings": 787,
+        "title": "ワンピースカード ゴムゴムの火拳銃 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14903705968",
+      "message_id": "1535146156269633569",
+      "sent_at": "2026-08-07T04:42:45.429085+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146224145924197": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m76119927882",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m76119927882_1.jpg?1782842875",
+          "https://static.mercdn.net/item/detail/orig/photos/m76119927882_2.jpg?1782842875"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 matches the exact artwork, layout, and serial number (OP11-114) of reference R1 (Gum-Gum Fire-Fist Pistol Red Hawk)."
+        ],
+        "price_yen": 8500,
+        "seller_positive_ratings": 48,
+        "title": "ゴムゴムの火拳銃"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m76119927882",
+      "message_id": "1535146224145924197",
+      "sent_at": "2026-08-07T04:43:01.538857+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146294165643305": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m25335111536",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m25335111536_1.jpg?1764310895"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing shows four copies of the exact One Piece card with matching red and white artwork featuring Luffy/Ace style elements and Japanese layout."
+        ],
+        "price_yen": 580,
+        "seller_positive_ratings": 278,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m25335111536",
+      "message_id": "1535146294165643305",
+      "sent_at": "2026-08-07T04:43:18.230574+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146508087726132": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m19385432046",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_1.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_2.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_3.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_4.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_5.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_6.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_7.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_8.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_9.jpg?1785734814",
+          "https://static.mercdn.net/item/detail/orig/photos/m19385432046_10.jpg?1785734814"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab label and card art in O1-1, O1-3, and O1-4 clearly match the Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114 reference card from R1."
+        ],
+        "price_yen": 28500,
+        "seller_positive_ratings": 2762,
+        "title": "①PSA10 ゴムゴムの火拳銃 R-P [OP11-114]"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m19385432046",
+      "message_id": "1535146508087726132",
+      "sent_at": "2026-08-07T04:44:09.270615+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146568695685121": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m40506604213",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m40506604213_1.jpg?1783824430",
+          "https://static.mercdn.net/item/detail/orig/photos/m40506604213_2.jpg?1783824430"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The graded PSA slab in O1-1 shows the exact same One Piece card artwork, red-white-gold color palette, and layout as reference R1.",
+          "The PSA label in O1-1 clearly states '2025 ONE PIECE OP11 JP G/G F/F PISTOL RED HAWK ALTERNATE ART #114'."
+        ],
+        "price_yen": 13500,
+        "seller_positive_ratings": 959,
+        "title": "ワンピースカードゲーム　ゴムゴムの火拳銃　パラレル　psa9"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m40506604213",
+      "message_id": "1535146568695685121",
+      "sent_at": "2026-08-07T04:44:23.686056+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146701365715036": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m97391000184",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m97391000184_1.jpg?1781621866"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab in O1-1 matches the One Piece card R1 with identical artwork and card number #114."
+        ],
+        "price_yen": 39999,
+        "seller_positive_ratings": 4770,
+        "title": "【PSA10】ONE PIECE OP11 ゴムゴムのレッドホーク #114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m97391000184",
+      "message_id": "1535146701365715036",
+      "sent_at": "2026-08-07T04:44:55.311340+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146734798250036": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m91877509818",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m91877509818_1.jpg?1785603738",
+          "https://static.mercdn.net/item/detail/orig/photos/m91877509818_2.jpg?1785603738",
+          "https://static.mercdn.net/item/detail/orig/photos/m91877509818_3.jpg?1785603738",
+          "https://static.mercdn.net/item/detail/orig/photos/m91877509818_4.jpg?1785603738"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The One Piece card Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114 is visible in multiple images (O1-1, O1-2, O1-3) inside a PSA slab with matching label text.",
+          "The reverse side in O1-4 shows the One Piece Card Game back, matching the game of R1."
+        ],
+        "price_yen": 26500,
+        "seller_positive_ratings": 53,
+        "title": "ワンピースカードゲーム ゴムゴムの火拳銃 PSA10"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m91877509818",
+      "message_id": "1535146734798250036",
+      "sent_at": "2026-08-07T04:45:03.321944+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146866549719080": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m55659997986",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m55659997986_1.jpg?1751985173"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 matches the exact artwork, layout, color scheme, and numbering of R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 189,
+        "title": "ゴムゴムの火拳銃　OP11-114 R⭐︎"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m55659997986",
+      "message_id": "1535146866549719080",
+      "sent_at": "2026-08-07T04:45:34.717356+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535146965866774619": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m86063946244",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_1.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_2.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_3.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_4.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_5.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_6.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_7.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_8.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_9.jpg?1785970045",
+          "https://static.mercdn.net/item/detail/orig/photos/m86063946244_10.jpg?1785970045"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card inside the PSA slab matches the Team Rocket's Moltres ex #124 artwork and layout shown in R1.",
+          "PSA label clearly reads 2025 POKEMON SV10 JP ROCKET'S MOLTRES ex SPECIAL ART RARE #124 GEM MT 10."
+        ],
+        "price_yen": 40000,
+        "seller_positive_ratings": 262,
+        "title": "ロケット団のファイヤーex SAR PSA 10 GEM MT"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m86063946244",
+      "message_id": "1535146965866774619",
+      "sent_at": "2026-08-07T04:45:58.382579+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535147037064953937": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m84126064033",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m84126064033_1.jpg?1783729404"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing image O1-1 shows four copies of the exact same One Piece card matching R1 (Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114)."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 284,
+        "title": "ゴムゴムの火拳銃×4"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m84126064033",
+      "message_id": "1535147037064953937",
+      "sent_at": "2026-08-07T04:46:15.373101+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147197966852107": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m52370866522",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_1.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_2.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_3.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_4.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_5.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_6.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_7.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_8.jpg?1781106384",
+          "https://static.mercdn.net/item/detail/orig/photos/m52370866522_9.jpg?1781106384"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and text box matching the One Piece Gum-Gum Fire-Fist Pistol Red Hawk card are clearly visible across all sub-images in Image 2."
+        ],
+        "price_yen": 7999,
+        "seller_positive_ratings": 2334,
+        "title": "ワンピースカード　ゴムゴムの火拳銃　R　パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m52370866522",
+      "message_id": "1535147197966852107",
+      "sent_at": "2026-08-07T04:46:53.744515+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147340409606237": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m26271341736",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m26271341736_1.jpg?1784888788"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 contains four copies of the Gum-Gum Fire-Fist Pistol Red Hawk card matching R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4705,
+        "title": "ワンピースカード ゴムゴムの火拳銃"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m26271341736",
+      "message_id": "1535147340409606237",
+      "sent_at": "2026-08-07T04:47:27.710475+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147481850060874": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m33753173814",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m33753173814_1.jpg?1777719617"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image O1-1 clearly shows a stack of the exact One Piece card from R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 レッドホーク 4枚 ワンピースカードS20"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m33753173814",
+      "message_id": "1535147481850060874",
+      "sent_at": "2026-08-07T04:48:01.485699+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147629246152786": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m67959885310",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m67959885310_1.jpg?1786052445",
+          "https://static.mercdn.net/item/detail/orig/photos/m67959885310_2.jpg?1786052445"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and layout in O1-1 match R1 (Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114)."
+        ],
+        "price_yen": 6999,
+        "seller_positive_ratings": 883,
+        "title": "ゴムゴムの火拳銃 R パラレル OP11-114 sp"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m67959885310",
+      "message_id": "1535147629246152786",
+      "sent_at": "2026-08-07T04:48:36.552443+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147702696935455": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m44100254749",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_1.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_2.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_3.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_4.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_5.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_6.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_7.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_8.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_9.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_10.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_11.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_12.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_13.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_14.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_15.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_16.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_17.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_18.jpg?1785507708",
+          "https://static.mercdn.net/item/detail/orig/photos/m44100254749_19.jpg?1785507708"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork matches the Team Rocket's Moltres ex #124 perfectly in O1-1 and O1-2."
+        ],
+        "price_yen": 22980,
+        "seller_positive_ratings": 442,
+        "title": "【AKIRA EGAWA】メガラティアスex ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m44100254749",
+      "message_id": "1535147702696935455",
+      "sent_at": "2026-08-07T04:48:54.055194+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535147852026880051": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m14459352243",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m14459352243_1.jpg?1785477128"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the One Piece card R1 are clearly visible in the listing image 01-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 342,
+        "title": "ワンピースカード ゴムゴムの火拳銃 4枚セット OP11-114R"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14459352243",
+      "message_id": "1535147852026880051",
+      "sent_at": "2026-08-07T04:49:29.684696+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147898201702411": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m55775796410",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m55775796410_1.jpg?1783090173"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The stack of cards in O1-1 shows the exact same distinctive red and white artwork, typography, and cost indicators as R1 (Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 718,
+        "title": "ゴムゴムの火拳銃 黄R4枚　U65"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m55775796410",
+      "message_id": "1535147898201702411",
+      "sent_at": "2026-08-07T04:49:40.659434+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147938505039953": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m45339813578",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m45339813578_1.jpg?1781594040",
+          "https://static.mercdn.net/item/detail/orig/photos/m45339813578_2.jpg?1781594040"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and card details match R1 (Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114)."
+        ],
+        "price_yen": 7777,
+        "seller_positive_ratings": 749,
+        "title": "ゴムゴムの火拳銃(レッドホーク) R パラレル OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m45339813578",
+      "message_id": "1535147938505039953",
+      "sent_at": "2026-08-07T04:49:50.309729+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535147995966996532": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m75417504375",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m75417504375_1.jpg?1774498710"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact match of the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 card artwork and layout visible in O1-1 (multiple copies stacked)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 レッドホーク 4枚 ワンピースカードE1688"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m75417504375",
+      "message_id": "1535147995966996532",
+      "sent_at": "2026-08-07T04:50:04.070948+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148113684205669": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m95217510586",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m95217510586_1.jpg?1777428038"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing image O1-1 shows four copies of the One Piece card matching R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1291,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃　OP11-114 4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m95217510586",
+      "message_id": "1535148113684205669",
+      "sent_at": "2026-08-07T04:50:32.039418+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148177601335391": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m18326927123",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m18326927123_1.jpg?1782045004"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "All visible cards in the listing match the artwork, layout, and unique red-and-white style of R1 (Gum-Gum Fire-Fist Pistol Red Hawk)."
+        ],
+        "price_yen": 450,
+        "seller_positive_ratings": 345,
+        "title": "ワンピースカード ゴムゴムの火拳銃 8枚セット347"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m18326927123",
+      "message_id": "1535148177601335391",
+      "sent_at": "2026-08-07T04:50:47.383631+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148266147287114": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m79035330989",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m79035330989_1.jpg?1784039448",
+          "https://static.mercdn.net/item/detail/orig/photos/m79035330989_2.jpg?1784039448",
+          "https://static.mercdn.net/item/detail/orig/photos/m79035330989_3.jpg?1784039448",
+          "https://static.mercdn.net/item/detail/orig/photos/m79035330989_4.jpg?1784039448",
+          "https://static.mercdn.net/item/detail/orig/photos/m79035330989_5.jpg?1784039448"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The distinctive red/white artwork of Luffy performing Red Hawk and the card layout match R1 across multiple listing images (O1-1, O1-2, O1-4)."
+        ],
+        "price_yen": 420,
+        "seller_positive_ratings": 337,
+        "title": "ワンピースカード ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m79035330989",
+      "message_id": "1535148266147287114",
+      "sent_at": "2026-08-07T04:51:08.537197+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148339530825752": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m93832559517",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m93832559517_1.jpg?1770127962"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows multiple copies of the exact same One Piece card matching R1's unique artwork, layout, and text box styling."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 R 黄 4枚 ワンピースカードB182"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m93832559517",
+      "message_id": "1535148339530825752",
+      "sent_at": "2026-08-07T04:51:25.939717+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148439065600070": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m37917682690",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m37917682690_1.jpg?1785608963",
+          "https://static.mercdn.net/item/detail/orig/photos/m37917682690_2.jpg?1785608963"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 matches the exact artwork, layout, and rarity indicators of R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 8888,
+        "seller_positive_ratings": 130,
+        "title": "ゴムゴムの火拳銃　レッド　ホーク　OP11-114　パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m37917682690",
+      "message_id": "1535148439065600070",
+      "sent_at": "2026-08-07T04:51:49.661735+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148490030846013": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m94239089587",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m94239089587_1.jpg?1781958099"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the same One Piece event card with the distinctive red-and-white art and Japanese text matching R1 are visible in image 01-1."
+        ],
+        "price_yen": 444,
+        "seller_positive_ratings": 10,
+        "title": "ワンピースカードゲーム ゴムゴムの火拳銃 8枚セット295"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m94239089587",
+      "message_id": "1535148490030846013",
+      "sent_at": "2026-08-07T04:52:01.767941+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148541364936715": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m98423237418",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_1.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_2.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_3.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_4.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_5.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_6.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_7.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_8.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_9.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_10.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_11.jpg?1779175539",
+          "https://static.mercdn.net/item/detail/orig/photos/m98423237418_12.jpg?1779175539"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, character, card name, and set number 124/098 SAR match perfectly across multiple zoomed angles in the listing."
+        ],
+        "price_yen": 17300,
+        "seller_positive_ratings": 4061,
+        "title": "ロケット団のファイヤーex SAR SV10 124/098 ロケット団の栄光"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m98423237418",
+      "message_id": "1535148541364936715",
+      "sent_at": "2026-08-07T04:52:14.004941+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535148640958419036": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m79844619307",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m79844619307_1.jpg?1780908133",
+          "https://static.mercdn.net/item/detail/orig/photos/m79844619307_2.jpg?1780908133"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card artwork matches R1 (Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114).",
+          "Back of the card in O1-2 is the standard One Piece Card Game back matching the game of R1."
+        ],
+        "price_yen": 7999,
+        "seller_positive_ratings": 2567,
+        "title": "ワンピースカードゲーム ゴムゴムの火拳銃 OP11-114 パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m79844619307",
+      "message_id": "1535148640958419036",
+      "sent_at": "2026-08-07T04:52:37.835968+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148718549110816": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m31716416687",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m31716416687_1.jpg?1773491422"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing shows multiple copies of the One Piece card matching the art, layout, and colors of R1 (Gum-Gum Fire-Fist Pistol Red Hawk)."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 2999,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃 4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m31716416687",
+      "message_id": "1535148718549110816",
+      "sent_at": "2026-08-07T04:52:56.276295+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148767739904031": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m61240121435",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m61240121435_1.jpg?1780918853"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing O1-1 shows a stack of cards matching the exact artwork, text box, and cost layout of the One Piece card R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 718,
+        "title": "【即日発送♡残4枚】ゴムゴムの火拳銃　op11-114 ワンピースカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m61240121435",
+      "message_id": "1535148767739904031",
+      "sent_at": "2026-08-07T04:53:07.991712+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148851655086161": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m39085574415",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m39085574415_1.jpg?1774494228"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, cost, and card layout precisely match the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 card shown in R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 レッドホーク 4枚 ワンピースカードE1641"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m39085574415",
+      "message_id": "1535148851655086161",
+      "sent_at": "2026-08-07T04:53:27.990614+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535148925084766238": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m60914494499",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m60914494499_1.jpg?1780931404",
+          "https://static.mercdn.net/item/detail/orig/photos/m60914494499_2.jpg?1780931404",
+          "https://static.mercdn.net/item/detail/orig/photos/m60914494499_3.jpg?1780931404"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork in cell O1-1 matches the Team Rocket's Moltres ex #124 from IMAGE 1.",
+          "Cells O1-2 and O1-3 show the back of the card consistent with the listing."
+        ],
+        "price_yen": 15422,
+        "seller_positive_ratings": 40,
+        "title": "ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m60914494499",
+      "message_id": "1535148925084766238",
+      "sent_at": "2026-08-07T04:53:45.502040+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535149016633970722": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m41867706858",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m41867706858_1.jpg?1781744545"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and card details match R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114) perfectly in cell O1-1."
+        ],
+        "price_yen": 499,
+        "seller_positive_ratings": 519,
+        "title": "ワンピースカードゲーム R 4枚セット ゴムゴムの火拳銃 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m41867706858",
+      "message_id": "1535149016633970722",
+      "sent_at": "2026-08-07T04:54:07.367396+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149086791958551": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m54433816253",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m54433816253_1.jpg?1773636556"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the One Piece card clearly visible in listing cell O1-1, matching artwork and card layout."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 4枚 ワンピースカードE855"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m54433816253",
+      "message_id": "1535149086791958551",
+      "sent_at": "2026-08-07T04:54:24.145512+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149165615644773": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m41482229951",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_1.jpg?1778727318",
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_2.jpg?1778727318",
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_3.jpg?1779585706",
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_4.jpg?1779585706",
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_5.jpg?1779585706",
+          "https://static.mercdn.net/item/detail/orig/photos/m41482229951_6.jpg?1779585706"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, character, layout, attacks, and set symbol match reference R1 (Team Rocket's Moltres ex #124)."
+        ],
+        "price_yen": 16700,
+        "seller_positive_ratings": 60,
+        "title": "ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m41482229951",
+      "message_id": "1535149165615644773",
+      "sent_at": "2026-08-07T04:54:42.836481+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535149264986964009": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m25917090983",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m25917090983_1.jpg?1780843315"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 matches the artwork, layout, and card number OP11-114 of reference R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 509,
+        "title": "【在庫10】ワンピースカード　ゴムゴムの火拳銃 OP11-114 R ルフィ"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m25917090983",
+      "message_id": "1535149264986964009",
+      "sent_at": "2026-08-07T04:55:06.555278+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149396201705523": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m93011384954",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m93011384954_1.jpg?1755043713",
+          "https://static.mercdn.net/item/detail/orig/photos/m93011384954_2.jpg?1755043713"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, card layout, and text box match the Gum-Gum Fire-Fist Pistol Red Hawk card shown in R1.",
+          "Both listing images O1-1 and O1-2 clearly show multiple copies and a close-up of this exact card."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 956,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃 10枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m93011384954",
+      "message_id": "1535149396201705523",
+      "sent_at": "2026-08-07T04:55:37.843104+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149484600983576": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m24246685268",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_1.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_2.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_3.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_4.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_5.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_6.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_7.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_8.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_9.jpg?1781409590",
+          "https://static.mercdn.net/item/detail/orig/photos/m24246685268_10.jpg?1781409590"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the One Piece card OP11-114 are visible in O1-1 and O1-3.",
+          "The card backs in O1-2 and O1-4 match the One Piece Card Game design."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 3669,
+        "title": "ワンピースカード ゴムゴムの火拳銃 op11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24246685268",
+      "message_id": "1535149484600983576",
+      "sent_at": "2026-08-07T04:55:58.957608+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149713412726866": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m41350503780",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_1.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_2.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_3.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_4.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_5.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_6.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_7.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_8.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_9.jpg?1780162598",
+          "https://static.mercdn.net/item/detail/orig/photos/m41350503780_10.jpg?1780162598"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O2-1 shows the exact same artwork style, attack text, and bottom border details (HP, weakness, attack names) as R1."
+        ],
+        "price_yen": 1450,
+        "seller_positive_ratings": 185,
+        "title": "⭐️ ロケット団のファイヤーex SR 112/098"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m41350503780",
+      "message_id": "1535149713412726866",
+      "sent_at": "2026-08-07T04:56:53.436834+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535149761311678498": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m71588481148",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m71588481148_1.jpg?1764560222"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the exact same One Piece card artwork, layout, and card number OP11-114."
+        ],
+        "price_yen": 800,
+        "seller_positive_ratings": 207,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m71588481148",
+      "message_id": "1535149761311678498",
+      "sent_at": "2026-08-07T04:57:04.955609+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149806069096570": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m56554652706",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m56554652706_1.jpg?1780902496"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 contains multiple copies of the One Piece card matching R1's artwork and set number OP11-114."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 4951,
+        "title": "ゴムゴムの火拳銃 4枚 ワンピースカードM412"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m56554652706",
+      "message_id": "1535149806069096570",
+      "sent_at": "2026-08-07T04:57:15.602824+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149860570013750": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m82550856212",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m82550856212_1.jpg?1776947684",
+          "https://static.mercdn.net/item/detail/orig/photos/m82550856212_2.jpg?1776947684"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab in O1-1 clearly shows the Team Rocket's Moltres ex #124 artwork matching R1.",
+          "The PSA label in O1-1 reads 'ROCKET'S MOLTRES EX' and '#124', confirming the exact card."
+        ],
+        "price_yen": 37200,
+        "seller_positive_ratings": 366,
+        "title": "ロケット団のファイヤーex SAR PSA10 スカーレット&バイオレット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m82550856212",
+      "message_id": "1535149860570013750",
+      "sent_at": "2026-08-07T04:57:28.711204+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535149921718509579": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m90297952335",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m90297952335_1.jpg?1778470342"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the exact One Piece card with reference label R1 are clearly visible in the listing image O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 361,
+        "title": "ワンピースカード　ゴムゴムの火拳銃 OP11-114 R"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m90297952335",
+      "message_id": "1535149921718509579",
+      "sent_at": "2026-08-07T04:57:43.124798+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535149949082148919": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m57175502387",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m57175502387_1.jpg?1781611904",
+          "https://static.mercdn.net/item/detail/orig/photos/m57175502387_2.jpg?1781611904",
+          "https://static.mercdn.net/item/detail/orig/photos/m57175502387_3.jpg?1781611904",
+          "https://static.mercdn.net/item/detail/orig/photos/m57175502387_4.jpg?1781611904"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1, O1-2, and O1-3 matches the artwork, layout, and number 124/098 SAR of Team Rocket's Moltres ex from Image 1.",
+          "O1-4 shows the standard Japanese Pokémon card back belonging to the same card."
+        ],
+        "price_yen": 19500,
+        "seller_positive_ratings": 750,
+        "title": "ポケモンカード ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m57175502387",
+      "message_id": "1535149949082148919",
+      "sent_at": "2026-08-07T04:57:49.733472+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535149980678099065": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m80681120500",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_1.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_2.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_3.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_4.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_5.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_6.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_7.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_8.jpg?1781395528",
+          "https://static.mercdn.net/item/detail/orig/photos/m80681120500_9.jpg?1781395528"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "All images in the listing show the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 card."
+        ],
+        "price_yen": 420,
+        "seller_positive_ratings": 626,
+        "title": "ワンピースカード ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m80681120500",
+      "message_id": "1535149980678099065",
+      "sent_at": "2026-08-07T04:57:57.206646+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150115763789957": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m28933062432",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m28933062432_1.jpg?1785112800",
+          "https://static.mercdn.net/item/detail/orig/photos/m28933062432_2.jpg?1785112800"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab in O1-1 shows the exact same card artwork, layout, and card number #124 of Team Rocket's Moltres ex.",
+          "The PSA label in O1-1 explicitly reads '2025 POKEMON SV10 JP ROCKET'S MOLTRES ex SPECIAL ART RARE'."
+        ],
+        "price_yen": 19500,
+        "seller_positive_ratings": 586,
+        "title": "【PSA9】124/098 ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m28933062432",
+      "message_id": "1535150115763789957",
+      "sent_at": "2026-08-07T04:58:29.374658+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535150193178058894": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m48937199136",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m48937199136_1.jpg?1767886161",
+          "https://static.mercdn.net/item/detail/orig/photos/m48937199136_2.jpg?1767886161"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the One Piece Gum-Gum Fire-Fist Pistol Red Hawk card are clearly visible in O1-1 with matching artwork and gold border elements."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 370,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m48937199136",
+      "message_id": "1535150193178058894",
+      "sent_at": "2026-08-07T04:58:47.887304+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150283087417405": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m93596297144",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m93596297144_1.jpg?1779435598"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows multiple copies of the One Piece card matching R1's exact artwork and layout."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 718,
+        "title": "ゴムゴムの火拳銃　黄R4枚　J39"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m93596297144",
+      "message_id": "1535150283087417405",
+      "sent_at": "2026-08-07T04:59:09.260550+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150342172573778": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m70089992854",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_1.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_2.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_3.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_4.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_5.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_6.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_7.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_8.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_9.jpg?1780728097",
+          "https://static.mercdn.net/item/detail/orig/photos/m70089992854_10.jpg?1780728097"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, character, and attacks of the card in O1-1, O1-3, and O1-4 exactly match the canonical reference R1 (Team Rocket's Moltres ex #124)."
+        ],
+        "price_yen": 18000,
+        "seller_positive_ratings": 470,
+        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック ロ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m70089992854",
+      "message_id": "1535150342172573778",
+      "sent_at": "2026-08-07T04:59:23.377988+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535150418903179355": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m27206221007",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m27206221007_1.jpg?1783470547",
+          "https://static.mercdn.net/item/detail/orig/photos/m27206221007_2.jpg?1783470547"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card on the left in image O1-1 matches the exact artwork, gold borders, and text box layout of reference R1 (OP11-114)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 116,
+        "title": "ワンピースカード 実直拳骨 ゴムゴムの火拳銃 op11-018/op11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m27206221007",
+      "message_id": "1535150418903179355",
+      "sent_at": "2026-08-07T04:59:41.651257+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150566261661730": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m82233033875",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m82233033875_1.jpg?1758719502"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows multiple copies of the One Piece card matching R1 artwork and layout."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 824,
+        "title": "ゴムゴムの火拳銃 4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m82233033875",
+      "message_id": "1535150566261661730",
+      "sent_at": "2026-08-07T05:00:16.904152+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150764257976474": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m14159404880",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m14159404880_1.jpg?1767926579"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The listing image O1-1 clearly shows multiple copies of the One Piece card matching R1 (Gum-Gum Fire-Fist Pistol Red Hawk)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 2046,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃　op11-114 ４枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14159404880",
+      "message_id": "1535150764257976474",
+      "sent_at": "2026-08-07T05:01:04.131801+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535150929647763579": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m18686786181",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m18686786181_1.jpg?1773239120"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and layout precisely match the Gum-Gum Fire-Fist Pistol Red Hawk card shown in R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 5907,
+        "title": "ワンピースカード ゴムゴムの火拳銃 レッドホーク R 2枚 OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m18686786181",
+      "message_id": "1535150929647763579",
+      "sent_at": "2026-08-07T05:01:43.435161+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151114545274891": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m54858168633",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m54858168633_1.jpg?1756297687"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 matches the exact artwork, layout, and serial number OP11-114 of reference card R1."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 41,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m54858168633",
+      "message_id": "1535151114545274891",
+      "sent_at": "2026-08-07T05:02:27.497603+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151226994298963": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m87886733745",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m87886733745_1.jpg?1754558380"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, color scheme (yellow/red theme), and text structure perfectly match the One Piece reference card R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 3107,
+        "title": "ワンピースカード　ゴムゴムの火拳銃　黄　R4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m87886733745",
+      "message_id": "1535151226994298963",
+      "sent_at": "2026-08-07T05:02:54.436537+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151335375376465": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m42307590661",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m42307590661_1.jpg?1754815953",
+          "https://static.mercdn.net/item/detail/orig/photos/m42307590661_2.jpg?1754815953"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact matching artwork, card layout, and OP11-114 card number visible in O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 201,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m42307590661",
+      "message_id": "1535151335375376465",
+      "sent_at": "2026-08-07T05:03:20.175639+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151522483273739": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m99645049504",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m99645049504_1.jpg?1741350197",
+          "https://static.mercdn.net/item/detail/orig/photos/m99645049504_2.jpg?1741350197"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Listing O1-1 clearly shows multiple copies of the One Piece Gum-Gum Fire-Fist Pistol Red Hawk card matching R1's unique red/white illustration and layout."
+        ],
+        "price_yen": 349,
+        "seller_positive_ratings": 186,
+        "title": "ゴムゴムの火拳銃R×4"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m99645049504",
+      "message_id": "1535151522483273739",
+      "sent_at": "2026-08-07T05:04:04.780664+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151658164817971": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m97239807729",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_1.jpg?1784078489",
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_2.jpg?1784078489",
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_3.jpg?1784078489",
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_4.jpg?1784078489",
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_5.jpg?1784078489",
+          "https://static.mercdn.net/item/detail/orig/photos/m97239807729_6.jpg?1784078489"
+        ],
+        "match_confidence": 0.85,
+        "match_evidence": [
+          "The listing shows close-up photos of the back corners of a Japanese Pokemon card, which corresponds to the reference card R1."
+        ],
+        "price_yen": 1222,
+        "seller_positive_ratings": 62,
+        "title": "ロケット団のファイヤーex SR スカーレット&バイオレット 拡張パック ロケ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m97239807729",
+      "message_id": "1535151658164817971",
+      "sent_at": "2026-08-07T05:04:37.121755+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535151787114373221": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m47683574838",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m47683574838_1.jpg?1781380224",
+          "https://static.mercdn.net/item/detail/orig/photos/m47683574838_2.jpg?1781380224",
+          "https://static.mercdn.net/item/detail/orig/photos/m47683574838_3.jpg?1781380224",
+          "https://static.mercdn.net/item/detail/orig/photos/m47683574838_4.jpg?1781380224",
+          "https://static.mercdn.net/item/detail/orig/photos/m47683574838_5.jpg?1781380224"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and layout matching Gum-Gum Fire-Fist Pistol Red Hawk are clearly visible in O1-1, O1-2, and O1-3."
+        ],
+        "price_yen": 19555,
+        "seller_positive_ratings": 585,
+        "title": "ゴムゴムの火拳銃 R OP11-114 他まとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m47683574838",
+      "message_id": "1535151787114373221",
+      "sent_at": "2026-08-07T05:05:07.887916+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535151942899077143": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m24834981642",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24834981642_1.jpg?1740869362"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows multiple copies of the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 card matching R1."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 84,
+        "title": "ワンピースカード　ゴムゴムの火拳銃"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24834981642",
+      "message_id": "1535151942899077143",
+      "sent_at": "2026-08-07T05:05:45.033339+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535152173816741949": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m59485874017",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m59485874017_1.jpg?1741052246"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 shows Luffy using Red Hawk with the exact same artwork, text box layout, and gold framing/cost numbers corresponding to OP11-114."
+        ],
+        "price_yen": 444,
+        "seller_positive_ratings": 598,
+        "title": "ゴムゴムの火拳銃　4枚セット　神速の拳"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m59485874017",
+      "message_id": "1535152173816741949",
+      "sent_at": "2026-08-07T05:06:40.058983+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535152345820696669": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m68860983989",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_1.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_2.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_3.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_4.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_5.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_6.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_7.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_8.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_9.jpg?1779532815",
+          "https://static.mercdn.net/item/detail/orig/photos/m68860983989_10.jpg?1779532815"
+        ],
+        "match_confidence": 0.85,
+        "match_evidence": [
+          "The listing images show close-up shots of card backs with Pokémon branding, consistent with inspecting condition for a high-value SAR card like R1."
+        ],
+        "price_yen": 11111,
+        "seller_positive_ratings": 113,
+        "title": "ポケモンカード R団のファイヤーex 014/020 キラ ホロ ロケット団"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m68860983989",
+      "message_id": "1535152345820696669",
+      "sent_at": "2026-08-07T05:07:21.073716+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535152599894855683": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m28172043731",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_1.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_2.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_3.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_4.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_5.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_6.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_7.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_8.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_9.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_10.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_11.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_12.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_13.jpg?1742368721",
+          "https://static.mercdn.net/item/detail/orig/photos/m28172043731_14.jpg?1742368721"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card is visible in the bottom-left of the overview image O1-1, showing the distinctive red artwork and text layout of the Gum-Gum Fire-Fist Pistol Red Hawk event card."
+        ],
+        "price_yen": 600,
+        "seller_positive_ratings": 970,
+        "title": "神速の拳　黄　デッキ　OP11-041 〜116 カードセット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m28172043731",
+      "message_id": "1535152599894855683",
+      "sent_at": "2026-08-07T05:08:21.716860+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535153276138557561": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m63763817414",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m63763817414_1.jpg?1755239856",
+          "https://static.mercdn.net/item/detail/orig/photos/m63763817414_2.jpg?1756774790"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The distinctive red/white manga art style with Luffy and 'SAMPLE' style layout matches R1 exactly, visible in O1-1 (top right) and O1-2 (second from left)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 73,
+        "title": "ワンピースカード ルフィ"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m63763817414",
+      "message_id": "1535153276138557561",
+      "sent_at": "2026-08-07T05:11:02.878945+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535153359722389518": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m41557396075",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m41557396075_1.jpg?1746174217",
+          "https://static.mercdn.net/item/detail/orig/photos/m41557396075_2.jpg?1746174217"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, character, text layout, and gold border styling exactly match R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 16,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m41557396075",
+      "message_id": "1535153359722389518",
+      "sent_at": "2026-08-07T05:11:22.820739+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535153651788546149": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m23148889349",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m23148889349_1.jpg?1784079185",
+          "https://static.mercdn.net/item/detail/orig/photos/m23148889349_2.jpg?1784079185",
+          "https://static.mercdn.net/item/detail/orig/photos/m23148889349_3.jpg?1784079185"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card in O1-1 and O1-2 shows Team Rocket's Moltres ex with identical artwork, character placement, and set number 124/098 SAR matching R1."
+        ],
+        "price_yen": 499,
+        "seller_positive_ratings": 11,
+        "title": "ロケット団のファイヤー RR ロケット団の栄光015/098"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m23148889349",
+      "message_id": "1535153651788546149",
+      "sent_at": "2026-08-07T05:12:32.451152+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535153955036729406": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m24733956501",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24733956501_1.jpg?1743081564"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the One Piece Gum-Gum Fire-Fist Pistol Red Hawk card are clearly visible in cell O1-1."
+        ],
+        "price_yen": 399,
+        "seller_positive_ratings": 6054,
+        "title": "ゴムゴムの火拳銃　4枚セット　ワンピースカード　神速の拳"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24733956501",
+      "message_id": "1535153955036729406",
+      "sent_at": "2026-08-07T05:13:44.734773+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535154126290292739": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m67660651057",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_1.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_2.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_3.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_4.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_5.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_6.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_7.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_8.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_9.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_10.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_11.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_12.jpg?1778298472",
+          "https://static.mercdn.net/item/detail/orig/photos/m67660651057_13.jpg?1778298472"
+        ],
+        "match_confidence": 0.8,
+        "match_evidence": [
+          "The listing shows card backs which likely correspond to the front shown in R1, though only the back is visible in the listing images."
+        ],
+        "price_yen": 1399,
+        "seller_positive_ratings": 200,
+        "title": "【美品】ロケット団のファイヤーex SR 112/099 希少レア コレクション"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m67660651057",
+      "message_id": "1535154126290292739",
+      "sent_at": "2026-08-07T05:14:25.617611+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535154465546707027": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m10363333044",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_1.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_2.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_3.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_4.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_5.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_6.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_7.jpg?1783686480",
+          "https://static.mercdn.net/item/detail/orig/photos/m10363333044_8.jpg?1783686480"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Visible in top stack of O1-1 and partially uncovered in O1-3"
+        ],
+        "price_yen": 15555,
+        "seller_positive_ratings": 3486,
+        "title": "黄ルフィ　空島ルフィデッキ　ゾロ　ナミ　ニコ・ロビン　OP15　ゼウス　OP11"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m10363333044",
+      "message_id": "1535154465546707027",
+      "sent_at": "2026-08-07T05:15:46.469536+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535154702281605123": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m16878813230",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m16878813230_1.jpg?1785685984",
+          "https://static.mercdn.net/item/detail/orig/photos/m16878813230_2.jpg?1785685984",
+          "https://static.mercdn.net/item/detail/orig/photos/m16878813230_3.jpg?1785685984",
+          "https://static.mercdn.net/item/detail/orig/photos/m16878813230_4.jpg?1785685984",
+          "https://static.mercdn.net/item/detail/orig/photos/m16878813230_5.jpg?1785685984"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and text box layout match the Gum-Gum Fire-Fist Pistol Red Hawk card exactly in O1-1 (right card) and O1-2."
+        ],
+        "price_yen": 13000,
+        "seller_positive_ratings": 56,
+        "title": "ワンピースカード 2年後にシャボンディ諸島で・ゴムゴムの火拳銃 まとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m16878813230",
+      "message_id": "1535154702281605123",
+      "sent_at": "2026-08-07T05:16:42.994656+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535154960281632769": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m91342696892",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m91342696892_1.jpg?1742129368"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 shows the exact same One Piece artwork, layout, and text box styling as R1 (Gum-Gum Fire-Fist Pistol Red Hawk)."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 8593,
+        "title": "★ゴムゴムの火拳銃3枚★バラ売りOK★神速の拳★"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m91342696892",
+      "message_id": "1535154960281632769",
+      "sent_at": "2026-08-07T05:17:44.435324+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535155077461966891": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m31309581785",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_1.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_2.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_3.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_4.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_5.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_6.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_7.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_8.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_9.jpg?1784982364",
+          "https://static.mercdn.net/item/detail/orig/photos/m31309581785_10.jpg?1784982364"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card in PSA slab clearly matches the R1 artwork and #114 label"
+        ],
+        "price_yen": 22400,
+        "seller_positive_ratings": 194,
+        "title": "【ワンピースカードゲーム】イベントカード 29枚セット【おまけ有り】"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m31309581785",
+      "message_id": "1535155077461966891",
+      "sent_at": "2026-08-07T05:18:12.441602+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535155712273940544": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m84346757424",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m84346757424_1.jpg?1756350728",
+          "https://static.mercdn.net/item/detail/orig/photos/m84346757424_2.jpg?1756350728",
+          "https://static.mercdn.net/item/detail/orig/photos/m84346757424_3.jpg?1756350728",
+          "https://static.mercdn.net/item/detail/orig/photos/m84346757424_4.jpg?1756350728",
+          "https://static.mercdn.net/item/detail/orig/photos/m84346757424_5.jpg?1756350728"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the One Piece card OP11-114 (Gum-Gum Fire-Fist Pistol Red Hawk) are visible across cells O1-1, O1-2, O1-3, and O1-4 in IMAGE 2."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 140,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃 4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m84346757424",
+      "message_id": "1535155712273940544",
+      "sent_at": "2026-08-07T05:20:43.679252+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535155857946316871": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m88907950214",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m88907950214_1.jpg?1741092728"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact match of the One Piece card OP11-114 shown in multiple copies in image O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 308,
+        "title": "ワンピースカード　神速の拳　ゴムゴムの火拳銃　Ｒ　4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m88907950214",
+      "message_id": "1535155857946316871",
+      "sent_at": "2026-08-07T05:21:18.436053+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535155978503196748": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m20923473993",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m20923473993_1.jpg?1784984257"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows four copies of the exact same card matching R1."
+        ],
+        "price_yen": 42222,
+        "seller_positive_ratings": 841,
+        "title": "ワンピースカード ゴムゴムの火拳銃　パラレル　4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m20923473993",
+      "message_id": "1535155978503196748",
+      "sent_at": "2026-08-07T05:21:47.204883+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156113476161582": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m40959285912",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m40959285912_1.jpg?1740807786",
+          "https://static.mercdn.net/item/detail/orig/photos/m40959285912_2.jpg?1740807786",
+          "https://static.mercdn.net/item/detail/orig/photos/m40959285912_3.jpg?1740807786",
+          "https://static.mercdn.net/item/detail/orig/photos/m40959285912_4.jpg?1740807786",
+          "https://static.mercdn.net/item/detail/orig/photos/m40959285912_5.jpg?1740807786"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The red-themed One Piece event card with the distinctive 'SAMPLE' watermark or standard text layout matching R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114) is clearly visible in cell O1-1 (middle card) and cell O1-3 (center card)."
+        ],
+        "price_yen": 555,
+        "seller_positive_ratings": 541,
+        "title": "ONE PIECE ワンピースカードゲーム 神速の拳 ３枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m40959285912",
+      "message_id": "1535156113476161582",
+      "sent_at": "2026-08-07T05:22:19.455771+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156135395598388": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m36208340124",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m36208340124_1.jpg?1781842619",
+          "https://static.mercdn.net/item/detail/orig/photos/m36208340124_2.jpg?1781842619"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The graded PSA slab in image O1-1 shows the exact same One Piece card art, layout, and number #OP11-114 as reference R1.",
+          "The slab label in O1-1 explicitly states '2025 ONE PIECE OP11 JP G/G F/F PISTOL RED HAWK ALTERNATE ART #114'."
+        ],
+        "price_yen": 26666,
+        "seller_positive_ratings": 336,
+        "title": "ゴムゴムの火拳銃 パラレル　psa10"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m36208340124",
+      "message_id": "1535156135395598388",
+      "sent_at": "2026-08-07T05:22:24.618984+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156145856188568": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m62346382756",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m62346382756_1.jpg?1781979005",
+          "https://static.mercdn.net/item/detail/orig/photos/m62346382756_2.jpg?1781979005",
+          "https://static.mercdn.net/item/detail/orig/photos/m62346382756_3.jpg?1781979005"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The Moltres ex card with identical artwork and text is clearly visible on the left side of image O1-1."
+        ],
+        "price_yen": 1000,
+        "seller_positive_ratings": 8,
+        "title": "ポケモンカード ロケット団のファイヤーex ヒビキのホウオウex"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m62346382756",
+      "message_id": "1535156145856188568",
+      "sent_at": "2026-08-07T05:22:27.161116+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156156169855088": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m24116299993",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24116299993_1.jpg?1744585776",
+          "https://static.mercdn.net/item/detail/orig/photos/m24116299993_2.jpg?1744585776"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and serial number OP11-114 match the Gum-Gum Fire-Fist Pistol Red Hawk reference card in R1.",
+          "Both listing images O1-1 and O1-2 show stacks of this exact One Piece card."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 2632,
+        "title": "特価品 ゴムゴムの火拳銃 R 1コスト 黄 4枚 神速の拳 ワンピースカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24116299993",
+      "message_id": "1535156156169855088",
+      "sent_at": "2026-08-07T05:22:29.517624+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156164671578196": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m87860657360",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m87860657360_1.jpg?1748436920"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The cards in O1-1 clearly match the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 artwork and layout shown in R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1201,
+        "title": "ゴムゴムの火拳銃R×4"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m87860657360",
+      "message_id": "1535156164671578196",
+      "sent_at": "2026-08-07T05:22:31.612444+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156198129803348": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m95689673797",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_1.jpg?1758582741",
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_2.jpg?1758582741",
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_3.jpg?1758582741",
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_4.jpg?1758582741",
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_5.jpg?1758582741",
+          "https://static.mercdn.net/item/detail/orig/photos/m95689673797_6.jpg?1758582741"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, Japanese text, and yellow color scheme match the Gum-Gum Fire-Fist Pistol Red Hawk card in all cells of IMAGE 2."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 647,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m95689673797",
+      "message_id": "1535156198129803348",
+      "sent_at": "2026-08-07T05:22:39.579373+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156227661627433": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m11734530596",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_1.jpg?1745917153",
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_2.jpg?1745917153",
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_3.jpg?1745917153",
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_4.jpg?1745917153",
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_5.jpg?1745917153",
+          "https://static.mercdn.net/item/detail/orig/photos/m11734530596_6.jpg?1745917153"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork matches the Gum-Gum Fire-Fist Pistol Red Hawk card (OP11-114)",
+          "Visible in cell O1-1 (top right card) and clearly featured up close in cell O1-3"
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 327,
+        "title": "ワンピースカード まとめ売り（5枚）"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m11734530596",
+      "message_id": "1535156227661627433",
+      "sent_at": "2026-08-07T05:22:46.582570+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156244849893497": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m42258091859",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m42258091859_1.jpg?1782045033"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "All visible cards in the listing match the exact One Piece artwork, borders, and layout of R1."
+        ],
+        "price_yen": 450,
+        "seller_positive_ratings": 345,
+        "title": "ワンピースカード ゴムゴムの火拳銃 8枚セット348"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m42258091859",
+      "message_id": "1535156244849893497",
+      "sent_at": "2026-08-07T05:22:50.675197+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156257457963039": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m17807882323",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m17807882323_1.jpg?1767522469",
+          "https://static.mercdn.net/item/detail/orig/photos/m17807882323_2.jpg?1767522469",
+          "https://static.mercdn.net/item/detail/orig/photos/m17807882323_3.jpg?1767522469",
+          "https://static.mercdn.net/item/detail/orig/photos/m17807882323_4.jpg?1767522469",
+          "https://static.mercdn.net/item/detail/orig/photos/m17807882323_5.jpg?1767522469"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Moltres ex SAR artwork matches R1 in multiple images (O1-1, O1-2, O1-3)."
+        ],
+        "price_yen": 3333,
+        "seller_positive_ratings": 2714,
+        "title": "2026年ロケット団のファイヤーex RR SV10 など4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m17807882323",
+      "message_id": "1535156257457963039",
+      "sent_at": "2026-08-07T05:22:53.679918+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156269634162760": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m53231270034",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m53231270034_1.jpg?1752161374"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and layout precisely match R1 (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114)."
+        ],
+        "price_yen": 444,
+        "seller_positive_ratings": 1522,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m53231270034",
+      "message_id": "1535156269634162760",
+      "sent_at": "2026-08-07T05:22:56.579299+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156288604864565": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m51859869318",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_1.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_2.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_3.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_4.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_5.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_6.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_7.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_8.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_9.jpg?1782340281",
+          "https://static.mercdn.net/item/detail/orig/photos/m51859869318_10.jpg?1782340281"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and distinctive red and white manga-style panel design perfectly match the reference card R1 (Gum-Gum Fire-Fist Pistol Red Hawk).",
+          "Cells O1-1, O1-2, O1-3, and O1-4 all display different close-ups of this exact card."
+        ],
+        "price_yen": 9160,
+        "seller_positive_ratings": 289,
+        "title": "ワンピースカード　ゴムゴムの火拳銃　R　パラレル"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m51859869318",
+      "message_id": "1535156288604864565",
+      "sent_at": "2026-08-07T05:23:01.177852+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156324235743334": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m22532833556",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m22532833556_1.jpg?1770296331"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the exact same One Piece card (Gum-Gum Fire-Fist Pistol Red Hawk #OP11-114) are visible in O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 2220,
+        "title": "ワンピースカード　ゴムゴムの火拳銃(レッドホーク)　R　黄　OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m22532833556",
+      "message_id": "1535156324235743334",
+      "sent_at": "2026-08-07T05:23:09.626199+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156335996436556": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m78506171413",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_1.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_2.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_3.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_4.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_5.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_6.jpg?1778766184",
+          "https://static.mercdn.net/item/detail/orig/photos/m78506171413_7.jpg?1778766184"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Moltres ex SAR artwork matches R1 exactly in O1-1 (bottom card) and O1-4."
+        ],
+        "price_yen": 680,
+        "seller_positive_ratings": 424,
+        "title": "ニドキングex+クロバットex+ファイヤーex 三枚セット(^-^)"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m78506171413",
+      "message_id": "1535156335996436556",
+      "sent_at": "2026-08-07T05:23:12.458634+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156468838572033": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m38555594607",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_1.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_2.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_3.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_4.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_5.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_6.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_7.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_8.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_9.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_10.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_11.jpg?1782129484",
+          "https://static.mercdn.net/item/detail/orig/photos/m38555594607_12.jpg?1782129484"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "The listing images show the back of a One Piece card (O3-1 to O3-4), which matches the One Piece card game format of reference R1."
+        ],
+        "price_yen": 13500,
+        "seller_positive_ratings": 13,
+        "title": "op15-119"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m38555594607",
+      "message_id": "1535156468838572033",
+      "sent_at": "2026-08-07T05:23:44.065328+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156479705878559": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m74151451189",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m74151451189_1.jpg?1774536996"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of the exact same Gum-Gum Fire-Fist Pistol Red Hawk card layout and artwork are visible in cell O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 2999,
+        "title": "ゴムゴムの火拳銃 SR 4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m74151451189",
+      "message_id": "1535156479705878559",
+      "sent_at": "2026-08-07T05:23:46.679521+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156502417899521": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m67246923308",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m67246923308_1.jpg?1743684621",
+          "https://static.mercdn.net/item/detail/orig/photos/m67246923308_2.jpg?1743684621",
+          "https://static.mercdn.net/item/detail/orig/photos/m67246923308_3.jpg?1743684621"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, Japanese text boxes, and specific card number #OP11-114 match R1 across all listing cells O1-1, O1-2, and O1-3."
+        ],
+        "price_yen": 14900,
+        "seller_positive_ratings": 437,
+        "title": "ゴムゴムの火拳銃 R スーパーパラレル(コミパラ) OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m67246923308",
+      "message_id": "1535156502417899521",
+      "sent_at": "2026-08-07T05:23:52.075641+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156512572313664": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m12606149171",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m12606149171_1.jpg?1743414702"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact artwork, layout, and card number OP11-114 match R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 188,
+        "title": "ゴムゴムの火拳銃 R OP11-114"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m12606149171",
+      "message_id": "1535156512572313664",
+      "sent_at": "2026-08-07T05:23:54.549505+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156650456121395": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m43752329104",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m43752329104_1.jpg?1748708680"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork, layout, and distinctive red/yellow design of the One Piece card OP11-114 perfectly match the stack of cards shown in O1-1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 8085,
+        "title": "【即日発送】ワンピースカード ゴムゴムの火拳銃 4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m43752329104",
+      "message_id": "1535156650456121395",
+      "sent_at": "2026-08-07T05:24:27.409307+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156674480967724": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m10667406697",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m10667406697_1.jpg?1781140514",
+          "https://static.mercdn.net/item/detail/orig/photos/m10667406697_2.jpg?1781140514"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the exact same One Piece #OP11-114 card in a PSA slab with matching label and artwork.",
+          "O1-2 shows the back of the card in the same PSA slab."
+        ],
+        "price_yen": 58999,
+        "seller_positive_ratings": 693,
+        "title": "ワンピースカード 【PSA10】ゴムゴムの火拳銃(レッドホーク)"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m10667406697",
+      "message_id": "1535156674480967724",
+      "sent_at": "2026-08-07T05:24:33.147070+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156683561500673": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m18626157441",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m18626157441_1.jpg?1741425092"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The stack of cards in O1-1 clearly shows the distinctive red and gold artwork of Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1632,
+        "title": "ゴムゴムの火拳銃　4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m18626157441",
+      "message_id": "1535156683561500673",
+      "sent_at": "2026-08-07T05:24:35.270716+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156699751518280": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m59120107817",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_1.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_2.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_3.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_4.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_5.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_6.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_7.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_8.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_9.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_10.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_11.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_12.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_13.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_14.jpg?1785050445",
+          "https://static.mercdn.net/item/detail/orig/photos/m59120107817_15.jpg?1785050445"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card is clearly visible in the middle row, second column of listing image O1-2, showing Moltres and the trainer figure with identical artwork and composition."
+        ],
+        "price_yen": 7500,
+        "seller_positive_ratings": 90,
+        "title": "ポケカ ex まとめ売り 63枚 大量 メガex"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m59120107817",
+      "message_id": "1535156699751518280",
+      "sent_at": "2026-08-07T05:24:39.202826+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156730563002420": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m53267191690",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m53267191690_1.jpg?1763369875"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 (O1-1) clearly shows a stack of cards matching the unique artwork, layout, and text box of the Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114."
+        ],
+        "price_yen": 320,
+        "seller_positive_ratings": 569,
+        "title": "ワンピース ゴムゴムの火拳銃(レッドホーク) R OP11-114 ４枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m53267191690",
+      "message_id": "1535156730563002420",
+      "sent_at": "2026-08-07T05:24:46.579929+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156740914413579": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m99299774688",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m99299774688_1.jpg?1783063347",
+          "https://static.mercdn.net/item/detail/orig/photos/m99299774688_2.jpg?1783063347"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card displayed inside the custom holder in O1-1 matches the exact artwork, character, set symbol (sv10), and number (124/098 SAR) of R1 (Team Rocket's Moltres ex)."
+        ],
+        "price_yen": 2222,
+        "seller_positive_ratings": 281,
+        "title": "ロケット団のファイヤーex SAR ディスプレイフレーム"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m99299774688",
+      "message_id": "1535156740914413579",
+      "sent_at": "2026-08-07T05:24:48.922178+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156775521615927": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m56727279391",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_1.jpg?1785026046",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_2.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_3.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_4.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_5.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_6.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_7.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_8.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_9.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_10.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_11.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_12.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_13.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_14.jpg?1785025976",
+          "https://static.mercdn.net/item/detail/orig/photos/m56727279391_15.jpg?1785025976"
+        ],
+        "match_confidence": 0.85,
+        "match_evidence": [
+          "The listing shows the back of a One Piece Card Game card, which aligns with R1 being a One Piece card (whereas R2 is Pokemon)."
+        ],
+        "price_yen": 98000,
+        "seller_positive_ratings": 183,
+        "title": "【極美品】ワンピースカード　 ボア・ハンコックSP OP114-112蒼海の七傑"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m56727279391",
+      "message_id": "1535156775521615927",
+      "sent_at": "2026-08-07T05:24:57.308946+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156794987380789": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m40179826446",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m40179826446_1.jpg?1766391054"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The right card in image O1-1 clearly shows Team Rocket's Moltres ex with the exact same artwork and layout as R1."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1998,
+        "title": "ロケット団のクロバットEX RR ロケット団のファイヤーEX RR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m40179826446",
+      "message_id": "1535156794987380789",
+      "sent_at": "2026-08-07T05:25:01.882415+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156818593062983": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m43681865729",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m43681865729_1.jpg?1770040266",
+          "https://static.mercdn.net/item/detail/orig/photos/m43681865729_2.jpg?1770040266",
+          "https://static.mercdn.net/item/detail/orig/photos/m43681865729_3.jpg?1770040266"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Moltres ex SAR artwork matches R1 exactly in O1-1 and O1-2"
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1290,
+        "title": "ポケカ ポケモンカード ロケット団のファイヤー ex RR ノーマル まとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m43681865729",
+      "message_id": "1535156818593062983",
+      "sent_at": "2026-08-07T05:25:07.483646+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535156841280180386": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m92692606022",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m92692606022_1.jpg?1747496084"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the Gum-Gum Fire-Fist Pistol Red Hawk card (OP11-114) are clearly visible in O1-1 resting on a playmat."
+        ],
+        "price_yen": 399,
+        "seller_positive_ratings": 909,
+        "title": "ゴムゴムの火拳銃　4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m92692606022",
+      "message_id": "1535156841280180386",
+      "sent_at": "2026-08-07T05:25:12.880522+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156919151497308": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m90728004506",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m90728004506_1.jpg?1752771649"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The stack of cards clearly shows the distinctive red artwork, layout, and text box of OP11-114."
+        ],
+        "price_yen": 333,
+        "seller_positive_ratings": 155,
+        "title": "ワンピース カードゲーム ゴムゴムの火拳銃 4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m90728004506",
+      "message_id": "1535156919151497308",
+      "sent_at": "2026-08-07T05:25:31.433226+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156972628869191": {
+      "alert_type": "probable",
+      "card_name": "Gum-Gum Fire-Fist Pistol Red Hawk [Alternate Art] #OP11-114 (One Piece Japanese Fist of Divine Speed)",
+      "embed": null,
+      "listing_code": "m25993674338",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m25993674338_1.jpg?1781367677"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Four copies of the Gum-Gum Fire-Fist Pistol Red Hawk card are visible in image O1-1."
+        ],
+        "price_yen": 39999,
+        "seller_positive_ratings": 989,
+        "title": "ゴムゴムの火拳銃　パラレル4枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m25993674338",
+      "message_id": "1535156972628869191",
+      "sent_at": "2026-08-07T05:25:44.212984+00:00",
+      "target_id": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114"
+    },
+    "1535156982250610721": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m75791303748",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m75791303748_1.jpg?1776184031",
+          "https://static.mercdn.net/item/detail/orig/photos/m75791303748_2.jpg?1776184031"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The card is clearly visible on the right side of cell O1-1, showing the exact same artwork of Moltres ex with a character in front, matching the layout, borders, and colors of R1."
+        ],
+        "price_yen": 1580,
+        "seller_positive_ratings": 76,
+        "title": "ポケモンカード　ロケット団のファイヤーex SR　ボーマンダex SR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m75791303748",
+      "message_id": "1535156982250610721",
+      "sent_at": "2026-08-07T05:25:46.626774+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
     }
   },
   "rejected": {

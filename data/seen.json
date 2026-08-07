@@ -6,17 +6,67 @@
       "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:59:10.297424+00:00"
     },
+    "m10363333044": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "534a21fbb124fcc6dbe1cf0dd67bee78ef2d7b1c98ffc05d014636079e18c19d"
+      },
+      "fingerprint": "860ea8bc392e615e140bfa03156ca09e2b10f05767a8d82f154f9e84f5d6f7dd",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:16:30.122755+00:00"
+    },
+    "m10424025354": {
+      "alerts": {},
+      "fingerprint": "4cf55e5b869f0831f47311b818af80aebcb61c79ae3beac64e75e3aa27081219",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:16:39.910825+00:00"
+    },
+    "m10667406697": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "483e4cee58de261fd0cc94ee36aa27798e5151079454efd4f8978db2cb2dde8c"
+      },
+      "fingerprint": "454371234600ed2caef51d1a351243bd8987fcbe46f65cd663df49294fb635f0",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:33.147127+00:00"
+    },
     "m10678043309": {
       "alerts": {},
       "fingerprint": "5c2bbcc2307210b3d8ef27c36297bc21c73f4bbcdf7b80406788b0f05b511db5",
       "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:53:46.779172+00:00"
     },
+    "m10791608000": {
+      "alerts": {},
+      "fingerprint": "ce47002a6c1f64c282a1d48d7af1e9129b6c4ea143ce506bf55126fb7c27cf48",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:48:51.204299+00:00"
+    },
     "m11228602763": {
       "alerts": {},
       "fingerprint": "478936d235728ede39451f83a993bc6454ed517e5cd80cced20c4a5b8967a728",
       "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:06:45.231453+00:00"
+    },
+    "m11401644528": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "334fb072ae8a9a8552a0bf1a1270c8a69e472a2bdefedfa7d8874d3cbe01452d"
+      },
+      "fingerprint": "c41ffe1b643389266fff8d29078d362777eb2f27d026e620ad29528420fd1bca",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:40:47.436720+00:00"
+    },
+    "m11465084137": {
+      "alerts": {},
+      "fingerprint": "6967409bbddf26bcd261614254f12009859ac8d27993b8628fb06482c86b4fdf",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:37.651965+00:00"
+    },
+    "m11734530596": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c5530eff0b450517035605e049cbc1ff2dfed5e9c9e69b30f88c7c1b98aa7552"
+      },
+      "fingerprint": "2ae7817e68f4d1fd502493b20ec252498e6a0672cf630e756b0256e3a767ed8f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:49.013654+00:00"
     },
     "m11799203937": {
       "alerts": {},
@@ -34,9 +84,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "e315a1e1909cf856fb0761abde13507744a48e6fa64a1c928380d4d04e8a57de"
       },
-      "fingerprint": "84e5132367cbf269a00b161db19287973df598de6a0248858a1c37941aebb66a",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:50:00.296625+00:00"
+      "fingerprint": "d9f27afe2fd4974208505de47a376139e9b1d880cd0eb7536fc167bfbe44e05f",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T04:40:29.425473+00:00"
     },
     "m12473248955": {
       "alerts": {},
@@ -44,11 +94,25 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:30.782559+00:00"
     },
+    "m12606149171": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "39efff7a6455f54cb40d1917741f5867b052da8fda760d86a68af42a4a36548f"
+      },
+      "fingerprint": "039a1007f480a2834423ca14e927d91f7ef9f5596f6d81ea074a40e6c8221617",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:54.549709+00:00"
+    },
     "m12784309790": {
       "alerts": {},
       "fingerprint": "947a8187ca6bc66d50be7f823c98f8c4eed42c7fdac323583b05efde40b5c148",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:59:11.825137+00:00"
+    },
+    "m12913930382": {
+      "alerts": {},
+      "fingerprint": "33ac20331f5e1393b31309b36755ca166ad5b743cdc9745bbdc67eee7103577e",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:14:17.655069+00:00"
     },
     "m13387676750": {
       "alerts": {},
@@ -64,17 +128,25 @@
     },
     "m13526065167": {
       "alerts": {},
-      "fingerprint": "b05fbbec7cb425c39a6624ec084b2e92fda6c149637ec8c4699ecd76c7b2658e",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:51:51.658470+00:00"
+      "fingerprint": "d19daee986f652c38d057b087de98f795f8199b1be74e3293a81277690fc88b5",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:41:58.591264+00:00"
     },
     "m13997210704": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "9c7e18ead1b6bbcd5ffb91423d32c7c3d672e901ee19a7bc06088975a711dc36"
       },
-      "fingerprint": "4b29853305f1f29d403ecb7b6aee1019e5828b583104a322e78abcaeec7f75cf",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:45:30.664597+00:00"
+      "fingerprint": "98b47faeee77abc5bdf00be11d0c6710644a0ef1e0f7bcaaf2960205f679bc9d",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:34:34.876989+00:00"
+    },
+    "m14159404880": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "a97aa427c0ad63dd707240f68f737a65ccecd702119b7d940eb5193fe27d6c8e"
+      },
+      "fingerprint": "8f37f43c3ee34e15ecd99defce6b9a6dc2178ec2f7a85a5d26ea05a285b987b2",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:01:40.056358+00:00"
     },
     "m14177868643": {
       "alerts": {},
@@ -91,17 +163,37 @@
       "last_outcome": "victini_black_bolt_97: confirmed 1.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:44:52.873880+00:00"
     },
+    "m14339154036": {
+      "alerts": {},
+      "fingerprint": "3ebe45b5540b96c69fd7baaaa24c732d0497260e02bfd63380d3b2e0d9e202aa",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:55:55.704420+00:00"
+    },
     "m14449784993": {
       "alerts": {},
       "fingerprint": "da11965a6cabd75b98eb406197b9e6a9690d49d960d5635d09fc34d526529190",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:53:00.684317+00:00"
     },
+    "m14459352243": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "1106fafc23896a1883099386ddf7237bc9a13b685a6768b91565bf5fba261784"
+      },
+      "fingerprint": "6cd9901156b187bb0de6c9508064ae47076fc1d3ab4d62a96cc71786f5202f6c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.95; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:49:38.148031+00:00"
+    },
     "m14633236601": {
       "alerts": {},
       "fingerprint": "6fb258e9bc3f78d57212a1b6209321be1b841abd4dfd92fd1d854ee1e5a15aeb",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:06.265390+00:00"
+    },
+    "m14819768651": {
+      "alerts": {},
+      "fingerprint": "d7950574a0919fb5901b31e51d5adad745efdad04902efb8a55d79e11b931b94",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:44.182557+00:00"
     },
     "m14891466152": {
       "alerts": {
@@ -110,6 +202,14 @@
       "fingerprint": "f2f44cde9a06535b87174be384d7c9a5013eb2ab7b5022455ed7943249e1a6d1",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:00:17.387144+00:00"
+    },
+    "m14903705968": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "35e7e9cfb0d871fb6d94fcf21b04b3aa3e93bf995df5a829749b2f1935e12a72"
+      },
+      "fingerprint": "5edd74da76abac6391f1e02d233c53fc54aedd622efa87184ce68211f6421f30",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:42:59.023214+00:00"
     },
     "m15322866326": {
       "alerts": {
@@ -129,9 +229,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "bc50b9877b28cf642d9cfed99e19397cf723321249e02752149135f0cf705179"
       },
-      "fingerprint": "7ae4307f18373773ed3be53237e77123509b8b516bf9330a8251628f684b0084",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:48:16.146404+00:00"
+      "fingerprint": "a0f43a5c587fcb2b9ecb07f82bf4f34754e71dfdfd957c9d9ddf6a5d9c35c76a",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:38:12.748117+00:00"
     },
     "m15817224344": {
       "alerts": {},
@@ -154,6 +254,20 @@
       "fingerprint": "3e43b0d03fa2a0f0f75765f67dc77c1eb6124923b92edf0cd043fd257219222f",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:04:53.257423+00:00"
+    },
+    "m16764756634": {
+      "alerts": {},
+      "fingerprint": "f17aa4f716d7f9a2b1b82548bfd063df13e338735d313127005f79eb20fee070",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:22:06.941600+00:00"
+    },
+    "m16878813230": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "a2b3d3b45cac4b10156c4c16d23909f4c4b6743a934488dc8fcc2f3f3267be40"
+      },
+      "fingerprint": "10bbaa14a83671c4127511d0d2ef1f508731a44ba1a161948e625760b692d35c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:17:41.405610+00:00"
     },
     "m16961680682": {
       "alerts": {},
@@ -195,11 +309,35 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00",
       "updated_at": "2026-07-30T04:51:07.303998+00:00"
     },
+    "m17807882323": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "b19eef0844e5e4ac073e868868fa7bb768c72b725c65048148cda0afd277a8a8"
+      },
+      "fingerprint": "40f038612177cd549b26146d916223a6f3d68c4df19d4fda7e68fcf3db385026",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:22:53.680009+00:00"
+    },
+    "m18002458121": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "7873ccb2884b8e4d9373f3ab05b27b81e75f3b325379117995120751529cf3e2"
+      },
+      "fingerprint": "c50fa13388158409228d8eced0e3f71a4e19ab37a50cca86779fff321291ee08",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:35:36.832240+00:00"
+    },
     "m18120737320": {
       "alerts": {},
       "fingerprint": "fa9cee46afd003e5e76ff82e560c1c1e615a4ef02e37b562f8849c70c72eef54",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:51:17.197688+00:00"
+    },
+    "m18326927123": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "e98ae445afa5ea1e1f0f01829f9ebebdc09764575d89f6dff7151a7bc48c8d6e"
+      },
+      "fingerprint": "a3503a95c621087811d8365f1bd8066cc92dc80600eb3dac3822929439fd5a81",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:51:00.113108+00:00"
     },
     "m18348593430": {
       "alerts": {},
@@ -212,6 +350,22 @@
       "fingerprint": "5eda1f08612c4d8090e2bc82bfadaa8283b2dd2e82e662871031628238f28932",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:05:42.199446+00:00"
+    },
+    "m18626157441": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "f25c9ad2eb2f5762f9ff35d3be5529eb73c6ac22ccdd9804333fd6e18bcd3bd5"
+      },
+      "fingerprint": "a1f2f593ee99a9d78bcbfc56c9269f7570427bef72bb4e5cb89366eb172e653a",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:35.270776+00:00"
+    },
+    "m18686786181": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "9685bfcd298f560c6b08c2e2e71e872e475baa6f904e6b21b5639c921f7e0bb1"
+      },
+      "fingerprint": "9b0dbadf94875019842d09664aba72c2fdba4946a656bfb8ca290a4a02c40066",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:02:25.308486+00:00"
     },
     "m18933943841": {
       "alerts": {
@@ -229,13 +383,21 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.98",
       "updated_at": "2026-07-30T04:54:25.832269+00:00"
     },
+    "m19385432046": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "903ff9f8213ca3045c5bff6b3f6dd54fb52e7e252b93322e4dfd37458c6daacf"
+      },
+      "fingerprint": "e5ac86373eb3fb8c5535cef0a89897c7ad334956fc7f919fc97ae452a241f6a8",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:44:21.262707+00:00"
+    },
     "m19782024176": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "f4454d41871bab730d94aa32925c98cbccc402de3c66dba0639cd86940426bff"
       },
-      "fingerprint": "c4e117d01a7451624d352c7b1624ec862b7f9d4d0e818199e404295cae7e19ad",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:03:08.902020+00:00"
+      "fingerprint": "aefa402a9b01c0fedbcf53e3061bda0fd7c9a44198641fbcccae2d77c415d60c",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:46:50.829716+00:00"
     },
     "m19819094871": {
       "alerts": {
@@ -244,6 +406,34 @@
       "fingerprint": "8c2160a09e04d18a739fc1c22de9ee2b33247734236cb217cd4b29bae76c5c8d",
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:57:26.593381+00:00"
+    },
+    "m20117839016": {
+      "alerts": {},
+      "fingerprint": "11da55ee4a1780191773a03ae42e49b91dafce1ff4008c372790be2232cc97fd",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:51.798654+00:00"
+    },
+    "m20218209402": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "246a2fc15aac7f3fef0e4668b82d2e4872daed31909f955844bdbb8268081f06"
+      },
+      "fingerprint": "7ac202d44f6c4d093b9a155f47bb6c2783836fbb1cb42a39d85fdeffdd0a0fb7",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:38:57.971351+00:00"
+    },
+    "m20762886996": {
+      "alerts": {},
+      "fingerprint": "a80cad36eea5f7e357c3ac414f49d354572dd8b00f0af336a89f8dc24868239e",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:11:00.175656+00:00"
+    },
+    "m20923473993": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "110e7d0016cd554a39a60428a146ca113d0925c11e7c8b24cc524759e48a893d"
+      },
+      "fingerprint": "36f22412bf1e9e654fa658d5277681b8ed1529fa6ca288eef860b1f34bc6149f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:06.941567+00:00"
     },
     "m21015367891": {
       "alerts": {},
@@ -256,6 +446,34 @@
       "fingerprint": "7c55c4db6f0b2505bbcee76aeef82ad55fa332c0a188b36b592992116649b31d",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:45:04.975422+00:00"
+    },
+    "m21105198011": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c3e6b0ddc95faed6d86ed5c211ff0a7f7b97944e398c4041792b3fb748d5b6aa"
+      },
+      "fingerprint": "d9ce3cd3fd915a55bfe6acf43e33f65b8ed586d1c51601a17aaf5ee161175bee",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.98; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:39:39.057813+00:00"
+    },
+    "m21125670866": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "df4ed68711770d8c3048ce3706406f92e184c3a9289d2df6d430772904803b0a"
+      },
+      "fingerprint": "413223f437172cd76fbcfbd79e4da2811133b92e27f55446853aea569173f137",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:41:52.797643+00:00"
+    },
+    "m21573359383": {
+      "alerts": {},
+      "fingerprint": "e73ccd063ca7bfd0cbdb53fd28f43e954534cf76b0ce3aaaf6dc4d9933ba0df4",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:04.563782+00:00"
+    },
+    "m21687929215": {
+      "alerts": {},
+      "fingerprint": "a4d15762278ad381a0d9f22b619e2d9f787521488609091cdc30845647367864",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:33.953972+00:00"
     },
     "m21729412348": {
       "alerts": {},
@@ -275,6 +493,14 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:26.631893+00:00"
     },
+    "m22532833556": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "4dc940998177483744a7170725664d02b5e6a1893e122e44b3bba89b236a41a9"
+      },
+      "fingerprint": "30ef900d914d8302b610a3b10e7d5dd246bf1e5f46a8e8eb3d6578cab78b4dc3",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:09.626271+00:00"
+    },
     "m22571247456": {
       "alerts": {},
       "fingerprint": "f7a7c245ca80e8b459e39976a607320f33517439731c4115a6fee1d551f2be34",
@@ -289,15 +515,29 @@
     },
     "m22878310726": {
       "alerts": {},
-      "fingerprint": "c711426bc2e95c777c6adc69cefe3b5c93a1545451c587ca8ea657f6e962a929",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:05:21.081212+00:00"
+      "fingerprint": "632d398ce08b71952b2db80d2d8de2a2d7f284c978a44fcfdbef864e8398b4c7",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:49:47.933476+00:00"
+    },
+    "m23065572562": {
+      "alerts": {},
+      "fingerprint": "298311e6b10a0166b6eeb49677655b11310dea52f68537631722ddaae6ff329f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:58:26.948124+00:00"
     },
     "m23140157589": {
       "alerts": {},
       "fingerprint": "ade59f3605cd6e60c3ca9bf610de17a56109786656e70f04cf1f187ee57114e3",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:24.442179+00:00"
+    },
+    "m23148889349": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "3e5a2bcbcc448f69131d54b81423cb43b9809dee1dec1fad395638519f8ea4c0"
+      },
+      "fingerprint": "2e83cc569187aec26584b403d24ef203c262bd0951aa00369fe42d788cdf01aa",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T05:13:42.116667+00:00"
     },
     "m23756475747": {
       "alerts": {},
@@ -317,6 +557,22 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:24.135819+00:00"
     },
+    "m24116299993": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "0e01c7a0231b34a921bee91a0d723ed3a38830c6849c34874deedab895d306dd"
+      },
+      "fingerprint": "d39209ae45c08e4517304b5345e4368efef4d97c590dfeca141c93fe7cbeeea1",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:29.517697+00:00"
+    },
+    "m24246685268": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d26f599625e3f695d1719eb00a40692795dd4ff3ce0fb638b3e322ee801d92dd"
+      },
+      "fingerprint": "2ebf55cdb336c67cc66b1433e8147dc9ece1fdaeb1088540833acaf93fb58320",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:56:44.959743+00:00"
+    },
     "m24533542624": {
       "alerts": {},
       "fingerprint": "691c950fd7570f5bf1e465c04d7e61bf2a63b8e6dd8b9672bd3b1436f18377f5",
@@ -334,6 +590,28 @@
       "fingerprint": "c826a266757620dcbf0ce48164b01e36647f65105e768805e283dd16514e5911",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:00:55.916995+00:00"
+    },
+    "m24733956501": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d0a7747b4e5fa35fb4883118bf762127915ede3d8a3e81ff7a006a5ced7ed1a1"
+      },
+      "fingerprint": "d315e113747291eeac55e9746543f41838822dd353f1a35832eb1b4982ba0012",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:14:15.499248+00:00"
+    },
+    "m24834981642": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "3dd07fd075af8dae12586a105ac7f035ef5d4e701d0d3647d01ef8499c653386"
+      },
+      "fingerprint": "7d51701b33bcf9a179d6ca7d8e16a438f9e83c1a7a9c447e024d0d49a1698c69",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:06:32.554404+00:00"
+    },
+    "m24866687579": {
+      "alerts": {},
+      "fingerprint": "4cf7b5ba1bbd2f37487004ed34d8cad019ed12fcb593efb49086be0c9528f5ca",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:21:44.927208+00:00"
     },
     "m24875212438": {
       "alerts": {
@@ -357,17 +635,67 @@
       "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:20.090731+00:00"
     },
+    "m25335111536": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "e6c26e1ab43845092347b28b65891bde19e2fb6005c1959af6fcaa0066b98875"
+      },
+      "fingerprint": "c506bd8b5fa594f99f1fd78ba63c38a08d50a65ae04377dc81d0ae362cf42b44",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:30.824496+00:00"
+    },
+    "m25445830790": {
+      "alerts": {},
+      "fingerprint": "01c4aa871a98820f62b1816ce26c68e882cb900e99c980cfb0e2c70b35b3c3e2",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:59.741736+00:00"
+    },
     "m25882431119": {
       "alerts": {},
       "fingerprint": "4731f7ce682e4af558cb6bccf2991bde67c2e18c62fe5d12cb0f0ee2142e06ee",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:49.821147+00:00"
     },
+    "m25917090983": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "71c3861fec775122c2e8a0ec70bf0de6f10b27067d90db4482f1d88dd4ecbdcf"
+      },
+      "fingerprint": "ca5f0f63075feb70baf3139a2299726d880a5446634039154616f2dbb5883164",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:55:34.996505+00:00"
+    },
+    "m25993674338": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "ab5210e275459ba29edd8877706db448f8d6e100a6a41dba46f973717f8c90b6"
+      },
+      "fingerprint": "de2b150b5b475ebe194acdb7def9cfcee3bdabe4825ca08d418d8c774ac31c4e",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:44.213085+00:00"
+    },
+    "m26128210319": {
+      "alerts": {},
+      "fingerprint": "81a7ec00d66dca4bf22661c602879a81a0d8f5c3d9952cce162ddf1db786271f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:47:58.974963+00:00"
+    },
+    "m26271341736": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "7e96e989337084b42fa8029d0badb33b90479ff2f3ba32b136b33b54ffd7bf50"
+      },
+      "fingerprint": "f794193944b069a7b4d11dfb4445b8e42d8f4e1329f39149ce1a2d5f0ce63ede",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.95; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:47:38.056288+00:00"
+    },
     "m26285362003": {
       "alerts": {},
       "fingerprint": "27e708c298faba0daa928fe8ae0be7f539c1d7b6e65fe411951ca22083d06b40",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:50:14.925701+00:00"
+    },
+    "m26347232269": {
+      "alerts": {},
+      "fingerprint": "b6becf92a1e20bcbd2afab9655110c98467427b0fe378b2781ba87c0db50b9c3",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:34.122878+00:00"
     },
     "m26484932193": {
       "alerts": {},
@@ -380,6 +708,12 @@
       "fingerprint": "5a0eee008cc1dbba92f07017fa43ce0d0dc2ece2c026aac19ad7e2ab61ef95ed",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:51:09.262865+00:00"
+    },
+    "m27067143630": {
+      "alerts": {},
+      "fingerprint": "38c116c35c07ecd10536d4795d7321a29987f03d9f440f08c6adba6ffcbe947a",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:03:17.579093+00:00"
     },
     "m27112934559": {
       "alerts": {
@@ -397,11 +731,27 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:11.883978+00:00"
     },
+    "m27206221007": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "90861aa86e52348b18cd4fd45979461e35640cf0f1345bbeb04dc067ff9015f6"
+      },
+      "fingerprint": "954c34012a63e1e74b45334061e56348d6d4c793aa54590d4326c9c27696bf12",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:00:14.207587+00:00"
+    },
     "m27627980521": {
       "alerts": {},
       "fingerprint": "46f018d8dd7784618327298473be02e766df0799357bbcad37465ea8643589e9",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:12.629791+00:00"
+    },
+    "m27838803643": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "464a3603fce4f5955ce2a38f4e81ea33af7610ecf2704b0e8929f90bff74acf3"
+      },
+      "fingerprint": "3261c9b77555bf6e0284aa06d3c858940418387438e2d59d2240ec0fa61aadb1",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.98; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:37:22.261592+00:00"
     },
     "m28014855270": {
       "alerts": {},
@@ -414,6 +764,14 @@
       "fingerprint": "900ae23e45c1e99fee0d2470311a3b6f69b4baf1e6cab7cf67e1d87b71fd2fcc",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:53.036061+00:00"
+    },
+    "m28172043731": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d2908b241400cec204c252fa6fbc668da2654d66a7e644f67f5db270bf126578"
+      },
+      "fingerprint": "83f2bfcb77e3ae5e93d6bfb615dcde212b2d10b356eb01939eb7d7f4b0143897",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:10:57.836933+00:00"
     },
     "m28285919156": {
       "alerts": {
@@ -428,6 +786,20 @@
       "fingerprint": "151770f200e44e483cf4211ac79f11780f92b4f9134367e008a5aa3096068e6d",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:54:11.236018+00:00"
+    },
+    "m28532039913": {
+      "alerts": {},
+      "fingerprint": "fca415ec258d8e19b7268f3313b6b8a5b12e1366a5373adde12703c80c9ae091",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T04:57:46.922616+00:00"
+    },
+    "m28933062432": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "ad768d4dd2259b02c6cb66bab79aee176b9c9f48afb08048fb0c4ffd2026c24d"
+      },
+      "fingerprint": "a594fd35787e2aab564f25d0c8fbca56110e0d7727cf862794d810dd08bd6c3d",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:58:45.086485+00:00"
     },
     "m28983748531": {
       "alerts": {},
@@ -450,6 +822,48 @@
       "fingerprint": "d9abdb9e6a42478417dd3f1a73acfc0e1e0c85df13fe530e5a9b426f1a21da5b",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:59:36.647539+00:00"
+    },
+    "m29756130966": {
+      "alerts": {},
+      "fingerprint": "c8e7e785b87d0a1d50c142bea659c3b0dac08e6a4453d8a0774fa2ac84bb184e",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:58.793681+00:00"
+    },
+    "m29791925538": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "19622e63d8afc1c371896a438460498561634caa3f2984e3f1aa0ca9be0107d2"
+      },
+      "fingerprint": "4a3d94cd0853d7cc222c910684edaf955dadc42f4da0eda29a79b53edb1b42d6",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:41:36.449139+00:00"
+    },
+    "m30163017429": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "154103b4391d99d0cd4cdcab8512043528043e91cebdda04a2aa494e5dc425ed"
+      },
+      "fingerprint": "ab06d011a501754ea198c1c4f4c9f529d550dc21955ac1c087e63c0872769f70",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:36:11.836853+00:00"
+    },
+    "m30417860296": {
+      "alerts": {},
+      "fingerprint": "7bcf3e1b26a16ed50c7a8ddfa2f08fa1959638699d1ed4e2b555776e93384aec",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:36.561483+00:00"
+    },
+    "m30544991866": {
+      "alerts": {},
+      "fingerprint": "678a1eb806b0b4cd7b0729c0091b2e7122b83741db7de42deedfa7bafd56c017",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:37.653250+00:00"
+    },
+    "m30605311380": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "2445e95bd7a638323b5bdc152b86365ba45a5ad5d2b814c825e915141b8c65b0"
+      },
+      "fingerprint": "e1dedd104a7e6660b6ce94d1c84cbe9823ab2e5a749d33720e0b8e49d15839fd",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:42:27.503445+00:00"
     },
     "m30876445351": {
       "alerts": {
@@ -479,6 +893,20 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:02:29.120061+00:00"
     },
+    "m31273983395": {
+      "alerts": {},
+      "fingerprint": "b7aa32c62a490e2594fade34b60ab4bb7a02ba816e4ab4516f9b2d220c7e57b5",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:46.626840+00:00"
+    },
+    "m31309581785": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d2e185dc551a7d79be3cb09cad603c6ffaace6893cc425a66b519cdfd54e1b68"
+      },
+      "fingerprint": "8e156c27add0115f1d1fbb0f9f8c40a82097e69e9ee4952a0ae81f97ccaad34a",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:20:40.509790+00:00"
+    },
     "m31415722203": {
       "alerts": {
         "victini_black_bolt_97:probable": "a4c16f9dbda9d361c5040b52c8ed6d35e993938a62029fb6b0e22ffa6bfe4a80"
@@ -492,6 +920,20 @@
       "fingerprint": "74841e85d2cf370eaecee212145e6a065a3bb7ec5db06999940411905646bbc0",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:05:01.412169+00:00"
+    },
+    "m31716416687": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "7baabdcc48701118387a5a17bc67ded10f4c6482e723d7876f20ea97f738f867"
+      },
+      "fingerprint": "d65243d1d8f36e309b80edc516efe5393fe9156b3b534c522958d78c7e77ce76",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:53:05.552593+00:00"
+    },
+    "m32007669677": {
+      "alerts": {},
+      "fingerprint": "3ebce5f18695045ee7fd559194c7633dcb3f12ae0648fa12c0ffd7681c2aeea5",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:21:10.327497+00:00"
     },
     "m32018222828": {
       "alerts": {
@@ -559,13 +1001,21 @@
       "last_outcome": "already sold",
       "updated_at": "2026-08-07T02:51:29.680889+00:00"
     },
+    "m33753173814": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "edc90f450c20f99256139372fd107b3c72008c1f90c926439b563d68a98ea499"
+      },
+      "fingerprint": "6f1310f8731d8241fd4b8b043f367cb4007e97b1509c8a3eebf3f30f18ac4429",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:48:15.993750+00:00"
+    },
     "m34081344714": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "cdb23f40584dda69187f6e6085a33019dd40c4601fca4053589166721b7598d9"
       },
-      "fingerprint": "9a72d2df27a81b53f2d7996f22cd2441bd6d915c959772e3c50b2f30764514f0",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:53:44.930362+00:00"
+      "fingerprint": "f627e38a4dad0b6ac1a2116991e0f23de0eb8d79dd574f2a52926913829b4819",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:42:42.687025+00:00"
     },
     "m34501783185": {
       "alerts": {},
@@ -577,9 +1027,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "00ae3d32facfb8099dda4f90dd3b9b64d5b5ad8db1aa1c1b8d3b25c4597618fb"
       },
-      "fingerprint": "392b2bfe4f0aefac77536dc9b4941cd09ad3c601f149eac1cda33595fabfe9f8",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.98; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:50:48.610442+00:00"
+      "fingerprint": "e79083d6bc02c3b06ad435642226edd5ce6cdd59ed7c0d49e4ea2e812dff76a1",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.98",
+      "updated_at": "2026-08-07T04:41:21.199379+00:00"
     },
     "m35041715818": {
       "alerts": {},
@@ -595,13 +1045,21 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:04:04.051478+00:00"
     },
+    "m36208340124": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "984dd471cf4e80ff143ce3040bfb44f18f4e1acf843039bb737a64113b5e1675"
+      },
+      "fingerprint": "622782a95c7117e057e5503c99ca3ec8c454278e70bd402e45fd625b7766a17f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:24.619064+00:00"
+    },
     "m36674054366": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "29cf1c0e4d0f916dafa4a7d2794251cfa3f84c8c07019d91b7b08e036960668c"
       },
-      "fingerprint": "6b3f198dbfc9fef66b181ff0b32c0e9af3f903c662aef9c5838b54373d62284f",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:52:38.131703+00:00"
+      "fingerprint": "ea79e97f250244c598359cd318ac006748d21dd1c814717266fc9a2326d0ad83",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T04:43:16.098274+00:00"
     },
     "m37049082309": {
       "alerts": {},
@@ -609,17 +1067,31 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:22.578566+00:00"
     },
+    "m37124610599": {
+      "alerts": {},
+      "fingerprint": "b3a385e89f85a3e9ff217213ce3509a752a9fd71d9541432630f9317631811d2",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:24.740517+00:00"
+    },
     "m37298913345": {
       "alerts": {},
-      "fingerprint": "a87684e8506c165dacd746f89cb0d64cc6a950b65f24ee5fd54e54effd9bef7f",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:55:55.671984+00:00"
+      "fingerprint": "cd798b00cd374e7c05f6a77ad475107c72ee1191646bbdbb6590a573e7ef69c8",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:52.394485+00:00"
     },
     "m37852156971": {
       "alerts": {},
       "fingerprint": "053a432392ef4c1dcb52c8e2e97068b9a35e41164ecd0d6b0191e8fbe369d9fb",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:47:36.015573+00:00"
+    },
+    "m37917682690": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "546bfe89fce4913c2f60e35d2f128099299d8cff209fc1b8227e7d16bdae783a"
+      },
+      "fingerprint": "19271c288781f5b362e1eca690eb338cdecc8861dfba39c45c15dae264496e04",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:51:59.718786+00:00"
     },
     "m38197722788": {
       "alerts": {
@@ -639,15 +1111,37 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "6875e3361fd9816ce31db6d220f5eb3ac72a0028d39c4aa419f575f021695d9d"
       },
-      "fingerprint": "2812ab5ec57a8e84e69f79c7b29c53e813cc94d656db12164a6e3403eaa71c84",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:47:01.440979+00:00"
+      "fingerprint": "addfed09abdf34946d9466e615f7f19fab9561340e90a2b6bf1607e19cd97515",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:39:12.499220+00:00"
+    },
+    "m38555594607": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "8757ad801be4b7b9155869c4de2eaf3ff0034dab48d53b76791ce13697b0be0d"
+      },
+      "fingerprint": "a798fdda7291731960b7178d878a6a2ce22109014332e1755ba81b33c68e5b67",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:44.065403+00:00"
     },
     "m38895066343": {
       "alerts": {},
       "fingerprint": "8bf23be79dbfdb76e125549f3845abdf05559f7ae9861b27d8b702a699b44cd9",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:59:47.892313+00:00"
+    },
+    "m39085574415": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "07db2b5e96545cf42adf9db84ed85d1a031dbe6ce521d8ce24d6a19305210f9a"
+      },
+      "fingerprint": "e8de758c1aa74e697ae2c6a0acef817ba99362ecb32c778bd10ac1dab8c6bdf0",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:53:42.820171+00:00"
+    },
+    "m39131116662": {
+      "alerts": {},
+      "fingerprint": "2686c2c566937d5189f3223babccca9b11f32ef85539e44a44bb766c5e836ed4",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:15.124323+00:00"
     },
     "m39319160218": {
       "alerts": {},
@@ -659,9 +1153,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "734574d90a1fc2e2cb6a368a35cad339541c867b11fe203f0d77ac15f0d5067f"
       },
-      "fingerprint": "5276f574baf1c482917812380de3dc3a1f951d2f2bc36464bc293bb089b651a5",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:46:21.065277+00:00"
+      "fingerprint": "3aece89f2a3cc8ce09bc1277543e1bcd4613496104e8bf55b6ba1175f0e78a2a",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:35:57.139402+00:00"
     },
     "m39531373325": {
       "alerts": {},
@@ -683,6 +1177,22 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.98",
       "updated_at": "2026-07-30T04:55:00.342172+00:00"
     },
+    "m40179826446": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "3ab76de511f2f8fa3d4a069826ed9dc3638d5fe656ebabbcc31e02b86c36ea65"
+      },
+      "fingerprint": "de0d984c7724d1410797c66148577105c289182c4f94db9de7f1cdb1d7e4cfd2",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:25:01.882479+00:00"
+    },
+    "m40506604213": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "7fcf4e049834326ec7c4cede26270a3f3301c99dbdbffd138d4ad3495d9d9fcf"
+      },
+      "fingerprint": "af9634b72fefba5d71c0c5d0c64e53ddc020d85f731ef3a2ce35d92644130bd0",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:44:33.388349+00:00"
+    },
     "m40807807480": {
       "alerts": {
         "ampharos_bandit_ring_27:probable": "f19d62f74f947a03101164d1fce8d9130108e8eb52902dc74d988726ec59ee04"
@@ -697,6 +1207,14 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:55:48.162150+00:00"
     },
+    "m40959285912": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "cdfc05dac9ac1f848139a1eda0cc5c99f89ad516365d3f0127ae2f9a8c70db93"
+      },
+      "fingerprint": "4693d005be71140b5e3d973d16d22d62198aa0757a851c8a4a8dc32a021eb1e2",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:21.268701+00:00"
+    },
     "m41237084366": {
       "alerts": {},
       "fingerprint": "47b747839d5ef4fd2674370cee7a392e9d050cd4c42506bc396f2dfa9b73b493",
@@ -709,17 +1227,47 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:46.114163+00:00"
     },
+    "m41350503780": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "2b8048b5e6a0f8977dcce2942be54b4916ca8532dc294cd7ecd33f2d2638fde8"
+      },
+      "fingerprint": "a352988bb87f3412f3b07d275ca77ce028dd18d6f8e36365fc3a6fe6861a3741",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T04:57:02.575898+00:00"
+    },
     "m41472876616": {
       "alerts": {},
       "fingerprint": "1c38eebc14b923bdd7adda36f96ff54bcfedba7483b76c965e77c16e49622063",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:45:20.981596+00:00"
     },
+    "m41482229951": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "2ecd909e91c143aec6f3f8e86ef85900bcd6dcb4574fcd794c7d21616edcd6e9"
+      },
+      "fingerprint": "dda609362e9520e96430822d1aa93e916625479c859de0ee2a123f8272d02bb7",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:55:03.933990+00:00"
+    },
+    "m41557396075": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "2c5898b37473f0ee00fb5cdc00c9ffa07d83e2560ff136e8cbc1661bed55c11c"
+      },
+      "fingerprint": "4b0e7517a5f6a4cbb909c4b1c09e69a339f46c0e2caee65df741d93e78943f6d",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:12:29.735269+00:00"
+    },
     "m41608189157": {
       "alerts": {},
       "fingerprint": "703bac1b9b76adf00c669d74211c8bec075b4a8972027a4d1f80442af35e6f41",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:13.065103+00:00"
+    },
+    "m41745301406": {
+      "alerts": {},
+      "fingerprint": "cbebda1d9d170d2876d5d5c9a46e5d7502f50c091a988e675c6e9f47c0b389d4",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:01:01.444783+00:00"
     },
     "m41753214943": {
       "alerts": {},
@@ -735,11 +1283,41 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:09:59.636773+00:00"
     },
+    "m41839373858": {
+      "alerts": {},
+      "fingerprint": "ae3c35911843304ec49e9a88c4b95369b310abbdd6e1d3376466238e06b9ebda",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:21:15.485565+00:00"
+    },
+    "m41867706858": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "8dedfa092da900674e313e8de0a4e10efe899285ccecd1c4975fb6b7805f986f"
+      },
+      "fingerprint": "a760fcf17a677d4050c1288366303a8b2e8bb92d7475d273c11637315485939a",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:54:21.108520+00:00"
+    },
     "m41958778688": {
       "alerts": {},
       "fingerprint": "4ecab88c6fde38a431cbf7d8c24eb858add7f0585f8c6d04314e6413f7d23090",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:55:24.658523+00:00"
+    },
+    "m42258091859": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6b91ba319036d628f217a301c060785923c21df5379bd78824ab07ed14794f7f"
+      },
+      "fingerprint": "a3827327ac87acc00260163efbaaffb6ede55fdf53e96905e5e822c09ada93bf",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:50.675269+00:00"
+    },
+    "m42307590661": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "e027c40ecf46b1a5df0c3f4d8d4e66336a67471fa8021a35113214e693492206"
+      },
+      "fingerprint": "c2eacd3c6be2c3ae7a2efa6ae85cec80868b88f7a0432379cb3c64bf1b5b5d72",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:04:01.443351+00:00"
     },
     "m42381711806": {
       "alerts": {},
@@ -755,13 +1333,37 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95",
       "updated_at": "2026-07-30T04:54:53.208989+00:00"
     },
+    "m43681865729": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "a82c612fc8ca6ef0bed7e93a8f83c6e09d0a1cfe8e8b7d8bb48219becedf58cb"
+      },
+      "fingerprint": "6c0c387cdafd13f25c2a2fae3c2b978c2b1677b49b92783eddb100efc8672d3d",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:25:07.483711+00:00"
+    },
+    "m43752329104": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "03fe44daab6e03a34e267699d89947f65b6b55d0c6d64b7d1b9e3f05d942fc8c"
+      },
+      "fingerprint": "808363900b695014cb730fbbc3e309e2941f7a73ec6a4c01c019c1b7b50da7eb",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:27.409383+00:00"
+    },
     "m44063398736": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "6e8952da0874b2e98bbd006aa51f44496bb96840669fb3ae55a3e62139a35ae8"
       },
-      "fingerprint": "6faf9a14f154386b92366321ae7c5ac2f7ab074f38a5545c8a1308599b60045a",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:58:22.428420+00:00"
+      "fingerprint": "d7e5c5f75be14d8ed441805693d93e0d09e424b84f154d6ce37938a0217dbe7f",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:44:06.330987+00:00"
+    },
+    "m44100254749": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "75ad0a95b7e236fa7f77ebc0f94c18a5bd139484e063078e131843d790b080e8"
+      },
+      "fingerprint": "f9e768bb4c325a9c8b73e698c1d487b4105ccb82fc23902bd3d66014c9946f0c",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:49:27.532984+00:00"
     },
     "m44121631943": {
       "alerts": {},
@@ -797,11 +1399,31 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:30.279625+00:00"
     },
+    "m44966498030": {
+      "alerts": {},
+      "fingerprint": "fa27a7970e77ecca1b856044ea35d12a9806b992a3334bd26ff65e30e0f508df",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:46:12.933452+00:00"
+    },
+    "m45265169522": {
+      "alerts": {},
+      "fingerprint": "de3b7122ae6485439e2d6badeacc7b2c8a0a716e9f0069532b385e77fa786c10",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:56:47.931846+00:00"
+    },
     "m45300128990": {
       "alerts": {},
       "fingerprint": "9851b9cd9e88faaa7dc1c157b580f25c8e1840593872d4705d4a853ca660c6e3",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:53:56.843260+00:00"
+    },
+    "m45339813578": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "774aa4ae6a7f7b672caad89c503c8f7086e3b0a93e76850d243e9ad7118dd525"
+      },
+      "fingerprint": "457728bcead047cb707564d9e07c35d04e0325abe64e4dfce6ae0fdcb7f5c32b",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:50:01.288161+00:00"
     },
     "m46206936375": {
       "alerts": {},
@@ -831,6 +1453,14 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00",
       "updated_at": "2026-07-30T04:53:43.815283+00:00"
     },
+    "m47535960457": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "3777362ebfbdeb81f29c38d31809af8762c8f1479eaaec634e11f12453615276"
+      },
+      "fingerprint": "9f0dbe5c29cf57c03e8941026e737e6ba844c5b29186e8d965d8e0d254719866",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:35:55.484805+00:00"
+    },
     "m47614731206": {
       "alerts": {},
       "fingerprint": "19f4dc343fc6c9d92fa9d9612a7ee4cf691d8ef1d1ce5a94f5df55fcad35bbba",
@@ -842,6 +1472,14 @@
       "fingerprint": "6515fec499272df0312cb588ff6a821912f0766b370986585a4e821e14cda91b",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:51:31.933779+00:00"
+    },
+    "m47683574838": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "9381591f18dc777da007c1dab8368222c05afdd7b9fc1ea256280d93bbe2622c"
+      },
+      "fingerprint": "739cead20aac7e07531a99c5c8d0386bfa40f97d4543f54d0ac105fbf9a1356f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:05:42.614192+00:00"
     },
     "m47756576842": {
       "alerts": {
@@ -871,6 +1509,14 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:55:27.005462+00:00"
     },
+    "m48937199136": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "3f6b172d2cad1d518cb22f88849f480e467a230151ff127a9df92a836b39e350"
+      },
+      "fingerprint": "0466b6cb4335dae94bb2b2dd666e9d9c56fe91853c69764de59c60ccfa6c0a55",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:59:07.079935+00:00"
+    },
     "m48964999581": {
       "alerts": {},
       "fingerprint": "e110a279e1f227992dc12682f2da8a855c38f7d7aa88e819e92b37d7a6d270b1",
@@ -891,11 +1537,35 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:51:30.238420+00:00"
     },
+    "m49549340786": {
+      "alerts": {},
+      "fingerprint": "8838969467158d56b15a0965c63623c57e300ebba15fbc0c7e16415d4cf6b62b",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:49.228451+00:00"
+    },
+    "m49945745201": {
+      "alerts": {},
+      "fingerprint": "eb0f6de49886f0013ed0f0975131e022e4602b1d4662c0c3d88a0accc7e98f8a",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:44:00.114960+00:00"
+    },
+    "m49960480470": {
+      "alerts": {},
+      "fingerprint": "69a2842bc897505459403beb922ab7986901c288def3a02018dd5f2607876cca",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:09.924108+00:00"
+    },
     "m50465405821": {
       "alerts": {},
       "fingerprint": "6d51b86736feb1eed0acdf0bd1eca5e340dafcc294e201d8954d589b1ece6c89",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:26.365556+00:00"
+    },
+    "m50720965175": {
+      "alerts": {},
+      "fingerprint": "9ee296f5c81681187ab903d65ae4b866340895a25a47c05415763cd4b732e1d2",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:16:34.984552+00:00"
     },
     "m50777952153": {
       "alerts": {},
@@ -908,6 +1578,22 @@
       "fingerprint": "4aebfbf510d4c082c74ab4dab650d6860c12e7a838a6c49b854f50af669255d5",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:47.659053+00:00"
+    },
+    "m51859869318": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "8003eb66b178d2760cf156306b89873f34cc33beb6291202fe727a14f4a3e9c5"
+      },
+      "fingerprint": "e369f474685b7a9490fcb91a92f47c0e5bcb8c5e05e80e949ff5172761c0aeda",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:07.248466+00:00"
+    },
+    "m52370866522": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d773e49c2d4fa3fea8b3081a7dbe2627b017c2d244e44f211b8163e138698006"
+      },
+      "fingerprint": "f2f2eb465c419c1b8f2202f317c52806800cff9c7ae9e7e8c6fc00c995571afd",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:47:25.414740+00:00"
     },
     "m52405729761": {
       "alerts": {},
@@ -934,6 +1620,28 @@
       "fingerprint": "78d601e364f9064d9fb51a55d8ca1873b0e8afdbdfb96ddf35d1e83dae9d5006",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:44:59.355925+00:00"
+    },
+    "m53076579832": {
+      "alerts": {},
+      "fingerprint": "9074decb14dd0343e15b4c28bb886b656b82b520f005164d2c61c7b986cac3ed",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:20.004725+00:00"
+    },
+    "m53231270034": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "47489be15625e0c62c8111f6d7129db2e454d33b1d6c36b4d518dced3436d667"
+      },
+      "fingerprint": "1596102a712b9cf522d9d8791446f91798f53079202eafa470477fb18f444ecf",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:56.579377+00:00"
+    },
+    "m53267191690": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "022714b25f844a8c2aa590051f77566f7409433c54cf24cd077a9c256d67179d"
+      },
+      "fingerprint": "774808469d2ff645332db5b976f48472d551b1713520c280f845ab8bc9a3aaf8",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:46.579987+00:00"
     },
     "m53318611952": {
       "alerts": {},
@@ -979,9 +1687,37 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "257874a3e06a13b689cbc7bc9ddf4b49694f5a407ce888e8d40c88b010d4771e"
       },
-      "fingerprint": "296c28959ee18ae24c1572521f18c9c60e94a3e6aee01448b7c56ab469ab4a1e",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:10:46.402488+00:00"
+      "fingerprint": "7d67ff410853038cb7b1f144555152a6fa7ec3c771bc8bc9872fc4461133880f",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:51:05.825245+00:00"
+    },
+    "m54269959907": {
+      "alerts": {},
+      "fingerprint": "665dd754543e5c00f38934145c62cfef1545a3a3696cc352e776564767f92be6",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:02:25.308518+00:00"
+    },
+    "m54433816253": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6691df5dd713aee8bf8b8f6d3aa3ca559a9f9dccde1844e61eff323d521a7857"
+      },
+      "fingerprint": "f19440cc83b5e1ee75a6ccffae73a67dcc37498cbc51079e53968377cd543905",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:54:40.368466+00:00"
+    },
+    "m54781481235": {
+      "alerts": {},
+      "fingerprint": "27ac38920936bc38307f3533d1d4890ddeb1177572468dd5efd18336d81ebcfb",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:15.897422+00:00"
+    },
+    "m54858168633": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "24b67845f278bbc7e697204763ec88d8c34fd2a5d8480ac0be9e700228144412"
+      },
+      "fingerprint": "a5b746a9e8a218a16757b028d2555e5bd3e2e09049e7354097e22374fde6d578",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:02:51.683989+00:00"
     },
     "m54987427873": {
       "alerts": {},
@@ -996,6 +1732,14 @@
       "fingerprint": "9b243da57632de5eb6c074bb84836f531fb9137d75621638aa956fcdaf8e2f6c",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.98",
       "updated_at": "2026-07-30T04:51:46.564290+00:00"
+    },
+    "m55225847032": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "e007e815df7b9f2d8d7773d0565e5f8eadb8e746374ed4e6dffff42f1cc9fbcf"
+      },
+      "fingerprint": "e7b45fb9d82086073e093e8004b050deb4f317e0c99578548c1c3c431ab6d77e",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:42:12.863981+00:00"
     },
     "m55307918073": {
       "alerts": {},
@@ -1017,6 +1761,22 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:47:10.859342+00:00"
     },
+    "m55659997986": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "36f0f1970d2d31a85782210ab013d3e27c6af771400c78268cead71fd5d6f485"
+      },
+      "fingerprint": "a9157c7f10254b7620e1777231685c2c7cb24ff1233d3d5ae2ce09f1f629a5c0",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:45:46.986667+00:00"
+    },
+    "m55775796410": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "76350bfec44eefbbaf40d7318d41307303b73f1e64e445882e51e11cfe22069a"
+      },
+      "fingerprint": "97280799cbae483a077a596a4b48751e9ccb0f256c55aac0d7dd6bb170b3378b",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:49:44.088861+00:00"
+    },
     "m55939764064": {
       "alerts": {},
       "fingerprint": "8435d6705ee1021fb5018d0ba2686b3518df200b8d764f51aea0c67352af0483",
@@ -1027,9 +1787,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "b2583f4c9fe4e597812fec24ead558eca217f38d0ed24c753798a403849c1f91"
       },
-      "fingerprint": "93dd40f52f73de94a03990e5a04ab2141e79522dd9b0f1db591c8a323c08d74f",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:54:46.369323+00:00"
+      "fingerprint": "a4265f801e97b8639bfbf6de56cf93eae7b97d88470e7fc7bd81f37a7b1c28f5",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:43:41.124395+00:00"
     },
     "m56243288410": {
       "alerts": {},
@@ -1043,6 +1803,22 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:51:50.717276+00:00"
     },
+    "m56554652706": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "fa3566cf6b59103bf8da825370cedfe6a5e901979ad9c268be3c211c3ff9844d"
+      },
+      "fingerprint": "ccca023898d5fb5e3544334db48c4ac398beddc33e9553d344c79eeff6ca72a5",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:57:26.270032+00:00"
+    },
+    "m56727279391": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "8df7390a2a937b88d2e5f989996030e40034fcdd181b97ba501f38b1acb4a353"
+      },
+      "fingerprint": "cedbfdf31db3e43ae7473f898708ee6b862b1309d3b85f1ec5a129013a033b1d",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:57.309023+00:00"
+    },
     "m57132755145": {
       "alerts": {},
       "fingerprint": "2f3a3395119ade20b92dd25461d3f0c8c111933c3e966bfef7dd9f5c923fd6ab",
@@ -1054,6 +1830,14 @@
       "fingerprint": "55f0ba14f63f7f7cb70131b1cff0960aa2b7c7afe6e84e36bdccb4cd763239c5",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:50:43.359800+00:00"
+    },
+    "m57175502387": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "44a72857ccdbaad1285fb09ef078d6f9283cc8d00f4904392e158e5e2c417376"
+      },
+      "fingerprint": "913f82c68524650b43a53b5ee39aabeb85cd5aadee053b0cfad5cd7e32536767",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:57:54.600754+00:00"
     },
     "m57255966806": {
       "alerts": {},
@@ -1075,6 +1859,12 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:28.292340+00:00"
     },
+    "m57961080954": {
+      "alerts": {},
+      "fingerprint": "4675230d575e6d0983e27b0c199d6a250dd450d190b3f69ee95ee5232aede52c",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:33.953923+00:00"
+    },
     "m57973163638": {
       "alerts": {
         "victini_black_bolt_97:probable": "6399e7a15d0751bf23a5c3c62cb51eb1b7d44441bcf34c562348534ce84c8887"
@@ -1091,11 +1881,45 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:50.842105+00:00"
     },
+    "m58698438427": {
+      "alerts": {},
+      "fingerprint": "3edf3c53b872b196737c821258ddcd58c47d6c389ae0dd3564e6b9889e69d008",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:33.007524+00:00"
+    },
     "m58880728398": {
       "alerts": {},
       "fingerprint": "ffb596802a1f5b905753517ed5995faa3989dfc2954d2d5de2c8b101812c2f14",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:01:14.879405+00:00"
+    },
+    "m59120107817": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "4e2a2c510652a9436c4c27b86df0290afd7dcd4d62b42a5d686f1a87540b8544"
+      },
+      "fingerprint": "b2559f21a25bdb43f92787fb16f2824729281bd5cd4f5831157704111e315b8e",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:24:39.202893+00:00"
+    },
+    "m59444157665": {
+      "alerts": {},
+      "fingerprint": "7613a2600f8c09b9d35c41d26f71ea90eb9e5b76b29e995688ee7b5e76813180",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:41.491241+00:00"
+    },
+    "m59485874017": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c6b20c8760605b5a96a217304462cec0fc7e551191f4f4b1633b41b360384690"
+      },
+      "fingerprint": "17a2e614c4417be2045e03c5aea2fc0a62ac8703a6395b36286aebd216b4f8cf",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:07:09.533446+00:00"
+    },
+    "m59518473746": {
+      "alerts": {},
+      "fingerprint": "181211f626ca38fe2b10bfe0a2e434b640f1985da164fd92228c8508dc0c0a83",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:49.221844+00:00"
     },
     "m59618432415": {
       "alerts": {
@@ -1104,6 +1928,32 @@
       "fingerprint": "601b034ecbf7b37e8a593e6a73e36e52e2a836094758e6da936e7d44ed65c67f",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:01.349338+00:00"
+    },
+    "m60050624134": {
+      "alerts": {},
+      "fingerprint": "a02a13032e6783282699bd5fd60e940f0c4957243faacbbc629c2fe0c996ec83",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.10",
+      "updated_at": "2026-08-07T04:51:47.222052+00:00"
+    },
+    "m60313266737": {
+      "alerts": {},
+      "fingerprint": "ccf0fc0db12ca24233f00cc01e588ed516332b6b4f3a75508133c12705c1bc89",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:07:12.060444+00:00"
+    },
+    "m60359895843": {
+      "alerts": {},
+      "fingerprint": "05960187ec0a28c7e4809a9f78d52f1285e89fc7b58bdd1436ce75546d10d111",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T04:53:05.552628+00:00"
+    },
+    "m60914494499": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "419aa2d2235566c406f6ff02ee9d922eb639a587144f7898f339d44de2a3cf4d"
+      },
+      "fingerprint": "713690403508cb4cd6dbca64b30f9711f9e2147140507c2e4319337c6f68e35b",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:54:04.616320+00:00"
     },
     "m60993604291": {
       "alerts": {},
@@ -1118,6 +1968,30 @@
       "fingerprint": "e4095d1651bd77ba5403dd3b3894f328c0c089ba8319dca6fb9698c5242fe6a5",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95",
       "updated_at": "2026-07-30T04:51:38.140920+00:00"
+    },
+    "m61182403617": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "085ad5d76a3ed0c1d2320d183e8d0b315a3696d9e5321faaf50eda0e3a0cb3a8"
+      },
+      "fingerprint": "88dc7d8285e08ef5fcb673d9648dcec922f9472013f72c3f7d4b689cc9a5a3d7",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:41:02.683277+00:00"
+    },
+    "m61240121435": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "ee95ef2e9e6e1b2cd7d24ecd24cd70e22e308c9cd8866bddbd3ba8ff4c46ac99"
+      },
+      "fingerprint": "410d98913b65f1910af6b7991186b99714d95b5fa1d76a97b779b9fb1a7df7bd",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:53:25.912751+00:00"
+    },
+    "m62346382756": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "efe0a053c7bd2dfe61bef9b8ab9b7ade2dae8231c54642559dc359beb007f02d"
+      },
+      "fingerprint": "15c23c53579b44ec121aad400d77ea7284b23b77b9d2e02029f03bf76d61936c",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:22:27.161183+00:00"
     },
     "m62487774049": {
       "alerts": {},
@@ -1145,6 +2019,14 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:51:01.970186+00:00"
     },
+    "m63763817414": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "ca44a6e4fde592947c64c17310a3aa1325f17ffb4900d1170873dd2e3fa6d460"
+      },
+      "fingerprint": "098631c7fea4e2bc2739d74f1e5cc819f22defd42c4a1432125a4aebe1cc081c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.98; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:11:19.871552+00:00"
+    },
     "m63907467916": {
       "alerts": {},
       "fingerprint": "528c3bb87887b0d7630fb51f837bf9bd4d686c7e637dc3f4b7139c17cc680ce6",
@@ -1161,9 +2043,15 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "2a4f25a0c66ebf4373ebc057e14861989c3ee7e1c866406f1de98316e6deb9a6"
       },
-      "fingerprint": "2ea2e3ce4d652a6ced13f3a3f447df6d97271a31eec7f0144c7585204cc0fbc5",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:06:40.637447+00:00"
+      "fingerprint": "90a07fac57d57e5bb25c794a24188f9bca326db3a0992c706971c94761a1cbec",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T04:47:56.583438+00:00"
+    },
+    "m65445365207": {
+      "alerts": {},
+      "fingerprint": "ea837ef1024b488851f3ab9c24c3d3180da00e3974a316ce4c269e5cad09edb4",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:19.812365+00:00"
     },
     "m65759619370": {
       "alerts": {
@@ -1172,6 +2060,18 @@
       "fingerprint": "a798f1b00ca12ede6888d43a1767e5592a5e329fe2db84f6f2115eaa2618e9f5",
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:01:10.124968+00:00"
+    },
+    "m65767416876": {
+      "alerts": {},
+      "fingerprint": "3a86dec2a98198c17447f2514193a1c1ff84d19977cdde41d59ab131fff072cb",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:24:29.726126+00:00"
+    },
+    "m66069456854": {
+      "alerts": {},
+      "fingerprint": "16c74f07455a7164660215279091c757777c7f8cb16823de09dc490b36d00965",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:46.283179+00:00"
     },
     "m66117826248": {
       "alerts": {},
@@ -1184,6 +2084,14 @@
       "fingerprint": "e72deda4ea6f97f918fa363883e1a58db2248ff971d0311bb3e9bb411ca5343b",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:55:20.164199+00:00"
+    },
+    "m67246923308": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6a34d596e0d8f386bbfa30c5b3b20658b63d9ff24f75b9ba3e7206a008924962"
+      },
+      "fingerprint": "602657c4f8ff9734aac762ff399fa1a5a6724a2dd5e43bd369808dd204f07676",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:52.075717+00:00"
     },
     "m67479461246": {
       "alerts": {},
@@ -1199,11 +2107,45 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: not confirmed 0.95; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:03:48.038046+00:00"
     },
+    "m67660651057": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "ecbfd4181a2a256b070fcc5bba5f4416b25f12b193386ed101c4c7d58c533767"
+      },
+      "fingerprint": "1384fe81ddc5ab83b48cbe8e911a568dca27cf62d94fbcf2b1c5bd1b38a2fa05",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T05:15:42.294184+00:00"
+    },
+    "m67844968525": {
+      "alerts": {},
+      "fingerprint": "1ce6035f3b565aa978a3828398d2c217af7f6defe7456964da1329e5b879a5cf",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:06:37.922429+00:00"
+    },
+    "m67959885310": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "34ced66ab15601f95ccf537210c4863c04bf1216fd3d2a5d48c7693beecf6bcc"
+      },
+      "fingerprint": "5ecb3e34845cbd39f9ba4658dac5afce617eceada5436d86719f5a5572b68351",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:48:48.874526+00:00"
+    },
+    "m67966416042": {
+      "alerts": {},
+      "fingerprint": "4c2346d10dfa3051a199fc22f6b8ae863d2b1e47794cc4f3ab598fb6f0351936",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:45:55.771504+00:00"
+    },
     "m68147656634": {
       "alerts": {},
       "fingerprint": "d4dc199cdece939d70c267bf7dbf634e41604c80dc720cc0461073967b429ee3",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:54:26.811786+00:00"
+    },
+    "m68291297705": {
+      "alerts": {},
+      "fingerprint": "e39cffff371fb1c7f82c5864844f12aa610799924c85142987b6701064351658",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:28.388714+00:00"
     },
     "m68323032836": {
       "alerts": {},
@@ -1229,6 +2171,14 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:44:38.114844+00:00"
     },
+    "m68860983989": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "06c111a1e12b634616e1c62d703a576d0f9426bf0054eb88e27a2fc475aa4c0b"
+      },
+      "fingerprint": "650056de0bdb4b1b48d287b74fbca5b0dabf11f372cbb93d3863c471a56a90c8",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T05:08:18.350344+00:00"
+    },
     "m69060721059": {
       "alerts": {
         "victini_black_bolt_97:probable": "a3adc48d89445ebea82f931d7a19e4a7378b47a37efaf8f6778f88f843fe0885"
@@ -1236,6 +2186,12 @@
       "fingerprint": "1448d540fa2891226929093c38e79f318e27b08a560464eeb3e28a76ce7d7edc",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:49.989804+00:00"
+    },
+    "m69098983026": {
+      "alerts": {},
+      "fingerprint": "15007c422e2d8743265ec23278780e4a8acc9f0fbc27af032ee2615dac9deb64",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:18:08.513114+00:00"
     },
     "m69196831514": {
       "alerts": {},
@@ -1253,9 +2209,17 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "a029457304fb926e2ae9cfb67e28eb0cb7c3bd3e159af4fe2f51663da04b0b98"
       },
-      "fingerprint": "14b81d84651325db17d910303a7a1f2775e46daee328e0de4280e7c97cc90e70",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T03:59:08.017528+00:00"
+      "fingerprint": "2514f4ba20b8315660247115e981c7be046c7aac1b0afa4507de47e4aafbc344",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:44:52.063333+00:00"
+    },
+    "m70089992854": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "f0473e25dc755168cb1212caf876d56cbd607f7a35ef9afe06d5a5d2b9b98606"
+      },
+      "fingerprint": "9e4439a2d0dd1928d34f9e362d04d5a599628193a3969ec1e3d1048af9ab9c93",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:59:39.506302+00:00"
     },
     "m70122927227": {
       "alerts": {},
@@ -1308,6 +2272,12 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:56:49.606088+00:00"
     },
+    "m71067825357": {
+      "alerts": {},
+      "fingerprint": "02616512c34497e659bb1eb6bdca71e570e0257c4c757decea0aa26a436136ce",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:39:41.761395+00:00"
+    },
     "m71087629561": {
       "alerts": {
         "victini_black_bolt_97:probable": "2ee5e57d97e4be87f3f19e091ee17ee684fb96e98bdf53efe28815ddb4ca8e9e"
@@ -1315,6 +2285,12 @@
       "fingerprint": "8810302c467f99dc06b7a637bf617cceb18e9d01c029ec46b5b5137e99ddc01e",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00",
       "updated_at": "2026-07-30T04:51:29.697857+00:00"
+    },
+    "m71130120811": {
+      "alerts": {},
+      "fingerprint": "6a1f74c6aa8c38f82b3255ad7cc5cb47f2d9f50e3d99477281ad4c2fa0a443a2",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:01.882527+00:00"
     },
     "m71148443336": {
       "alerts": {},
@@ -1333,6 +2309,14 @@
       "fingerprint": "13d0f4a0db1fe06427b37227aa6e4b8a90f453e6856a5cbfae9520e20267b669",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:05:49.705854+00:00"
+    },
+    "m71588481148": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "d3a215d3479f62ee2cf80832f901bde4c1f9e3c0fd532eb0415ff6a2d3e7c5cd"
+      },
+      "fingerprint": "f7fa9c8a6a3cc3f7437f2914de00fff116784ffd57a5188a50a745d179ade7ea",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:57:13.322611+00:00"
     },
     "m71647447421": {
       "alerts": {
@@ -1362,9 +2346,9 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "f4b6e2e885b91b5ea2cd2ca8a932698f0636e1d447abfb4888cfa473ac18ffa3"
       },
-      "fingerprint": "83bf30a1b5deb0c473e5ccd51ffbb016051beb5d161075052270772649a10282",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.98; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:00:01.308171+00:00"
+      "fingerprint": "cd44a92fcc0dfb6a958289bae0b45a772ed6afc06bdb4ad0a2c5ba5177507f91",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.98",
+      "updated_at": "2026-08-07T04:45:32.059444+00:00"
     },
     "m72259659737": {
       "alerts": {},
@@ -1379,6 +2363,20 @@
       "fingerprint": "f8aa2349df859a90691432031b1a5583934e7b6d55e6b2760ede3ef25a540e5c",
       "last_outcome": "victini_black_bolt_97: not confirmed 1.00",
       "updated_at": "2026-07-30T04:51:22.099185+00:00"
+    },
+    "m74022020103": {
+      "alerts": {},
+      "fingerprint": "3e7fb426f27b217f3fd6d21177fc54ed7483dd3b9b82bc09f3a87c84cc1c9876",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:10:57.836972+00:00"
+    },
+    "m74151451189": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "afd2abcaff15de9e69c2f124c17002311292047b781f2b14a71b85783e95666a"
+      },
+      "fingerprint": "dbea22138cb1c3b6ed0ef51be71a0280fbcd2a634fc3690f52c43de1efc2f842",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:23:46.679581+00:00"
     },
     "m74582523765": {
       "alerts": {},
@@ -1399,6 +2397,14 @@
       "fingerprint": "8b4a29266a453913819e93bf0e17851bfd69a8fc985af80f48515977e47829d3",
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 0.98; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:58:59.270269+00:00"
+    },
+    "m75417504375": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "81412757dbf04dc8553f2c17ca7f4d8f057c6811792133a2c03bd1422912f36b"
+      },
+      "fingerprint": "1d9662a761e3818ca6e2d98bf8183c558f9b358361944e7ffcb43e26ef66188f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:50:12.714250+00:00"
     },
     "m75471775610": {
       "alerts": {
@@ -1421,6 +2427,28 @@
       "fingerprint": "93520a050e1887356fe05a0ca4ccd5c98ed8c20743daab90db65264bda78b1ab",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00",
       "updated_at": "2026-07-30T04:52:04.366972+00:00"
+    },
+    "m75791303748": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "662ededbc3147d05a725ecb3619b721a014282bc7a51da827222d5e6fdcc57c9"
+      },
+      "fingerprint": "d784886dc7ff6552338c9c0e8038acac5953b37e0ea75b6b0dcdb205339982cc",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:25:46.626826+00:00"
+    },
+    "m75811952790": {
+      "alerts": {},
+      "fingerprint": "dcf0af97a0b037c7bc16b57568eec8ee2b6ac3ebc37c836f4ce95e0fbd479149",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:16:37.343668+00:00"
+    },
+    "m76119927882": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "4bd743b8d35a802b7f1f56a0a75251a8b3ecf844e7ff0aab4d6cdc01c2caf7c9"
+      },
+      "fingerprint": "8d5b33eda4aca0e46202bb4d51f55eae0b1c5b083aecdf8e12299265a220aaf2",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.98; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:43:09.850572+00:00"
     },
     "m76523448813": {
       "alerts": {},
@@ -1464,6 +2492,12 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.98",
       "updated_at": "2026-07-30T04:53:11.519797+00:00"
     },
+    "m78048049043": {
+      "alerts": {},
+      "fingerprint": "7e478a2f465532e799a32a8c06b17dedc16cb3f96082ded5d635be06d2b2ea81",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:44:02.857589+00:00"
+    },
     "m78138698070": {
       "alerts": {},
       "fingerprint": "de4b1f11e24fd05605c336015c5458c2d95b7988daebab06622b8420aa9be866",
@@ -1486,9 +2520,17 @@
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "79c705e9cc2969eb1817a54cc6b1630b4c3c4e163f9cb852d119fc6cbced1f24"
       },
-      "fingerprint": "d067e0ab568f97a943cd5b38a541aea0060964743ebfcd82218186bd019bce9f",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:01:52.627072+00:00"
+      "fingerprint": "7eb8cd1f03d30eb8bb6759c800342b281f3cfb5b4c2e12a9acbcf76499ec24cf",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:48:33.871013+00:00"
+    },
+    "m78506171413": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "65486013e69ce0697477356dbd60f127538e6ccf7c2da7f8abfdab051165cb8a"
+      },
+      "fingerprint": "0a4406c556dde27a83f1f7e272a94719014517d6237aa8880968acc33c4c22aa",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:23:12.458705+00:00"
     },
     "m78627315215": {
       "alerts": {},
@@ -1496,11 +2538,41 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:59:45.374805+00:00"
     },
+    "m79035330989": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "25d2086c0db56a49b82c8157f81ba2953872450b37de12d58359f8edcf00e3fa"
+      },
+      "fingerprint": "26fa4876245dab64d1925f457ed6d12a91c5b625d02eb0b410336ef245d74b70",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:51:23.162670+00:00"
+    },
+    "m79844619307": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "30e586a8fcfaaa1c0f61b6a61c80a78400f264379a8251455df787774a8f51ba"
+      },
+      "fingerprint": "d93beb0eac5dbc7ed54f6a5f298a80909a611ebe8745ced7eca5fdb85779c103",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.98; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:52:54.095613+00:00"
+    },
     "m80242128205": {
       "alerts": {},
       "fingerprint": "f754d35e1665158b70913b39fc7b28c295812f600ce232fa43281987d4979113",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:50.473870+00:00"
+    },
+    "m80681120500": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "bf3455065b66221b3ba081328307bdd3de3ea9b7d40d4a207a7598af7233b713"
+      },
+      "fingerprint": "7e78b683bc0adb6acee6ede71c22c33fa1e0bb7656b32e12b78442d5a2efef3e",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:58:24.648272+00:00"
+    },
+    "m80711370320": {
+      "alerts": {},
+      "fingerprint": "7a26ab5aedb13b72249f65283b8b6e651ed2c178eedd0a5006c0393f0d24479c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:39:00.623465+00:00"
     },
     "m80759722237": {
       "alerts": {},
@@ -1528,17 +2600,39 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:56:05.527503+00:00"
     },
+    "m82233033875": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c18fb518fc3a5c51e08dc55eb6fb046dde99de70b2673842ff7342c75c7d2e4d"
+      },
+      "fingerprint": "c8d3aa19d7c1586bcdb464fce73689a6b9e84a19863c362def65349af1fac74e",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:00:58.769508+00:00"
+    },
     "m82279299097": {
       "alerts": {},
       "fingerprint": "5641c331ea295cadd470a04c09e0095f12dfba7a7136009a74cb6b6692a45193",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:55:33.247057+00:00"
     },
+    "m82550856212": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "af26b03c38a9632b6354c4243db4f96564a9c26a7f40e698268c5e307f07c693"
+      },
+      "fingerprint": "ab5b7bc61f7944056bcdd8ef7b440b8d1361bf800a32e265abd0f0afaa104cc4",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:57:40.978576+00:00"
+    },
     "m82949519086": {
       "alerts": {},
       "fingerprint": "59d19c05b9d29bc574300caf0f4d459a2a364881f6ad3cd85ba7842a66e00b0f",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:03:19.807951+00:00"
+    },
+    "m83014800743": {
+      "alerts": {},
+      "fingerprint": "456b01afa20d8c7e730d7e23dbca87d080090c423fbaa6ee0a5e761da3292422",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:28.388681+00:00"
     },
     "m83037451728": {
       "alerts": {},
@@ -1571,6 +2665,22 @@
       "fingerprint": "3b2593033fc25d1df7196acc195b71cf209993e162721fc35254d59611a9772b",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:52:52.507193+00:00"
+    },
+    "m84126064033": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "f81e6cf8139187b4a947564f59b4aca44c67866fcecb20b91532bb0e66e95e41"
+      },
+      "fingerprint": "1a4357fc34283a4073272d2ada781de24f60e036dc3ae3b8b18c77e03cffa097",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:46:36.594505+00:00"
+    },
+    "m84346757424": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "ce47a0e67600f9cc14c436e6849daded705ccff523dc713da3a3d8bd54bca94c"
+      },
+      "fingerprint": "db3fbbf1c62d13809a2f587ed320e200d91e4bf8ffc200f9ba2eaed2046ebdef",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:21:06.223933+00:00"
     },
     "m84522955113": {
       "alerts": {},
@@ -1612,6 +2722,14 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T02:54:29.312912+00:00"
     },
+    "m86063946244": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "21b3fa1d08990dd04319c45922baf3a9e6407e1c336e1183e00ce64d6919effe"
+      },
+      "fingerprint": "91cc91c3e00c36fadab0551a7defa97887113de547baab11648a92d9b4cf2f4f",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:46:10.570503+00:00"
+    },
     "m87384674597": {
       "alerts": {},
       "fingerprint": "19da0573591b0412dbe6ef72481591e8363258ed9d9ac09ac63eca2a83809a58",
@@ -1651,6 +2769,36 @@
       "fingerprint": "b6579ed14cb90e58965cb8511d6e9bf7e5ac8fa006813b8e4624d5e340469ae4",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T04:03:17.019202+00:00"
+    },
+    "m87860657360": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "7d9d0211f3e4b265cc88e6cac4cbf3fff837a106c7f75318a09e480cdb870815"
+      },
+      "fingerprint": "4cad045d0a6eaf3626d76668b0f25ec2f419cddf913a444d986f31fbe611d428",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:31.612520+00:00"
+    },
+    "m87886733745": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "42793cfc153a7e98e5597d339836e33c0805ed6ba6a5d1f4403b5f0016687ab4"
+      },
+      "fingerprint": "336d1f23fd89bf69adcb7d5604a19711b5f2c064cae3859ef8276a1e372a849c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:03:17.579059+00:00"
+    },
+    "m88830123564": {
+      "alerts": {},
+      "fingerprint": "0b8e06e6db0a0b36c832815d4ae18776c4d178a0b16a421482353c7c6b964f7d",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:51.798634+00:00"
+    },
+    "m88907950214": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "028bf1e69ff365d593a852e9062f4abc8310041aff6a588ab7bbdde60580aa23"
+      },
+      "fingerprint": "361dfab86c35c427ab81e28830640c1df0f2e21df101af57fbb54d00606f29cf",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:21:41.743335+00:00"
     },
     "m89176582844": {
       "alerts": {},
@@ -1701,11 +2849,27 @@
       "last_outcome": "ampharos_bandit_ring_27: not confirmed 1.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:59.824907+00:00"
     },
+    "m90297952335": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "511a911ce961a061383f749537baa957fb14c9e768ba9207a3815318b50af24f"
+      },
+      "fingerprint": "154e7bf0ae26bb83a92243a9c52df2e64b462fdd36af0fae7f3df2d7af6753ae",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:57:46.922583+00:00"
+    },
     "m90655287621": {
       "alerts": {},
       "fingerprint": "45bfb38af34f5de3aeeb3a5738c775a42ea74be54d2ca0eb7fd2bb8734a5055d",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:21.455321+00:00"
+    },
+    "m90728004506": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "b18b8e69591d0e0fe51c5d5f65659a191f7fe965f6bcb0cf7b2d6ff99b0684b1"
+      },
+      "fingerprint": "5450223b4084e1ee9d71d0ded8125b564e3bbcf9d5714251627c1379f2eb5e82",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:31.433343+00:00"
     },
     "m90784745141": {
       "alerts": {},
@@ -1713,17 +2877,45 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:26.444499+00:00"
     },
+    "m90963077604": {
+      "alerts": {},
+      "fingerprint": "fcf2f4b7675ad1ce89364d6c97ee216c043e5e6970fc0447ebc74c180546628f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:16:32.593600+00:00"
+    },
     "m90998903501": {
       "alerts": {},
       "fingerprint": "177f2efd3ea789475da58eaa886383d0f7c8ba6eb5125353ce8750ad6286f85b",
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:02.811880+00:00"
     },
+    "m91159468608": {
+      "alerts": {},
+      "fingerprint": "9ba055476bf4cee35319ded43accbdef7122a90aa6f07b8128c699aa81f7308f",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:44.007183+00:00"
+    },
+    "m91342696892": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6f9b1a11f142a1ea5476ccabdf01d8c52f78c8c0bd541ead59a8508cc0c97fe2"
+      },
+      "fingerprint": "a53100206d06b44e8d9d87dcdef3cc1a9fde0d8ba084be6355d04c0f54103b06",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:18:05.942386+00:00"
+    },
     "m91636292918": {
       "alerts": {},
       "fingerprint": "47ee679774a1f5f87dadcd7eb30d7a05b7d9c605f616cb507448cf64ddfa3d29",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:56.936227+00:00"
+    },
+    "m91877509818": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c8f6704f274df91ff88b4ac354ab9a81449f0c257d5534ac64f7841eecc9e8ef"
+      },
+      "fingerprint": "eab90010c6295f9c2c21315b63f7d19a1656cf44145d22bec4618a5bd6cb50c3",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:45:18.678013+00:00"
     },
     "m92063478120": {
       "alerts": {
@@ -1747,11 +2939,27 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:54:52.327157+00:00"
     },
+    "m92692606022": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6303be9c9d93e4f9a261f7858047673997083d9637df20b6ad01fc216063ee3b"
+      },
+      "fingerprint": "af1b4ea805a7d9bbedea9a10d2399e70842705cc0688fe769f56969839aeda9f",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:12.880584+00:00"
+    },
     "m92894400545": {
       "alerts": {},
       "fingerprint": "9e04a101ec63402eed185e040cbbd8d6e7bc7f308c834d4392e435e1055a3d41",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:48.257662+00:00"
+    },
+    "m93011384954": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "9c51a7ba89c52fe1c92ef399e01615c461bd87fe5f07293b1e565ac252bfdcc9"
+      },
+      "fingerprint": "99501c166f252eba2a46b8a34f18d478cff917a8d6e9c9a3f85b8d775ccba92c",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:55:53.374501+00:00"
     },
     "m93261577677": {
       "alerts": {
@@ -1761,11 +2969,41 @@
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95",
       "updated_at": "2026-07-30T04:54:17.313124+00:00"
     },
+    "m93596297144": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "f3f1426ff29f6d5ca257ab9692816042b5ffa9834aaf372a958fa4215de09a28"
+      },
+      "fingerprint": "426954737c4fc08bcb5e068a497ba736f20cbd7cd219499986b56ff0de854cf4",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.95; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:59:21.070707+00:00"
+    },
+    "m93832559517": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "74c72234130be191b21c0a5b6d887fdf460af514917d6304a21117c3aa28cb65"
+      },
+      "fingerprint": "6e12e9e5192db5673a9fc88f0d6de5dfc8d8320e809ced459e493145fa41cc9b",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:51:39.712532+00:00"
+    },
     "m94221871807": {
       "alerts": {},
       "fingerprint": "87cb8c42d93b798b878d65d456e064dc58190bf33de50ac1ddfec38ce07899eb",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:53:04.111055+00:00"
+    },
+    "m94239089587": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "b34243bc80f3f3d81bcd35b4cd9cfb59f810ffd4e79c3e67b409cb4620701289"
+      },
+      "fingerprint": "c4d2a5db6c84a081e9d0665f74724f047c72ff8ebfd731fee9b10540a4196476",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:52:11.222843+00:00"
+    },
+    "m94362891872": {
+      "alerts": {},
+      "fingerprint": "c7f3e4d2b2290f56e0294c62401fb30b84b34c4d82090c170b79b4dfe4619da4",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:25:15.124268+00:00"
     },
     "m94643999741": {
       "alerts": {
@@ -1775,13 +3013,35 @@
       "last_outcome": "victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:45:43.090395+00:00"
     },
+    "m95133101141": {
+      "alerts": {},
+      "fingerprint": "ef69c9e4c95976d7c290677f0efbdad58e95b33ef530110095b478883b7146f9",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:16:37.343719+00:00"
+    },
+    "m95217510586": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "c90ae8e94c486a1f2f599e5cccd5318dafce7766d2f61ab1399715ff4deb9de1"
+      },
+      "fingerprint": "4944c11a71aa5421a613a30c414fabb8007de073c8aa6f93c24949f94b28927b",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:50:44.668937+00:00"
+    },
+    "m95689673797": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "f72299233e5f3592f15516f10bf57b05e95dad3867010ed8e5fad55b2605e355"
+      },
+      "fingerprint": "7eb06cc632e1ddcb6732fd09607801ad7830254904ec3e05ac074271e270aeef",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: held for detailed-listing cap; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:22:41.768608+00:00"
+    },
     "m95696798041": {
       "alerts": {
         "team_rocket_27s_moltres_ex_124:probable": "56160b5652d052245db92df0552e615fadd01e3d21d26c60d31d9040c335c0ae"
       },
-      "fingerprint": "38b9df1fd1c27355fa2f7a2118b4fa2ad6b3c8d05394191a4ddaa9f11550b4b8",
-      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00",
-      "updated_at": "2026-08-07T04:04:15.238825+00:00"
+      "fingerprint": "5db2c797cf00569ce2496fdb46455e7be0415004f01913691b2638a467650732",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 0.00",
+      "updated_at": "2026-08-07T04:50:29.107775+00:00"
     },
     "m95829027532": {
       "alerts": {
@@ -1821,17 +3081,53 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:46:43.926747+00:00"
     },
+    "m96726824966": {
+      "alerts": {},
+      "fingerprint": "0540e58497d63259b7dc55afcc9ebb0a7ac9814518fc29aa3b732ae81cff04bc",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:22:53.680061+00:00"
+    },
     "m96806421697": {
       "alerts": {},
       "fingerprint": "2a2cd0403a030293898585152432336b7265f5388d49466bc6b37655e10383de",
       "last_outcome": "victini_black_bolt_97: screen negative 0.00",
       "updated_at": "2026-07-30T04:52:32.241224+00:00"
     },
+    "m97239807729": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "41541fa456fa7c4cb6b660f5d0515cc7dc64561049c88eda756159b1287c6946"
+      },
+      "fingerprint": "3f2e8d359968336368899a97999e385414b6eb2b3e54cf1f1f0731875ea729a2",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T05:05:04.274889+00:00"
+    },
+    "m97286813441": {
+      "alerts": {},
+      "fingerprint": "052d7d25ad0801e5f098d12692ae7e559b4f0d5387fd317d86151ee1043dc073",
+      "last_outcome": "already sold",
+      "updated_at": "2026-08-07T05:25:33.953959+00:00"
+    },
+    "m97391000184": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "5607c9f6acb2cc1830410682703e40f19f9b1d9d9f6dd7e533d3f816506cb4f0"
+      },
+      "fingerprint": "85e589418b553385dca5e168d4ffee46e5c28f0ea4bfe09316cd6a04686205db",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T04:45:00.654732+00:00"
+    },
     "m97678646519": {
       "alerts": {},
       "fingerprint": "af5f4f54ff198c3fab16b954d46933cd8f91f1dbe1898c43a3d41e9107d6f843",
       "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; ampharos_bandit_ring_27: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:47:06.722234+00:00"
+    },
+    "m98423237418": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "d71f6c1707a5b9aa11436675b06e3c424453ea9f2d156c31b79bafd586c770c6"
+      },
+      "fingerprint": "79e3e8c4e3fd9c8f31eeaf44338bb18797d67d24854424cf9cf61ab936783d7c",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: not confirmed 1.00",
+      "updated_at": "2026-08-07T04:52:35.150989+00:00"
     },
     "m98638850629": {
       "alerts": {},
@@ -1867,6 +3163,14 @@
       "last_outcome": "ampharos_bandit_ring_27: screen negative 0.00; victini_black_bolt_97: screen negative 0.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
       "updated_at": "2026-08-07T03:48:43.437181+00:00"
     },
+    "m99299774688": {
+      "alerts": {
+        "team_rocket_27s_moltres_ex_124:probable": "38abb0a225435866d6657130d3af16291215ac35fba64827051b2b7cfb179938"
+      },
+      "fingerprint": "9877b0978dff272ce533de49013b022284f4fde79370dc498c96e5665680255b",
+      "last_outcome": "team_rocket_27s_moltres_ex_124: held for detailed-listing cap",
+      "updated_at": "2026-08-07T05:24:48.922253+00:00"
+    },
     "m99311119141": {
       "alerts": {
         "victini_black_bolt_97:probable": "a955789fd328c6bc322e9cf1b8d39817184fb36b38b8a48ff9a0fe65d83b7dc5"
@@ -1882,6 +3186,14 @@
       "fingerprint": "d089ba9a2f4d41c20b85d67f02a8ebc3bc934a9715929e87598dca76cb636070",
       "last_outcome": "victini_black_bolt_97: not confirmed 0.95",
       "updated_at": "2026-07-30T04:53:01.691143+00:00"
+    },
+    "m99645049504": {
+      "alerts": {
+        "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114:probable": "6b6e87184490df4f25f9f30d1abcbcfb23eba1033291a32c4a1fcb4722a525a8"
+      },
+      "fingerprint": "7e0c9848dd2296b8fbe645ee70a4df034c45d55789f34933598d17922e085bab",
+      "last_outcome": "gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114: not confirmed 1.00; team_rocket_27s_moltres_ex_124: screen negative 0.00",
+      "updated_at": "2026-08-07T05:04:31.786323+00:00"
     },
     "m99957467359": {
       "alerts": {},
