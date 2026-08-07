@@ -1,0 +1,25 @@
+# Python bytecode. These were tracked until 2026-08-06 and produced a
+# modified-file for every module on every run, which repeatedly got in the
+# way of routine pulls and rebases.
+__pycache__/
+*.py[cod]
+
+# Local virtualenv
+.venv/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local-only runtime caches: no workflow commits these, and both rebuild
+# themselves on demand (FX rates expire in hours; PriceCharting lookups are
+# re-fetched when missing).
+data/fx_cache.json
+data/price_search_cache.json
+
+# Note: data/reference_images/ is deliberately NOT ignored -- the
+# "Add Watchlist Card" workflow commits newly downloaded reference art
+# there, and the scan workflow restores it from an actions/cache keyed on
+# watchlist.yaml.
