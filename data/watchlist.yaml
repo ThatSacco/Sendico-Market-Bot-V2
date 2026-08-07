@@ -6,35 +6,6 @@
 # Names, set, card number, market price and the visual reference image are
 # downloaded automatically from PriceCharting. They are not matching gates.
 cards:
-  - id: victini_black_bolt_97
-    active: true
-    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
-    searches:
-      - term: "ブラックボルト まとめ売り"
-        active: true
-      - term: "sv11B まとめ売り"
-        active: true
-      - term: "ビクティニ まとめ売り"
-        active: true
-      - term: "ビクティニ プロモ"
-        active: true
-
-  - id: ampharos_bandit_ring_27
-    active: true
-    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
-    searches:
-      - term: "XY7 まとめ売り"
-        active: true
-      - term: "バンデットリング まとめ売り"
-        active: true
-      - term: "デンリュウEX まとめ売り"
-        active: true
-      # Was "アンプハラン ex", which is not the card's Japanese name and
-      # returned zero results on every run it ever made. Ampharos is
-      # デンリュウ; verified 2026-08-06 that this term returns ~64 listings.
-      - term: "デンリュウex XY7"
-        active: true
-
   - id: team_rocket_27s_moltres_ex_124
     active: true
     pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
