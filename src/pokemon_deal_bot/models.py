@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -29,9 +30,20 @@ class ReferenceCard:
     card_number: str
     image_url: str
     image_path: Path
+    # PriceCharting's own category, e.g. "Pokemon Cards", "One Piece Cards".
+    # Auto-derived like everything else about a card, so adding a watchlist
+    # entry still needs nothing but a URL and search terms.
+    game: str = ""
     ungraded_usd: float | None = None
     psa10_usd: float | None = None
     fetched_at: str = ""
+
+    @property
+    def game_label(self) -> str:
+        """A noun phrase for prompts: "One Piece" rather than "One Piece Cards"."""
+
+        label = re.sub(r"\s*cards?\s*$", "", self.game or "", flags=re.I).strip()
+        return label or "trading"
 
     @property
     def display_name(self) -> str:

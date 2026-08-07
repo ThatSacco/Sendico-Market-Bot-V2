@@ -14,7 +14,17 @@ from .models import ReferenceCard, WatchTarget
 
 LOGGER = logging.getLogger(__name__)
 _PRICE_RE = re.compile(r"\$\s*([0-9][0-9,]*(?:\.[0-9]{1,2})?)")
-_TITLE_RE = re.compile(r"^(.*?)\s+#?([0-9]+(?:/[0-9]+)?)\s+Prices\s*\|\s*(.*?)\s*\|", re.I)
+# PriceCharting titles read "{name} {number} Prices | {set} | {category}".
+# The number is deliberately matched as "last whitespace-delimited token
+# before Prices that contains a digit" rather than a digits-only pattern:
+# card numbering is game-specific (Pokemon "97" or "027/081", One Piece
+# "ST21-014" / "P-110", Yu-Gi-Oh "LOB-001") and hardcoding one game's shape
+# made every other game's cards fail to resolve at all.
+_TITLE_RE = re.compile(
+    r"^(.*?)\s+#?([^\s|]*\d[^\s|]*)\s+Prices\s*\|\s*(.*?)\s*\|\s*(.*?)\s*$",
+    re.I,
+)
+_HEADING_RE = re.compile(r"^(.*?)\s+#?([^\s|]*\d[^\s|]*)$")
 _PRODUCT_ID_RE = re.compile(r"PriceCharting ID:\s*[^0-9]*([0-9]+)", re.I)
 
 
@@ -36,16 +46,19 @@ def parse_pricecharting_page(url: str, html: str) -> dict[str, object]:
     name = ""
     number = ""
     set_name = ""
+    game = ""
     match = _TITLE_RE.search(combined_title)
     if match:
-        name, number, set_name = [part.strip() for part in match.groups()]
+        name, number, set_name, game = [part.strip() for part in match.groups()]
     else:
-        h_match = re.search(r"^(.*?)\s+#?([0-9]+(?:/[0-9]+)?)$", heading_text)
+        h_match = _HEADING_RE.search(heading_text)
         if h_match:
             name, number = h_match.groups()
-        detail_match = re.search(r"\((Pokemon[^)]+)\)", soup.get_text(" ", strip=True), re.I)
-        if detail_match:
-            set_name = detail_match.group(1).strip()
+        # Fall back to the breadcrumb/category link rather than pattern
+        # matching one game's set names, which only ever worked for Pokemon.
+        category = soup.select_one('a[href*="/category/"]')
+        if category:
+            game = category.get_text(" ", strip=True)
 
     image_url = ""
     for attrs in [
@@ -116,6 +129,10 @@ def parse_pricecharting_page(url: str, html: str) -> dict[str, object]:
         "name": name.strip(),
         "set_name": set_name.strip(),
         "card_number": _clean_number(number),
+        # e.g. "Pokemon Cards", "One Piece Cards". Carried through so the
+        # vision prompts can describe what they are looking at, and so
+        # listings are only compared against references from the same game.
+        "game": game.strip(),
         "image_url": image_url,
         "ungraded_usd": ungraded,
         "psa10_usd": psa10,
@@ -231,6 +248,7 @@ class PriceChartingReferenceClient:
             name=str(record.get("name") or target_id),
             set_name=str(record.get("set_name") or ""),
             card_number=str(record.get("card_number") or ""),
+            game=str(record.get("game") or ""),
             image_url=str(record.get("image_url") or ""),
             image_path=self.root / str(record.get("image_path") or ""),
             ungraded_usd=float(record["ungraded_usd"]) if record.get("ungraded_usd") is not None else None,

@@ -225,24 +225,25 @@ class GeminiReferenceMatcher:
         reference_jpeg: bytes,
         candidate_jpeg: bytes,
         stage: str,
+        game: str = "trading",
     ) -> VisualMatch:
         if stage == "screening":
             model_candidates = [self.screening_model, *self.models]
             prompt = f"""
-You are visually screening a Japanese Pokemon-card marketplace listing.
+You are visually screening a Japanese {game} trading-card marketplace listing.
 IMAGE 1 is the canonical PriceCharting reference for: {reference_name}.
-IMAGE 2 is a labelled contact sheet from one Sendico/Mercari listing.
+IMAGE 2 is a labelled contact sheet from one Mercari listing.
 Find whether any visible card appears to be the same exact printing and artwork as IMAGE 1.
 Do not require readable card text or number. Use artwork, layout, borders, colours and illustration composition.
 
-Many unrelated Pokemon cards share generic background tropes (grassy cliffs,
-sunset skies, forests, water, ruins). A similar background or colour palette
-alone is never sufficient evidence -- the specific Pokemon species, its exact
-pose and its illustration must match IMAGE 1.
+Many unrelated cards share generic background tropes (skies, forests, water,
+ruins, action lines) and house art styles. A similar background, palette or
+style alone is never sufficient evidence -- the specific character or subject,
+its exact pose and its illustration must match IMAGE 1.
 
 Moderate uncertainty about a real candidate can produce a moderate confidence
 rather than an automatic false. But a high confidence (above 0.6) requires you
-to name one specific candidate label in IMAGE 2 whose Pokemon, pose and
+to name one specific candidate label in IMAGE 2 whose character, pose and
 illustration genuinely match IMAGE 1 -- never assign a high confidence based on
 a generic resemblance, and never describe IMAGE 1's own appearance as if it
 were something you found in IMAGE 2.
@@ -254,22 +255,22 @@ Never report a high confidence for an absence -- report a low number instead.
         else:
             model_candidates = self.models
             prompt = f"""
-Perform an exact visual comparison of a Pokemon card.
+Perform an exact visual comparison of a {game} trading card.
 IMAGE 1 is the canonical PriceCharting reference for: {reference_name}.
 IMAGE 2 is a labelled contact sheet of candidate listing cards/crops.
 Decide whether any candidate is the same exact card printing as the reference.
 Artwork and card layout are primary. Printed name, number and set are supporting evidence only and may be unreadable.
 Different artwork, framing, pose, background composition or card template are conflicts.
 
-Many unrelated Pokemon cards share generic background tropes (grassy cliffs,
-sunset skies, forests, water, ruins). A similar background alone is never
-sufficient; the specific Pokemon species, its exact pose, colouring and
-illustration must match IMAGE 1.
+Many unrelated cards share generic background tropes (skies, forests, water,
+ruins, action lines) and house art styles. A similar background or style alone
+is never sufficient; the specific character or subject, its exact pose,
+colouring and illustration must match IMAGE 1.
 
 "evidence" must describe what you actually observe in IMAGE 2 at one specific
 candidate label -- never restate IMAGE 1's own appearance as if it were found
 in IMAGE 2. If you cannot name one specific candidate label in IMAGE 2 whose
-Pokemon, pose and illustration genuinely match IMAGE 1, report same_card=false
+character, pose and illustration genuinely match IMAGE 1, report same_card=false
 with a low confidence, even if a card in that general style is present.
 Return same_card true only when the visual identity is convincing, but do not reject merely because text is blurred.
 "confidence" is the probability from 0.0 to 1.0 that the reference card IS
@@ -304,6 +305,7 @@ Never report a high confidence for an absence -- report a low number instead.
         targets: list[tuple[str, str]],
         reference_strip_jpeg: bytes,
         candidate_jpeg: bytes,
+        game: str = "trading",
     ) -> dict[str, VisualMatch]:
         """Screen one listing contact sheet against every reference in a single call.
 
@@ -316,12 +318,12 @@ Never report a high confidence for an absence -- report a low number instead.
             f"{label}: {name}" for label, (_, name) in by_label.items()
         )
         prompt = f"""
-You are visually screening a Japanese Pokemon-card marketplace listing against
-multiple canonical reference cards at once.
+You are visually screening a Japanese {game} trading-card marketplace listing
+against multiple canonical reference cards at once.
 IMAGE 1 is a labelled reference strip. Each cell is one canonical PriceCharting
 reference card:
 {reference_list}
-IMAGE 2 is a labelled contact sheet from one Sendico/Mercari listing.
+IMAGE 2 is a labelled contact sheet from one Mercari listing.
 For every reference label that plausibly appears among the listing images in
 IMAGE 2, report it in "matches". Do not require readable card text or number.
 Use artwork, layout, borders, colours and illustration composition.
@@ -376,17 +378,19 @@ instead.
         self,
         *,
         candidate_jpeg: bytes,
+        game: str = "trading",
     ) -> tuple[list[LotCard], int]:
         """Catalogue every card visible in a confirmed lot's crops.
 
         Returns ``(identified_cards, visible_card_count)`` so callers can
         report how many visible cards could not be identified.
         """
-        prompt = """
-You are cataloguing every Pokemon card visible in a labelled contact sheet
-from a Sendico/Mercari lot listing that has already been confirmed to
+        prompt = f"""
+You are cataloguing every {game} trading card visible in a labelled contact
+sheet from a Mercari lot listing that has already been confirmed to
 contain a wanted card.
-For every DISTINCT card you can identify, report its Pokemon name, card
+For every DISTINCT card you can identify, report its printed card name
+(the character or subject as printed on the card), card
 number (if legible), set name (if legible), language, variant/rarity (e.g.
 "Normal/Holo", "SR", "AR", "Full Art"; default to "Normal/Holo" unless a
 premium variant is clearly shown), and grade (only report a specific grading

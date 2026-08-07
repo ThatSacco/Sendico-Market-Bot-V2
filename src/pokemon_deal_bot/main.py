@@ -63,7 +63,14 @@ def _candidate_targets(
     *,
     compare_all: bool,
 ) -> list[str]:
-    """Prioritise search-associated targets; gate on them when compare_all is false."""
+    """Prioritise search-associated targets; gate on them when compare_all is false.
+
+    When compare_all is on, the broadening stays *within the same game*. A
+    listing found by a One Piece search will never contain a Pokemon card,
+    so comparing it against Pokemon references is a guaranteed miss that
+    still costs a Gemini call -- and that cost scales with every unrelated
+    card on the watchlist.
+    """
 
     associated = list(
         dict.fromkeys(
@@ -74,7 +81,22 @@ def _candidate_targets(
     )
     if not compare_all:
         return associated
-    remaining = [target_id for target_id in references if target_id not in associated]
+    associated_games = {
+        references[target_id].game for target_id in associated
+    }
+    remaining = [
+        target_id
+        for target_id, reference in references.items()
+        if target_id not in associated
+        # An unknown game (older cache entry, or a page whose category
+        # could not be read) stays comparable rather than being silently
+        # excluded -- a wasted call is cheaper than a missed card.
+        and (
+            not associated_games
+            or not reference.game
+            or reference.game in associated_games
+        )
+    ]
     return [*associated, *remaining]
 
 
@@ -192,6 +214,24 @@ def _report_match(
     )
 
 
+def _shared_game_label(
+    references: dict[str, ReferenceCard], target_ids: list[str]
+) -> str:
+    """Name the game these targets share, for prompt context.
+
+    Comparisons are game-scoped, so a batch is normally all one game. If a
+    batch somehow spans several, fall back to the neutral wording rather
+    than telling the model to look for the wrong game.
+    """
+
+    labels = {
+        references[target_id].game_label
+        for target_id in target_ids
+        if target_id in references
+    }
+    return labels.pop() if len(labels) == 1 else "trading"
+
+
 def _select_scanner(config: AppConfig):
     """Pick the discovery source named in config.yaml's ``source`` key.
 
@@ -238,6 +278,7 @@ async def _catalogue_lot(
     matcher: GeminiReferenceMatcher,
     price_client: PriceChartingSearchClient,
     detailed_limits: dict,
+    game: str = "trading",
 ) -> tuple[list[LotCard], int]:
     """Identify every card visible in a lot, then price each one.
 
@@ -266,6 +307,7 @@ async def _catalogue_lot(
         )
         batch_cards, batch_visible = await matcher.identify_lot_cards(
             candidate_jpeg=sheet.jpeg,
+            game=game,
         )
         lot_cards.extend(batch_cards)
         visible_card_count += batch_visible
@@ -399,7 +441,8 @@ def _build_confirmation_enricher(
             maximum=int(detailed_limits["max_card_crops_per_listing"]),
         )
         lot_cards, visible_card_count = await _catalogue_lot(
-            images, crops, matcher, price_client, detailed_limits
+            images, crops, matcher, price_client, detailed_limits,
+            game=reference.game_label,
         )
         valuation = lot_value(
             lot_cards,
@@ -840,6 +883,9 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             targets=strip_targets,
                             reference_strip_jpeg=reference_strip.jpeg,
                             candidate_jpeg=overview.jpeg,
+                            game=_shared_game_label(
+                                references, remaining_targets
+                            ),
                         )
                         for target_id in list(remaining_targets):
                             screen = screen_results.get(target_id)
@@ -986,6 +1032,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                             detail = await matcher.compare(
                                 target_id=target_id,
                                 reference_name=reference.display_name,
+                                game=reference.game_label,
                                 reference_jpeg=reference_jpeg,
                                 candidate_jpeg=detail_sheet.jpeg,
                                 stage="detailed",
@@ -1032,6 +1079,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                     verified = await matcher.compare(
                                         target_id=target_id,
                                         reference_name=reference.display_name,
+                                        game=reference.game_label,
                                         reference_jpeg=reference_jpeg,
                                         candidate_jpeg=zoom_sheet.jpeg,
                                         stage="detailed",
@@ -1075,6 +1123,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                                             matcher,
                                             price_client,
                                             detailed_limits,
+                                            game=reference.game_label,
                                         )
                                     )
                                 except GeminiBudgetReached:
