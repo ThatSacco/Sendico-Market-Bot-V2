@@ -41,3 +41,10 @@ cards:
     searches:
       - term: "ロケット団のファイヤーex"
         active: true
+
+  - id: gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114
+    active: true
+    pricecharting_url: "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/gum-gum-fire-fist-pistol-red-hawk-alternate-art-op11-114"
+    searches:
+      - term: "O11-114"
+        active: true
