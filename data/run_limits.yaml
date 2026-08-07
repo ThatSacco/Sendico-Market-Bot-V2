@@ -8,7 +8,12 @@ search:
   # remaining cross-term ceiling.
   results_per_term: 0
   total_listings_per_run: 200
-  raw_links_per_term: 0
+  # Not unlimited any more. With Mercari as the source, unlimited paginated
+  # 13,504 listings across 9 terms in one run (2026-08-06) to fill a
+  # 200-listing budget -- ~98% of that crawl was discarded, and the
+  # pagination is the slowest part of a run. 150 per term still offers
+  # ~1,350 to round-robin from, comfortably more than the real ceiling.
+  raw_links_per_term: 150
   page_timeout_ms: 60000
   # Raised well beyond what any real search should need; the actual stop
   # condition is stable_rounds_before_stop (Load More disappears or the

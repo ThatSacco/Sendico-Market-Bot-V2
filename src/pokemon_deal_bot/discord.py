@@ -411,7 +411,8 @@ class DiscordNotifier:
             f"Held: **{stats.held}**"
         )
         match_value = (
-            f"Screened: **{stats.screened}**\n"
+            f"Screened: **{stats.listings_screened}**\n"
+            f"Comparisons: **{stats.screened}**\n"
             f"Detailed: **{stats.detailed}**\n"
             f"Probable: **{stats.probable_matches}**\n"
             f"Confirmed: **{stats.confirmed_matches}**\n"

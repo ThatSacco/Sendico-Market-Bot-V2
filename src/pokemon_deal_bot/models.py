@@ -133,6 +133,11 @@ class ScanStats:
     found: int = 0
     candidates: int = 0
     hydrated: int = 0
+    # Listings that entered screening. This is what
+    # screening.max_listings_per_run caps -- `screened` below counts
+    # individual target comparisons, of which there are one per active
+    # watchlist card per listing.
+    listings_screened: int = 0
     screened: int = 0
     detailed: int = 0
     probable_matches: int = 0

@@ -707,7 +707,15 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                 ):
                     stats.skipped_seen += 1
                     continue
-                if screening_limit > 0 and stats.screened >= screening_limit:
+                # Capped on listings, not target comparisons. Comparing
+                # against stats.screened made every active watchlist card
+                # consume the budget again: with 3 cards a limit named
+                # "max_listings_per_run: 200" actually stopped the run after
+                # 67 listings (observed live, 2026-08-06 -- screened hit 201).
+                if (
+                    screening_limit > 0
+                    and stats.listings_screened >= screening_limit
+                ):
                     stats.held += len(candidates) - index
                     break
 
@@ -791,6 +799,7 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                     }
                     probable_alerted: set[str] = set()
                     remaining_targets = list(target_ids)
+                    stats.listings_screened += 1
 
                     for batch_number, batch in enumerate(
                         _batches(

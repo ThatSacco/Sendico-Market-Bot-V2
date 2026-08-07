@@ -132,3 +132,32 @@ def test_resolve_cropped_candidate_rejects_a_whole_listing_photo():
 def test_resolve_cropped_candidate_returns_none_for_unresolvable_labels():
     batch = [Image.new("RGB", (1, 1))]
     assert _resolve_cropped_candidate(batch, [True], "C1-", ["C1-9"]) is None
+
+
+def test_screening_cap_counts_listings_not_target_comparisons():
+    """The run budget must not shrink as watchlist cards are added.
+
+    Observed live 2026-08-06: with 3 active cards, a limit named
+    "screening.max_listings_per_run: 200" stopped the run after 67
+    listings, because the counter it was compared against incremented once
+    per card per listing (it reached 201). The cap is on listings.
+    """
+
+    from pokemon_deal_bot.models import ScanStats
+
+    stats = ScanStats()
+    screening_limit = 200
+    active_cards = 3
+    listings_processed = 0
+
+    for _ in range(500):
+        if screening_limit > 0 and stats.listings_screened >= screening_limit:
+            break
+        stats.listings_screened += 1
+        # One comparison per active watchlist card, as run() does.
+        stats.screened += active_cards
+        listings_processed += 1
+
+    assert listings_processed == 200
+    # The comparison counter still reports the real Gemini-side workload.
+    assert stats.screened == 600

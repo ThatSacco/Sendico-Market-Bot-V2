@@ -56,7 +56,12 @@ def test_repository_configuration_loads():
     # isn't cut short before covering every candidate.
     assert config.run_limits["token_budget"]["max_total_tokens_per_run"] == 0
     assert config.run_limits["search"]["results_per_term"] == 0
-    assert config.run_limits["search"]["raw_links_per_term"] == 0
+    # raw_links_per_term is deliberately NOT unlimited: against Mercari,
+    # unlimited paginated 13,504 listings to fill a 200-listing budget.
+    # It only has to stay comfortably above total_listings_per_run.
+    raw_links = config.run_limits["search"]["raw_links_per_term"]
+    assert raw_links > 0
+    assert raw_links * 2 >= config.run_limits["search"]["total_listings_per_run"]
 
 
 def test_validate_run_limits_allows_zero_token_budget_as_unlimited():
