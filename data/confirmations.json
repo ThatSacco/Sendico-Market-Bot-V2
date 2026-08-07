@@ -229,6 +229,1227 @@
       "message_id": "1532250144970379275",
       "sent_at": "2026-07-30T04:55:02.488660+00:00",
       "target_id": "victini_black_bolt_97"
+    },
+    "1535117968583696395": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "confirmed_at": "2026-08-07T03:37:20.995430+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Victini Pokemon Japanese Black Bolt #97",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`victini_black_bolt_97`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥2,999 / A$26.98"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$34.18"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-34.18 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "16 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$34.18 (¥2,999 listing + ¥800 fee)\nVariance: A$-34.18 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Victini artwork matching R1 visible in O1-1"
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m52488569161_1.jpg?1785810520"
+        },
+        "title": "MANUAL SELLER CHECK — Victini 97",
+        "url": "https://sendico.com/shop/mercari/catalog/m52488569161"
+      },
+      "listing_code": "m52488569161",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m52488569161_1.jpg?1785810520",
+          "https://static.mercdn.net/item/detail/orig/photos/m52488569161_2.jpg?1785810520"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini artwork matching R1 visible in O1-1"
+        ],
+        "price_yen": 2999,
+        "seller_positive_ratings": 16,
+        "title": "ビクティニ プロモ ポケモンカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m52488569161",
+      "message_id": "1535117968583696395",
+      "sent_at": "2026-08-07T02:50:44.904592+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118093020569692": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "confirmed_at": "2026-08-07T03:37:30.282973+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Team Rocket's Moltres ex Pokemon Japanese Glory of Team Rocket #124",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`team_rocket_27s_moltres_ex_124`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥14,800 / A$133.15"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$140.35"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-140.35 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "2,536 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$140.35 (¥14,800 listing + ¥800 fee)\nVariance: A$-140.35 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• O1-1 shows the exact same Team Rocket's Moltres ex #124 card layout and illustration.\n• O1-2, O1-3, and O1-4 provide close-ups of corners and edges belonging to the same card."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m13997210704_1.jpg?1786041897"
+        },
+        "title": "MANUAL SELLER CHECK — Team Rocket's Moltres ex 124",
+        "url": "https://sendico.com/shop/mercari/catalog/m13997210704"
+      },
+      "listing_code": "m13997210704",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_1.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_2.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_3.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_4.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_5.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_6.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_7.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_8.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_9.jpg?1786041897",
+          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_10.jpg?1786041897"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the exact same Team Rocket's Moltres ex #124 card layout and illustration.",
+          "O1-2, O1-3, and O1-4 provide close-ups of corners and edges belonging to the same card."
+        ],
+        "price_yen": 14800,
+        "seller_positive_ratings": 2536,
+        "title": "ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m13997210704",
+      "message_id": "1535118093020569692",
+      "sent_at": "2026-08-07T02:51:14.591380+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535118281134964828": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "confirmed_at": "2026-08-07T03:37:38.512628+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Ampharos EX Pokemon Japanese Bandit Ring #27",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`ampharos_bandit_ring_27`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥1,000 / A$9.00"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$16.19"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-16.19 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "21 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$16.19 (¥1,000 listing + ¥800 fee)\nVariance: A$-16.19 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "0 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 0 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Ampharos EX artwork, layout, name (デンリュウEX), and HP 170 matching R1 exactly in cell O1-1"
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m53834294064_1.jpg?1781946135"
+        },
+        "title": "MANUAL SELLER CHECK — Ampharos EX 27",
+        "url": "https://sendico.com/shop/mercari/catalog/m53834294064"
+      },
+      "listing_code": "m53834294064",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m53834294064_1.jpg?1781946135",
+          "https://static.mercdn.net/item/detail/orig/photos/m53834294064_2.jpg?1781946135"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX artwork, layout, name (デンリュウEX), and HP 170 matching R1 exactly in cell O1-1"
+        ],
+        "price_yen": 1000,
+        "seller_positive_ratings": 21,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m53834294064",
+      "message_id": "1535118281134964828",
+      "sent_at": "2026-08-07T02:51:59.413556+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535118397174714409": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "confirmed_at": "2026-08-07T03:37:42.125268+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Victini Pokemon Japanese Black Bolt #97",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`victini_black_bolt_97`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥4,600 / A$41.39"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$48.58"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-48.58 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "515 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$48.58 (¥4,600 listing + ¥800 fee)\nVariance: A$-48.58 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 0 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• The PSA slab and card art in O1-1, O1-2, O1-3, and O1-4 match the Victini AR card shown in R1."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m24942008847_1.jpg?1786007903"
+        },
+        "title": "MANUAL SELLER CHECK — Victini 97",
+        "url": "https://sendico.com/shop/mercari/catalog/m24942008847"
+      },
+      "listing_code": "m24942008847",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_1.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_2.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_3.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_4.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_5.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_6.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_7.jpg?1786007903",
+          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_8.jpg?1786007903"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab and card art in O1-1, O1-2, O1-3, and O1-4 match the Victini AR card shown in R1."
+        ],
+        "price_yen": 4600,
+        "seller_positive_ratings": 515,
+        "title": "ポケカ PROMO プロモ ビクティニ PSA9 ワンオーナー"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24942008847",
+      "message_id": "1535118397174714409",
+      "sent_at": "2026-08-07T02:52:27.098344+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118516221386844": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "confirmed_at": "2026-08-07T03:37:47.339534+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Team Rocket's Moltres ex Pokemon Japanese Glory of Team Rocket #124",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`team_rocket_27s_moltres_ex_124`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥13,000 / A$116.96"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$124.16"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-124.16 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "31 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$124.16 (¥13,000 listing + ¥800 fee)\nVariance: A$-124.16 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 0 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Card O1-1 matches R1 exactly in artwork, text, and set number sv10 124/098 SAR.\n• O1-3 and O1-4 are close-up details of the same card."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m38357956328_1.jpg?1785588847"
+        },
+        "title": "MANUAL SELLER CHECK — Team Rocket's Moltres ex 124",
+        "url": "https://sendico.com/shop/mercari/catalog/m38357956328"
+      },
+      "listing_code": "m38357956328",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_1.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_2.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_3.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_4.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_5.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_6.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_7.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_8.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_9.jpg?1785588847",
+          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_10.jpg?1785588847"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 matches R1 exactly in artwork, text, and set number sv10 124/098 SAR.",
+          "O1-3 and O1-4 are close-up details of the same card."
+        ],
+        "price_yen": 13000,
+        "seller_positive_ratings": 31,
+        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック ロ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m38357956328",
+      "message_id": "1535118516221386844",
+      "sent_at": "2026-08-07T02:52:55.543873+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535118601642573865": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "confirmed_at": "2026-08-07T03:37:57.538462+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Victini Pokemon Japanese Black Bolt #97",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`victini_black_bolt_97`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥2,999 / A$26.98"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$34.18"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-34.18 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "325 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$34.18 (¥2,999 listing + ¥800 fee)\nVariance: A$-34.18 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• The artwork in O1-1 matches R1 (Victini looking over a landscape from a cliff).\n• Note that the promo version has a different set number in the text, but the visual artwork and card layout are identical."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m27112934559_1.jpg?1786006726"
+        },
+        "title": "MANUAL SELLER CHECK — Victini 97",
+        "url": "https://sendico.com/shop/mercari/catalog/m27112934559"
+      },
+      "listing_code": "m27112934559",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m27112934559_1.jpg?1786006726",
+          "https://static.mercdn.net/item/detail/orig/photos/m27112934559_2.jpg?1786006726"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "The artwork in O1-1 matches R1 (Victini looking over a landscape from a cliff).",
+          "Note that the promo version has a different set number in the text, but the visual artwork and card layout are identical."
+        ],
+        "price_yen": 2999,
+        "seller_positive_ratings": 325,
+        "title": "ビクティニ AR プロモ　ブラックボルト・ホワイトフレア"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m27112934559",
+      "message_id": "1535118601642573865",
+      "sent_at": "2026-08-07T02:53:15.836779+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118663991164951": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "confirmed_at": "2026-08-07T03:38:07.856270+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Ampharos EX Pokemon Japanese Bandit Ring #27",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`ampharos_bandit_ring_27`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$14.39"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-14.39 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "4,495 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$14.39 (¥800 listing + ¥800 fee)\nVariance: A$-14.39 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "0 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 0 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Card artwork matches Ampharos EX exactly across O1-1, O1-3, and O1-4.\n• Card number 027/081 and set symbol XY7 are clearly visible in O1-2, matching R1."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m90241316106_1.jpg?1780697783"
+        },
+        "title": "MANUAL SELLER CHECK — Ampharos EX 27",
+        "url": "https://sendico.com/shop/mercari/catalog/m90241316106"
+      },
+      "listing_code": "m90241316106",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_1.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_2.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_3.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_4.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_5.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_6.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_7.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_8.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_9.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_10.jpg?1780697783",
+          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_11.jpg?1780697783"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card artwork matches Ampharos EX exactly across O1-1, O1-3, and O1-4.",
+          "Card number 027/081 and set symbol XY7 are clearly visible in O1-2, matching R1."
+        ],
+        "price_yen": 800,
+        "seller_positive_ratings": 4495,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m90241316106",
+      "message_id": "1535118663991164951",
+      "sent_at": "2026-08-07T02:53:30.778158+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535118734534901761": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "confirmed_at": "2026-08-07T03:38:11.085611+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Team Rocket's Moltres ex Pokemon Japanese Glory of Team Rocket #124",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`team_rocket_27s_moltres_ex_124`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥16,800 / A$151.15"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$158.34"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-158.34 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "613 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$158.34 (¥16,800 listing + ¥800 fee)\nVariance: A$-158.34 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 0 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Card O1-1 shows Team Rocket's Moltres ex #124 with identical artwork, layout, HP, and set number matching R1."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m15722536083_1.jpg?1783561911"
+        },
+        "title": "MANUAL SELLER CHECK — Team Rocket's Moltres ex 124",
+        "url": "https://sendico.com/shop/mercari/catalog/m15722536083"
+      },
+      "listing_code": "m15722536083",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m15722536083_1.jpg?1783561911",
+          "https://static.mercdn.net/item/detail/orig/photos/m15722536083_2.jpg?1783561911"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card O1-1 shows Team Rocket's Moltres ex #124 with identical artwork, layout, HP, and set number matching R1."
+        ],
+        "price_yen": 16800,
+        "seller_positive_ratings": 613,
+        "title": "ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m15722536083",
+      "message_id": "1535118734534901761",
+      "sent_at": "2026-08-07T02:53:47.518660+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535119169316720722": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "confirmed_at": "2026-08-07T03:38:18.088808+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Team Rocket's Moltres ex Pokemon Japanese Glory of Team Rocket #124",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`team_rocket_27s_moltres_ex_124`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥35,500 / A$319.39"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$326.59"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-326.59 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "164 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$326.59 (¥35,500 listing + ¥800 fee)\nVariance: A$-326.59 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 1 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• PSA slab in O1-1 shows the exact artwork and layout of Team Rocket's Moltres ex #124 (SAR)\n• The label in O1-1 clearly states 2025 POKEMON SV10 JP ROCKET'S MOLTRES ex #124 GEM MT 10"
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m34587054014_1.jpg?1785938832"
+        },
+        "title": "MANUAL SELLER CHECK — Team Rocket's Moltres ex 124",
+        "url": "https://sendico.com/shop/mercari/catalog/m34587054014"
+      },
+      "listing_code": "m34587054014",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m34587054014_1.jpg?1785938832",
+          "https://static.mercdn.net/item/detail/orig/photos/m34587054014_2.jpg?1785938832"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "PSA slab in O1-1 shows the exact artwork and layout of Team Rocket's Moltres ex #124 (SAR)",
+          "The label in O1-1 clearly states 2025 POKEMON SV10 JP ROCKET'S MOLTRES ex #124 GEM MT 10"
+        ],
+        "price_yen": 35500,
+        "seller_positive_ratings": 164,
+        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m34587054014",
+      "message_id": "1535119169316720722",
+      "sent_at": "2026-08-07T02:55:31.345792+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535119331254599712": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "confirmed_at": "2026-08-07T03:38:27.489565+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Ampharos EX Pokemon Japanese Bandit Ring #27",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`ampharos_bandit_ring_27`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥633 / A$5.70"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$12.89"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-12.89 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "332 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$12.89 (¥633 listing + ¥800 fee)\nVariance: A$-12.89 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "2 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 2 identified cards unpriced; 0 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-bandit-ring/ampharos-ex-27"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Ampharos EX artwork and card layout match all images O1-1 through O1-4 exactly."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m75471775610_1.jpg?1780100324"
+        },
+        "title": "MANUAL SELLER CHECK — Ampharos EX 27",
+        "url": "https://sendico.com/shop/mercari/catalog/m75471775610"
+      },
+      "listing_code": "m75471775610",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_1.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_2.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_3.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_4.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_5.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_6.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_7.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_8.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_9.jpg?1780100324",
+          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_10.jpg?1780100324"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX artwork and card layout match all images O1-1 through O1-4 exactly."
+        ],
+        "price_yen": 633,
+        "seller_positive_ratings": 332,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m75471775610",
+      "message_id": "1535119331254599712",
+      "sent_at": "2026-08-07T02:56:09.789447+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535119468517261323": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "confirmed_at": "2026-08-07T03:38:37.175649+00:00",
+      "embed": {
+        "color": 16763904,
+        "description": "Victini Pokemon Japanese Black Bolt #97",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Manually confirmed by reaction (the bot could not independently verify this one); seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`victini_black_bolt_97`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥3,000 / A$26.99"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$34.19"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-34.19 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "5,822 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$34.19 (¥3,000 listing + ¥800 fee)\nVariance: A$-34.19 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "1 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 1 identified cards unpriced; 0 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Victini artwork matches the reference R1 exactly."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T03:37:14.686023+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m98905809751_1.jpg?1785719266"
+        },
+        "title": "MANUAL SELLER CHECK — Victini 97",
+        "url": "https://sendico.com/shop/mercari/catalog/m98905809751"
+      },
+      "listing_code": "m98905809751",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m98905809751_1.jpg?1785719266",
+          "https://static.mercdn.net/item/detail/orig/photos/m98905809751_2.jpg?1785719266"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini artwork matches the reference R1 exactly."
+        ],
+        "price_yen": 3000,
+        "seller_positive_ratings": 5822,
+        "title": "ポケモンカード　未開封 　ビクティニ　 271/SV-P 　　プロモ　 カー"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m98905809751",
+      "message_id": "1535119468517261323",
+      "sent_at": "2026-08-07T02:56:42.589553+00:00",
+      "target_id": "victini_black_bolt_97"
     }
   },
   "pending": {
@@ -295,242 +1516,6 @@
       "sent_at": "2026-07-30T03:54:26.963314+00:00",
       "target_id": "victini_black_bolt_97"
     },
-    "1535117793286950958": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m94643999741",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_1.jpg?1786026713",
-          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_2.jpg?1786026713",
-          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_3.jpg?1786026713"
-        ],
-        "match_confidence": 0.95,
-        "match_evidence": [
-          "Victini #97 (AR) is visible in the top left area of O1-1."
-        ],
-        "price_yen": 500,
-        "seller_positive_ratings": 165,
-        "title": "【匿名配送】ポケカ　sv11B、sv11B モンスターボールミラーまとめ売り"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m94643999741",
-      "message_id": "1535117793286950958",
-      "sent_at": "2026-08-07T02:50:03.205671+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535117814585626655": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m14257977701",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_1.jpg?1785058830",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_2.jpg?1785058830",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_3.jpg?1785058830",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_4.jpg?1785058830",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_5.jpg?1786031475",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_6.jpg?1786031475",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_7.jpg?1786031475",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_8.jpg?1786031475",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_9.jpg?1786031475",
-          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_10.jpg?1786031475"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Victini #97 AR is clearly visible as the bottom card in the column O1-1."
-        ],
-        "price_yen": 900,
-        "seller_positive_ratings": 82,
-        "title": "【極美品】ビクティニAR 7枚セット　300円スタート　まとめ売り"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m14257977701",
-      "message_id": "1535117814585626655",
-      "sent_at": "2026-08-07T02:50:08.197665+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535117959150964798": {
-      "alert_type": "confirmed",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": {
-        "color": 16763904,
-        "description": "Victini Pokemon Japanese Black Bolt #97",
-        "fields": [
-          {
-            "inline": false,
-            "name": "Status",
-            "value": "Watchlist match confirmed; seller rating must be verified manually"
-          },
-          {
-            "inline": false,
-            "name": "Matched watchlist",
-            "value": "`victini_black_bolt_97`"
-          },
-          {
-            "inline": true,
-            "name": "Mercari price",
-            "value": "¥900 / A$8.10"
-          },
-          {
-            "inline": true,
-            "name": "Sendico fee",
-            "value": "¥800 / A$7.20"
-          },
-          {
-            "inline": true,
-            "name": "Total Sendico cost",
-            "value": "A$15.29"
-          },
-          {
-            "inline": true,
-            "name": "PriceCharting lot value",
-            "value": "A$0.00"
-          },
-          {
-            "inline": true,
-            "name": "Price variance",
-            "value": "A$-15.29 value below Sendico cost (-100.0%)"
-          },
-          {
-            "inline": true,
-            "name": "Seller positives",
-            "value": "82 positive ratings — no minimum configured; confirm seller reputation manually before buying"
-          },
-          {
-            "inline": false,
-            "name": "Lot value comparison",
-            "value": "PriceCharting value: A$0.00\nSendico cost: A$15.29 (¥900 listing + ¥800 fee)\nVariance: A$-15.29 value below Sendico cost (-100.0%)"
-          },
-          {
-            "inline": false,
-            "name": "Cards priced at ≥95% match",
-            "value": "No individual cards cleared the price-match threshold."
-          },
-          {
-            "inline": false,
-            "name": "Coverage",
-            "value": "9 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 9 identified cards unpriced; 7 visible cards unidentified"
-          },
-          {
-            "inline": false,
-            "name": "PriceCharting",
-            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
-          },
-          {
-            "inline": false,
-            "name": "Evidence",
-            "value": "• Candidate Z1-1 depicts the exact same Victini illustration by Amelicart sitting on a grassy cliff overlooking a landscape, matching the art, card layout, Japanese name ビクティニ, HP 80, move Vフォース (120), and set number 097/086 AR from Image 1."
-          },
-          {
-            "inline": false,
-            "name": "Important",
-            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
-          }
-        ],
-        "footer": {
-          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T02:09:27.510435+00:00)"
-        },
-        "thumbnail": {
-          "url": "https://static.mercdn.net/item/detail/orig/photos/m14257977701_1.jpg?1785058830"
-        },
-        "title": "MANUAL SELLER CHECK — Victini 97",
-        "url": "https://sendico.com/shop/mercari/catalog/m14257977701"
-      },
-      "listing_code": "m14257977701",
-      "listing_snapshot": null,
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m14257977701",
-      "message_id": "1535117959150964798",
-      "sent_at": "2026-08-07T02:50:42.687574+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535117968583696395": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m52488569161",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m52488569161_1.jpg?1785810520",
-          "https://static.mercdn.net/item/detail/orig/photos/m52488569161_2.jpg?1785810520"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Victini artwork matching R1 visible in O1-1"
-        ],
-        "price_yen": 2999,
-        "seller_positive_ratings": 16,
-        "title": "ビクティニ プロモ ポケモンカード"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m52488569161",
-      "message_id": "1535117968583696395",
-      "sent_at": "2026-08-07T02:50:44.904592+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118093020569692": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m13997210704",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_1.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_2.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_3.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_4.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_5.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_6.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_7.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_8.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_9.jpg?1786041897",
-          "https://static.mercdn.net/item/detail/orig/photos/m13997210704_10.jpg?1786041897"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "O1-1 shows the exact same Team Rocket's Moltres ex #124 card layout and illustration.",
-          "O1-2, O1-3, and O1-4 provide close-ups of corners and edges belonging to the same card."
-        ],
-        "price_yen": 14800,
-        "seller_positive_ratings": 2536,
-        "title": "ロケット団のファイヤーex SAR"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m13997210704",
-      "message_id": "1535118093020569692",
-      "sent_at": "2026-08-07T02:51:14.591380+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535118188281597995": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m59618432415",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_1.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_2.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_3.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_4.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_5.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_6.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_7.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_8.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_9.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_10.jpg?1785765238",
-          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_11.jpg?1785765238"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Victini #97 AR artwork matches the card in O3-3."
-        ],
-        "price_yen": 78000,
-        "seller_positive_ratings": 10,
-        "title": "ポケモンカード ビクティニ プロモ BWR"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m59618432415",
-      "message_id": "1535118188281597995",
-      "sent_at": "2026-08-07T02:51:37.370256+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
     "1535118246766977025": {
       "alert_type": "probable",
       "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
@@ -559,295 +1544,6 @@
       "message_id": "1535118246766977025",
       "sent_at": "2026-08-07T02:51:51.230316+00:00",
       "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535118281134964828": {
-      "alert_type": "probable",
-      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
-      "embed": null,
-      "listing_code": "m53834294064",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m53834294064_1.jpg?1781946135",
-          "https://static.mercdn.net/item/detail/orig/photos/m53834294064_2.jpg?1781946135"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Ampharos EX artwork, layout, name (デンリュウEX), and HP 170 matching R1 exactly in cell O1-1"
-        ],
-        "price_yen": 1000,
-        "seller_positive_ratings": 21,
-        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m53834294064",
-      "message_id": "1535118281134964828",
-      "sent_at": "2026-08-07T02:51:59.413556+00:00",
-      "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535118302098231328": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m39417061618",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m39417061618_1.jpg?1784966975",
-          "https://static.mercdn.net/item/detail/orig/photos/m39417061618_2.jpg?1784966975"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "O1-1 displays Team Rocket's Moltres ex with matching artwork and layout"
-        ],
-        "price_yen": 1080,
-        "seller_positive_ratings": 2234,
-        "title": "ロケット団のファイヤーex❤️SR スカーレット&バイオレット 112/098"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m39417061618",
-      "message_id": "1535118302098231328",
-      "sent_at": "2026-08-07T02:52:04.444558+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535118358129938465": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m16522033195",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_1.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_2.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_3.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_4.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_5.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_6.jpg?1785171756",
-          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_7.jpg?1785171756"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Victini AR with attack V-Force is visible in O1-1 bottom right, O1-2, and O1-3, matching R1 artwork and set symbol sv11B 097/086 (or similar alternate printing variant/angle)."
-        ],
-        "price_yen": 2999,
-        "seller_positive_ratings": 604,
-        "title": "ポケモンカード ビクティニ 5枚セット マスターボールミラー"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m16522033195",
-      "message_id": "1535118358129938465",
-      "sent_at": "2026-08-07T02:52:17.911332+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118397174714409": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m24942008847",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_1.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_2.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_3.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_4.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_5.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_6.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_7.jpg?1786007903",
-          "https://static.mercdn.net/item/detail/orig/photos/m24942008847_8.jpg?1786007903"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "The PSA slab and card art in O1-1, O1-2, O1-3, and O1-4 match the Victini AR card shown in R1."
-        ],
-        "price_yen": 4600,
-        "seller_positive_ratings": 515,
-        "title": "ポケカ PROMO プロモ ビクティニ PSA9 ワンオーナー"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m24942008847",
-      "message_id": "1535118397174714409",
-      "sent_at": "2026-08-07T02:52:27.098344+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118516221386844": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m38357956328",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_1.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_2.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_3.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_4.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_5.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_6.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_7.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_8.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_9.jpg?1785588847",
-          "https://static.mercdn.net/item/detail/orig/photos/m38357956328_10.jpg?1785588847"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Card O1-1 matches R1 exactly in artwork, text, and set number sv10 124/098 SAR.",
-          "O1-3 and O1-4 are close-up details of the same card."
-        ],
-        "price_yen": 13000,
-        "seller_positive_ratings": 31,
-        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック ロ…"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m38357956328",
-      "message_id": "1535118516221386844",
-      "sent_at": "2026-08-07T02:52:55.543873+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535118601642573865": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m27112934559",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m27112934559_1.jpg?1786006726",
-          "https://static.mercdn.net/item/detail/orig/photos/m27112934559_2.jpg?1786006726"
-        ],
-        "match_confidence": 0.95,
-        "match_evidence": [
-          "The artwork in O1-1 matches R1 (Victini looking over a landscape from a cliff).",
-          "Note that the promo version has a different set number in the text, but the visual artwork and card layout are identical."
-        ],
-        "price_yen": 2999,
-        "seller_positive_ratings": 325,
-        "title": "ビクティニ AR プロモ　ブラックボルト・ホワイトフレア"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m27112934559",
-      "message_id": "1535118601642573865",
-      "sent_at": "2026-08-07T02:53:15.836779+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118663991164951": {
-      "alert_type": "probable",
-      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
-      "embed": null,
-      "listing_code": "m90241316106",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_1.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_2.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_3.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_4.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_5.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_6.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_7.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_8.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_9.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_10.jpg?1780697783",
-          "https://static.mercdn.net/item/detail/orig/photos/m90241316106_11.jpg?1780697783"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Card artwork matches Ampharos EX exactly across O1-1, O1-3, and O1-4.",
-          "Card number 027/081 and set symbol XY7 are clearly visible in O1-2, matching R1."
-        ],
-        "price_yen": 800,
-        "seller_positive_ratings": 4495,
-        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m90241316106",
-      "message_id": "1535118663991164951",
-      "sent_at": "2026-08-07T02:53:30.778158+00:00",
-      "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535118734534901761": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m15722536083",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m15722536083_1.jpg?1783561911",
-          "https://static.mercdn.net/item/detail/orig/photos/m15722536083_2.jpg?1783561911"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Card O1-1 shows Team Rocket's Moltres ex #124 with identical artwork, layout, HP, and set number matching R1."
-        ],
-        "price_yen": 16800,
-        "seller_positive_ratings": 613,
-        "title": "ロケット団のファイヤーex SAR"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m15722536083",
-      "message_id": "1535118734534901761",
-      "sent_at": "2026-08-07T02:53:47.518660+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535118775261863968": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m38197722788",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_1.jpg?1785469145",
-          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_2.jpg?1785469145",
-          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_3.jpg?1785469145",
-          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_4.jpg?1785469145"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Victini AR is clearly visible in the bottom right pocket of image O1-1."
-        ],
-        "price_yen": 1200,
-        "seller_positive_ratings": 204,
-        "title": "ポケモンカード まとめ売り ファイル付き sv11W & sv11B 全135"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m38197722788",
-      "message_id": "1535118775261863968",
-      "sent_at": "2026-08-07T02:53:57.238631+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118805724827693": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m24875212438",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m24875212438_1.jpg?1785885829",
-          "https://static.mercdn.net/item/detail/orig/photos/m24875212438_2.jpg?1785885829"
-        ],
-        "match_confidence": 0.95,
-        "match_evidence": [
-          "Victini sitting by the tree artwork matches cell O1-1 bottom left card"
-        ],
-        "price_yen": 580,
-        "seller_positive_ratings": 2609,
-        "title": "ポケモンカード　ビクティニ　まとめ売り　スターター、その他"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m24875212438",
-      "message_id": "1535118805724827693",
-      "sent_at": "2026-08-07T02:54:04.530166+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535118827644391517": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m53369264705",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_1.jpg?1785975476",
-          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_2.jpg?1785975476",
-          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_3.jpg?1785975476",
-          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_4.jpg?1785975476",
-          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_5.jpg?1785975476"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "O1-1 shows Victini #97 inside a sealed promotional wrap matching the artwork, character, and layout of R1."
-        ],
-        "price_yen": 90000,
-        "seller_positive_ratings": 597,
-        "title": "最終値下げ　ビクティニ P SV-P 288 　プロモ　ビクティニBWR争奪戦"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m53369264705",
-      "message_id": "1535118827644391517",
-      "sent_at": "2026-08-07T02:54:09.742007+00:00",
-      "target_id": "victini_black_bolt_97"
     },
     "1535118871210631249": {
       "alert_type": "probable",
@@ -879,249 +1575,1279 @@
       "sent_at": "2026-08-07T02:54:20.113908+00:00",
       "target_id": "ampharos_bandit_ring_27"
     },
-    "1535118960545108030": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m12324182872",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_1.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_2.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_3.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_4.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_5.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_6.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_7.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_8.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_9.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_10.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_11.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_12.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_13.jpg?1785941886",
-          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_14.jpg?1785941886"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "The artwork and text box layout in O2-1 and O2-2 clearly match Team Rocket's Moltres ex #124 from R1."
-        ],
-        "price_yen": 1100,
-        "seller_positive_ratings": 315,
-        "title": "ロケット団のファイヤーex SR スカーレット&バイオレット 拡張パック ロケ…"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m12324182872",
-      "message_id": "1535118960545108030",
-      "sent_at": "2026-08-07T02:54:41.476714+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535119104925761637": {
+    "1535131662457774146": {
       "alert_type": "probable",
       "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
       "embed": null,
-      "listing_code": "m30876445351",
+      "listing_code": "m70303590227",
       "listing_snapshot": {
         "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_1.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_2.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_3.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_4.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_5.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_6.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_7.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_8.jpg?1782736369",
-          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_9.jpg?1782736369"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Listing images show Ampharos EX with identical artwork, card layout, and HP 170 matching R1."
-        ],
-        "price_yen": 7999,
-        "seller_positive_ratings": 495,
-        "title": "デンリュウEX SR XY7 バンデットリング 085/081"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m30876445351",
-      "message_id": "1535119104925761637",
-      "sent_at": "2026-08-07T02:55:15.837406+00:00",
-      "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535119169316720722": {
-      "alert_type": "probable",
-      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
-      "embed": null,
-      "listing_code": "m34587054014",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m34587054014_1.jpg?1785938832",
-          "https://static.mercdn.net/item/detail/orig/photos/m34587054014_2.jpg?1785938832"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "PSA slab in O1-1 shows the exact artwork and layout of Team Rocket's Moltres ex #124 (SAR)",
-          "The label in O1-1 clearly states 2025 POKEMON SV10 JP ROCKET'S MOLTRES ex #124 GEM MT 10"
-        ],
-        "price_yen": 35500,
-        "seller_positive_ratings": 164,
-        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m34587054014",
-      "message_id": "1535119169316720722",
-      "sent_at": "2026-08-07T02:55:31.345792+00:00",
-      "target_id": "team_rocket_27s_moltres_ex_124"
-    },
-    "1535119217970384987": {
-      "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
-      "embed": null,
-      "listing_code": "m32018222828",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m32018222828_1.jpg?1785840564"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Multiple copies of Victini #97 AR are clearly visible in O1-1 with matching artwork and layout."
-        ],
-        "price_yen": 300,
-        "seller_positive_ratings": 1119,
-        "title": "ビクティニ　012/086 10枚 セット まとめ売り　汎用　デッキパーツ"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m32018222828",
-      "message_id": "1535119217970384987",
-      "sent_at": "2026-08-07T02:55:42.775354+00:00",
-      "target_id": "victini_black_bolt_97"
-    },
-    "1535119262312824874": {
-      "alert_type": "probable",
-      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
-      "embed": null,
-      "listing_code": "m49422792491",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_1.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_2.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_3.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_4.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_5.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_6.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_7.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_8.jpg?1777134857",
-          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_9.jpg?1777134857"
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_1.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_2.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_3.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_4.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_5.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_6.jpg?1785843842"
         ],
         "match_confidence": 0.95,
         "match_evidence": [
-          "O2-1 shows the bottom-left corner of a card with a Fighting type weakness (x2), Water type resistance (-20), and a '1' 1st Edition stamp matching the layout and symbols of R1 (Ampharos EX)."
+          "O2-1 shows the back of a card with a Lightning energy symbol watermark near the top right, corresponding to Ampharos EX (Electric type)."
         ],
-        "price_yen": 2837,
-        "seller_positive_ratings": 987,
-        "title": "ポケモンカードゲーム ロトム C XY7 バンデットリング 029/081"
+        "price_yen": 2166,
+        "seller_positive_ratings": 26,
+        "title": "デンリュウex ☆ 第3弾拡張パック 天空の覇者 025/054"
       },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m49422792491",
-      "message_id": "1535119262312824874",
-      "sent_at": "2026-08-07T02:55:53.382741+00:00",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m70303590227",
+      "message_id": "1535131662457774146",
+      "sent_at": "2026-08-07T03:45:09.926824+00:00",
       "target_id": "ampharos_bandit_ring_27"
     },
-    "1535119299855913041": {
-      "alert_type": "probable",
-      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
-      "embed": null,
-      "listing_code": "m70224699141",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_1.jpg?1768121314",
-          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_2.jpg?1768121314",
-          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_3.jpg?1768121314",
-          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_4.jpg?1768121314",
-          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_5.jpg?1768121314"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Image 2 shows booster packs for 'Bandit Ring' (XY series), which corresponds to the set for Ampharos EX #27."
-        ],
-        "price_yen": 888,
-        "seller_positive_ratings": 204,
-        "title": "バンデットリング 空パック 絶版 2パック"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m70224699141",
-      "message_id": "1535119299855913041",
-      "sent_at": "2026-08-07T02:56:02.307908+00:00",
-      "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535119331254599712": {
-      "alert_type": "probable",
-      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
-      "embed": null,
-      "listing_code": "m75471775610",
-      "listing_snapshot": {
-        "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_1.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_2.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_3.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_4.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_5.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_6.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_7.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_8.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_9.jpg?1780100324",
-          "https://static.mercdn.net/item/detail/orig/photos/m75471775610_10.jpg?1780100324"
-        ],
-        "match_confidence": 1.0,
-        "match_evidence": [
-          "Ampharos EX artwork and card layout match all images O1-1 through O1-4 exactly."
-        ],
-        "price_yen": 633,
-        "seller_positive_ratings": 332,
-        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
-      },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m75471775610",
-      "message_id": "1535119331254599712",
-      "sent_at": "2026-08-07T02:56:09.789447+00:00",
-      "target_id": "ampharos_bandit_ring_27"
-    },
-    "1535119438440046604": {
+    "1535131663623913544": {
       "alert_type": "probable",
       "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
       "embed": null,
-      "listing_code": "m69060721059",
+      "listing_code": "m70303590227",
       "listing_snapshot": {
         "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m69060721059_1.jpg?1786020259",
-          "https://static.mercdn.net/item/detail/orig/photos/m69060721059_2.jpg?1786020259"
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_1.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_2.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_3.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_4.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_5.jpg?1785843842",
+          "https://static.mercdn.net/item/detail/orig/photos/m70303590227_6.jpg?1785843842"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "O2-2 shows the back of a card with a Grass energy symbol watermark near the top left, corresponding to Victini (Grass type art/card)."
+        ],
+        "price_yen": 2166,
+        "seller_positive_ratings": 26,
+        "title": "デンリュウex ☆ 第3弾拡張パック 天空の覇者 025/054"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m70303590227",
+      "message_id": "1535131663623913544",
+      "sent_at": "2026-08-07T03:45:10.044731+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535132330996531284": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m27188516917",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m27188516917_1.jpg?1785662767",
+          "https://static.mercdn.net/item/detail/orig/photos/m27188516917_2.jpg?1785662767",
+          "https://static.mercdn.net/item/detail/orig/photos/m27188516917_3.jpg?1785662767",
+          "https://static.mercdn.net/item/detail/orig/photos/m27188516917_4.jpg?1785662767",
+          "https://static.mercdn.net/item/detail/orig/photos/m27188516917_5.jpg?1785662767"
         ],
         "match_confidence": 1.0,
         "match_evidence": [
-          "Victini with the specific artwork and layout is clearly visible in the middle row, second card from the left in O1-1."
+          "Ampharos EX artwork and card layout match R1, though R1 is the full art version (027/081) and the listing shows the standard/full art variant (085/081 SR)."
+        ],
+        "price_yen": 4100,
+        "seller_positive_ratings": 18,
+        "title": "デンリュウEX SR XY7 バンデットリング 085/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m27188516917",
+      "message_id": "1535132330996531284",
+      "sent_at": "2026-08-07T03:47:49.168589+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535132645300772998": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m84656955153",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_1.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_2.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_3.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_4.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_5.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_6.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_7.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_8.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_9.jpg?1783509855",
+          "https://static.mercdn.net/item/detail/orig/photos/m84656955153_10.jpg?1783509855"
+        ],
+        "match_confidence": 0.98,
+        "match_evidence": [
+          "O2-1 clearly shows a Mega Ampharos EX card from the same set/era, matching the style and text layout of R1 (though R1 is Ampharos EX and O2-1 shows Mega Ampharos EX, they belong to the same evolutionary line and listing context, but let's check: R1 is Ampharos EX #27, O2-1 shows Mega Ampharos EX #28 which is the direct evolution/next card in the set)."
+        ],
+        "price_yen": 2780,
+        "seller_positive_ratings": 40,
+        "title": "【美品】MデンリュウEX RR XY7 バンデットリング 028/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m84656955153",
+      "message_id": "1535132645300772998",
+      "sent_at": "2026-08-07T03:49:04.228246+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535132951669379144": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m92155074316",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m92155074316_1.jpg?1786067694",
+          "https://static.mercdn.net/item/detail/orig/photos/m92155074316_2.jpg?1786067694"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "The PSA slab in O1-1 shows a Victini card with matching artwork and HP 80, though the promo number differs from the reference, the visual artwork matches the character and layout."
+        ],
+        "price_yen": 74000,
+        "seller_positive_ratings": 274,
+        "title": "PSA9 ビクティニ 288/SV-P プロモ ポケモンカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m92155074316",
+      "message_id": "1535132951669379144",
+      "sent_at": "2026-08-07T03:50:17.225824+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535133374539370498": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m63115481782",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m63115481782_1.jpg?1786055841",
+          "https://static.mercdn.net/item/detail/orig/photos/m63115481782_2.jpg?1786055841",
+          "https://static.mercdn.net/item/detail/orig/photos/m63115481782_3.jpg?1786055901"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR from Black Bolt (sv11B) is clearly visible in the top row of O1-1 and O1-2."
+        ],
+        "price_yen": 12222,
+        "seller_positive_ratings": 294,
+        "title": "ブラックボルト ホワイトフレア AR 21枚 まとめ売り ポケモンカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m63115481782",
+      "message_id": "1535133374539370498",
+      "sent_at": "2026-08-07T03:51:57.942559+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535133522023550976": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m36674054366",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m36674054366_1.jpg?1785241897",
+          "https://static.mercdn.net/item/detail/orig/photos/m36674054366_2.jpg?1785241897"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image O1-1 shows the exact same card as R1 (Team Rocket's Moltres ex with Giovanni in the background and matching artwork, HP 220, type fire)."
+        ],
+        "price_yen": 9999,
+        "seller_positive_ratings": 625,
+        "title": "【PSA10】ロケット団のファイヤーexSR ロケット団の栄光"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m36674054366",
+      "message_id": "1535133522023550976",
+      "sent_at": "2026-08-07T03:52:33.124470+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535133652147765379": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m71882046877",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_1.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_2.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_3.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_4.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_5.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_6.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_7.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_8.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_9.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_10.jpg?1782313600",
+          "https://static.mercdn.net/item/detail/orig/photos/m71882046877_11.jpg?1782313600"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows the full card matching Ampharos EX #27 with identical artwork and text.",
+          "O1-2, O1-3, and O1-4 show closeups of the top-left, top-right, and bottom portions of the exact same Ampharos EX card."
+        ],
+        "price_yen": 599,
+        "seller_positive_ratings": 133,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081 状態不良"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m71882046877",
+      "message_id": "1535133652147765379",
+      "sent_at": "2026-08-07T03:53:04.239512+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535133790027120682": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m34081344714",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_1.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_2.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_3.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_4.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_5.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_6.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_7.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_8.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_9.jpg?1777771358",
+          "https://static.mercdn.net/item/detail/orig/photos/m34081344714_10.jpg?1777771358"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "All listing images O1-1 through O1-4 show the exact same card as reference R1 (Team Rocket's Moltres ex #124, featuring the distinct artwork by AKIRA EGAWA, HP 220, and set number 124/098 SAR)."
+        ],
+        "price_yen": 12000,
+        "seller_positive_ratings": 891,
+        "title": "ロケット団のファイヤーex SAR SV10 傷あり！要確認！値下げ相談可能！"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m34081344714",
+      "message_id": "1535133790027120682",
+      "sent_at": "2026-08-07T03:53:37.042974+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535133940778537032": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m40807807480",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m40807807480_1.jpg?1783404766",
+          "https://static.mercdn.net/item/detail/orig/photos/m40807807480_2.jpg?1783404766",
+          "https://static.mercdn.net/item/detail/orig/photos/m40807807480_3.jpg?1783404766"
+        ],
+        "match_confidence": 0.85,
+        "match_evidence": [
+          "The starter set promo pack in O1-1 is explicitly for Hogator & Ampharos ex (ホゲータ＆デンリュウex), which contains Ampharos ex cards matching R1."
+        ],
+        "price_yen": 1899,
+        "seller_positive_ratings": 1282,
+        "title": "ポケカ　スターターセットex ホゲータ＆デンリュウex プロモカードパック"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m40807807480",
+      "message_id": "1535133940778537032",
+      "sent_at": "2026-08-07T03:54:13.081945+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535134010806636635": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m56189080106",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_1.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_2.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_3.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_4.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_5.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_6.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_7.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_8.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_9.jpg?1785287625",
+          "https://static.mercdn.net/item/detail/orig/photos/m56189080106_10.jpg?1785287625"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork in O1-1, O1-3, and O1-4 clearly matches Team Rocket's Moltres ex #124 with Giovanni in the background and Moltres in the foreground."
+        ],
+        "price_yen": 1500,
+        "seller_positive_ratings": 169,
+        "title": "ロケット団のファイヤーex SR スカーレット&バイオレット 拡張パック ロケ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m56189080106",
+      "message_id": "1535134010806636635",
+      "sent_at": "2026-08-07T03:54:29.717300+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535134115609710593": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m99311119141",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m99311119141_1.jpg?1780318427",
+          "https://static.mercdn.net/item/detail/orig/photos/m99311119141_2.jpg?1780318427"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR is clearly visible in the top right of O1-1 and also stacked in O1-2."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 131,
+        "title": "ポケモンカード ブラックボルト　SV11B まとめ売り 12枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m99311119141",
+      "message_id": "1535134115609710593",
+      "sent_at": "2026-08-07T03:54:54.644399+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535134201894928426": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m57973163638",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m57973163638_1.jpg?1786021399",
+          "https://static.mercdn.net/item/detail/orig/photos/m57973163638_2.jpg?1786021399"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR from Japanese set is visible in the top-left cell of image O1-1."
+        ],
+        "price_yen": 5750,
+        "seller_positive_ratings": 28,
+        "title": "ポケモンカード　ビクティニ含む AR 4枚セット まとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m57973163638",
+      "message_id": "1535134201894928426",
+      "sent_at": "2026-08-07T03:55:15.380928+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535134288381485111": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m83790740365",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m83790740365_1.jpg?1785776961",
+          "https://static.mercdn.net/item/detail/orig/photos/m83790740365_2.jpg?1785776961"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX is clearly visible in the top right corner of image O1-2."
+        ],
+        "price_yen": 499,
+        "seller_positive_ratings": 17,
+        "title": "ポケモンロケット団の栄光ゲンガーexロケット団のクロバットex含む18枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m83790740365",
+      "message_id": "1535134288381485111",
+      "sent_at": "2026-08-07T03:55:35.917287+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535134391922065429": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m81911724715",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m81911724715_1.jpg?1785680203",
+          "https://static.mercdn.net/item/detail/orig/photos/m81911724715_2.jpg?1785683128",
+          "https://static.mercdn.net/item/detail/orig/photos/m81911724715_3.jpg?1785683128",
+          "https://static.mercdn.net/item/detail/orig/photos/m81911724715_4.jpg?1785683128",
+          "https://static.mercdn.net/item/detail/orig/photos/m81911724715_5.jpg?1785683128"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 AR is clearly visible in the bottom right section of image O1-4, showing the characteristic landscape and Victini artwork."
+        ],
+        "price_yen": 2600,
+        "seller_positive_ratings": 364,
+        "title": "ポケモンカード ブラックボルト ミラー キラ サポート まとめ売り 引退品 絶版"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m81911724715",
+      "message_id": "1535134391922065429",
+      "sent_at": "2026-08-07T03:56:00.524793+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535134434796507177": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m28285919156",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_1.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_2.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_3.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_4.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_5.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_6.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_7.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_8.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_9.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_10.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_11.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_12.jpg?1785165534",
+          "https://static.mercdn.net/item/detail/orig/photos/m28285919156_13.jpg?1785165534"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR from sv11B matches the card visible in O1-1 (middle column, bottom row) and zoomed in at O1-3."
         ],
         "price_yen": 2000,
-        "seller_positive_ratings": 1091,
-        "title": "ポケモンカード　BW XY 11枚セットまとめ売り　カイリュー　プラズマ団　RR"
+        "seller_positive_ratings": 278,
+        "title": "ポケモンカード ビクティニ 6枚セット まとめ売り しぶぞー"
       },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m69060721059",
-      "message_id": "1535119438440046604",
-      "sent_at": "2026-08-07T02:56:35.367460+00:00",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m28285919156",
+      "message_id": "1535134434796507177",
+      "sent_at": "2026-08-07T03:56:10.732043+00:00",
       "target_id": "victini_black_bolt_97"
     },
-    "1535119468517261323": {
+    "1535134711381237831": {
       "alert_type": "probable",
-      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
       "embed": null,
-      "listing_code": "m98905809751",
+      "listing_code": "m19819094871",
       "listing_snapshot": {
         "image_urls": [
-          "https://static.mercdn.net/item/detail/orig/photos/m98905809751_1.jpg?1785719266",
-          "https://static.mercdn.net/item/detail/orig/photos/m98905809751_2.jpg?1785719266"
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_1.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_2.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_3.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_4.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_5.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_6.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_7.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_8.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_9.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_10.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_11.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_12.jpg?1773891284",
+          "https://static.mercdn.net/item/detail/orig/photos/m19819094871_13.jpg?1773891284"
         ],
         "match_confidence": 1.0,
         "match_evidence": [
-          "Victini artwork matches the reference R1 exactly."
+          "Ampharos EX #27 is clearly visible in the middle position of image O1-1."
         ],
-        "price_yen": 3000,
-        "seller_positive_ratings": 5822,
-        "title": "ポケモンカード　未開封 　ビクティニ　 271/SV-P 　　プロモ　 カー"
+        "price_yen": 6444,
+        "seller_positive_ratings": 517,
+        "title": "MデンリュウEX 進化セット XY7"
       },
-      "listing_url": "https://sendico.com/shop/mercari/catalog/m98905809751",
-      "message_id": "1535119468517261323",
-      "sent_at": "2026-08-07T02:56:42.589553+00:00",
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m19819094871",
+      "message_id": "1535134711381237831",
+      "sent_at": "2026-08-07T03:57:16.685926+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535134793317089352": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m44063398736",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m44063398736_1.jpg?1783858876",
+          "https://static.mercdn.net/item/detail/orig/photos/m44063398736_2.jpg?1783862893",
+          "https://static.mercdn.net/item/detail/orig/photos/m44063398736_3.jpg?1783858876",
+          "https://static.mercdn.net/item/detail/orig/photos/m44063398736_4.jpg?1783858876",
+          "https://static.mercdn.net/item/detail/orig/photos/m44063398736_5.jpg?1783858876"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2, cell O1-1 shows the Team Rocket's Moltres card (though note that the rarity/number in the listing image is sv10 015/098 RR rather than the SAR shown in reference R1, but the artwork and card type match)."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1869,
+        "title": "【ロケット団の栄光】015/098 ロケット団のファイヤーex《RR》"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m44063398736",
+      "message_id": "1535134793317089352",
+      "sent_at": "2026-08-07T03:57:36.220379+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535135131671601163": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m75131794083",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m75131794083_1.jpg?1769434827"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact artwork, card frame, HP, attacks, and set number matching Ampharos EX #27."
+        ],
+        "price_yen": 2100,
+        "seller_positive_ratings": 56,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m75131794083",
+      "message_id": "1535135131671601163",
+      "sent_at": "2026-08-07T03:58:56.878614+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535135154572623972": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m69644275120",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_1.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_2.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_3.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_4.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_5.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_6.jpg?1785314937",
+          "https://static.mercdn.net/item/detail/orig/photos/m69644275120_7.jpg?1785314937"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card artwork matches Team Rocket's Moltres ex #124 perfectly in O1-1, O1-2, and O1-3."
+        ],
+        "price_yen": 18000,
+        "seller_positive_ratings": 614,
+        "title": "ロケット団のファイヤーex SAR スカーレット&バイオレット 拡張パック ロ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m69644275120",
+      "message_id": "1535135154572623972",
+      "sent_at": "2026-08-07T03:59:02.350615+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535135213905125487": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m70957762782",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m70957762782_1.jpg?1783233920",
+          "https://static.mercdn.net/item/detail/orig/photos/m70957762782_2.jpg?1783233920"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 (bottom middle card in O1-1 matches R1 artwork and layout exactly)"
+        ],
+        "price_yen": 450,
+        "seller_positive_ratings": 345,
+        "title": "ビクティニまとめ売り　6枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m70957762782",
+      "message_id": "1535135213905125487",
+      "sent_at": "2026-08-07T03:59:16.548543+00:00",
       "target_id": "victini_black_bolt_97"
+    },
+    "1535135284822548612": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m29513962388",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m29513962388_1.jpg?1785934536",
+          "https://static.mercdn.net/item/detail/orig/photos/m29513962388_2.jpg?1785934536"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 AR artwork and text alignment match O1-1.",
+          "Card back shown in O1-2."
+        ],
+        "price_yen": 94999,
+        "seller_positive_ratings": 1005,
+        "title": "ビクティニ P SV-P 288 プロモーションカードビクティニBWR争奪戦"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m29513962388",
+      "message_id": "1535135284822548612",
+      "sent_at": "2026-08-07T03:59:33.422565+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535135355588579342": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m72198460074",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m72198460074_1.jpg?1785420929",
+          "https://static.mercdn.net/item/detail/orig/photos/m72198460074_2.jpg?1785420929"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 clearly shows Team Rocket's Moltres ex #124 with identical artwork, character placement, and layout."
+        ],
+        "price_yen": 15000,
+        "seller_positive_ratings": 958,
+        "title": "ポケモンカード　ロケット団のファイヤーex SAR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m72198460074",
+      "message_id": "1535135355588579342",
+      "sent_at": "2026-08-07T03:59:50.354368+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535135421934338160": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m14891466152",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_1.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_2.jpg?1785877344",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_3.jpg?1785877344",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_4.jpg?1785877344",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_5.jpg?1785877344",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_6.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_7.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_8.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_9.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_10.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_11.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_12.jpg?1785678518",
+          "https://static.mercdn.net/item/detail/orig/photos/m14891466152_13.jpg?1785678518"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 is clearly visible in image O1-1 (second row, second card) and zoomed in on O1-2."
+        ],
+        "price_yen": 640,
+        "seller_positive_ratings": 10,
+        "title": "​ポケモンカード まとめ売り ガオガエンex　オーガポンex レシラムe他12枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14891466152",
+      "message_id": "1535135421934338160",
+      "sent_at": "2026-08-07T04:00:06.102474+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535135549025947709": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m17709959853",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_1.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_2.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_3.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_4.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_5.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_6.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_7.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_8.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_9.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_10.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_11.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_12.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_13.jpg?1785503757",
+          "https://static.mercdn.net/item/detail/orig/photos/m17709959853_14.jpg?1785503757"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork featuring Victini on a cliff with trees and hills matches R1.",
+          "Character name and layout match R1."
+        ],
+        "price_yen": 2200,
+        "seller_positive_ratings": 2383,
+        "title": "未開封プロモ ビクティニ PROMO 271/SV-P カードファイルセット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m17709959853",
+      "message_id": "1535135549025947709",
+      "sent_at": "2026-08-07T04:00:36.436379+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535135641807880195": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m65759619370",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_1.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_2.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_3.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_4.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_5.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_6.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_7.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_8.jpg?1785229219",
+          "https://static.mercdn.net/item/detail/orig/photos/m65759619370_9.jpg?1785229219"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX features prominently on the 'Sprigatito & Ampharos ex' starter deck box in O1-1 and on the back cover of the starter deck packaging in O1-2 and O1-3."
+        ],
+        "price_yen": 5400,
+        "seller_positive_ratings": 576,
+        "title": "ポケモンカード スターターセットex 3種セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m65759619370",
+      "message_id": "1535135641807880195",
+      "sent_at": "2026-08-07T04:00:58.624555+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535135721197928520": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m78364659008",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m78364659008_1.jpg?1785722443",
+          "https://static.mercdn.net/item/detail/orig/photos/m78364659008_2.jpg?1785722443",
+          "https://static.mercdn.net/item/detail/orig/photos/m78364659008_3.jpg?1785722443"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The PSA slab label clearly states '2025 POKEMON SV10 JP #124 ROCKET'S MOLTRES ex SPECIAL ART RARE', matching reference R1 exactly."
+        ],
+        "price_yen": 44000,
+        "seller_positive_ratings": 35,
+        "title": "ロケット団のファイヤーex SAR 拡張パック ロケット団の栄光PSA10"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m78364659008",
+      "message_id": "1535135721197928520",
+      "sent_at": "2026-08-07T04:01:17.441275+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535135912588091454": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m89312119769",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_1.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_2.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_3.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_4.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_5.jpg?1786057447"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini coin / token present in O1-1 and O1-2"
+        ],
+        "price_yen": 600,
+        "seller_positive_ratings": 461,
+        "title": "ポケモンカードゲーム コイン"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m89312119769",
+      "message_id": "1535135912588091454",
+      "sent_at": "2026-08-07T04:02:03.066537+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535135915402465303": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m89312119769",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_1.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_2.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_3.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_4.jpg?1786057447",
+          "https://static.mercdn.net/item/detail/orig/photos/m89312119769_5.jpg?1786057447"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos coin / token present in O1-1 and O1-3"
+        ],
+        "price_yen": 600,
+        "seller_positive_ratings": 461,
+        "title": "ポケモンカードゲーム コイン"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m89312119769",
+      "message_id": "1535135915402465303",
+      "sent_at": "2026-08-07T04:02:03.840162+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535136060361941035": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m95829027532",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_1.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_2.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_3.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_4.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_5.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_6.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_7.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_8.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_9.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_10.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_11.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_12.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_13.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_14.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_15.jpg?1782175001",
+          "https://static.mercdn.net/item/detail/orig/photos/m95829027532_16.jpg?1782175001"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Team Rocket's Moltres ex (SAR) is clearly visible on the right edge of cell O3-4, showing the distinct artwork and layout matching R3."
+        ],
+        "price_yen": 450,
+        "seller_positive_ratings": 531,
+        "title": "ポケモンカード 14枚 まとめ売り ニンジャスピナー"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m95829027532",
+      "message_id": "1535136060361941035",
+      "sent_at": "2026-08-07T04:02:38.325505+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535136126635999353": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m71794194294",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_1.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_2.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_3.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_4.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_5.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_6.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_7.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_8.jpg?1761370018",
+          "https://static.mercdn.net/item/detail/orig/photos/m71794194294_9.jpg?1761370018"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX #27 matches the artwork and layout in listing cells O1-1, O1-2, and O1-3."
+        ],
+        "price_yen": 950,
+        "seller_positive_ratings": 1522,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m71794194294",
+      "message_id": "1535136126635999353",
+      "sent_at": "2026-08-07T04:02:54.101718+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535136176183312415": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m19782024176",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m19782024176_1.jpg?1780671722",
+          "https://static.mercdn.net/item/detail/orig/photos/m19782024176_2.jpg?1780671722"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card in slab O1-1 perfectly matches the artwork, layout, and text of R1 (Team Rocket's Moltres ex #124)."
+        ],
+        "price_yen": 19999,
+        "seller_positive_ratings": 0,
+        "title": "【PSA9】ロケット団のファイヤーex SAR 【即日発送】"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m19782024176",
+      "message_id": "1535136176183312415",
+      "sent_at": "2026-08-07T04:03:05.915475+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535136245959893013": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m77461131737",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_1.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_2.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_3.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_4.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_5.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_6.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_7.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_8.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_9.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_10.jpg?1785756989",
+          "https://static.mercdn.net/item/detail/orig/photos/m77461131737_11.jpg?1785756989"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini artwork matches the reference card exactly across images O1-1 through O1-4."
+        ],
+        "price_yen": 2580,
+        "seller_positive_ratings": 2329,
+        "title": "ビクティニ PROMO 271/SV-Pブラックボルト カードファイルセット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m77461131737",
+      "message_id": "1535136245959893013",
+      "sent_at": "2026-08-07T04:03:22.551825+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535136327576588309": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m67613479937",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m67613479937_1.jpg?1785846174",
+          "https://static.mercdn.net/item/detail/orig/photos/m67613479937_2.jpg?1785846174",
+          "https://static.mercdn.net/item/detail/orig/photos/m67613479937_3.jpg?1785846174",
+          "https://static.mercdn.net/item/detail/orig/photos/m67613479937_4.jpg?1785846174",
+          "https://static.mercdn.net/item/detail/orig/photos/m67613479937_5.jpg?1785846174"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "Victini AR from sv11B is visible at the far left of the stacked cards in O1-1."
+        ],
+        "price_yen": 555,
+        "seller_positive_ratings": 1122,
+        "title": "【ポケモンカード】　まとめ売り　『869』"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m67613479937",
+      "message_id": "1535136327576588309",
+      "sent_at": "2026-08-07T04:03:42.040571+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535136362510950401": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m35182959886",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_1.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_2.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_3.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_4.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_5.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_6.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_7.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_8.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_9.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_10.jpg?1785954558",
+          "https://static.mercdn.net/item/detail/orig/photos/m35182959886_11.jpg?1785954558"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX artwork and card layout perfectly match O1-1, O1-2, O1-3, and O1-4."
+        ],
+        "price_yen": 19000,
+        "seller_positive_ratings": 945,
+        "title": "ARS9 デンリュウEX SR XY7 バンデットリング アンリミ PSA9"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m35182959886",
+      "message_id": "1535136362510950401",
+      "sent_at": "2026-08-07T04:03:50.375320+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535136429586513942": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m95696798041",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m95696798041_1.jpg?1781069453",
+          "https://static.mercdn.net/item/detail/orig/photos/m95696798041_2.jpg?1781069453"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and character (Team Rocket's Moltres ex) in O1-1 matches R1 exactly.",
+          "O1-2 shows the back of the card corresponding to O1-1."
+        ],
+        "price_yen": 2400,
+        "seller_positive_ratings": 110,
+        "title": "ポケモンカード ロケット団のファイヤーex RR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m95696798041",
+      "message_id": "1535136429586513942",
+      "sent_at": "2026-08-07T04:04:06.416665+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535136601477349457": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m16742032826",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m16742032826_1.jpg?1784998515",
+          "https://static.mercdn.net/item/detail/orig/photos/m16742032826_2.jpg?1784998515"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The middle card on the top row of O1-1 matches Victini #97 with the exact same artwork, HP 80, and layout."
+        ],
+        "price_yen": 1500,
+        "seller_positive_ratings": 48,
+        "title": "ポケモンカード　ポケカ　ビクティニ　イラスト色々7枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m16742032826",
+      "message_id": "1535136601477349457",
+      "sent_at": "2026-08-07T04:04:47.330753+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535136699762610237": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m46259233221",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m46259233221_1.jpg?1785902113",
+          "https://static.mercdn.net/item/detail/orig/photos/m46259233221_2.jpg?1785902113"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Exact matching artwork, card layout, and text of Ampharos EX in O1-1"
+        ],
+        "price_yen": 500,
+        "seller_positive_ratings": 37,
+        "title": "デンリュウEX RR XY7 バンデットリング 027/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m46259233221",
+      "message_id": "1535136699762610237",
+      "sent_at": "2026-08-07T04:05:10.778135+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535136881036238910": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m18933943841",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m18933943841_1.jpg?1745911451",
+          "https://static.mercdn.net/item/detail/orig/photos/m18933943841_2.jpg?1745911451"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "The cards in image O1-1 show Ampharos EX with the same artwork, layout, and HP/card design as R1."
+        ],
+        "price_yen": 900,
+        "seller_positive_ratings": 8790,
+        "title": "デンリュウex 4枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m18933943841",
+      "message_id": "1535136881036238910",
+      "sent_at": "2026-08-07T04:05:54.011319+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535136943216791563": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m87429851387",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_1.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_2.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_3.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_4.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_5.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_6.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_7.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_8.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_9.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_10.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_11.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_12.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_13.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_14.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_15.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_16.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_17.jpg?1777937846",
+          "https://static.mercdn.net/item/detail/orig/photos/m87429851387_18.jpg?1777937846"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O3-1 shows a close-up of Ampharos EX text box and card texture matching R1.",
+          "O3-2, O3-3, O3-4 show the back of the card matching the front in O3-1."
+        ],
+        "price_yen": 2569,
+        "seller_positive_ratings": 2152,
+        "title": "MデンリュウEX RR XY7 028/081 Ampharos メガ進化 ②"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m87429851387",
+      "message_id": "1535136943216791563",
+      "sent_at": "2026-08-07T04:06:08.825191+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535137060225159184": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m64644522651",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_1.jpg?1784333059",
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_2.jpg?1784333059",
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_3.jpg?1784333059",
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_4.jpg?1784333059",
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_5.jpg?1784333059",
+          "https://static.mercdn.net/item/detail/orig/photos/m64644522651_6.jpg?1784333059"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and text box layout in O2-1 matches Team Rocket's Moltres ex #124 from R1 exactly."
+        ],
+        "price_yen": 1899,
+        "seller_positive_ratings": 661,
+        "title": "ポケモンカード ロケット団のファイヤーex SR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m64644522651",
+      "message_id": "1535137060225159184",
+      "sent_at": "2026-08-07T04:06:36.827910+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535137128390860801": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m71647447421",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m71647447421_1.jpg?1785722041"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows three copies of Victini #97 matching R1 artwork and set number."
+        ],
+        "price_yen": 8999,
+        "seller_positive_ratings": 478,
+        "title": "【未開封】 ビクティニ 271/SV-P 3枚"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m71647447421",
+      "message_id": "1535137128390860801",
+      "sent_at": "2026-08-07T04:06:52.952020+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535137152210575421": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m76812972668",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m76812972668_1.jpg?1784427837",
+          "https://static.mercdn.net/item/detail/orig/photos/m76812972668_2.jpg?1784427837"
+        ],
+        "match_confidence": 0.99,
+        "match_evidence": [
+          "Victini artwork matches O1-1 perfectly"
+        ],
+        "price_yen": 3222,
+        "seller_positive_ratings": 239,
+        "title": "ポケモンカード　未開封　ビクティニ　プロモ(271/SV-P)"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m76812972668",
+      "message_id": "1535137152210575421",
+      "sent_at": "2026-08-07T04:06:58.635012+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535137416946655265": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m29203596192",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m29203596192_1.jpg?1779623155",
+          "https://static.mercdn.net/item/detail/orig/photos/m29203596192_2.jpg?1779623155",
+          "https://static.mercdn.net/item/detail/orig/photos/m29203596192_3.jpg?1779623155",
+          "https://static.mercdn.net/item/detail/orig/photos/m29203596192_4.jpg?1779623155",
+          "https://static.mercdn.net/item/detail/orig/photos/m29203596192_5.jpg?1779623155"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "Ampharos EX card is visibly present in the top-right position of the card grid in O1-1 and O1-2."
+        ],
+        "price_yen": 2590,
+        "seller_positive_ratings": 1671,
+        "title": "カイリュー　xy6 ポケカ　ebb bw"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m29203596192",
+      "message_id": "1535137416946655265",
+      "sent_at": "2026-08-07T04:08:01.775406+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535137539265011747": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m48199441370",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m48199441370_1.jpg?1783739143"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Ampharos EX is visible in the top-left card of the listing image (O1-1)."
+        ],
+        "price_yen": 1500,
+        "seller_positive_ratings": 35,
+        "title": "ポケモンカード まとめ売り 11枚セット"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m48199441370",
+      "message_id": "1535137539265011747",
+      "sent_at": "2026-08-07T04:08:31.065165+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535137739719180409": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m41798608950",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m41798608950_1.jpg?1783933278",
+          "https://static.mercdn.net/item/detail/orig/photos/m41798608950_2.jpg?1783933278",
+          "https://static.mercdn.net/item/detail/orig/photos/m41798608950_3.jpg?1783933278"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "PSA slab label and card artwork match Ampharos EX #27 exactly in O1-1, O1-2, and O1-3."
+        ],
+        "price_yen": 7000,
+        "seller_positive_ratings": 1895,
+        "title": "【PSA9】デンリュウEX RR XY バンデットリング ポケモンカード"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m41798608950",
+      "message_id": "1535137739719180409",
+      "sent_at": "2026-08-07T04:09:18.722012+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535137923148808253": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m54206287396",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_1.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_2.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_3.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_4.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_5.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_6.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_7.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_8.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_9.jpg?1784886172",
+          "https://static.mercdn.net/item/detail/orig/photos/m54206287396_10.jpg?1784886172"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Card artwork matches Team Rocket's Moltres ex exactly.",
+          "Listing images show front, back, and close-ups of O1-1."
+        ],
+        "price_yen": 310,
+        "seller_positive_ratings": 585,
+        "title": "ロケット団のファイヤーex RR 015/098"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m54206287396",
+      "message_id": "1535137923148808253",
+      "sent_at": "2026-08-07T04:10:02.436292+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
     }
   },
   "rejected": {
@@ -1393,6 +3119,493 @@
       "message_id": "1532250247605125171",
       "rejected_at": "2026-08-06T05:42:22.163515+00:00",
       "sent_at": "2026-07-30T04:55:27.000725+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535117793286950958": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m94643999741",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_1.jpg?1786026713",
+          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_2.jpg?1786026713",
+          "https://static.mercdn.net/item/detail/orig/photos/m94643999741_3.jpg?1786026713"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "Victini #97 (AR) is visible in the top left area of O1-1."
+        ],
+        "price_yen": 500,
+        "seller_positive_ratings": 165,
+        "title": "【匿名配送】ポケカ　sv11B、sv11B モンスターボールミラーまとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m94643999741",
+      "message_id": "1535117793286950958",
+      "rejected_at": "2026-08-07T03:37:17.986256+00:00",
+      "sent_at": "2026-08-07T02:50:03.205671+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535117814585626655": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m14257977701",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_1.jpg?1785058830",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_2.jpg?1785058830",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_3.jpg?1785058830",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_4.jpg?1785058830",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_5.jpg?1786031475",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_6.jpg?1786031475",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_7.jpg?1786031475",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_8.jpg?1786031475",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_9.jpg?1786031475",
+          "https://static.mercdn.net/item/detail/orig/photos/m14257977701_10.jpg?1786031475"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 AR is clearly visible as the bottom card in the column O1-1."
+        ],
+        "price_yen": 900,
+        "seller_positive_ratings": 82,
+        "title": "【極美品】ビクティニAR 7枚セット　300円スタート　まとめ売り"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14257977701",
+      "message_id": "1535117814585626655",
+      "rejected_at": "2026-08-07T03:37:19.012980+00:00",
+      "sent_at": "2026-08-07T02:50:08.197665+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535117959150964798": {
+      "alert_type": "confirmed",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": {
+        "color": 16763904,
+        "description": "Victini Pokemon Japanese Black Bolt #97",
+        "fields": [
+          {
+            "inline": false,
+            "name": "Status",
+            "value": "Watchlist match confirmed; seller rating must be verified manually"
+          },
+          {
+            "inline": false,
+            "name": "Matched watchlist",
+            "value": "`victini_black_bolt_97`"
+          },
+          {
+            "inline": true,
+            "name": "Mercari price",
+            "value": "¥900 / A$8.10"
+          },
+          {
+            "inline": true,
+            "name": "Sendico fee",
+            "value": "¥800 / A$7.20"
+          },
+          {
+            "inline": true,
+            "name": "Total Sendico cost",
+            "value": "A$15.29"
+          },
+          {
+            "inline": true,
+            "name": "PriceCharting lot value",
+            "value": "A$0.00"
+          },
+          {
+            "inline": true,
+            "name": "Price variance",
+            "value": "A$-15.29 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": true,
+            "name": "Seller positives",
+            "value": "82 positive ratings — no minimum configured; confirm seller reputation manually before buying"
+          },
+          {
+            "inline": false,
+            "name": "Lot value comparison",
+            "value": "PriceCharting value: A$0.00\nSendico cost: A$15.29 (¥900 listing + ¥800 fee)\nVariance: A$-15.29 value below Sendico cost (-100.0%)"
+          },
+          {
+            "inline": false,
+            "name": "Cards priced at ≥95% match",
+            "value": "No individual cards cleared the price-match threshold."
+          },
+          {
+            "inline": false,
+            "name": "Coverage",
+            "value": "9 cards identified at the configured confidence; 0 priced at ≥95% match confidence; 9 identified cards unpriced; 7 visible cards unidentified"
+          },
+          {
+            "inline": false,
+            "name": "PriceCharting",
+            "value": "https://www.pricecharting.com/game/pokemon-japanese-black-bolt/victini-97"
+          },
+          {
+            "inline": false,
+            "name": "Evidence",
+            "value": "• Candidate Z1-1 depicts the exact same Victini illustration by Amelicart sitting on a grassy cliff overlooking a landscape, matching the art, card layout, Japanese name ビクティニ, HP 80, move Vフォース (120), and set number 097/086 AR from Image 1."
+          },
+          {
+            "inline": false,
+            "name": "Important",
+            "value": "Verify the seller has sufficient positive ratings before purchase. Shipping, domestic freight, GST and condition adjustments are excluded. Premium variants are valued only when explicitly confirmed; otherwise Normal/Holo is assumed. Graded pricing is used only when a grading company and grade are detected from the slab or explicitly claimed in the listing title. Verify the slab, certification number, identity and authenticity."
+          }
+        ],
+        "footer": {
+          "text": "Confirmed match ≥85% · lot pricing ≥95% · FX: 1 JPY=A$0.008997, 1 USD=A$1.4200 (live, 2026-08-07T02:09:27.510435+00:00)"
+        },
+        "thumbnail": {
+          "url": "https://static.mercdn.net/item/detail/orig/photos/m14257977701_1.jpg?1785058830"
+        },
+        "title": "MANUAL SELLER CHECK — Victini 97",
+        "url": "https://sendico.com/shop/mercari/catalog/m14257977701"
+      },
+      "listing_code": "m14257977701",
+      "listing_snapshot": null,
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m14257977701",
+      "message_id": "1535117959150964798",
+      "rejected_at": "2026-08-07T03:37:20.180091+00:00",
+      "sent_at": "2026-08-07T02:50:42.687574+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118188281597995": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m59618432415",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_1.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_2.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_3.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_4.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_5.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_6.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_7.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_8.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_9.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_10.jpg?1785765238",
+          "https://static.mercdn.net/item/detail/orig/photos/m59618432415_11.jpg?1785765238"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini #97 AR artwork matches the card in O3-3."
+        ],
+        "price_yen": 78000,
+        "seller_positive_ratings": 10,
+        "title": "ポケモンカード ビクティニ プロモ BWR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m59618432415",
+      "message_id": "1535118188281597995",
+      "rejected_at": "2026-08-07T03:37:37.652902+00:00",
+      "sent_at": "2026-08-07T02:51:37.370256+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118302098231328": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m39417061618",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m39417061618_1.jpg?1784966975",
+          "https://static.mercdn.net/item/detail/orig/photos/m39417061618_2.jpg?1784966975"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 displays Team Rocket's Moltres ex with matching artwork and layout"
+        ],
+        "price_yen": 1080,
+        "seller_positive_ratings": 2234,
+        "title": "ロケット団のファイヤーex❤️SR スカーレット&バイオレット 112/098"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m39417061618",
+      "message_id": "1535118302098231328",
+      "rejected_at": "2026-08-07T03:37:41.285852+00:00",
+      "sent_at": "2026-08-07T02:52:04.444558+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535118358129938465": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m16522033195",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_1.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_2.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_3.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_4.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_5.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_6.jpg?1785171756",
+          "https://static.mercdn.net/item/detail/orig/photos/m16522033195_7.jpg?1785171756"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR with attack V-Force is visible in O1-1 bottom right, O1-2, and O1-3, matching R1 artwork and set symbol sv11B 097/086 (or similar alternate printing variant/angle)."
+        ],
+        "price_yen": 2999,
+        "seller_positive_ratings": 604,
+        "title": "ポケモンカード ビクティニ 5枚セット マスターボールミラー"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m16522033195",
+      "message_id": "1535118358129938465",
+      "rejected_at": "2026-08-07T03:37:41.702344+00:00",
+      "sent_at": "2026-08-07T02:52:17.911332+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118775261863968": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m38197722788",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_1.jpg?1785469145",
+          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_2.jpg?1785469145",
+          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_3.jpg?1785469145",
+          "https://static.mercdn.net/item/detail/orig/photos/m38197722788_4.jpg?1785469145"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini AR is clearly visible in the bottom right pocket of image O1-1."
+        ],
+        "price_yen": 1200,
+        "seller_positive_ratings": 204,
+        "title": "ポケモンカード まとめ売り ファイル付き sv11W & sv11B 全135"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m38197722788",
+      "message_id": "1535118775261863968",
+      "rejected_at": "2026-08-07T03:38:15.530113+00:00",
+      "sent_at": "2026-08-07T02:53:57.238631+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118805724827693": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m24875212438",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m24875212438_1.jpg?1785885829",
+          "https://static.mercdn.net/item/detail/orig/photos/m24875212438_2.jpg?1785885829"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "Victini sitting by the tree artwork matches cell O1-1 bottom left card"
+        ],
+        "price_yen": 580,
+        "seller_positive_ratings": 2609,
+        "title": "ポケモンカード　ビクティニ　まとめ売り　スターター、その他"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m24875212438",
+      "message_id": "1535118805724827693",
+      "rejected_at": "2026-08-07T03:38:15.958318+00:00",
+      "sent_at": "2026-08-07T02:54:04.530166+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118827644391517": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m53369264705",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_1.jpg?1785975476",
+          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_2.jpg?1785975476",
+          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_3.jpg?1785975476",
+          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_4.jpg?1785975476",
+          "https://static.mercdn.net/item/detail/orig/photos/m53369264705_5.jpg?1785975476"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "O1-1 shows Victini #97 inside a sealed promotional wrap matching the artwork, character, and layout of R1."
+        ],
+        "price_yen": 90000,
+        "seller_positive_ratings": 597,
+        "title": "最終値下げ　ビクティニ P SV-P 288 　プロモ　ビクティニBWR争奪戦"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m53369264705",
+      "message_id": "1535118827644391517",
+      "rejected_at": "2026-08-07T03:38:16.400897+00:00",
+      "sent_at": "2026-08-07T02:54:09.742007+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535118960545108030": {
+      "alert_type": "probable",
+      "card_name": "Team Rocket's Moltres ex #124 (Pokemon Japanese Glory of Team Rocket)",
+      "embed": null,
+      "listing_code": "m12324182872",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_1.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_2.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_3.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_4.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_5.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_6.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_7.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_8.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_9.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_10.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_11.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_12.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_13.jpg?1785941886",
+          "https://static.mercdn.net/item/detail/orig/photos/m12324182872_14.jpg?1785941886"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "The artwork and text box layout in O2-1 and O2-2 clearly match Team Rocket's Moltres ex #124 from R1."
+        ],
+        "price_yen": 1100,
+        "seller_positive_ratings": 315,
+        "title": "ロケット団のファイヤーex SR スカーレット&バイオレット 拡張パック ロケ…"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m12324182872",
+      "message_id": "1535118960545108030",
+      "rejected_at": "2026-08-07T03:38:17.196361+00:00",
+      "sent_at": "2026-08-07T02:54:41.476714+00:00",
+      "target_id": "team_rocket_27s_moltres_ex_124"
+    },
+    "1535119104925761637": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m30876445351",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_1.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_2.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_3.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_4.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_5.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_6.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_7.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_8.jpg?1782736369",
+          "https://static.mercdn.net/item/detail/orig/photos/m30876445351_9.jpg?1782736369"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Listing images show Ampharos EX with identical artwork, card layout, and HP 170 matching R1."
+        ],
+        "price_yen": 7999,
+        "seller_positive_ratings": 495,
+        "title": "デンリュウEX SR XY7 バンデットリング 085/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m30876445351",
+      "message_id": "1535119104925761637",
+      "rejected_at": "2026-08-07T03:38:17.649543+00:00",
+      "sent_at": "2026-08-07T02:55:15.837406+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535119217970384987": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m32018222828",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m32018222828_1.jpg?1785840564"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Multiple copies of Victini #97 AR are clearly visible in O1-1 with matching artwork and layout."
+        ],
+        "price_yen": 300,
+        "seller_positive_ratings": 1119,
+        "title": "ビクティニ　012/086 10枚 セット まとめ売り　汎用　デッキパーツ"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m32018222828",
+      "message_id": "1535119217970384987",
+      "rejected_at": "2026-08-07T03:38:26.146830+00:00",
+      "sent_at": "2026-08-07T02:55:42.775354+00:00",
+      "target_id": "victini_black_bolt_97"
+    },
+    "1535119262312824874": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m49422792491",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_1.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_2.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_3.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_4.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_5.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_6.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_7.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_8.jpg?1777134857",
+          "https://static.mercdn.net/item/detail/orig/photos/m49422792491_9.jpg?1777134857"
+        ],
+        "match_confidence": 0.95,
+        "match_evidence": [
+          "O2-1 shows the bottom-left corner of a card with a Fighting type weakness (x2), Water type resistance (-20), and a '1' 1st Edition stamp matching the layout and symbols of R1 (Ampharos EX)."
+        ],
+        "price_yen": 2837,
+        "seller_positive_ratings": 987,
+        "title": "ポケモンカードゲーム ロトム C XY7 バンデットリング 029/081"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m49422792491",
+      "message_id": "1535119262312824874",
+      "rejected_at": "2026-08-07T03:38:26.578759+00:00",
+      "sent_at": "2026-08-07T02:55:53.382741+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535119299855913041": {
+      "alert_type": "probable",
+      "card_name": "Ampharos EX #27 (Pokemon Japanese Bandit Ring)",
+      "embed": null,
+      "listing_code": "m70224699141",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_1.jpg?1768121314",
+          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_2.jpg?1768121314",
+          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_3.jpg?1768121314",
+          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_4.jpg?1768121314",
+          "https://static.mercdn.net/item/detail/orig/photos/m70224699141_5.jpg?1768121314"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Image 2 shows booster packs for 'Bandit Ring' (XY series), which corresponds to the set for Ampharos EX #27."
+        ],
+        "price_yen": 888,
+        "seller_positive_ratings": 204,
+        "title": "バンデットリング 空パック 絶版 2パック"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m70224699141",
+      "message_id": "1535119299855913041",
+      "rejected_at": "2026-08-07T03:38:27.046032+00:00",
+      "sent_at": "2026-08-07T02:56:02.307908+00:00",
+      "target_id": "ampharos_bandit_ring_27"
+    },
+    "1535119438440046604": {
+      "alert_type": "probable",
+      "card_name": "Victini #97 (Pokemon Japanese Black Bolt)",
+      "embed": null,
+      "listing_code": "m69060721059",
+      "listing_snapshot": {
+        "image_urls": [
+          "https://static.mercdn.net/item/detail/orig/photos/m69060721059_1.jpg?1786020259",
+          "https://static.mercdn.net/item/detail/orig/photos/m69060721059_2.jpg?1786020259"
+        ],
+        "match_confidence": 1.0,
+        "match_evidence": [
+          "Victini with the specific artwork and layout is clearly visible in the middle row, second card from the left in O1-1."
+        ],
+        "price_yen": 2000,
+        "seller_positive_ratings": 1091,
+        "title": "ポケモンカード　BW XY 11枚セットまとめ売り　カイリュー　プラズマ団　RR"
+      },
+      "listing_url": "https://sendico.com/shop/mercari/catalog/m69060721059",
+      "message_id": "1535119438440046604",
+      "rejected_at": "2026-08-07T03:38:36.781909+00:00",
+      "sent_at": "2026-08-07T02:56:35.367460+00:00",
       "target_id": "victini_black_bolt_97"
     }
   },
