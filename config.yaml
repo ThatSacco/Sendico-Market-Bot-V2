@@ -1,6 +1,17 @@
 watchlist_file: data/watchlist.yaml
 run_limits_file: data/run_limits.yaml
 search_criteria_file: data/search_criteria.yaml
+# Where listings are discovered: "mercari" or "sendico".
+# Sendico put its catalogue behind a Cloudflare bot challenge on 2026-08-06
+# and now returns HTTP 403 to the scanner, taking every search to zero
+# results. Mercari is the original source for the same inventory and
+# publishes schema.org data (canonical JPY price, full-resolution photos,
+# and sold status). Alerts still link to Sendico to buy.
+source: mercari
+mercari:
+  # 0 means no page limit; the crawl stops when Mercari stops offering a
+  # "next" link. raw_links_per_term in run_limits.yaml still applies.
+  max_search_pages: 0
 sendico:
   category_url: https://sendico.com/shop/mercari/catalog/categories/1289
 gemini:

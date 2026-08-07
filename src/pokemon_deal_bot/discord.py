@@ -407,6 +407,7 @@ class DiscordNotifier:
             f"Found: **{stats.found}**\n"
             f"Candidates: **{stats.candidates}**\n"
             f"Hydrated: **{stats.hydrated}**\n"
+            f"Sold: **{stats.skipped_sold}**\n"
             f"Held: **{stats.held}**"
         )
         match_value = (

@@ -57,6 +57,10 @@ class SendicoListing:
     raw_text: str = ""
     seller_positive_ratings: int | None = None
     candidate_target_ids: list[str] = field(default_factory=list)
+    # True only when the source said so outright. Sendico's pages never
+    # exposed this; Mercari's structured data does, which lets an already
+    # sold listing be dropped before it costs any Gemini budget.
+    sold_out: bool = False
 
 
 @dataclass(slots=True)
@@ -136,6 +140,7 @@ class ScanStats:
     held: int = 0
     skipped_seen: int = 0
     skipped_seller: int = 0
+    skipped_sold: int = 0
     processing_errors: int = 0
     alerts_sent: int = 0
     requests_sent: int = 0

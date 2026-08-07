@@ -23,6 +23,7 @@ from .image_processing import (
     make_contact_sheet,
 )
 from .lot_valuation import lot_value
+from .mercari import MercariScanner
 from .models import (
     LotCard,
     PendingConfirmation,
@@ -189,6 +190,27 @@ def _report_match(
             "conflicts": " | ".join(match.conflicts),
         }
     )
+
+
+def _select_scanner(config: AppConfig):
+    """Pick the discovery source named in config.yaml's ``source`` key.
+
+    Defaults to Mercari: Sendico began returning a Cloudflare bot
+    challenge (HTTP 403) to the scanner on 2026-08-06, taking every search
+    to zero results. Sendico remains selectable so the original path can be
+    restored the moment it works again.
+    """
+
+    source = str(config.raw.get("source") or "mercari").strip().lower()
+    if source == "sendico":
+        LOGGER.info("Discovery source: Sendico")
+        return SendicoScanner, config.raw["sendico"]
+    if source != "mercari":
+        raise ValueError(
+            f"config.yaml 'source' must be 'mercari' or 'sendico', not {source!r}"
+        )
+    LOGGER.info("Discovery source: Mercari (buy links still point at Sendico)")
+    return MercariScanner, config.raw.get("mercari") or {}
 
 
 def _listing_snapshot(listing: SendicoListing, match: VisualMatch) -> dict:
@@ -613,10 +635,9 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
 
     listings_by_code: dict[str, SendicoListing] = {}
     plan = build_search_plan(config.targets)
+    scanner_factory, scanner_config = _select_scanner(config)
     try:
-        async with SendicoScanner(
-            config.raw["sendico"], config.run_limits
-        ) as scanner:
+        async with scanner_factory(scanner_config, config.run_limits) as scanner:
             search_semaphore = asyncio.Semaphore(SEARCH_CONCURRENCY)
 
             async def _run_search(task):
@@ -698,6 +719,18 @@ async def run(config_path: str = "config.yaml", dry_run: bool = False) -> int:
                 try:
                     listing = await hydration_task
                     stats.hydrated += 1
+                    if listing.sold_out:
+                        # Free to know, and worth acting on: an already-sold
+                        # listing can never be bought, so spending image
+                        # downloads and Gemini calls on it is pure waste.
+                        stats.skipped_sold += 1
+                        state.mark_processed(
+                            listing,
+                            signature,
+                            "already sold",
+                            fingerprint=discovery_fingerprint,
+                        )
+                        continue
                     minimum_ratings = int(
                         seller_criteria["minimum_positive_ratings"]
                     )
