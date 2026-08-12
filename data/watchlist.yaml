@@ -12,10 +12,14 @@ cards:
     searches:
       - term: "ホロンの研究塔"
         active: true
+      - term: "メタモン"
+        active: true
 
   - id: ditto_mime_holon
     active: true
     pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-holon-research/ditto-1st-edition-46"
     searches:
       - term: "ホロンの研究塔"
+        active: true
+      - term: "メタモン"
         active: true
