@@ -6,22 +6,9 @@
 # Names, set, card number, market price and the visual reference image are
 # downloaded automatically from PriceCharting. They are not matching gates.
 cards:
-  - id: team_rocket_27s_moltres_ex_124
+  - id: ditto_charmander_holon
     active: true
-    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-glory-of-team-rocket/team-rocket%27s-moltres-ex-124"
+    pricecharting_url: "https://www.pricecharting.com/game/pokemon-japanese-holon-research/ditto-charmander-1st-edition-3"
     searches:
-      - term: "ロケット団のファイヤーex"
-        active: true
-
-  - id: gum_gum_fire_fist_pistol_red_hawk_alternate_art_op11_114
-    active: true
-    pricecharting_url: "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/gum-gum-fire-fist-pistol-red-hawk-alternate-art-op11-114"
-    searches:
-      # Was "O11-114" (missing the P). Mercari fuzzy-matched that on "114"
-      # and returned trousers, a knife and an aircon remote -- 51 listings
-      # of noise that would have eaten the run's listing budget. Both terms
-      # below verified live 2026-08-07.
-      - term: "OP11-114"
-        active: true
-      - term: "ゴムゴムの火拳銃"
+      - term: "ホロンの研究塔"
         active: true
