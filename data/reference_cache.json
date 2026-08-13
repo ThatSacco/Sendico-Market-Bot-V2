@@ -43,5 +43,29 @@
     "psa10_usd": 6.0,
     "set_name": "Pokemon Japanese Glory of Team Rocket",
     "ungraded_usd": 97.13
+  },
+  "https://www.pricecharting.com/game/pokemon-japanese-holon-research/ditto-1st-edition-46": {
+    "card_number": "46",
+    "fetched_at": "2026-08-12T23:44:25.400204+00:00",
+    "game": "Pokemon Cards",
+    "image_path": "data/reference_images/3507378.jpg",
+    "image_url": "https://storage.googleapis.com/images.pricecharting.com/reff98fd0e075da3a98aed446c1a4d88620a24c72a8296c731aae6c6c7e0fbe1f2d/1600.jpg",
+    "name": "Ditto [1st Edition]",
+    "product_id": "3507378",
+    "psa10_usd": 6.0,
+    "set_name": "Pokemon Japanese Holon Research",
+    "ungraded_usd": 62.88
+  },
+  "https://www.pricecharting.com/game/pokemon-japanese-holon-research/ditto-charmander-1st-edition-3": {
+    "card_number": "3",
+    "fetched_at": "2026-08-12T23:44:24.825680+00:00",
+    "game": "Pokemon Cards",
+    "image_path": "data/reference_images/8740867.jpg",
+    "image_url": "https://storage.googleapis.com/images.pricecharting.com/442vl34zein5yuo7/1600.jpg",
+    "name": "Ditto [Charmander 1st Edition]",
+    "product_id": "8740867",
+    "psa10_usd": 32.91,
+    "set_name": "Pokemon Japanese Holon Research",
+    "ungraded_usd": 32.91
   }
 }
